@@ -1,0 +1,148 @@
+{
+  "kind": [
+    {
+      "key": "term",
+      "label": "Term",
+      "description": "Core vocabulary items for professional communication.",
+      "order": 1
+    },
+    {
+      "key": "phrase",
+      "label": "Phrase",
+      "description": "Reusable short expressions for spoken English.",
+      "order": 2
+    },
+    {
+      "key": "pattern",
+      "label": "Pattern",
+      "description": "Full sentence patterns for interviews and workplace communication.",
+      "order": 3
+    }
+  ],
+  "scene": [
+    {
+      "key": "interview",
+      "label": "Interview",
+      "description": "Language for self-introduction, experience questions, and hiring conversations.",
+      "order": 1
+    },
+    {
+      "key": "portfolio",
+      "label": "Portfolio",
+      "description": "Language for case-study walkthroughs and presentation of design decisions.",
+      "order": 2
+    },
+    {
+      "key": "workplace",
+      "label": "Workplace",
+      "description": "Language for cross-functional collaboration and day-to-day communication.",
+      "order": 3
+    }
+  ],
+  "module": [
+    {
+      "key": "personal_branding",
+      "label": "Personal Branding",
+      "description": "How to position experience, strengths, and level clearly.",
+      "order": 1
+    },
+    {
+      "key": "product_strategy_and_business",
+      "label": "Product Strategy & Business",
+      "description": "How to connect design work to product direction and business outcomes.",
+      "order": 2
+    },
+    {
+      "key": "ux_research_and_interaction",
+      "label": "UX Research & Interaction",
+      "description": "How to describe user understanding, flows, and interaction decisions.",
+      "order": 3
+    },
+    {
+      "key": "visual_ui_and_design_systems",
+      "label": "Visual UI & Design Systems",
+      "description": "How to discuss visual craft, consistency, and scalable design systems.",
+      "order": 4
+    },
+    {
+      "key": "prototyping_motion_and_3d",
+      "label": "Prototyping, Motion & 3D",
+      "description": "How to talk about prototyping depth, motion design, and 3D workflows.",
+      "order": 5
+    },
+    {
+      "key": "data_metrics_and_experimentation",
+      "label": "Data, Metrics & Experimentation",
+      "description": "How to explain metrics, experiments, and data-informed decisions.",
+      "order": 6
+    },
+    {
+      "key": "accessibility_and_content_clarity",
+      "label": "Accessibility & Content Clarity",
+      "description": "How to describe inclusive design, clear UI writing, and usability improvements.",
+      "order": 7
+    },
+    {
+      "key": "ai_product_and_design_workflow",
+      "label": "AI Product & Design Workflow",
+      "description": "How to discuss AI product thinking and AI-enabled design workflows.",
+      "order": 8
+    },
+    {
+      "key": "engineering_collaboration_and_technical_fluency",
+      "label": "Engineering Collaboration & Technical Fluency",
+      "description": "How to communicate with engineers and speak about technical collaboration.",
+      "order": 9
+    },
+    {
+      "key": "leadership_and_management",
+      "label": "Leadership & Management",
+      "description": "How to describe coaching, alignment, delegation, and team leadership.",
+      "order": 10
+    },
+    {
+      "key": "impact_and_credibility",
+      "label": "Impact & Credibility",
+      "description": "How to show scope, proof, measurable outcomes, and professional credibility.",
+      "order": 11
+    }
+  ],
+  "intent": [
+    {
+      "key": "position_self",
+      "label": "Position Self",
+      "description": "Language for framing level, strengths, and professional identity.",
+      "order": 1
+    },
+    {
+      "key": "describe_scope",
+      "label": "Describe Scope",
+      "description": "Language for describing the problem space, constraints, and responsibilities.",
+      "order": 2
+    },
+    {
+      "key": "explain_process_and_reasoning",
+      "label": "Explain Process & Reasoning",
+      "description": "Language for explaining decisions, tradeoffs, and design thinking.",
+      "order": 3
+    },
+    {
+      "key": "show_impact",
+      "label": "Show Impact",
+      "description": "Language for presenting outcomes, scale, and business value.",
+      "order": 4
+    },
+    {
+      "key": "collaborate_and_influence",
+      "label": "Collaborate & Influence",
+      "description": "Language for working across functions and aligning stakeholders.",
+      "order": 5
+    },
+    {
+      "key": "manage_and_coach",
+      "label": "Manage & Coach",
+      "description": "Language for leading people, coaching teammates, and building teams.",
+      "order": 6
+    }
+  ]
+}
