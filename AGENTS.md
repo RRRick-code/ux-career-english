@@ -19,7 +19,6 @@ Use `USER_PROFILE.md` as the detailed source of truth whenever output should ref
 - Frontend: React + TypeScript
 - Build tool: Vite
 - Routing: React Router with HashRouter
-- Styling: CSS Modules and CSS variables
 - Data flow: app-ready JSON content files consumed directly by React
 - Local state: browser localStorage
 - Deployment: GitHub Actions + GitHub Pages
