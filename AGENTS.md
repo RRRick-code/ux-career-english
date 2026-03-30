@@ -25,7 +25,9 @@ Use `USER_PROFILE.md` as the detailed source of truth whenever output should ref
 
 ## UI Rules
 
-- Use only shadcn/ui components with `style: "new-york"` and `baseColor: "neutral"`.
+- Follow the current shadcn preset-based setup in the repo instead of reintroducing legacy hand-maintained theme/config patterns.
+- Use the local shadcn components in `src/components/ui` as the default UI layer, and add new shadcn components via the `shadcn` CLI so they stay aligned with the repo setup.
+- Treat `components.json`, `src/index.css`, and `package.json` as the source of truth for shadcn setup details.
 - Use light mode only; do not design or implement dark mode.
 - Keep the interface simple and clear; avoid over-design.
 
