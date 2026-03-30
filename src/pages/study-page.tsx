@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { X } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
 import { getTaxonomyLabel, items } from "@/lib/content";
 import { EmptyState } from "@/components/empty-state";
 import { getStatusLabel } from "@/lib/learning";
@@ -27,6 +29,7 @@ export function StudyPage() {
       return;
     }
 
+    // Current round is fixed for the session; record updates must not rebuild it.
     const round = buildStudyRound(items, records, mode);
     setRoundItems(round.selected);
     setCurrentIndex(0);
@@ -35,7 +38,7 @@ export function StudyPage() {
     setNewlyMasteredCount(0);
     setRoundComplete(false);
     setRoundReady(true);
-  }, [mode, navigate, records]);
+  }, [mode, navigate]);
 
   const currentItem = roundItems[currentIndex] ?? null;
   const isEmpty = roundReady && roundItems.length === 0;
@@ -81,10 +84,7 @@ export function StudyPage() {
 
   if (isEmpty) {
     return (
-      <StudyShell
-        title={title}
-        subtitle="There are no eligible items available for this round."
-      >
+      <StudyShell title={title}>
         <EmptyState
           title="No items available"
           description={
@@ -112,7 +112,7 @@ export function StudyPage() {
 
   if (roundComplete) {
     return (
-      <StudyShell title={`${title} complete`} subtitle="Round summary">
+      <StudyShell title={`${title} complete`}>
         <section className="space-y-5 rounded-3xl border bg-white px-6 py-6">
           <div className="space-y-2">
             <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
@@ -127,10 +127,10 @@ export function StudyPage() {
             <SummaryRow label="Easy" value={summary.easy} />
             <SummaryRow label="Newly Mastered" value={newlyMasteredCount} />
           </div>
-          <Button className="w-full rounded-xl" onClick={() => navigate("/")}>
-            Finish
-          </Button>
         </section>
+        <Button className="h-12 w-full rounded-xl" onClick={() => navigate("/")}>
+          Finish
+        </Button>
       </StudyShell>
     );
   }
@@ -140,16 +140,27 @@ export function StudyPage() {
   }
 
   return (
-    <StudyShell title={title} subtitle="One item at a time">
+    <StudyShell title={title}>
       <div className="space-y-6">
         <section className="space-y-5">
-          <div className="space-y-1">
-            <div className="text-sm text-muted-foreground">Progress {progressText}</div>
-            <div className="text-sm text-muted-foreground">
-              Current status {getStatusLabel(getRecord(currentItem.id).status)}
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <div className="text-sm text-muted-foreground">
+                Progress {progressText}
+              </div>
+              <Progress
+                className="h-2"
+                value={total > 0 ? ((currentIndex + 1) / total) * 100 : 0}
+              />
             </div>
-            <div className="text-sm text-muted-foreground">
-              Current progress {getRecord(currentItem.id).progress}/100
+            <div className="space-y-1">
+              <div className="text-sm text-muted-foreground">Item ID {currentItem.id}</div>
+              <div className="text-sm text-muted-foreground">
+                Current status {getStatusLabel(getRecord(currentItem.id).status)}
+              </div>
+              <div className="text-sm text-muted-foreground">
+                Current progress {getRecord(currentItem.id).progress}/100
+              </div>
             </div>
           </div>
           <button
@@ -195,7 +206,7 @@ export function StudyPage() {
             Uncertain
           </Button>
           <Button
-            className="h-12 w-full rounded-xl border-0 bg-emerald-600 text-white hover:bg-emerald-500"
+            className="h-12 w-full rounded-xl"
             onClick={() => handleFeedback("easy")}
           >
             Easy
@@ -213,20 +224,24 @@ export function StudyPage() {
 
 function StudyShell({
   title,
-  subtitle,
   children,
 }: {
   title: string;
-  subtitle: string;
   children: React.ReactNode;
 }) {
   return (
     <AppShell
       title={title}
-      description={subtitle}
+      actionsPlacement="top-right"
       actions={
-        <Button asChild className="h-auto w-fit px-0" variant="link">
-          <Link to="/">Back Home</Link>
+        <Button
+          asChild
+          size="icon"
+          className="border border-border bg-white text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
+        >
+          <Link aria-label="Close study page" to="/">
+            <X className="h-4 w-4" />
+          </Link>
         </Button>
       }
     >

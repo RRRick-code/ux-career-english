@@ -5,12 +5,14 @@ type AppShellProps = PropsWithChildren<{
   title: string;
   description?: string;
   actions?: ReactNode;
+  actionsPlacement?: "stacked" | "top-right";
 }>;
 
 export function AppShell({
   title,
   description,
   actions,
+  actionsPlacement = "stacked",
   children,
 }: AppShellProps) {
   return (
@@ -24,15 +26,31 @@ export function AppShell({
             >
               UX English Library
             </Link>
-            <div>
-              <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
-              {description ? (
-                <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
-                  {description}
-                </p>
-              ) : null}
-            </div>
-            {actions ? <div className="space-y-2">{actions}</div> : null}
+            {actionsPlacement === "top-right" ? (
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
+                  {description ? (
+                    <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
+                      {description}
+                    </p>
+                  ) : null}
+                </div>
+                {actions ? <div className="shrink-0">{actions}</div> : null}
+              </div>
+            ) : (
+              <>
+                <div>
+                  <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
+                  {description ? (
+                    <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
+                      {description}
+                    </p>
+                  ) : null}
+                </div>
+                {actions ? <div className="space-y-2">{actions}</div> : null}
+              </>
+            )}
           </div>
           <div className="space-y-6">{children}</div>
         </div>
