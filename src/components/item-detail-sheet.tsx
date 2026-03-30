@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import {
   Drawer,
   DrawerContent,
@@ -39,10 +38,10 @@ export function ItemDetailSheet({
 
   const content = (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-center gap-2">
-        <Badge variant="outline">{getTaxonomyLabel("kind", item.kind)}</Badge>
-        <Badge>{getStatusLabel(record.status)}</Badge>
-        <span className="text-sm text-muted-foreground">{record.progress}/100</span>
+      <div className="space-y-1 text-sm text-muted-foreground">
+        <div>{getTaxonomyLabel("kind", item.kind)}</div>
+        <div>{getStatusLabel(record.status)}</div>
+        <div>{record.progress}/100</div>
       </div>
       <div className="space-y-3">
         <section>
@@ -60,7 +59,7 @@ export function ItemDetailSheet({
       </div>
       <Progress value={record.progress} />
       <Separator />
-      <div className="grid gap-4 text-sm sm:grid-cols-2">
+      <div className="space-y-4 text-sm">
         <MetaRow label="Scene" value={getTaxonomyLabel("scene", item.scene)} />
         <MetaRow label="Module" value={getTaxonomyLabel("module", item.module)} />
         <MetaRow label="Intent" value={getTaxonomyLabel("intent", item.intent)} />

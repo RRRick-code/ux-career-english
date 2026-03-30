@@ -46,7 +46,11 @@ export function LibraryPage() {
       title="Content library"
       description="Browse every language item, inspect progress, and filter by context without changing study state."
       actions={
-        <Button variant="outline" onClick={() => setFilters(defaultFilters())}>
+        <Button
+          className="h-auto w-fit px-0"
+          variant="link"
+          onClick={() => setFilters(defaultFilters())}
+        >
           Reset Filters
         </Button>
       }
@@ -72,13 +76,13 @@ export function LibraryPage() {
             title="No items match the current filters"
             description="Reset or adjust filters to see more content."
             actions={
-              <Button variant="outline" onClick={() => setFilters(defaultFilters())}>
+              <Button onClick={() => setFilters(defaultFilters())}>
                 Clear Filters
               </Button>
             }
           />
         ) : (
-          <div className="grid gap-4 pb-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="space-y-3 pb-6">
             {filteredItems.map((item) => (
               <ItemCard
                 key={item.id}

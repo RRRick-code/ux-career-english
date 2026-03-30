@@ -5,7 +5,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getStatusLabel } from "@/lib/learning";
 import type { DisplayMode, ItemFilters, TaxonomyMap } from "@/types";
 
@@ -35,65 +34,63 @@ export function FilterBar({
   taxonomy: TaxonomyMap;
 }) {
   return (
-    <div className="space-y-4 rounded-xl border bg-card p-4">
-      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
-        <FilterSelect
-          label="Scene"
-          value={filters.scene}
-          onValueChange={(value) => onFilterChange("scene", value)}
-          options={taxonomy.scene.map((entry) => ({
-            value: entry.key,
-            label: entry.label,
-          }))}
-        />
-        <FilterSelect
-          label="Module"
-          value={filters.module}
-          onValueChange={(value) => onFilterChange("module", value)}
-          options={taxonomy.module.map((entry) => ({
-            value: entry.key,
-            label: entry.label,
-          }))}
-        />
-        <FilterSelect
-          label="Intent"
-          value={filters.intent}
-          onValueChange={(value) => onFilterChange("intent", value)}
-          options={taxonomy.intent.map((entry) => ({
-            value: entry.key,
-            label: entry.label,
-          }))}
-        />
-        <FilterSelect
-          label="Kind"
-          value={filters.kind}
-          onValueChange={(value) => onFilterChange("kind", value)}
-          options={taxonomy.kind.map((entry) => ({
-            value: entry.key,
-            label: entry.label,
-          }))}
-        />
-        <FilterSelect
-          label="Status"
-          value={filters.status}
-          onValueChange={(value) => onFilterChange("status", value)}
-          options={[
-            { value: "not_started", label: getStatusLabel("not_started") },
-            { value: "in_progress", label: getStatusLabel("in_progress") },
-            { value: "mastered", label: getStatusLabel("mastered") },
-          ]}
-        />
-      </div>
-      <Tabs
+    <div className="space-y-4 rounded-3xl border bg-white px-5 py-5">
+      <FilterSelect
+        label="Display"
         value={displayMode}
         onValueChange={(value) => onDisplayModeChange(value as DisplayMode)}
-      >
-        <TabsList>
-          <TabsTrigger value="bilingual">Bilingual</TabsTrigger>
-          <TabsTrigger value="english">English Only</TabsTrigger>
-          <TabsTrigger value="chinese">Chinese Only</TabsTrigger>
-        </TabsList>
-      </Tabs>
+        options={[
+          { value: "bilingual", label: "Bilingual" },
+          { value: "english", label: "English Only" },
+          { value: "chinese", label: "Chinese Only" },
+        ]}
+      />
+      <FilterSelect
+        label="Scene"
+        value={filters.scene}
+        onValueChange={(value) => onFilterChange("scene", value)}
+        options={taxonomy.scene.map((entry) => ({
+          value: entry.key,
+          label: entry.label,
+        }))}
+      />
+      <FilterSelect
+        label="Module"
+        value={filters.module}
+        onValueChange={(value) => onFilterChange("module", value)}
+        options={taxonomy.module.map((entry) => ({
+          value: entry.key,
+          label: entry.label,
+        }))}
+      />
+      <FilterSelect
+        label="Intent"
+        value={filters.intent}
+        onValueChange={(value) => onFilterChange("intent", value)}
+        options={taxonomy.intent.map((entry) => ({
+          value: entry.key,
+          label: entry.label,
+        }))}
+      />
+      <FilterSelect
+        label="Kind"
+        value={filters.kind}
+        onValueChange={(value) => onFilterChange("kind", value)}
+        options={taxonomy.kind.map((entry) => ({
+          value: entry.key,
+          label: entry.label,
+        }))}
+      />
+      <FilterSelect
+        label="Status"
+        value={filters.status}
+        onValueChange={(value) => onFilterChange("status", value)}
+        options={[
+          { value: "not_started", label: getStatusLabel("not_started") },
+          { value: "in_progress", label: getStatusLabel("in_progress") },
+          { value: "mastered", label: getStatusLabel("mastered") },
+        ]}
+      />
     </div>
   );
 }

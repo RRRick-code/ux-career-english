@@ -1,17 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { X } from "lucide-react";
+import { AppShell } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { items } from "@/lib/content";
+import { getTaxonomyLabel, items } from "@/lib/content";
 import { EmptyState } from "@/components/empty-state";
+import { getStatusLabel } from "@/lib/learning";
 import { summarizeFeedback, buildStudyRound } from "@/lib/study";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 import type { FeedbackRating, LanguageItem, StudyMode } from "@/types";
@@ -42,7 +35,7 @@ export function StudyPage() {
     setNewlyMasteredCount(0);
     setRoundComplete(false);
     setRoundReady(true);
-  }, [mode, navigate]);
+  }, [mode, navigate, records]);
 
   const currentItem = roundItems[currentIndex] ?? null;
   const isEmpty = roundReady && roundItems.length === 0;
@@ -101,10 +94,13 @@ export function StudyPage() {
           }
           actions={
             <>
-              <Button asChild variant="outline">
+              <Button asChild variant="link" className="h-auto w-fit px-0">
                 <Link to="/">Back Home</Link>
               </Button>
-              <Button asChild>
+              <Button
+                asChild
+                className="h-12 w-full rounded-xl border border-border bg-white text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
+              >
                 <Link to="/library">Open Library</Link>
               </Button>
             </>
@@ -117,26 +113,24 @@ export function StudyPage() {
   if (roundComplete) {
     return (
       <StudyShell title={`${title} complete`} subtitle="Round summary">
-        <Card className="mx-auto max-w-2xl">
-          <CardHeader>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>
+        <section className="space-y-5 rounded-3xl border bg-white px-6 py-6">
+          <div className="space-y-2">
+            <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
+            <p className="text-sm leading-6 text-muted-foreground">
               You completed {feedbackHistory.length} item
               {feedbackHistory.length === 1 ? "" : "s"} in this round.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="grid gap-4 sm:grid-cols-4">
-              <SummaryStat label="Hard" value={summary.hard} />
-              <SummaryStat label="Uncertain" value={summary.uncertain} />
-              <SummaryStat label="Easy" value={summary.easy} />
-              <SummaryStat label="Newly Mastered" value={newlyMasteredCount} />
-            </div>
-            <Button className="w-full" onClick={() => navigate("/")}>
-              Finish
-            </Button>
-          </CardContent>
-        </Card>
+            </p>
+          </div>
+          <div className="divide-y">
+            <SummaryRow label="Hard" value={summary.hard} />
+            <SummaryRow label="Uncertain" value={summary.uncertain} />
+            <SummaryRow label="Easy" value={summary.easy} />
+            <SummaryRow label="Newly Mastered" value={newlyMasteredCount} />
+          </div>
+          <Button className="w-full rounded-xl" onClick={() => navigate("/")}>
+            Finish
+          </Button>
+        </section>
       </StudyShell>
     );
   }
@@ -147,66 +141,72 @@ export function StudyPage() {
 
   return (
     <StudyShell title={title} subtitle="One item at a time">
-      <Card className="mx-auto max-w-3xl">
-        <CardHeader className="space-y-4">
-          <div className="flex items-center justify-between gap-4">
-            <div>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription>{progressText}</CardDescription>
+      <div className="space-y-6">
+        <section className="space-y-5">
+          <div className="space-y-1">
+            <div className="text-sm text-muted-foreground">Progress {progressText}</div>
+            <div className="text-sm text-muted-foreground">
+              Current status {getStatusLabel(getRecord(currentItem.id).status)}
             </div>
-            <Button onClick={() => navigate("/")} size="icon" variant="ghost">
-              <X className="h-4 w-4" />
-              <span className="sr-only">Exit round</span>
-            </Button>
+            <div className="text-sm text-muted-foreground">
+              Current progress {getRecord(currentItem.id).progress}/100
+            </div>
           </div>
-          <Separator />
-        </CardHeader>
-        <CardContent className="space-y-6">
           <button
-            className="flex min-h-[24rem] w-full flex-col rounded-2xl border bg-muted/30 p-8 text-left transition-colors hover:bg-muted/50 sm:min-h-[28rem]"
+            className="min-h-[24rem] w-full rounded-3xl border bg-white px-6 py-8 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
             onClick={() => setRevealed(true)}
             type="button"
           >
-            <div className="text-xs uppercase tracking-wide text-muted-foreground">
-              Chinese prompt
-            </div>
-            <div className="mt-4 text-2xl font-semibold leading-10">
-              {currentItem.chinese}
-            </div>
-            <div className="mt-6 min-h-40 rounded-xl bg-background p-5">
+            <div className="space-y-4">
+              <div className="text-xs uppercase tracking-wide text-muted-foreground">
+                Chinese prompt
+              </div>
+              <div className="text-2xl font-semibold leading-10">
+                {currentItem.chinese}
+              </div>
               {revealed ? (
-                <>
+                <div className="space-y-3 border-t pt-6">
                   <div className="text-xs uppercase tracking-wide text-muted-foreground">
                     English answer
                   </div>
-                  <div className="mt-3 text-xl font-medium leading-9">
+                  <div className="text-xl font-medium leading-9">
                     {currentItem.english}
                   </div>
-                </>
+                </div>
               ) : (
-                <div className="flex min-h-[7.5rem] items-center text-sm text-muted-foreground">
+                <div className="pt-2 text-sm text-muted-foreground">
                   Tap the card to reveal the English expression.
                 </div>
               )}
             </div>
           </button>
-
-          <div className="grid gap-3 sm:grid-cols-3">
-            <Button onClick={() => handleFeedback("hard")} variant="outline">
-              Hard
-            </Button>
-            <Button onClick={() => handleFeedback("uncertain")} variant="secondary">
-              Uncertain
-            </Button>
-            <Button onClick={() => handleFeedback("easy")}>
-              Easy
-            </Button>
-          </div>
-          <div className="rounded-xl border bg-card p-4 text-sm text-muted-foreground">
-            Current progress: {getRecord(currentItem.id).progress}/100
-          </div>
-        </CardContent>
-      </Card>
+        </section>
+        <div className="grid grid-cols-3 gap-3">
+          <Button
+            className="h-12 w-full rounded-xl border border-border bg-white text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
+            onClick={() => handleFeedback("hard")}
+          >
+            Hard
+          </Button>
+          <Button
+            className="h-12 w-full rounded-xl border border-border bg-white text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
+            onClick={() => handleFeedback("uncertain")}
+          >
+            Uncertain
+          </Button>
+          <Button
+            className="h-12 w-full rounded-xl border-0 bg-emerald-600 text-white hover:bg-emerald-500"
+            onClick={() => handleFeedback("easy")}
+          >
+            Easy
+          </Button>
+        </div>
+        <div className="space-y-2 text-sm text-muted-foreground">
+          <div>Scene: {getTaxonomyLabel("scene", currentItem.scene)}</div>
+          <div>Module: {getTaxonomyLabel("module", currentItem.module)}</div>
+          <div>Intent: {getTaxonomyLabel("intent", currentItem.intent)}</div>
+        </div>
+      </div>
     </StudyShell>
   );
 }
@@ -221,26 +221,25 @@ function StudyShell({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(245,245,245,0.85),_transparent_40%)] px-4 py-8 sm:px-6">
-      <div className="mx-auto mb-8 max-w-4xl">
-        <Link className="text-sm text-muted-foreground hover:text-foreground" to="/">
-          ← Back Home
-        </Link>
-        <div className="mt-6">
-          <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
-          <p className="mt-2 text-sm text-muted-foreground">{subtitle}</p>
-        </div>
-      </div>
+    <AppShell
+      title={title}
+      description={subtitle}
+      actions={
+        <Button asChild className="h-auto w-fit px-0" variant="link">
+          <Link to="/">Back Home</Link>
+        </Button>
+      }
+    >
       {children}
-    </div>
+    </AppShell>
   );
 }
 
-function SummaryStat({ label, value }: { label: string; value: number }) {
+function SummaryRow({ label, value }: { label: string; value: number }) {
   return (
-    <div className="rounded-xl border bg-muted/20 p-4">
+    <div className="py-4 first:pt-0 last:pb-0">
       <div className="text-sm text-muted-foreground">{label}</div>
-      <div className="mt-2 text-2xl font-semibold">{value}</div>
+      <div className="mt-1 text-2xl font-semibold">{value}</div>
     </div>
   );
 }
