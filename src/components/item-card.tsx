@@ -24,11 +24,11 @@ export function ItemCard({
 
   return (
     <button
-      className="w-full rounded-3xl border bg-white px-5 py-5 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm"
+      className="h-full w-full rounded-3xl border bg-white px-5 py-5 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm"
       onClick={onClick}
       type="button"
     >
-      <div className="space-y-4">
+      <div className="flex h-full flex-col gap-4">
         <div className="space-y-1 text-xs uppercase tracking-wide text-muted-foreground">
           <div>{getTaxonomyLabel("kind", item.kind)}</div>
           <div>{getStatusLabel(record.status)}</div>
@@ -40,12 +40,12 @@ export function ItemCard({
             <p className="text-sm leading-6 text-muted-foreground">{secondaryText}</p>
           ) : null}
         </div>
-        <div className="space-y-2 text-sm">
+        <div className="flex-1 space-y-2 text-sm">
           <Metadata label="Scene" value={getTaxonomyLabel("scene", item.scene)} />
           <Metadata label="Module" value={getTaxonomyLabel("module", item.module)} />
           <Metadata label="Intent" value={getTaxonomyLabel("intent", item.intent)} />
         </div>
-        <Progress value={record.progress} />
+        <Progress className="mt-auto" value={record.progress} />
       </div>
     </button>
   );

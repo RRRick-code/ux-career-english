@@ -42,12 +42,41 @@ export function loadLearningRecords(): LearningRecordMap {
   }
 }
 
+export function pruneLearningRecords(
+  records: LearningRecordMap,
+  validItemIds: Iterable<string>,
+) {
+  const validIds = new Set(validItemIds);
+  let removed = false;
+
+  const nextRecords = Object.fromEntries(
+    Object.entries(records).filter(([id]) => {
+      const keep = validIds.has(id);
+      removed ||= !keep;
+      return keep;
+    }),
+  );
+
+  return {
+    records: nextRecords,
+    removed,
+  };
+}
+
 export function saveLearningRecords(records: LearningRecordMap) {
   if (typeof window === "undefined") {
     return;
   }
 
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+}
+
+export function clearLearningRecords() {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.removeItem(STORAGE_KEY);
 }
 
 export function getLearningRecord(

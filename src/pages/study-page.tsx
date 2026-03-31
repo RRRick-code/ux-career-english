@@ -1,4 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { X } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
@@ -7,9 +9,12 @@ import { Progress } from "@/components/ui/progress";
 import { getTaxonomyLabel, items } from "@/lib/content";
 import { EmptyState } from "@/components/empty-state";
 import { getStatusLabel } from "@/lib/learning";
+import { cn } from "@/lib/utils";
 import { summarizeFeedback, buildStudyRound } from "@/lib/study";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 import type { FeedbackRating, LanguageItem, StudyMode } from "@/types";
+
+gsap.registerPlugin(useGSAP);
 
 export function StudyPage() {
   const { mode } = useParams<{ mode: StudyMode }>();
@@ -22,6 +27,9 @@ export function StudyPage() {
   const [feedbackHistory, setFeedbackHistory] = useState<FeedbackRating[]>([]);
   const [newlyMasteredCount, setNewlyMasteredCount] = useState(0);
   const [roundComplete, setRoundComplete] = useState(false);
+  const cardRef = useRef<HTMLButtonElement | null>(null);
+  const chineseTextRef = useRef<HTMLDivElement | null>(null);
+  const englishTextRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (mode !== "random" && mode !== "reinforcement") {
@@ -56,6 +64,42 @@ export function StudyPage() {
 
     return `${currentIndex + 1} / ${total}`;
   }, [currentIndex, currentItem, total]);
+
+  useGSAP(
+    () => {
+      if (!revealed || !chineseTextRef.current || !englishTextRef.current) {
+        return;
+      }
+
+      const timeline = gsap.timeline({
+        defaults: { duration: 0.42, ease: "power2.out" },
+      });
+
+      timeline
+        .to(
+          chineseTextRef.current,
+          {
+            y: -18,
+            fontSize: "1rem",
+            lineHeight: "1.75rem",
+            fontWeight: 400,
+            color: "var(--muted-foreground)",
+          },
+          0,
+        )
+        .fromTo(
+          englishTextRef.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.4 },
+          0.08,
+        );
+    },
+    {
+      scope: cardRef,
+      dependencies: [revealed, currentItem?.id],
+      revertOnUpdate: true,
+    },
+  );
 
   function handleFeedback(rating: FeedbackRating) {
     if (!currentItem) {
@@ -141,55 +185,62 @@ export function StudyPage() {
 
   return (
     <StudyShell title={title}>
-      <div className="space-y-6">
-        <section className="space-y-5">
-          <div className="space-y-4">
+      <div className="-mt-2 space-y-6">
+        <section className="space-y-3">
+          <div className="space-y-8">
             <div className="space-y-2">
-              <div className="text-sm text-muted-foreground">
-                Progress {progressText}
-              </div>
               <Progress
-                className="h-2"
+                className="h-2 bg-slate-200"
                 value={total > 0 ? ((currentIndex + 1) / total) * 100 : 0}
               />
             </div>
-            <div className="space-y-1">
-              <div className="text-sm text-muted-foreground">Item ID {currentItem.id}</div>
-              <div className="text-sm text-muted-foreground">
-                Current status {getStatusLabel(getRecord(currentItem.id).status)}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                Current progress {getRecord(currentItem.id).progress}/100
+            <div className="flex items-center justify-between gap-4 text-xs text-muted-foreground">
+              <div>{currentItem.id}</div>
+              <div>
+                {getTaxonomyLabel("scene", currentItem.scene)} /{" "}
+                {getTaxonomyLabel("intent", currentItem.intent)}
               </div>
             </div>
           </div>
           <button
-            className="min-h-[24rem] w-full rounded-3xl border bg-white px-6 py-8 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
+            ref={cardRef}
+            className="relative min-h-[24rem] w-full rounded-3xl border bg-white px-6 py-8 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
             onClick={() => setRevealed(true)}
             type="button"
           >
-            <div className="space-y-4">
-              <div className="text-xs uppercase tracking-wide text-muted-foreground">
-                Chinese prompt
-              </div>
-              <div className="text-2xl font-semibold leading-10">
+            <div
+              className={cn(
+                "absolute top-6 right-6 text-xs",
+                getStatusTone(getRecord(currentItem.id).status),
+              )}
+            >
+              {getStatusLabel(getRecord(currentItem.id).status)}
+            </div>
+            <div
+              className="flex min-h-full flex-col items-center justify-center space-y-6 text-center -translate-y-5"
+            >
+              <div
+                ref={chineseTextRef}
+                className="text-2xl font-semibold leading-10 text-foreground"
+              >
                 {currentItem.chinese}
               </div>
               {revealed ? (
-                <div className="space-y-3 border-t pt-6">
-                  <div className="text-xs uppercase tracking-wide text-muted-foreground">
-                    English answer
-                  </div>
-                  <div className="text-xl font-medium leading-9">
+                <div className="w-full space-y-3 pt-6">
+                  <div
+                    ref={englishTextRef}
+                    className="text-2xl font-medium leading-10"
+                  >
                     {currentItem.english}
                   </div>
                 </div>
-              ) : (
-                <div className="pt-2 text-sm text-muted-foreground">
-                  Tap the card to reveal the English expression.
-                </div>
-              )}
+              ) : null}
             </div>
+            {!revealed ? (
+              <div className="absolute right-0 bottom-8 left-0 text-center text-base text-muted-foreground">
+                Tap to reveal
+              </div>
+            ) : null}
           </button>
         </section>
         <div className="grid grid-cols-3 gap-3">
@@ -213,9 +264,7 @@ export function StudyPage() {
           </Button>
         </div>
         <div className="space-y-2 text-sm text-muted-foreground">
-          <div>Scene: {getTaxonomyLabel("scene", currentItem.scene)}</div>
           <div>Module: {getTaxonomyLabel("module", currentItem.module)}</div>
-          <div>Intent: {getTaxonomyLabel("intent", currentItem.intent)}</div>
         </div>
       </div>
     </StudyShell>
@@ -233,6 +282,7 @@ function StudyShell({
     <AppShell
       title={title}
       actionsPlacement="top-right"
+      showHeaderDivider={false}
       actions={
         <Button
           asChild
@@ -257,4 +307,15 @@ function SummaryRow({ label, value }: { label: string; value: number }) {
       <div className="mt-1 text-2xl font-semibold">{value}</div>
     </div>
   );
+}
+
+function getStatusTone(status: "not_started" | "in_progress" | "mastered") {
+  switch (status) {
+    case "in_progress":
+      return "text-emerald-400";
+    case "not_started":
+      return "text-orange-300";
+    case "mastered":
+      return "text-emerald-600";
+  }
 }

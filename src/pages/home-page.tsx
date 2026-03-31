@@ -1,14 +1,26 @@
 import { Link } from "react-router-dom";
 import { AppShell } from "@/components/app-shell";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { items } from "@/lib/content";
 import { countStatuses, getStatusLabel } from "@/lib/learning";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 
 export function HomePage() {
-  const { records } = useLearningRecords();
+  const { records, resetProgress } = useLearningRecords();
   const statusCounts = countStatuses(items, records);
   const totalCount = items.length;
+  const hasProgress = Object.keys(records).length > 0;
 
   return (
     <AppShell
@@ -16,7 +28,37 @@ export function HomePage() {
       description="Review your current learning state and jump directly into a focused round."
     >
       <section className="space-y-5">
-        <h2 className="text-xl font-semibold tracking-tight">Learning overview</h2>
+        <div className="flex items-start justify-between gap-4">
+          <h2 className="text-xl font-semibold tracking-tight">Learning overview</h2>
+          {hasProgress ? (
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="px-0 text-muted-foreground hover:text-foreground"
+                >
+                  Clear Progress
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent size="sm">
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Clear all learning progress?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    This will permanently remove your local study progress for this
+                    browser. Content data will stay unchanged.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={resetProgress} variant="destructive">
+                    Clear Progress
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          ) : null}
+        </div>
         <div className="grid grid-cols-2 gap-4">
           <StatCard label="total" count={totalCount} />
           <StatCard label="not_started" count={statusCounts.not_started} />

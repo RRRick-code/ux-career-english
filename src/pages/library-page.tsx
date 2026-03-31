@@ -14,6 +14,7 @@ export function LibraryPage() {
   const [filters, setFilters] = useState<ItemFilters>(defaultFilters);
   const [displayMode, setDisplayMode] = useState<DisplayMode>("bilingual");
   const [selectedItem, setSelectedItem] = useState<LanguageItem | null>(null);
+  const clearAllFilters = () => setFilters(defaultFilters());
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
@@ -43,28 +44,24 @@ export function LibraryPage() {
 
   return (
     <AppShell
+      contentWidth="wide"
       title="Content library"
       description="Browse every language item, inspect progress, and filter by context without changing study state."
-      actions={
-        <Button
-          className="h-auto w-fit px-0"
-          variant="link"
-          onClick={() => setFilters(defaultFilters())}
-        >
-          Reset Filters
-        </Button>
-      }
     >
       <div className="space-y-6">
-        <FilterBar
-          displayMode={displayMode}
-          filters={filters}
-          onDisplayModeChange={setDisplayMode}
-          onFilterChange={(key, value) =>
-            setFilters((current) => ({ ...current, [key]: value }))
-          }
-          taxonomy={taxonomy}
-        />
+        {hasAnyContent ? (
+          <FilterBar
+            resultCount={filteredItems.length}
+            onClearAllFilters={clearAllFilters}
+            displayMode={displayMode}
+            filters={filters}
+            onDisplayModeChange={setDisplayMode}
+            onFilterChange={(key, value) =>
+              setFilters((current) => ({ ...current, [key]: value }))
+            }
+            taxonomy={taxonomy}
+          />
+        ) : null}
 
         {!hasAnyContent ? (
           <EmptyState
@@ -76,13 +73,11 @@ export function LibraryPage() {
             title="No items match the current filters"
             description="Reset or adjust filters to see more content."
             actions={
-              <Button onClick={() => setFilters(defaultFilters())}>
-                Clear Filters
-              </Button>
+              <Button onClick={clearAllFilters}>Clear Filters</Button>
             }
           />
         ) : (
-          <div className="space-y-3 pb-6">
+          <div className="grid auto-rows-fr gap-4 pb-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {filteredItems.map((item) => (
               <ItemCard
                 key={item.id}

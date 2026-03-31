@@ -6,6 +6,8 @@ type AppShellProps = PropsWithChildren<{
   description?: string;
   actions?: ReactNode;
   actionsPlacement?: "stacked" | "top-right";
+  contentWidth?: "compact" | "wide";
+  showHeaderDivider?: boolean;
 }>;
 
 export function AppShell({
@@ -13,13 +15,24 @@ export function AppShell({
   description,
   actions,
   actionsPlacement = "stacked",
+  contentWidth = "compact",
+  showHeaderDivider = true,
   children,
 }: AppShellProps) {
+  const mainClassName =
+    contentWidth === "wide"
+      ? "w-full px-4 py-8 sm:px-6 lg:px-8 xl:px-10"
+      : "mx-auto w-full max-w-2xl px-4 py-8 sm:px-6";
+  const descriptionClassName =
+    contentWidth === "wide"
+      ? "mt-2 max-w-3xl text-sm leading-6 text-muted-foreground"
+      : "mt-2 max-w-xl text-sm leading-6 text-muted-foreground";
+
   return (
     <div className="min-h-screen bg-slate-100">
-      <main className="mx-auto max-w-2xl px-4 py-8 sm:px-6">
+      <main className={mainClassName}>
         <div className="space-y-8">
-          <div className="space-y-4 border-b pb-6">
+          <div className={showHeaderDivider ? "space-y-4 border-b pb-6" : "space-y-4"}>
             <Link
               to="/"
               className="inline-block text-sm font-semibold tracking-tight text-primary transition-colors hover:text-primary/80"
@@ -31,9 +44,7 @@ export function AppShell({
                 <div>
                   <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
                   {description ? (
-                    <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
-                      {description}
-                    </p>
+                    <p className={descriptionClassName}>{description}</p>
                   ) : null}
                 </div>
                 {actions ? <div className="shrink-0">{actions}</div> : null}
@@ -43,9 +54,7 @@ export function AppShell({
                 <div>
                   <h1 className="text-3xl font-semibold tracking-tight">{title}</h1>
                   {description ? (
-                    <p className="mt-2 max-w-xl text-sm leading-6 text-muted-foreground">
-                      {description}
-                    </p>
+                    <p className={descriptionClassName}>{description}</p>
                   ) : null}
                 </div>
                 {actions ? <div className="space-y-2">{actions}</div> : null}

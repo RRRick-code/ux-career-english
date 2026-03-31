@@ -10,16 +10,20 @@ import type {
   LearningRecord,
   LearningRecordMap,
 } from "@/types";
+import { items } from "@/lib/content";
 import {
   applyFeedback,
+  clearLearningRecords,
   getLearningRecord,
   loadLearningRecords,
+  pruneLearningRecords,
   saveLearningRecords,
 } from "@/lib/storage";
 
 type LearningRecordsContextValue = {
   records: LearningRecordMap;
   getRecord: (itemId: string) => LearningRecord;
+  resetProgress: () => void;
   updateWithFeedback: (
     itemId: string,
     feedback: FeedbackRating,
@@ -30,14 +34,28 @@ const LearningRecordsContext =
   createContext<LearningRecordsContextValue | null>(null);
 
 export function LearningRecordsProvider({ children }: PropsWithChildren) {
-  const [records, setRecords] = useState<LearningRecordMap>(() =>
-    loadLearningRecords(),
-  );
+  const [records, setRecords] = useState<LearningRecordMap>(() => {
+    const loadedRecords = loadLearningRecords();
+    const { records: cleanedRecords, removed } = pruneLearningRecords(
+      loadedRecords,
+      items.map((item) => item.id),
+    );
+
+    if (removed) {
+      saveLearningRecords(cleanedRecords);
+    }
+
+    return cleanedRecords;
+  });
 
   const value = useMemo<LearningRecordsContextValue>(
     () => ({
       records,
       getRecord: (itemId) => getLearningRecord(records, itemId),
+      resetProgress: () => {
+        setRecords({});
+        clearLearningRecords();
+      },
       updateWithFeedback: (itemId, feedback) => {
         const previous = getLearningRecord(records, itemId);
         const next = applyFeedback(previous, feedback);
