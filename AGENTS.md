@@ -40,14 +40,17 @@ Use `USER_PROFILE.md` as the detailed source of truth whenever output should ref
 ## Content Editing Protocol
 
 - Before changing `data/language_items.json`, first read `DATA_ARCHITECTURE.md` and `data/id_counters.json`.
+- Treat `examplePatternId` as part of the canonical content model for every `term` and `phrase`.
 - Classify every data mutation as exactly one of: `ADD`, `EDIT_KEEP_ID`, `DELETE`, `REPLACE`.
 - `ADD`:
   - Allocate the new `id` from `data/id_counters.json`.
   - Treat `data/id_counters.json` as the source of truth for the next assignable number.
   - Update the counter in the same change as the new item.
+  - Any new `term` or `phrase` must be created together with a valid linked example `pattern`, unless an existing compatible pattern is explicitly reused.
 - `EDIT_KEEP_ID`:
   - Keep the existing `id` when the learning unit is still the same.
   - Wording cleanup, translation refinement, and taxonomy updates do not justify a new `id`.
+  - Adding or correcting `examplePatternId` is an `EDIT_KEEP_ID` operation when the learning unit stays the same.
 - `DELETE`:
   - Remove the item from `data/language_items.json`.
   - Do not reuse its `id`, and do not decrement counters.
@@ -55,4 +58,7 @@ Use `USER_PROFILE.md` as the detailed source of truth whenever output should ref
   - Use this when the old and new content are not the same learning unit.
   - Remove the old item and create a new item with a newly allocated `id`.
 - Never generate new IDs by scanning only active items in `data/language_items.json`.
+- Every `term` and `phrase` must have a linked example `pattern`.
+- The linked pattern's English sentence must contain the target `term` or `phrase` so the app can highlight it after reveal.
+- If you edit the English text of a `term`, `phrase`, or linked `pattern`, re-check that the relationship still validates.
 - Run `npm run validate:content` after data changes that touch content, taxonomy, or counters.

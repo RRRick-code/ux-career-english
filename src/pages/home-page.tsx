@@ -72,18 +72,23 @@ export function HomePage() {
       <section className="space-y-3">
         <div className="space-y-3">
           <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
-            <Link to="/study/reinforcement">Reinforcement Study</Link>
+            <Link to="/study/term-phrase/reinforcement">
+              Reinforcement Study
+            </Link>
           </Button>
           <Button
             asChild
             className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
           >
-            <Link to="/study/random">Random Study</Link>
+            <Link to="/study/term-phrase/random">Random Study</Link>
           </Button>
           <Button
             asChild
             className="h-auto w-full rounded-xl border border-border bg-white px-4 py-4 text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
           >
+            <Link to="/study/pattern">Pattern Practice</Link>
+          </Button>
+          <Button asChild className="h-auto w-full rounded-xl px-4 py-4" variant="outline">
             <Link to="/library">Open Library</Link>
           </Button>
         </div>

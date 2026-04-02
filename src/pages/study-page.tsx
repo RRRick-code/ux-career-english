@@ -3,21 +3,34 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { X } from "lucide-react";
+import { HighlightedText } from "@/components/highlighted-text";
 import { AppShell } from "@/components/app-shell";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { getTaxonomyLabel, items } from "@/lib/content";
+import {
+  getExamplePatternForItem,
+  getTaxonomyLabel,
+  items,
+} from "@/lib/content";
 import { EmptyState } from "@/components/empty-state";
 import { getStatusLabel } from "@/lib/learning";
 import { cn } from "@/lib/utils";
 import { summarizeFeedback, buildStudyRound } from "@/lib/study";
 import { useLearningRecords } from "@/hooks/use-learning-records";
-import type { FeedbackRating, LanguageItem, StudyMode } from "@/types";
+import type {
+  FeedbackRating,
+  LanguageItem,
+  StudyMode,
+  StudyScope,
+} from "@/types";
 
 gsap.registerPlugin(useGSAP);
 
 export function StudyPage() {
-  const { mode } = useParams<{ mode: StudyMode }>();
+  const { scopeOrMode, mode: routeMode } = useParams<{
+    scopeOrMode?: string;
+    mode?: string;
+  }>();
   const navigate = useNavigate();
   const { records, getRecord, updateWithFeedback } = useLearningRecords();
   const [roundItems, setRoundItems] = useState<LanguageItem[]>([]);
@@ -28,17 +41,23 @@ export function StudyPage() {
   const [newlyMasteredCount, setNewlyMasteredCount] = useState(0);
   const [roundComplete, setRoundComplete] = useState(false);
   const cardRef = useRef<HTMLButtonElement | null>(null);
+  const chineseTextWrapperRef = useRef<HTMLDivElement | null>(null);
   const chineseTextRef = useRef<HTMLDivElement | null>(null);
   const englishTextRef = useRef<HTMLDivElement | null>(null);
 
+  const routeState = useMemo(
+    () => parseStudyRoute(scopeOrMode, routeMode),
+    [scopeOrMode, routeMode],
+  );
+
   useEffect(() => {
-    if (mode !== "random" && mode !== "reinforcement") {
+    if (!routeState) {
       navigate("/", { replace: true });
       return;
     }
 
     // Current round is fixed for the session; record updates must not rebuild it.
-    const round = buildStudyRound(items, records, mode);
+    const round = buildStudyRound(items, records, routeState.mode, routeState.scope);
     setRoundItems(round.selected);
     setCurrentIndex(0);
     setRevealed(false);
@@ -46,7 +65,7 @@ export function StudyPage() {
     setNewlyMasteredCount(0);
     setRoundComplete(false);
     setRoundReady(true);
-  }, [mode, navigate]);
+  }, [navigate, routeState]);
 
   const currentItem = roundItems[currentIndex] ?? null;
   const isEmpty = roundReady && roundItems.length === 0;
@@ -55,40 +74,58 @@ export function StudyPage() {
     () => summarizeFeedback(feedbackHistory),
     [feedbackHistory],
   );
-  const title = mode === "reinforcement" ? "Reinforcement Study" : "Random Study";
-
-  const progressText = useMemo(() => {
-    if (!currentItem) {
-      return "";
-    }
-
-    return `${currentIndex + 1} / ${total}`;
-  }, [currentIndex, currentItem, total]);
+  const title = routeState ? getStudyTitle(routeState) : "";
+  const examplePattern = currentItem ? getExamplePatternForItem(currentItem) : null;
 
   useGSAP(
     () => {
-      if (!revealed || !chineseTextRef.current || !englishTextRef.current) {
+      if (
+        !revealed ||
+        !chineseTextWrapperRef.current ||
+        !chineseTextRef.current ||
+        !englishTextRef.current
+      ) {
         return;
       }
+
+      const chineseWrapper = chineseTextWrapperRef.current;
+      const chineseText = chineseTextRef.current;
+      const englishText = englishTextRef.current;
+      const { width, height } = chineseWrapper.getBoundingClientRect();
 
       const timeline = gsap.timeline({
         defaults: { duration: 0.42, ease: "power2.out" },
       });
 
+      gsap.set(chineseWrapper, {
+        width,
+        height,
+        maxWidth: "100%",
+      });
+      gsap.set(chineseText, {
+        transformOrigin: "center center",
+      });
+
       timeline
         .to(
-          chineseTextRef.current,
+          chineseWrapper,
           {
             y: -18,
-            fontSize: "1rem",
-            lineHeight: "1.75rem",
+            height: height * (2 / 3),
+          },
+          0,
+        )
+        .to(
+          chineseText,
+          {
+            scale: 2 / 3,
             fontWeight: 400,
             color: "var(--muted-foreground)",
           },
           0,
         )
         .fromTo(
-          englishTextRef.current,
+          englishText,
           { y: 20, opacity: 0 },
           { y: 0, opacity: 1, duration: 0.4 },
           0.08,
@@ -122,7 +159,7 @@ export function StudyPage() {
     setRevealed(false);
   }
 
-  if (mode !== "random" && mode !== "reinforcement") {
+  if (!routeState) {
     return null;
   }
 
@@ -132,7 +169,7 @@ export function StudyPage() {
         <EmptyState
           title="No items available"
           description={
-            mode === "reinforcement"
+            routeState.mode === "reinforcement"
               ? "All items are currently mastered. Return home or review the library."
               : "There are no language items in the content set yet."
           }
@@ -196,10 +233,7 @@ export function StudyPage() {
             </div>
             <div className="flex items-center justify-between gap-4 text-xs text-muted-foreground">
               <div>{currentItem.id}</div>
-              <div>
-                {getTaxonomyLabel("scene", currentItem.scene)} /{" "}
-                {getTaxonomyLabel("intent", currentItem.intent)}
-              </div>
+              <div>{currentIndex + 1} / {total}</div>
             </div>
           </div>
           <button
@@ -220,19 +254,43 @@ export function StudyPage() {
               className="flex min-h-full flex-col items-center justify-center space-y-6 text-center -translate-y-5"
             >
               <div
-                ref={chineseTextRef}
-                className="text-2xl font-semibold leading-10 text-foreground"
+                ref={chineseTextWrapperRef}
+                className="flex max-w-full items-center justify-center"
               >
-                {currentItem.chinese}
+                <div
+                  ref={chineseTextRef}
+                  className="text-2xl font-semibold leading-10 text-foreground"
+                >
+                  {currentItem.chinese}
+                </div>
               </div>
               {revealed ? (
-                <div className="w-full space-y-3 pt-6">
+                <div className="w-full space-y-4 pt-6">
                   <div
                     ref={englishTextRef}
                     className="text-2xl font-medium leading-10"
                   >
                     {currentItem.english}
                   </div>
+                  {routeState.scope === "term_phrase" ? (
+                    examplePattern ? (
+                      <div className="rounded-2xl border bg-slate-50 px-4 py-4 text-left">
+                        <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
+                          Example
+                        </div>
+                        <p className="mt-2 text-base leading-8 text-foreground/80">
+                          <HighlightedText
+                            needle={currentItem.english}
+                            text={examplePattern.english}
+                          />
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="rounded-2xl border border-dashed px-4 py-4 text-left text-sm text-muted-foreground">
+                        Example sentence pending.
+                      </div>
+                    )
+                  ) : null}
                 </div>
               ) : null}
             </div>
@@ -269,6 +327,42 @@ export function StudyPage() {
       </div>
     </StudyShell>
   );
+}
+
+function parseStudyRoute(
+  scopeOrMode?: string,
+  mode?: string,
+): { scope: StudyScope; mode: StudyMode } | null {
+  if (!scopeOrMode) {
+    return null;
+  }
+
+  if (scopeOrMode === "pattern") {
+    return { scope: "pattern", mode: "random" };
+  }
+
+  if (scopeOrMode === "term-phrase" || scopeOrMode === "term_phrase") {
+    return {
+      scope: "term_phrase",
+      mode: mode === "reinforcement" ? "reinforcement" : "random",
+    };
+  }
+
+  if (scopeOrMode === "random" || scopeOrMode === "reinforcement") {
+    return { scope: "term_phrase", mode: scopeOrMode };
+  }
+
+  return null;
+}
+
+function getStudyTitle(routeState: { scope: StudyScope; mode: StudyMode }) {
+  if (routeState.scope === "pattern") {
+    return "Pattern Practice";
+  }
+
+  return routeState.mode === "reinforcement"
+    ? "Reinforcement Study"
+    : "Random Study";
 }
 
 function StudyShell({

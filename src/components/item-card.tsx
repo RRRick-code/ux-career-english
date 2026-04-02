@@ -1,61 +1,61 @@
-import { Progress } from "@/components/ui/progress";
-import { getTaxonomyLabel } from "@/lib/content";
-import { getStatusLabel } from "@/lib/learning";
-import type { DisplayMode, LanguageItem, LearningRecord } from "@/types";
+import {
+  getExamplePatternForItem,
+  getPatternUsageItems,
+  getTaxonomyLabel,
+} from "@/lib/content";
+import type { DisplayMode, LanguageItem } from "@/types";
 
 export function ItemCard({
   item,
-  record,
   displayMode,
   onClick,
 }: {
   item: LanguageItem;
-  record: LearningRecord;
   displayMode: DisplayMode;
   onClick: () => void;
 }) {
-  const primaryText = displayMode === "chinese" ? item.chinese : item.english;
-  const secondaryText =
-    displayMode === "bilingual"
-      ? item.chinese
-      : displayMode === "chinese"
-        ? item.english
-        : null;
+  const showEnglish = displayMode !== "chinese";
+  const showChinese = displayMode !== "english";
+  const examplePattern = getExamplePatternForItem(item);
+  const patternUsageItems =
+    item.kind === "pattern" ? getPatternUsageItems(item.id) : [];
 
   return (
     <button
-      className="h-full w-full rounded-3xl border bg-white px-5 py-5 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm"
+      className="h-full w-full rounded-3xl border bg-white px-4 py-4 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm"
       onClick={onClick}
       type="button"
     >
-      <div className="flex h-full flex-col gap-4">
-        <div className="space-y-1 text-xs uppercase tracking-wide text-muted-foreground">
-          <div>{getTaxonomyLabel("kind", item.kind)}</div>
-          <div>{getStatusLabel(record.status)}</div>
-          <div>{record.progress}/100</div>
-        </div>
-        <div className="space-y-2">
-          <div className="text-lg font-semibold leading-7">{primaryText}</div>
-          {secondaryText ? (
-            <p className="text-sm leading-6 text-muted-foreground">{secondaryText}</p>
+      <div className="flex h-full flex-col gap-3">
+        <div className="flex-1 space-y-3">
+          {showEnglish ? (
+            <section>
+              <p className="text-xl font-semibold leading-8">{item.english}</p>
+            </section>
+          ) : null}
+          {showChinese ? (
+            <section>
+              <p className="text-sm leading-6 text-muted-foreground">{item.chinese}</p>
+            </section>
           ) : null}
         </div>
-        <div className="flex-1 space-y-2 text-sm">
-          <Metadata label="Scene" value={getTaxonomyLabel("scene", item.scene)} />
-          <Metadata label="Module" value={getTaxonomyLabel("module", item.module)} />
-          <Metadata label="Intent" value={getTaxonomyLabel("intent", item.intent)} />
+        <div className="border-t border-border/70 pt-3">
+          <div className="text-sm font-medium leading-6 text-muted-foreground">
+            {getTaxonomyLabel("intent", item.intent)}
+          </div>
+          <div className="mt-1 text-xs leading-5 text-muted-foreground">
+            {item.kind === "pattern"
+              ? patternUsageItems.length > 0
+                ? `Used by ${patternUsageItems.length} item${
+                    patternUsageItems.length === 1 ? "" : "s"
+                  }`
+                : "Standalone pattern"
+              : examplePattern
+                ? "Example sentence linked"
+                : "Example sentence pending"}
+          </div>
         </div>
-        <Progress className="mt-auto" value={record.progress} />
       </div>
     </button>
-  );
-}
-
-function Metadata({ label, value }: { label: string; value: string }) {
-  return (
-    <div>
-      <div className="text-xs uppercase tracking-wide text-muted-foreground">{label}</div>
-      <div className="mt-1 text-foreground">{value}</div>
-    </div>
   );
 }

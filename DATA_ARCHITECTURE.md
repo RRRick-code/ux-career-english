@@ -21,7 +21,7 @@ Supported kinds:
 - `phrase`
 - `pattern`
 
-Each item contains these fields:
+Every item contains these base fields:
 
 - `id`
 - `kind`
@@ -30,6 +30,11 @@ Each item contains these fields:
 - `scene`
 - `module`
 - `intent`
+
+Relationship fields:
+
+- `term` and `phrase` items must contain `examplePatternId`
+- `pattern` items do not contain `examplePatternId`
 
 ## Taxonomy Model
 
@@ -54,6 +59,11 @@ This keeps navigation, filters, and section titles out of React component hardco
 - Keep every learning item atomic. Do not store scripts or multi-part practice sets in this file.
 - Use stable `id` values so the app can rely on them for routing, bookmarks, and local storage.
 - `kind`, `scene`, `module`, and `intent` must use values defined in `data/taxonomy.json`.
+- `term` and `phrase` items are the primary vocabulary learning units.
+- Every `term` and `phrase` must link to exactly one example sentence through `examplePatternId`.
+- The linked example sentence must be stored as a real `pattern` item, not duplicated inline inside the `term` or `phrase`.
+- A linked example `pattern` must contain the target `term` or `phrase` in its English text so the app can highlight it after reveal.
+- Example relationships should stay inside the same `module`.
 
 ## ID Lifecycle
 
@@ -107,3 +117,7 @@ This keeps navigation, filters, and section titles out of React component hardco
 - `kind`, `scene`, `module`, and `intent` must reference keys that exist in `data/taxonomy.json`.
 - Every active namespace must have a counter in `data/id_counters.json`.
 - Each counter value must be a positive integer and strictly greater than the largest active suffix in the same namespace.
+- Every `term` and `phrase` must have a non-empty `examplePatternId`.
+- Every `examplePatternId` must reference an existing `pattern` item.
+- The referenced `pattern` must be in the same `module` as the `term` or `phrase`.
+- The referenced `pattern.english` must contain the linked `term.english` or `phrase.english` after normalization for highlighting.

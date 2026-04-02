@@ -48,6 +48,11 @@ const displayOptions: FilterOption[] = [
   { value: "chinese", label: "Chinese Only" },
 ];
 
+const termAndPhraseKindOption: FilterOption = {
+  value: "term_phrase",
+  label: "Term & Phrase",
+};
+
 const filterLabels: Record<DataFilterKey, string> = {
   scene: "Scene",
   module: "Module",
@@ -88,10 +93,21 @@ export function FilterBar({
         value: entry.key,
         label: entry.label,
       })),
-      kind: taxonomy.kind.map((entry) => ({
-        value: entry.key,
-        label: entry.label,
-      })),
+      kind: [
+        ...taxonomy.kind
+          .filter((entry) => entry.key !== "pattern")
+          .map((entry) => ({
+            value: entry.key,
+            label: entry.label,
+          })),
+        termAndPhraseKindOption,
+        ...taxonomy.kind
+          .filter((entry) => entry.key === "pattern")
+          .map((entry) => ({
+            value: entry.key,
+            label: entry.label,
+          })),
+      ],
       status: [
         { value: "not_started", label: getStatusLabel("not_started") },
         { value: "in_progress", label: getStatusLabel("in_progress") },

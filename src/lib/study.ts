@@ -2,6 +2,7 @@ import type {
   FeedbackRating,
   LanguageItem,
   LearningRecordMap,
+  StudyScope,
   StudyMode,
 } from "@/types";
 import { getLearningRecord } from "@/lib/storage";
@@ -19,11 +20,16 @@ export function buildStudyRound(
   allItems: LanguageItem[],
   records: LearningRecordMap,
   mode: StudyMode,
+  scope: StudyScope,
 ) {
+  const scopeItems = allItems.filter((item) =>
+    scope === "pattern" ? item.kind === "pattern" : item.kind !== "pattern",
+  );
+
   const candidates =
     mode === "random"
-      ? allItems
-      : allItems.filter((item) => {
+      ? scopeItems
+      : scopeItems.filter((item) => {
           const record = getLearningRecord(records, item.id);
           return (
             record.status === "not_started" || record.status === "in_progress"

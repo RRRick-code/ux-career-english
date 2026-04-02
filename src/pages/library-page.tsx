@@ -29,7 +29,18 @@ export function LibraryPage() {
       if (filters.intent !== "all" && item.intent !== filters.intent) {
         return false;
       }
-      if (filters.kind !== "all" && item.kind !== filters.kind) {
+      if (
+        filters.kind === "term_phrase" &&
+        item.kind !== "term" &&
+        item.kind !== "phrase"
+      ) {
+        return false;
+      }
+      if (
+        filters.kind !== "all" &&
+        filters.kind !== "term_phrase" &&
+        item.kind !== filters.kind
+      ) {
         return false;
       }
       if (filters.status !== "all" && record.status !== filters.status) {
@@ -46,7 +57,7 @@ export function LibraryPage() {
     <AppShell
       contentWidth="wide"
       title="Content library"
-      description="Browse every language item, inspect progress, and filter by context without changing study state."
+      description="Browse every language item, review core content on each card, and open the full details in a side sheet."
     >
       <div className="space-y-6">
         {hasAnyContent ? (
@@ -84,7 +95,6 @@ export function LibraryPage() {
                 displayMode={displayMode}
                 item={item}
                 onClick={() => setSelectedItem(item)}
-                record={getRecord(item.id)}
               />
             ))}
           </div>

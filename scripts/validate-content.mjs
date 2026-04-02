@@ -8,6 +8,7 @@ const errors = [];
 const seenIds = new Set();
 const maxSuffixByNamespace = new Map();
 const taxonomyGroups = ["kind", "scene", "module", "intent"];
+const itemById = new Map(languageItems.map((item) => [item.id, item]));
 const taxonomyKeySets = Object.fromEntries(
   taxonomyGroups.map((group) => [
     group,
@@ -43,6 +44,51 @@ for (const [index, item] of languageItems.entries()) {
         `${location}: ${group}="${item[group]}" is not defined in taxonomy.json`,
       );
     }
+  }
+
+  if (item.kind === "term" || item.kind === "phrase") {
+    if (
+      typeof item.examplePatternId !== "string" ||
+      item.examplePatternId.trim().length === 0
+    ) {
+      errors.push(`${location}: ${item.kind} must define examplePatternId`);
+      continue;
+    }
+
+    const linkedPattern = itemById.get(item.examplePatternId);
+
+    if (!linkedPattern) {
+      errors.push(
+        `${location}: examplePatternId="${item.examplePatternId}" does not reference an existing item`,
+      );
+      continue;
+    }
+
+    if (linkedPattern.kind !== "pattern") {
+      errors.push(
+        `${location}: examplePatternId="${item.examplePatternId}" must reference a pattern item`,
+      );
+    }
+
+    if (linkedPattern.module !== item.module) {
+      errors.push(
+        `${location}: examplePatternId="${item.examplePatternId}" must stay in the same module`,
+      );
+    }
+
+    if (!containsNormalizedText(linkedPattern.english, item.english)) {
+      errors.push(
+        `${location}: linked pattern "${item.examplePatternId}" must contain "${item.english}" for highlighting`,
+      );
+    }
+  }
+
+  if (
+    item.kind === "pattern" &&
+    Object.hasOwn(item, "examplePatternId") &&
+    item.examplePatternId != null
+  ) {
+    errors.push(`${location}: pattern items must not define examplePatternId`);
   }
 }
 
@@ -83,4 +129,23 @@ function readJson(relativePath) {
   return JSON.parse(
     readFileSync(new URL(relativePath, import.meta.url), "utf8"),
   );
+}
+
+function normalizeText(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function containsNormalizedText(haystack, needle) {
+  const normalizedHaystack = normalizeText(haystack);
+  const normalizedNeedle = normalizeText(needle);
+
+  if (!normalizedNeedle) {
+    return false;
+  }
+
+  return ` ${normalizedHaystack} `.includes(` ${normalizedNeedle} `);
 }

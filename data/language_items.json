@@ -6,7 +6,8 @@
     "chinese": "复合型背景",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.020"
   },
   {
     "id": "personal_branding.002",
@@ -15,7 +16,8 @@
     "chinese": "staff级别的职责承担",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.021"
   },
   {
     "id": "personal_branding.003",
@@ -24,7 +26,8 @@
     "chinese": "C端产品经验",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.022"
   },
   {
     "id": "personal_branding.004",
@@ -33,7 +36,8 @@
     "chinese": "平台规模",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.023"
   },
   {
     "id": "personal_branding.005",
@@ -42,7 +46,8 @@
     "chinese": "连接战略与执行",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.024"
   },
   {
     "id": "personal_branding.006",
@@ -51,7 +56,8 @@
     "chinese": "具备很强的一线实操深度",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.025"
   },
   {
     "id": "personal_branding.007",
@@ -60,7 +66,8 @@
     "chinese": "在高自主度下推进工作",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.026"
   },
   {
     "id": "personal_branding.008",
@@ -69,7 +76,8 @@
     "chinese": "通过影响力来推动事情",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.027"
   },
   {
     "id": "personal_branding.009",
@@ -78,7 +86,8 @@
     "chinese": "能用业务语言沟通",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.028"
   },
   {
     "id": "personal_branding.010",
@@ -87,7 +96,8 @@
     "chinese": "连接设计与技术",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.029"
   },
   {
     "id": "personal_branding.011",
@@ -96,7 +106,8 @@
     "chinese": "平衡设计细节与系统思维",
     "scene": "interview",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.030"
   },
   {
     "id": "personal_branding.012",
@@ -171,13 +182,153 @@
     "intent": "position_self"
   },
   {
+    "id": "personal_branding.020",
+    "kind": "pattern",
+    "english": "I usually describe myself as having a hybrid profile across design, product, and technology.",
+    "chinese": "我通常会把自己描述成具备设计、产品和技术交叉能力的复合型背景。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.021",
+    "kind": "pattern",
+    "english": "In my last role, I was expected to operate with staff-level ownership, not just deliver screens.",
+    "chinese": "在上一份工作里，别人对我的期待更接近 staff 级别的职责承担，而不只是把页面做出来。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.022",
+    "kind": "pattern",
+    "english": "A lot of my judgment comes from years of consumer product experience in fast-moving environments.",
+    "chinese": "我很多判断力都来自多年在快节奏环境里的 C 端产品经验。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.023",
+    "kind": "pattern",
+    "english": "Working at platform scale taught me to think beyond one feature and design for system behavior.",
+    "chinese": "在平台规模下工作，让我学会跳出单个功能去思考系统层面的行为。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.024",
+    "kind": "pattern",
+    "english": "One of my strengths is that I can bridge strategy and execution without losing depth in either.",
+    "chinese": "我的一个优势，是能连接战略与执行，同时不丢掉任何一端的深度。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.025",
+    "kind": "pattern",
+    "english": "Even in leadership roles, I still bring hands-on depth when the problem needs it.",
+    "chinese": "即使在带团队的时候，只要问题需要，我也会带着一线实操深度亲自下场。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.026",
+    "kind": "pattern",
+    "english": "I can operate with high autonomy when the direction is clear but the path is still emerging.",
+    "chinese": "当方向已经清楚、但路径还在形成时，我可以在高自主度下推进工作。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.027",
+    "kind": "pattern",
+    "english": "In cross-functional teams, I often lead through influence rather than formal authority.",
+    "chinese": "在跨职能团队里，我经常通过影响力来推动事情，而不是依赖正式职权。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.028",
+    "kind": "pattern",
+    "english": "I make a point to speak the language of business when I explain design decisions to stakeholders.",
+    "chinese": "在和利益相关方解释设计决策时，我会主动用业务语言沟通。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.029",
+    "kind": "pattern",
+    "english": "My background helps me connect design and technology in a way that makes collaboration faster.",
+    "chinese": "我的背景让我能更自然地连接设计与技术，让协作变得更高效。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.030",
+    "kind": "pattern",
+    "english": "I try to balance craft and systems thinking so the work feels polished and scalable.",
+    "chinese": "我会努力平衡设计细节与系统思维，让结果既精致又可扩展。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.031",
+    "kind": "term",
+    "english": "hybrid background",
+    "chinese": "复合型背景",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.012"
+  },
+  {
+    "id": "personal_branding.032",
+    "kind": "phrase",
+    "english": "move from strategy to execution",
+    "chinese": "从战略走到执行",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.013"
+  },
+  {
+    "id": "personal_branding.033",
+    "kind": "phrase",
+    "english": "translate between design, engineering, and business",
+    "chinese": "在设计、工程和业务之间做翻译与连接",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.016"
+  },
+  {
+    "id": "personal_branding.034",
+    "kind": "phrase",
+    "english": "align people around direction",
+    "chinese": "围绕方向推动大家对齐",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.019"
+  },
+  {
     "id": "product_strategy_and_business.001",
     "kind": "term",
     "english": "north star experience",
     "chinese": "北极星体验",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.020"
   },
   {
     "id": "product_strategy_and_business.002",
@@ -186,7 +337,8 @@
     "chinese": "用户问题",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.021"
   },
   {
     "id": "product_strategy_and_business.003",
@@ -195,7 +347,8 @@
     "chinese": "业务目标",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.022"
   },
   {
     "id": "product_strategy_and_business.004",
@@ -204,7 +357,8 @@
     "chinese": "路线图押注点",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.023"
   },
   {
     "id": "product_strategy_and_business.005",
@@ -213,7 +367,8 @@
     "chinese": "把问题定义清楚",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.024"
   },
   {
     "id": "product_strategy_and_business.006",
@@ -222,7 +377,8 @@
     "chinese": "把用户需求连接到业务结果",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.025"
   },
   {
     "id": "product_strategy_and_business.007",
@@ -231,7 +387,8 @@
     "chinese": "基于影响力做优先级排序",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.026"
   },
   {
     "id": "product_strategy_and_business.008",
@@ -240,7 +397,8 @@
     "chinese": "定义成功标准",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.027"
   },
   {
     "id": "product_strategy_and_business.009",
@@ -249,7 +407,8 @@
     "chinese": "把模糊转化为方向",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.028"
   },
   {
     "id": "product_strategy_and_business.010",
@@ -258,7 +417,8 @@
     "chinese": "识别杠杆效应最大的机会",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.029"
   },
   {
     "id": "product_strategy_and_business.011",
@@ -267,7 +427,8 @@
     "chinese": "让设计决策与产品战略对齐",
     "scene": "interview",
     "module": "product_strategy_and_business",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.030"
   },
   {
     "id": "product_strategy_and_business.012",
@@ -342,13 +503,153 @@
     "intent": "explain_process_and_reasoning"
   },
   {
+    "id": "product_strategy_and_business.020",
+    "kind": "pattern",
+    "english": "We used the north star experience to align the team on what great should feel like end to end.",
+    "chinese": "我们用 north star experience 来帮助团队对齐，端到端理想体验应该是什么感觉。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.021",
+    "kind": "pattern",
+    "english": "Before proposing solutions, I make sure the team is aligned on the actual user problem.",
+    "chinese": "在提方案之前，我会先确保团队对真正的用户问题已经对齐。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.022",
+    "kind": "pattern",
+    "english": "I like to name the business goal early so design work stays tied to the outcome.",
+    "chinese": "我喜欢尽早说清楚业务目标，这样设计工作不会和结果脱节。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.023",
+    "kind": "pattern",
+    "english": "We treated that initiative as a roadmap bet because it could change both user value and business direction.",
+    "chinese": "我们把那个项目当成一个 roadmap bet，因为它可能同时改变用户价值和业务方向。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.024",
+    "kind": "pattern",
+    "english": "My first step in ambiguous projects is usually to frame the problem clearly for the whole team.",
+    "chinese": "在模糊项目里，我的第一步通常是先把问题说清楚，让整个团队看到同一个问题。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.025",
+    "kind": "pattern",
+    "english": "Strong product design means we connect user needs to business outcomes instead of treating them as separate conversations.",
+    "chinese": "好的产品设计意味着我们要把用户需求连接到业务结果，而不是把两者分开讨论。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.026",
+    "kind": "pattern",
+    "english": "When resources are tight, I prioritize based on impact rather than visibility.",
+    "chinese": "当资源有限时，我会按影响大小排序，而不是按声量排序。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.027",
+    "kind": "pattern",
+    "english": "Before we commit to a solution, I want the team to define the success criteria together.",
+    "chinese": "在真正投入方案之前，我希望团队先一起定义成功标准。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.028",
+    "kind": "pattern",
+    "english": "A big part of my role is to turn ambiguity into direction that product, design, and engineering can act on.",
+    "chinese": "我很重要的一部分价值，就是把模糊转化为产品、设计和工程都能执行的方向。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.029",
+    "kind": "pattern",
+    "english": "Before the team goes deep into execution, I try to identify the highest-leverage opportunity first.",
+    "chinese": "在团队深入执行之前，我会先识别杠杆效应最大的机会点。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.030",
+    "kind": "pattern",
+    "english": "I try to align design decisions with product strategy so the work compounds over time.",
+    "chinese": "我会尽量让设计决策和产品策略保持一致，这样工作的价值才能持续累积。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.031",
+    "kind": "term",
+    "english": "business outcome",
+    "chinese": "业务结果",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.012"
+  },
+  {
+    "id": "product_strategy_and_business.032",
+    "kind": "term",
+    "english": "business urgency",
+    "chinese": "业务紧迫性",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.015"
+  },
+  {
+    "id": "product_strategy_and_business.033",
+    "kind": "term",
+    "english": "system-level impact",
+    "chinese": "系统层面的影响",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.018"
+  },
+  {
+    "id": "product_strategy_and_business.034",
+    "kind": "phrase",
+    "english": "connect the user story to the business story",
+    "chinese": "把用户故事和业务故事连接起来",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.019"
+  },
+  {
     "id": "ux_research_and_interaction.001",
     "kind": "term",
     "english": "user insight",
     "chinese": "用户洞察",
     "scene": "interview",
     "module": "ux_research_and_interaction",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.020"
   },
   {
     "id": "ux_research_and_interaction.002",
@@ -357,7 +658,8 @@
     "chinese": "任务流程",
     "scene": "interview",
     "module": "ux_research_and_interaction",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.021"
   },
   {
     "id": "ux_research_and_interaction.003",
@@ -366,7 +668,8 @@
     "chinese": "信息层级",
     "scene": "interview",
     "module": "ux_research_and_interaction",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.022"
   },
   {
     "id": "ux_research_and_interaction.004",
@@ -375,7 +678,8 @@
     "chinese": "边界场景",
     "scene": "interview",
     "module": "ux_research_and_interaction",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.023"
   },
   {
     "id": "ux_research_and_interaction.005",
@@ -384,7 +688,8 @@
     "chinese": "挖掘未被满足的需求",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.024"
   },
   {
     "id": "ux_research_and_interaction.006",
@@ -393,7 +698,8 @@
     "chinese": "梳理端到端流程",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.025"
   },
   {
     "id": "ux_research_and_interaction.007",
@@ -402,7 +708,8 @@
     "chinese": "降低认知负担",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.026"
   },
   {
     "id": "ux_research_and_interaction.008",
@@ -411,7 +718,8 @@
     "chinese": "尽早验证假设",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.027"
   },
   {
     "id": "ux_research_and_interaction.009",
@@ -420,7 +728,8 @@
     "chinese": "为边界情况做设计",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.028"
   },
   {
     "id": "ux_research_and_interaction.010",
@@ -429,7 +738,8 @@
     "chinese": "简化核心路径",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.029"
   },
   {
     "id": "ux_research_and_interaction.011",
@@ -438,7 +748,8 @@
     "chinese": "让下一步足够明确",
     "scene": "workplace",
     "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.030"
   },
   {
     "id": "ux_research_and_interaction.012",
@@ -513,13 +824,153 @@
     "intent": "explain_process_and_reasoning"
   },
   {
+    "id": "ux_research_and_interaction.020",
+    "kind": "pattern",
+    "english": "The best user insight usually comes from understanding what people are trying to do, not just what they say.",
+    "chinese": "最有价值的用户洞察，通常来自理解用户想完成什么，而不只是他们嘴上怎么说。",
+    "scene": "interview",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.021",
+    "kind": "pattern",
+    "english": "We mapped the task flow carefully because a small break in sequence was causing most of the confusion.",
+    "chinese": "我们把任务流程逐步理清，因为一个很小的顺序断点就造成了大部分困惑。",
+    "scene": "interview",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.022",
+    "kind": "pattern",
+    "english": "A clearer information hierarchy helped users understand what to pay attention to first.",
+    "chinese": "更清晰的信息层级，帮助用户更快知道什么最值得先关注。",
+    "scene": "interview",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.023",
+    "kind": "pattern",
+    "english": "I always look at the edge case early because it often exposes where the design will break.",
+    "chinese": "我总会尽早看边缘情况，因为它往往最先暴露设计会在哪里失效。",
+    "scene": "interview",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.024",
+    "kind": "pattern",
+    "english": "Good research helps us uncover unmet needs that would not show up in analytics alone.",
+    "chinese": "好的研究能帮我们发现那些光看数据看不出来的未被满足需求。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.025",
+    "kind": "pattern",
+    "english": "Before changing the interface, I like to map the end-to-end flow and see where friction actually starts.",
+    "chinese": "在改界面之前，我通常会先梳理端到端流程，看看摩擦到底从哪里开始。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.026",
+    "kind": "pattern",
+    "english": "One of the main goals in this project was to reduce cognitive load during a high-stakes decision.",
+    "chinese": "这个项目里的一个核心目标，就是在高风险决策场景里降低认知负担。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.027",
+    "kind": "pattern",
+    "english": "I try to validate assumptions early so the team does not overinvest in the wrong direction.",
+    "chinese": "我会尽早验证假设，避免团队在错误方向上投入过多。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.028",
+    "kind": "pattern",
+    "english": "If the product is complex, we have to design for edge cases instead of treating them as exceptions.",
+    "chinese": "如果产品本身复杂，我们就必须为边缘情况而设计，而不是把它们当成少数例外。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.029",
+    "kind": "pattern",
+    "english": "The redesign worked because it helped us simplify the core path without hiding important details.",
+    "chinese": "这次改版之所以有效，是因为我们成功简化了核心路径，同时没有把重要细节藏起来。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.030",
+    "kind": "pattern",
+    "english": "A strong interaction should make the next step obvious before the user has to stop and think.",
+    "chinese": "好的交互应该在用户停下来思考之前，就让下一步足够明确。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.031",
+    "kind": "term",
+    "english": "interaction model",
+    "chinese": "交互模型",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.013"
+  },
+  {
+    "id": "ux_research_and_interaction.032",
+    "kind": "phrase",
+    "english": "where users hesitate",
+    "chinese": "用户犹豫的那个时刻",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.015"
+  },
+  {
+    "id": "ux_research_and_interaction.033",
+    "kind": "term",
+    "english": "biggest friction",
+    "chinese": "最大阻力点",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.017"
+  },
+  {
+    "id": "ux_research_and_interaction.034",
+    "kind": "phrase",
+    "english": "remove unnecessary decisions",
+    "chinese": "去掉不必要的决策点",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.018"
+  },
+  {
     "id": "visual_ui_and_design_systems.001",
     "kind": "term",
     "english": "visual hierarchy",
     "chinese": "视觉层级",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.020"
   },
   {
     "id": "visual_ui_and_design_systems.002",
@@ -528,7 +979,8 @@
     "chinese": "设计令牌",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.021"
   },
   {
     "id": "visual_ui_and_design_systems.003",
@@ -537,7 +989,8 @@
     "chinese": "可复用组件",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.022"
   },
   {
     "id": "visual_ui_and_design_systems.004",
@@ -546,7 +999,8 @@
     "chinese": "交互模式",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.023"
   },
   {
     "id": "visual_ui_and_design_systems.005",
@@ -555,7 +1009,8 @@
     "chinese": "提高设计质量标准",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.024"
   },
   {
     "id": "visual_ui_and_design_systems.006",
@@ -564,7 +1019,8 @@
     "chinese": "建立清晰的视觉层级",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.025"
   },
   {
     "id": "visual_ui_and_design_systems.007",
@@ -573,7 +1029,8 @@
     "chinese": "扩展设计系统",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.026"
   },
   {
     "id": "visual_ui_and_design_systems.008",
@@ -582,7 +1039,8 @@
     "chinese": "为大规模一致性做设计",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.027"
   },
   {
     "id": "visual_ui_and_design_systems.009",
@@ -591,7 +1049,8 @@
     "chinese": "把状态表达清楚",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.028"
   },
   {
     "id": "visual_ui_and_design_systems.010",
@@ -600,7 +1059,8 @@
     "chinese": "非常在意细节",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.029"
   },
   {
     "id": "visual_ui_and_design_systems.011",
@@ -609,7 +1069,8 @@
     "chinese": "把模式沉淀成可复用规范",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.030"
   },
   {
     "id": "visual_ui_and_design_systems.012",
@@ -684,13 +1145,153 @@
     "intent": "show_impact"
   },
   {
+    "id": "visual_ui_and_design_systems.020",
+    "kind": "pattern",
+    "english": "A stronger visual hierarchy made the page easier to scan and reduced decision fatigue.",
+    "chinese": "更强的视觉层级让页面更容易扫读，也减少了决策负担。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.021",
+    "kind": "pattern",
+    "english": "We added a design token for that state so teams could use it consistently across surfaces.",
+    "chinese": "我们为那个状态补了一个 design token，这样不同团队都能一致使用。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.022",
+    "kind": "pattern",
+    "english": "Turning it into a reusable component saved time and reduced drift between teams.",
+    "chinese": "把它抽成可复用组件之后，团队节省了很多时间，也减少了实现漂移。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.023",
+    "kind": "pattern",
+    "english": "We reused the same interaction pattern so users did not have to relearn the behavior in each surface.",
+    "chinese": "我们复用了同一个交互模式，这样用户不必在不同触点重新学习。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.024",
+    "kind": "pattern",
+    "english": "I wanted this project to raise the bar for craft, not just meet the minimum quality level.",
+    "chinese": "我希望这个项目能提高设计完成度的标准，而不只是勉强达到最低质量线。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.025",
+    "kind": "pattern",
+    "english": "My first pass was to create a clear visual hierarchy so the key information stood out immediately.",
+    "chinese": "我的第一步是先建立清晰的视觉层级，让关键信息能立刻跳出来。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.026",
+    "kind": "pattern",
+    "english": "Instead of solving it locally, we chose to extend the design system and make the decision reusable.",
+    "chinese": "与其局部解决，我们更愿意把它扩展进设计系统，让这个决策能被复用。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.027",
+    "kind": "pattern",
+    "english": "When a product spans many touchpoints, you have to design for consistency at scale.",
+    "chinese": "当产品跨越很多触点时，就必须为大规模一致性而设计。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.028",
+    "kind": "pattern",
+    "english": "We had to make states explicit so users could tell what had happened and what would happen next.",
+    "chinese": "我们必须把状态表达清楚，这样用户才能知道刚刚发生了什么、下一步会发生什么。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.029",
+    "kind": "pattern",
+    "english": "I still sweat the details because small polish choices shape trust in the product.",
+    "chinese": "我仍然会在意细节，因为这些微小的打磨会直接影响用户对产品的信任。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.030",
+    "kind": "pattern",
+    "english": "Once the solution proved useful, we needed to codify patterns for reuse across the system.",
+    "chinese": "当方案被证明有效后，我们就需要把模式沉淀成可复用规范，推广到系统里。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.031",
+    "kind": "phrase",
+    "english": "coherent across surfaces",
+    "chinese": "在不同触点上保持一致",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.014"
+  },
+  {
+    "id": "visual_ui_and_design_systems.032",
+    "kind": "phrase",
+    "english": "feel intentional",
+    "chinese": "让界面显得有明确设计意图",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.015"
+  },
+  {
+    "id": "visual_ui_and_design_systems.033",
+    "kind": "term",
+    "english": "scalable system asset",
+    "chinese": "可扩展的系统资产",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.018"
+  },
+  {
+    "id": "visual_ui_and_design_systems.034",
+    "kind": "term",
+    "english": "brand distinctiveness",
+    "chinese": "品牌辨识度",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.019"
+  },
+  {
     "id": "prototyping_motion_and_3d.001",
     "kind": "term",
     "english": "high-fidelity prototype",
     "chinese": "高保真原型",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.020"
   },
   {
     "id": "prototyping_motion_and_3d.002",
@@ -699,7 +1300,8 @@
     "chinese": "动效提示",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.021"
   },
   {
     "id": "prototyping_motion_and_3d.003",
@@ -708,7 +1310,8 @@
     "chinese": "服务流程演示",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.022"
   },
   {
     "id": "prototyping_motion_and_3d.004",
@@ -717,7 +1320,8 @@
     "chinese": "3D工作流",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.023"
   },
   {
     "id": "prototyping_motion_and_3d.005",
@@ -726,7 +1330,8 @@
     "chinese": "尽早原型化高风险部分",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.024"
   },
   {
     "id": "prototyping_motion_and_3d.006",
@@ -735,7 +1340,8 @@
     "chinese": "模拟端到端流程",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.025"
   },
   {
     "id": "prototyping_motion_and_3d.007",
@@ -744,7 +1350,8 @@
     "chinese": "用动效解释状态变化",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.026"
   },
   {
     "id": "prototyping_motion_and_3d.008",
@@ -753,7 +1360,8 @@
     "chinese": "在开发前验证交互细节",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.027"
   },
   {
     "id": "prototyping_motion_and_3d.009",
@@ -762,7 +1370,8 @@
     "chinese": "快速把概念变得可感知",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.028"
   },
   {
     "id": "prototyping_motion_and_3d.010",
@@ -771,7 +1380,8 @@
     "chinese": "通过原型为决策降风险",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.029"
   },
   {
     "id": "prototyping_motion_and_3d.011",
@@ -780,7 +1390,8 @@
     "chinese": "有意识地控制原型保真度",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.030"
   },
   {
     "id": "prototyping_motion_and_3d.012",
@@ -855,13 +1466,153 @@
     "intent": "explain_process_and_reasoning"
   },
   {
+    "id": "prototyping_motion_and_3d.020",
+    "kind": "pattern",
+    "english": "I used a high-fidelity prototype because the team needed to react to the interaction, not just the layout.",
+    "chinese": "我用了高保真原型，因为团队需要感受的是交互本身，而不只是静态布局。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.021",
+    "kind": "pattern",
+    "english": "A small motion cue helped users understand that the system was updating in the background.",
+    "chinese": "一个小小的动效提示，就帮助用户理解系统正在后台更新状态。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.022",
+    "kind": "pattern",
+    "english": "We built a service walkthrough to show how the experience connected across multiple steps.",
+    "chinese": "我们做了一个服务 walkthrough，来展示这个体验是如何跨多个步骤衔接起来的。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.023",
+    "kind": "pattern",
+    "english": "That project pushed me to refine a 3D workflow that designers and engineers could both work with.",
+    "chinese": "那个项目也促使我打磨出一套设计和工程都能协作的 3D workflow。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.024",
+    "kind": "pattern",
+    "english": "When the interaction is complex, I try to prototype the risky part early instead of debating it abstractly.",
+    "chinese": "当交互复杂时，我会先把高风险部分做成原型，而不是长期停留在抽象讨论里。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.025",
+    "kind": "pattern",
+    "english": "We used the prototype to simulate the end-to-end flow before anything was built.",
+    "chinese": "在真正开发前，我们先用原型去模拟端到端流程。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.026",
+    "kind": "pattern",
+    "english": "I use motion to explain state change when static screens cannot show the behavior clearly.",
+    "chinese": "当静态页面无法解释行为时，我会用动效来说明状态变化。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.027",
+    "kind": "pattern",
+    "english": "It is much cheaper to test interaction details before build than to fix them in production.",
+    "chinese": "在开发前先测试交互细节，成本远低于上线后再返工。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.028",
+    "kind": "pattern",
+    "english": "Fast prototyping helps me bring concepts to life quickly and get sharper feedback.",
+    "chinese": "快速原型让我能更快把概念做活，也更早拿到高质量反馈。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.029",
+    "kind": "pattern",
+    "english": "We were able to de-risk decisions through prototyping before the team committed engineering time.",
+    "chinese": "我们通过原型先把关键决策降风险，再决定是否投入工程资源。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.030",
+    "kind": "pattern",
+    "english": "I try to use fidelity intentionally based on the question the prototype needs to answer.",
+    "chinese": "我会根据原型要回答的问题来有意识地选择保真度，而不是默认越高越好。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.031",
+    "kind": "term",
+    "english": "abstract behavior",
+    "chinese": "抽象行为",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.012"
+  },
+  {
+    "id": "prototyping_motion_and_3d.032",
+    "kind": "phrase",
+    "english": "react to the same artifact",
+    "chinese": "围绕同一个原型产物作出反馈",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.015"
+  },
+  {
+    "id": "prototyping_motion_and_3d.033",
+    "kind": "phrase",
+    "english": "surface decision points",
+    "chinese": "暴露关键决策点",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.016"
+  },
+  {
+    "id": "prototyping_motion_and_3d.034",
+    "kind": "phrase",
+    "english": "reduce interpretation gaps",
+    "chinese": "减少理解偏差",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.018"
+  },
+  {
     "id": "data_metrics_and_experimentation.001",
     "kind": "term",
     "english": "success metric",
     "chinese": "成功指标",
     "scene": "interview",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.020"
   },
   {
     "id": "data_metrics_and_experimentation.002",
@@ -870,7 +1621,8 @@
     "chinese": "转化漏斗",
     "scene": "interview",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.021"
   },
   {
     "id": "data_metrics_and_experimentation.003",
@@ -879,7 +1631,8 @@
     "chinese": "行为信号",
     "scene": "interview",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.022"
   },
   {
     "id": "data_metrics_and_experimentation.004",
@@ -888,7 +1641,8 @@
     "chinese": "实验设计",
     "scene": "interview",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.023"
   },
   {
     "id": "data_metrics_and_experimentation.005",
@@ -897,7 +1651,8 @@
     "chinese": "预先定义成功标准",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.024"
   },
   {
     "id": "data_metrics_and_experimentation.006",
@@ -906,7 +1661,8 @@
     "chinese": "给体验埋点",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.025"
   },
   {
     "id": "data_metrics_and_experimentation.007",
@@ -915,7 +1671,8 @@
     "chinese": "结合定性和定量信号",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.026"
   },
   {
     "id": "data_metrics_and_experimentation.008",
@@ -924,7 +1681,8 @@
     "chinese": "基于证据迭代",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.027"
   },
   {
     "id": "data_metrics_and_experimentation.009",
@@ -933,7 +1691,8 @@
     "chinese": "关注意料之外的副作用",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.028"
   },
   {
     "id": "data_metrics_and_experimentation.010",
@@ -942,7 +1701,8 @@
     "chinese": "把设计变化连接到可衡量结果",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.029"
   },
   {
     "id": "data_metrics_and_experimentation.011",
@@ -951,7 +1711,8 @@
     "chinese": "把指标作为决策辅助",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.030"
   },
   {
     "id": "data_metrics_and_experimentation.012",
@@ -1026,13 +1787,153 @@
     "intent": "show_impact"
   },
   {
+    "id": "data_metrics_and_experimentation.020",
+    "kind": "pattern",
+    "english": "We agreed on a success metric early so everyone knew how the design would be evaluated.",
+    "chinese": "我们很早就对齐了成功指标，这样所有人都知道设计最后会按什么来评估。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.021",
+    "kind": "pattern",
+    "english": "The conversion funnel made it obvious where users were dropping off.",
+    "chinese": "转化漏斗很快就暴露了用户到底在哪一步流失最多。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.022",
+    "kind": "pattern",
+    "english": "One behavioral signal I pay close attention to is whether users keep moving or start hesitating.",
+    "chinese": "我特别关注的一个行为信号，是用户到底会继续往前走，还是开始犹豫。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.023",
+    "kind": "pattern",
+    "english": "A solid experiment design matters because weak setup can lead the team to the wrong conclusion.",
+    "chinese": "实验设计很关键，因为实验设计弱，团队就很容易得出错误结论。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.024",
+    "kind": "pattern",
+    "english": "If we do not define success up front, it becomes hard to tell whether the design actually worked.",
+    "chinese": "如果不先定义成功，后面就很难判断设计到底有没有起作用。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.025",
+    "kind": "pattern",
+    "english": "We had to instrument the experience properly before we could learn anything reliable from it.",
+    "chinese": "在真正开始学习之前，我们必须先把体验埋点做好，才能得到可靠结论。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.026",
+    "kind": "pattern",
+    "english": "I like to pair qualitative and quantitative signals so the team sees both depth and scale.",
+    "chinese": "我喜欢把定性和定量信号结合起来看，这样团队既能看到深度，也能看到规模。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.027",
+    "kind": "pattern",
+    "english": "The team moved faster once we agreed to iterate based on evidence instead of preference.",
+    "chinese": "一旦团队同意基于证据而不是凭偏好去迭代，推进速度就会快很多。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.028",
+    "kind": "pattern",
+    "english": "Any meaningful change can create side effects, so I always watch for unintended consequences.",
+    "chinese": "任何重要改动都可能带来副作用，所以我总会关注意料之外的后果。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.029",
+    "kind": "pattern",
+    "english": "I try to connect design changes to measurable outcomes whenever I present the work.",
+    "chinese": "我在呈现设计时，会尽量把设计变化和可衡量结果连接起来。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.030",
+    "kind": "pattern",
+    "english": "The goal is to use metrics as a decision aid, not to let them replace judgment.",
+    "chinese": "目标是把指标当成辅助决策的工具，而不是让它取代判断。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.031",
+    "kind": "term",
+    "english": "operational feasibility",
+    "chinese": "运营可行性",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.012"
+  },
+  {
+    "id": "data_metrics_and_experimentation.032",
+    "kind": "term",
+    "english": "biggest drop-off",
+    "chinese": "最大流失点",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.013"
+  },
+  {
+    "id": "data_metrics_and_experimentation.033",
+    "kind": "phrase",
+    "english": "replace judgment",
+    "chinese": "取代判断",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.017"
+  },
+  {
+    "id": "data_metrics_and_experimentation.034",
+    "kind": "term",
+    "english": "scale and nuance",
+    "chinese": "规模与细节",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.018"
+  },
+  {
     "id": "accessibility_and_content_clarity.001",
     "kind": "term",
     "english": "inclusive design",
     "chinese": "包容性设计",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "accessibility_and_content_clarity.020"
   },
   {
     "id": "accessibility_and_content_clarity.002",
@@ -1041,7 +1942,8 @@
     "chinese": "浅白清晰的语言",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "accessibility_and_content_clarity.021"
   },
   {
     "id": "accessibility_and_content_clarity.003",
@@ -1050,7 +1952,8 @@
     "chinese": "错误预防",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "accessibility_and_content_clarity.022"
   },
   {
     "id": "accessibility_and_content_clarity.004",
@@ -1059,7 +1962,8 @@
     "chinese": "内容清晰度",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "accessibility_and_content_clarity.023"
   },
   {
     "id": "accessibility_and_content_clarity.005",
@@ -1068,7 +1972,8 @@
     "chinese": "为了易懂而写",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.024"
   },
   {
     "id": "accessibility_and_content_clarity.006",
@@ -1077,7 +1982,8 @@
     "chinese": "减少界面中的歧义",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.025"
   },
   {
     "id": "accessibility_and_content_clarity.007",
@@ -1086,7 +1992,8 @@
     "chinese": "面向不同能力水平进行设计",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.026"
   },
   {
     "id": "accessibility_and_content_clarity.008",
@@ -1095,7 +2002,8 @@
     "chinese": "让反馈及时且清楚",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.027"
   },
   {
     "id": "accessibility_and_content_clarity.009",
@@ -1104,7 +2012,8 @@
     "chinese": "提升可读性",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.028"
   },
   {
     "id": "accessibility_and_content_clarity.010",
@@ -1113,7 +2022,8 @@
     "chinese": "去掉不必要的术语",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.029"
   },
   {
     "id": "accessibility_and_content_clarity.011",
@@ -1122,7 +2032,8 @@
     "chinese": "用清晰度提升用户信心",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "accessibility_and_content_clarity.030"
   },
   {
     "id": "accessibility_and_content_clarity.012",
@@ -1197,13 +2108,153 @@
     "intent": "explain_process_and_reasoning"
   },
   {
+    "id": "accessibility_and_content_clarity.020",
+    "kind": "pattern",
+    "english": "To me, inclusive design means considering more people before the product reaches them.",
+    "chinese": "对我来说，包容性设计的核心，是在产品触达用户之前就先考虑到更多人。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "accessibility_and_content_clarity.021",
+    "kind": "pattern",
+    "english": "We rewrote the flow in plain language so users could act without second-guessing the wording.",
+    "chinese": "我们把流程文案改成 plain language，让用户不用反复猜测也能采取行动。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "accessibility_and_content_clarity.022",
+    "kind": "pattern",
+    "english": "A lot of good UX is really about error prevention before the mistake happens.",
+    "chinese": "很多好的 UX，本质上都是在错误发生之前就做好预防。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "accessibility_and_content_clarity.023",
+    "kind": "pattern",
+    "english": "Content clarity mattered here because the interaction itself was simple but the wording carried the risk.",
+    "chinese": "这里内容清晰度很重要，因为交互本身并不复杂，真正有风险的是文案。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "accessibility_and_content_clarity.024",
+    "kind": "pattern",
+    "english": "When the feature is unfamiliar, I try to write for comprehension rather than sound clever.",
+    "chinese": "当功能本身陌生时，我会优先为理解而写，而不是为了显得聪明。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.025",
+    "kind": "pattern",
+    "english": "We worked to reduce ambiguity in the UI so users could tell exactly what each action would do.",
+    "chinese": "我们努力减少界面中的歧义，让用户清楚知道每个动作会带来什么结果。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.026",
+    "kind": "pattern",
+    "english": "When we design for diverse abilities, the experience usually gets better for everyone, not just one group.",
+    "chinese": "当我们面向不同能力水平进行设计时，受益的通常不只是某一类人，而是整体体验都会变得更好。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.027",
+    "kind": "pattern",
+    "english": "The interaction felt safer once we could make feedback timely and clear at every important step.",
+    "chinese": "当我们在每个关键步骤都让反馈及时且清楚之后，这个交互一下子就更让人安心了。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.028",
+    "kind": "pattern",
+    "english": "A few layout and copy changes were enough to improve readability across the whole flow.",
+    "chinese": "只靠几个版式和文案调整，我们就显著提升了整个流程的可读性。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.029",
+    "kind": "pattern",
+    "english": "We decided to remove unnecessary jargon because expert language was slowing down everyday users.",
+    "chinese": "我们决定去掉不必要的术语，因为过度专家化的表达会拖慢普通用户。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.030",
+    "kind": "pattern",
+    "english": "The interface should support confidence through clarity, especially when users are under pressure.",
+    "chinese": "这个界面应该通过清晰来支撑用户信心，尤其是在用户有压力的时候。",
+    "scene": "workplace",
+    "module": "accessibility_and_content_clarity",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "accessibility_and_content_clarity.031",
+    "kind": "phrase",
+    "english": "reducing assumptions",
+    "chinese": "减少界面对用户的预设",
+    "scene": "portfolio",
+    "module": "accessibility_and_content_clarity",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "accessibility_and_content_clarity.013"
+  },
+  {
+    "id": "accessibility_and_content_clarity.032",
+    "kind": "phrase",
+    "english": "under pressure",
+    "chinese": "在压力情境下",
+    "scene": "portfolio",
+    "module": "accessibility_and_content_clarity",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "accessibility_and_content_clarity.015"
+  },
+  {
+    "id": "accessibility_and_content_clarity.033",
+    "kind": "term",
+    "english": "product quality",
+    "chinese": "产品质量",
+    "scene": "portfolio",
+    "module": "accessibility_and_content_clarity",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "accessibility_and_content_clarity.017"
+  },
+  {
+    "id": "accessibility_and_content_clarity.034",
+    "kind": "phrase",
+    "english": "recover from mistakes",
+    "chinese": "从错误中恢复",
+    "scene": "portfolio",
+    "module": "accessibility_and_content_clarity",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "accessibility_and_content_clarity.019"
+  },
+  {
     "id": "ai_product_and_design_workflow.001",
     "kind": "term",
     "english": "agentic workflow",
     "chinese": "代理式工作流",
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ai_product_and_design_workflow.020"
   },
   {
     "id": "ai_product_and_design_workflow.002",
@@ -1212,7 +2263,8 @@
     "chinese": "人类介入回路",
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ai_product_and_design_workflow.021"
   },
   {
     "id": "ai_product_and_design_workflow.003",
@@ -1221,7 +2273,8 @@
     "chinese": "置信信号",
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ai_product_and_design_workflow.022"
   },
   {
     "id": "ai_product_and_design_workflow.004",
@@ -1230,7 +2283,8 @@
     "chinese": "模型延迟",
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "ai_product_and_design_workflow.023"
   },
   {
     "id": "ai_product_and_design_workflow.005",
@@ -1239,7 +2293,8 @@
     "chinese": "为不确定性而设计",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.024"
   },
   {
     "id": "ai_product_and_design_workflow.006",
@@ -1248,7 +2303,8 @@
     "chinese": "让用户保持控制权",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.025"
   },
   {
     "id": "ai_product_and_design_workflow.007",
@@ -1257,7 +2313,8 @@
     "chinese": "设定正确预期",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.026"
   },
   {
     "id": "ai_product_and_design_workflow.008",
@@ -1266,7 +2323,8 @@
     "chinese": "呈现置信度和边界",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.027"
   },
   {
     "id": "ai_product_and_design_workflow.009",
@@ -1275,7 +2333,8 @@
     "chinese": "用AI扩大探索空间",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.028"
   },
   {
     "id": "ai_product_and_design_workflow.010",
@@ -1284,7 +2343,8 @@
     "chinese": "把AI输出转成可编辑材料",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.029"
   },
   {
     "id": "ai_product_and_design_workflow.011",
@@ -1293,7 +2353,8 @@
     "chinese": "原型化非确定性行为",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.030"
   },
   {
     "id": "ai_product_and_design_workflow.012",
@@ -1368,13 +2429,153 @@
     "intent": "explain_process_and_reasoning"
   },
   {
+    "id": "ai_product_and_design_workflow.020",
+    "kind": "pattern",
+    "english": "We treated it as an agentic workflow, which meant the system had to do work on the user's behalf while staying understandable.",
+    "chinese": "我们把它当成 agentic workflow 来设计，这意味着系统要替用户做事，同时又必须让过程可理解。",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ai_product_and_design_workflow.021",
+    "kind": "pattern",
+    "english": "Keeping a human-in-the-loop was important because the output still needed review and judgment.",
+    "chinese": "保留 human-in-the-loop 很重要，因为输出仍然需要人的判断和审核。",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ai_product_and_design_workflow.022",
+    "kind": "pattern",
+    "english": "A visible confidence signal helped users decide when to trust the suggestion and when to double-check it.",
+    "chinese": "一个明确的 confidence signal 能帮助用户判断什么时候该信任结果、什么时候该再确认一下。",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ai_product_and_design_workflow.023",
+    "kind": "pattern",
+    "english": "We had to design around model latency so the experience still felt responsive.",
+    "chinese": "我们需要围绕模型延迟来设计，才能让体验依然显得顺畅。",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ai_product_and_design_workflow.024",
+    "kind": "pattern",
+    "english": "If the system can be wrong, the product has to design for uncertainty instead of pretending everything is deterministic.",
+    "chinese": "如果系统可能出错，产品就必须为不确定性而设计，而不是假装一切都确定无误。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.025",
+    "kind": "pattern",
+    "english": "Even with automation, I always want to keep the user in control of the final decision.",
+    "chinese": "即使有自动化，我也始终希望最终决定权仍然掌握在用户手里。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.026",
+    "kind": "pattern",
+    "english": "A lot of good AI UX comes down to how well we set the right expectation before the model responds.",
+    "chinese": "很多 AI 产品体验的好坏，最终都取决于我们能不能在模型响应前设定正确预期。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.027",
+    "kind": "pattern",
+    "english": "We needed to surface confidence and limits clearly so people knew how to use the output.",
+    "chinese": "我们必须把置信度和边界清楚展示出来，让用户知道该如何使用这个结果。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.028",
+    "kind": "pattern",
+    "english": "I use AI to widen exploration early, then narrow with judgment and product constraints.",
+    "chinese": "我会先用 AI 扩大探索范围，再用判断和产品约束把范围收回来。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.029",
+    "kind": "pattern",
+    "english": "The experience worked better once we could turn AI output into editable material instead of final answers.",
+    "chinese": "当我们能把 AI 输出转成可编辑材料，而不是把它当成最终答案时，整个体验就更好用了。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.030",
+    "kind": "pattern",
+    "english": "We had to prototype non-deterministic behavior because static mockups could not show how variable the system was.",
+    "chinese": "我们必须把非确定性行为做成原型，因为静态稿根本无法表现系统的变化性。",
+    "scene": "workplace",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.031",
+    "kind": "term",
+    "english": "expectation setting",
+    "chinese": "预期管理",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.012"
+  },
+  {
+    "id": "ai_product_and_design_workflow.032",
+    "kind": "phrase",
+    "english": "recover from AI-generated output",
+    "chinese": "从 AI 生成内容中修正和恢复",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.015"
+  },
+  {
+    "id": "ai_product_and_design_workflow.033",
+    "kind": "term",
+    "english": "failure modes",
+    "chinese": "失败模式",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.016"
+  },
+  {
+    "id": "ai_product_and_design_workflow.034",
+    "kind": "phrase",
+    "english": "clear points of human control",
+    "chinese": "清晰的人类控制节点",
+    "scene": "interview",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.019"
+  },
+  {
     "id": "engineering_collaboration_and_technical_fluency.001",
     "kind": "term",
     "english": "technical constraint",
     "chinese": "技术约束",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.020"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.002",
@@ -1383,7 +2584,8 @@
     "chinese": "实现细节",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.021"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.003",
@@ -1392,7 +2594,8 @@
     "chinese": "前端可行性",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.022"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.004",
@@ -1401,7 +2604,8 @@
     "chinese": "实时状态",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "describe_scope"
+    "intent": "describe_scope",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.023"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.005",
@@ -1410,7 +2614,8 @@
     "chinese": "贴近代码工作",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.024"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.006",
@@ -1419,7 +2624,8 @@
     "chinese": "把约束翻译成设计决策",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.025"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.007",
@@ -1428,7 +2634,8 @@
     "chinese": "与工程师深度协作",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.026"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.008",
@@ -1437,7 +2644,8 @@
     "chinese": "尽早对齐可行性",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.027"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.009",
@@ -1446,7 +2654,8 @@
     "chinese": "用足够具体的信息完成交付",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.028"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.010",
@@ -1455,7 +2664,8 @@
     "chinese": "用工程师可以直接行动的方式沟通",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.029"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.011",
@@ -1464,7 +2674,8 @@
     "chinese": "在设计时考虑技术现实",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "collaborate_and_influence"
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.030"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.012",
@@ -1539,13 +2750,153 @@
     "intent": "position_self"
   },
   {
+    "id": "engineering_collaboration_and_technical_fluency.020",
+    "kind": "pattern",
+    "english": "The design changed once we understood the real technical constraint behind the interaction.",
+    "chinese": "当我们真正搞清背后的技术约束之后，设计方案也跟着变了。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.021",
+    "kind": "pattern",
+    "english": "Sometimes the right design decision depends on an implementation detail that is easy to miss in mockups.",
+    "chinese": "有时候，正确的设计决策取决于一个很容易在效果图里忽略的实现细节。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.022",
+    "kind": "pattern",
+    "english": "I like to check frontend feasibility early so design ambition stays grounded in how the product actually works.",
+    "chinese": "我喜欢尽早确认前端可行性，这样设计野心就能建立在真实可实现性上。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.023",
+    "kind": "pattern",
+    "english": "Real-time state made the interaction more complex because the UI had to respond to constant updates.",
+    "chinese": "实时状态让这个交互复杂了很多，因为界面必须对持续变化的数据作出反应。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.024",
+    "kind": "pattern",
+    "english": "I prefer to work close to the code when the product behavior is tightly tied to implementation.",
+    "chinese": "当产品行为和实现细节强相关时，我更喜欢贴近代码工作。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.025",
+    "kind": "pattern",
+    "english": "A lot of collaboration is really about learning to translate constraints into design decisions.",
+    "chinese": "很多跨职能协作，本质上就是学会把约束翻译成设计决策。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.026",
+    "kind": "pattern",
+    "english": "The strongest outcomes usually come when designers collaborate deeply with engineers instead of handing work over late.",
+    "chinese": "最强的结果，通常来自设计师和工程师足够深入地协作，而不是很晚才交接。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.027",
+    "kind": "pattern",
+    "english": "We saved a lot of churn because we chose to align on feasibility early.",
+    "chinese": "我们之所以少走了很多弯路，是因为一开始就尽早对齐了可行性。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.028",
+    "kind": "pattern",
+    "english": "I try to hand off with enough specificity that engineering can move without guessing the intent.",
+    "chinese": "我会尽量把交付讲得足够具体，让工程不需要靠猜来补设计意图。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.029",
+    "kind": "pattern",
+    "english": "In reviews, I try to speak in a way engineers can act on immediately.",
+    "chinese": "在评审里，我会尽量用工程可以立刻行动的方式来沟通。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.030",
+    "kind": "pattern",
+    "english": "Good product teams design with technical realities in mind instead of treating them as someone else's problem.",
+    "chinese": "好的产品团队会在设计时把技术现实考虑进去，而不是把这些当成别人的问题。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.031",
+    "kind": "phrase",
+    "english": "collaborate effectively with engineers",
+    "chinese": "和工程师高效协作",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.013"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.032",
+    "kind": "term",
+    "english": "product intent",
+    "chinese": "产品意图",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.014"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.033",
+    "kind": "phrase",
+    "english": "surface constraints early",
+    "chinese": "尽早暴露约束",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.016"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.034",
+    "kind": "term",
+    "english": "implementation logic",
+    "chinese": "实现逻辑",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.019"
+  },
+  {
     "id": "leadership_and_management.001",
     "kind": "term",
     "english": "coaching",
     "chinese": "辅导",
     "scene": "interview",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.020"
   },
   {
     "id": "leadership_and_management.002",
@@ -1554,7 +2905,8 @@
     "chinese": "职责归属模式",
     "scene": "interview",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.021"
   },
   {
     "id": "leadership_and_management.003",
@@ -1563,7 +2915,8 @@
     "chinese": "团队健康度",
     "scene": "interview",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.022"
   },
   {
     "id": "leadership_and_management.004",
@@ -1572,7 +2925,8 @@
     "chinese": "决策清晰度",
     "scene": "interview",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.023"
   },
   {
     "id": "leadership_and_management.005",
@@ -1581,7 +2935,8 @@
     "chinese": "为团队建立清晰感",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.024"
   },
   {
     "id": "leadership_and_management.006",
@@ -1590,7 +2945,8 @@
     "chinese": "给直接且有用的反馈",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.025"
   },
   {
     "id": "leadership_and_management.007",
@@ -1599,7 +2955,8 @@
     "chinese": "辅导设计师穿越模糊性",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.026"
   },
   {
     "id": "leadership_and_management.008",
@@ -1608,7 +2965,8 @@
     "chinese": "提高质量标准",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.027"
   },
   {
     "id": "leadership_and_management.009",
@@ -1617,7 +2975,8 @@
     "chinese": "打通决策卡点",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.028"
   },
   {
     "id": "leadership_and_management.010",
@@ -1626,7 +2985,8 @@
     "chinese": "平衡支持与责任要求",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.029"
   },
   {
     "id": "leadership_and_management.011",
@@ -1635,7 +2995,8 @@
     "chinese": "围绕优先级完成人员对齐",
     "scene": "workplace",
     "module": "leadership_and_management",
-    "intent": "manage_and_coach"
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.030"
   },
   {
     "id": "leadership_and_management.012",
@@ -1710,13 +3071,153 @@
     "intent": "manage_and_coach"
   },
   {
+    "id": "leadership_and_management.020",
+    "kind": "pattern",
+    "english": "A big part of my management work is coaching people through problems instead of solving everything for them.",
+    "chinese": "我管理工作里很重要的一部分，就是通过 coaching 帮人一起过问题，而不是替所有人做决定。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.021",
+    "kind": "pattern",
+    "english": "We clarified the ownership model so decisions could move without constant escalation.",
+    "chinese": "我们先澄清了 ownership model，这样很多决策就不需要层层升级。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.022",
+    "kind": "pattern",
+    "english": "I watch team health closely because quality drops quickly when the team is overloaded or unclear.",
+    "chinese": "我会密切关注团队健康，因为当团队过载或不清楚方向时，质量会很快下滑。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.023",
+    "kind": "pattern",
+    "english": "Decision clarity matters because teams slow down when nobody knows who owns the call.",
+    "chinese": "决策清晰度很重要，因为一旦没人知道谁该拍板，团队速度就会掉下来。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.024",
+    "kind": "pattern",
+    "english": "In ambiguous situations, my first job is usually to create clarity for the team.",
+    "chinese": "在模糊环境里，我的第一职责通常是先为团队创造清晰度。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.025",
+    "kind": "pattern",
+    "english": "I try to give direct and useful feedback that people can apply right away.",
+    "chinese": "我会尽量给出直接而有用的反馈，让对方马上知道如何应用。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.026",
+    "kind": "pattern",
+    "english": "A big part of senior leadership is to coach designers through ambiguity instead of removing all of it for them.",
+    "chinese": "很多 senior leadership 的工作，其实是辅导设计师穿越模糊性，而不是替他们把所有模糊都清空。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.027",
+    "kind": "pattern",
+    "english": "I see leadership as helping the team raise the quality bar together.",
+    "chinese": "我理解的领导力，是帮团队一起把质量标准抬高。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.028",
+    "kind": "pattern",
+    "english": "Sometimes the most valuable thing a manager can do is unblock decision-making at the right moment.",
+    "chinese": "有时候，manager 最有价值的动作，就是在关键节点及时疏通决策。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.029",
+    "kind": "pattern",
+    "english": "I try to balance support with accountability so people feel trusted and challenged at the same time.",
+    "chinese": "我会努力平衡支持与要求，让团队既感到被支持，也感到被期待。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.030",
+    "kind": "pattern",
+    "english": "A lot of management work is really about how to align people around priorities when the environment keeps changing.",
+    "chinese": "很多管理工作，本质上都是在不断变化的环境里围绕优先级完成人员对齐。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.031",
+    "kind": "phrase",
+    "english": "direction and room to grow",
+    "chinese": "方向感与成长空间",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.012"
+  },
+  {
+    "id": "leadership_and_management.032",
+    "kind": "phrase",
+    "english": "creating clarity without creating dependency",
+    "chinese": "在不制造依赖的情况下创造清晰度",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.014"
+  },
+  {
+    "id": "leadership_and_management.033",
+    "kind": "term",
+    "english": "psychological safety",
+    "chinese": "心理安全感",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.016"
+  },
+  {
+    "id": "leadership_and_management.034",
+    "kind": "phrase",
+    "english": "bottleneck for every decision",
+    "chinese": "每个决策都卡在自己这里",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.019"
+  },
+  {
     "id": "impact_and_credibility.001",
     "kind": "term",
     "english": "revenue impact",
     "chinese": "营收影响",
     "scene": "interview",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.020"
   },
   {
     "id": "impact_and_credibility.002",
@@ -1725,7 +3226,8 @@
     "chinese": "平台规模",
     "scene": "interview",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.021"
   },
   {
     "id": "impact_and_credibility.003",
@@ -1734,7 +3236,8 @@
     "chinese": "设计奖项",
     "scene": "interview",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.022"
   },
   {
     "id": "impact_and_credibility.004",
@@ -1743,7 +3246,8 @@
     "chinese": "专利组合",
     "scene": "interview",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.023"
   },
   {
     "id": "impact_and_credibility.005",
@@ -1752,7 +3256,8 @@
     "chinese": "量化业务影响",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.024"
   },
   {
     "id": "impact_and_credibility.006",
@@ -1761,7 +3266,8 @@
     "chinese": "用证据支撑故事",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.025"
   },
   {
     "id": "impact_and_credibility.007",
@@ -1770,7 +3276,8 @@
     "chinese": "展示执行证明",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.026"
   },
   {
     "id": "impact_and_credibility.008",
@@ -1779,7 +3286,8 @@
     "chinese": "展示战略价值",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.027"
   },
   {
     "id": "impact_and_credibility.009",
@@ -1788,7 +3296,8 @@
     "chinese": "说明规模和复杂度",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.028"
   },
   {
     "id": "impact_and_credibility.010",
@@ -1797,7 +3306,8 @@
     "chinese": "把设计质量连接到结果",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.029"
   },
   {
     "id": "impact_and_credibility.011",
@@ -1806,7 +3316,8 @@
     "chinese": "通过具体事实建立可信度",
     "scene": "portfolio",
     "module": "impact_and_credibility",
-    "intent": "show_impact"
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.030"
   },
   {
     "id": "impact_and_credibility.012",
@@ -1879,5 +3390,144 @@
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.020",
+    "kind": "pattern",
+    "english": "The team took the work more seriously once we could show its revenue impact.",
+    "chinese": "一旦我们能证明营收影响，团队就会更认真地看待这项设计工作。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.021",
+    "kind": "pattern",
+    "english": "The solution had to hold up at platform scale, not just in a narrow use case.",
+    "chinese": "这个方案必须能在平台规模下成立，而不只是适用于一个局部场景。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.022",
+    "kind": "pattern",
+    "english": "A design award can be helpful external validation, but I care more about whether the work changed the product.",
+    "chinese": "设计奖可以作为外部认可，但我更在意这项工作是否真的改变了产品。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.023",
+    "kind": "pattern",
+    "english": "That project also contributed to a broader patent portfolio around the interaction model.",
+    "chinese": "那个项目也帮助我们围绕交互模型积累出更完整的专利组合。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.024",
+    "kind": "pattern",
+    "english": "I always try to quantify the business impact when I present the outcome.",
+    "chinese": "我在讲结果时，总会尽量量化业务影响。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.025",
+    "kind": "pattern",
+    "english": "A case study is much stronger when you can back the story with evidence.",
+    "chinese": "只要你能用证据撑住故事，case study 的说服力就会强很多。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.026",
+    "kind": "pattern",
+    "english": "To build trust, I try to show proof of execution rather than relying on claims.",
+    "chinese": "为了建立信任，我会尽量展示执行层面的证据，而不是只给判断。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.027",
+    "kind": "pattern",
+    "english": "The story landed better once we could demonstrate strategic value, not just visual polish.",
+    "chinese": "当我们能够证明战略价值，而不只是展示视觉打磨时，整个故事就更有说服力。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.028",
+    "kind": "pattern",
+    "english": "In interviews, I make sure to speak to scale and complexity, not just deliverables.",
+    "chinese": "在面试里，我会确保自己能讲清规模和复杂度，而不是只讲交付物。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.029",
+    "kind": "pattern",
+    "english": "In a case study, I try to connect craft to outcomes so the audience sees why the quality mattered.",
+    "chinese": "在 case study 里，我会尽量把设计质量连接到结果，让听众看见这些细节为什么重要。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.030",
+    "kind": "pattern",
+    "english": "The fastest way to build credibility through specifics is to show the decisions, constraints, and results together.",
+    "chinese": "通过具体细节建立可信度的最快方式，就是把决策、约束和结果一起讲清楚。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.031",
+    "kind": "term",
+    "english": "meaningful revenue growth",
+    "chinese": "有实质意义的营收增长",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.013"
+  },
+  {
+    "id": "impact_and_credibility.032",
+    "kind": "term",
+    "english": "measurable outcomes",
+    "chinese": "可衡量的结果",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.014"
+  },
+  {
+    "id": "impact_and_credibility.033",
+    "kind": "term",
+    "english": "very large user base",
+    "chinese": "非常大的用户规模",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.016"
+  },
+  {
+    "id": "impact_and_credibility.034",
+    "kind": "term",
+    "english": "logic of the work",
+    "chinese": "这项工作的内在逻辑",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.018"
   }
 ]

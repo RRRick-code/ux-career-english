@@ -6,6 +6,7 @@ export type LanguageItem = {
   scene: string;
   module: string;
   intent: string;
+  examplePatternId?: string;
 };
 
 export type TaxonomyEntry = {
@@ -23,6 +24,7 @@ export type TaxonomyMap = {
 };
 
 export type StudyMode = "random" | "reinforcement";
+export type StudyScope = "term_phrase" | "pattern";
 export type LearningStatus = "not_started" | "in_progress" | "mastered";
 export type DisplayMode = "bilingual" | "english" | "chinese";
 export type FeedbackRating = "hard" | "uncertain" | "easy";
