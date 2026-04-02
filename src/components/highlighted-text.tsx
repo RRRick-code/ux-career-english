@@ -1,11 +1,12 @@
+import type { LanguageItem } from "@/types";
 import { renderHighlightedText } from "@/lib/content";
 
 export function HighlightedText({
   text,
-  needle,
+  item,
 }: {
   text: string;
-  needle: string;
+  item: LanguageItem;
 }) {
-  return <>{renderHighlightedText(text, needle)}</>;
+  return <>{renderHighlightedText(text, item)}</>;
 }

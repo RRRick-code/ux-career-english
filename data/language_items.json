@@ -184,8 +184,8 @@
   {
     "id": "personal_branding.020",
     "kind": "pattern",
-    "english": "I usually describe myself as having a hybrid profile across design, product, and technology.",
-    "chinese": "我通常会把自己描述成具备设计、产品和技术交叉能力的复合型背景。",
+    "english": "I usually describe my background as a hybrid profile across design, product, and technology.",
+    "chinese": "我通常会把自己的背景描述成一个横跨设计、产品和技术的复合型背景。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
@@ -202,8 +202,8 @@
   {
     "id": "personal_branding.022",
     "kind": "pattern",
-    "english": "A lot of my judgment comes from years of consumer product experience in fast-moving environments.",
-    "chinese": "我很多判断力都来自多年在快节奏环境里的 C 端产品经验。",
+    "english": "A lot of my judgment comes from years of consumer product experience in fast-moving teams.",
+    "chinese": "很多判断力都来自于我在快节奏团队里做 C 端产品的多年经验。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
@@ -256,8 +256,8 @@
   {
     "id": "personal_branding.028",
     "kind": "pattern",
-    "english": "I make a point to speak the language of business when I explain design decisions to stakeholders.",
-    "chinese": "在和利益相关方解释设计决策时，我会主动用业务语言沟通。",
+    "english": "I make a point to speak the language of business when I walk stakeholders through design decisions.",
+    "chinese": "在带着利益相关方理解设计决策时，我会主动用业务语言沟通。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
@@ -505,8 +505,8 @@
   {
     "id": "product_strategy_and_business.020",
     "kind": "pattern",
-    "english": "We used the north star experience to align the team on what great should feel like end to end.",
-    "chinese": "我们用 north star experience 来帮助团队对齐，端到端理想体验应该是什么感觉。",
+    "english": "We used the north star experience as a reference point to align the team on what great should feel like end to end.",
+    "chinese": "我们把 north star experience 作为参考点，帮助团队对齐端到端理想体验应该是什么感觉。",
     "scene": "interview",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
@@ -2128,8 +2128,8 @@
   {
     "id": "accessibility_and_content_clarity.022",
     "kind": "pattern",
-    "english": "A lot of good UX is really about error prevention before the mistake happens.",
-    "chinese": "很多好的 UX，本质上都是在错误发生之前就做好预防。",
+    "english": "Good UX is often about error prevention before users make a mistake.",
+    "chinese": "好的 UX，往往就是在用户真正犯错之前先把错误防住。",
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
     "intent": "describe_scope"
@@ -2797,8 +2797,8 @@
   {
     "id": "engineering_collaboration_and_technical_fluency.025",
     "kind": "pattern",
-    "english": "A lot of collaboration is really about learning to translate constraints into design decisions.",
-    "chinese": "很多跨职能协作，本质上就是学会把约束翻译成设计决策。",
+    "english": "A lot of collaboration is about translating constraints into design decisions.",
+    "chinese": "很多跨职能协作，本质上都是在把约束转化成设计决策。",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "collaborate_and_influence"
@@ -3163,8 +3163,8 @@
   {
     "id": "leadership_and_management.030",
     "kind": "pattern",
-    "english": "A lot of management work is really about how to align people around priorities when the environment keeps changing.",
-    "chinese": "很多管理工作，本质上都是在不断变化的环境里围绕优先级完成人员对齐。",
+    "english": "A lot of management work is about aligning people around priorities as the environment keeps changing.",
+    "chinese": "很多管理工作，本质上都是在环境不断变化时围绕优先级完成人员对齐。",
     "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "manage_and_coach"
@@ -3475,7 +3475,7 @@
   {
     "id": "impact_and_credibility.029",
     "kind": "pattern",
-    "english": "In a case study, I try to connect craft to outcomes so the audience sees why the quality mattered.",
+    "english": "In a case study, I try to connect craft to outcomes so the audience sees why those details mattered.",
     "chinese": "在 case study 里，我会尽量把设计质量连接到结果，让听众看见这些细节为什么重要。",
     "scene": "portfolio",
     "module": "impact_and_credibility",

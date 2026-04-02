@@ -280,7 +280,7 @@ export function StudyPage() {
                         </div>
                         <p className="mt-2 text-base leading-8 text-foreground/80">
                           <HighlightedText
-                            needle={currentItem.english}
+                            item={currentItem}
                             text={examplePattern.english}
                           />
                         </p>

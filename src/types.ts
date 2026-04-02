@@ -7,6 +7,7 @@ export type LanguageItem = {
   module: string;
   intent: string;
   examplePatternId?: string;
+  highlightOverrides?: string[];
 };
 
 export type TaxonomyEntry = {

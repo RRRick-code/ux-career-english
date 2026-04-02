@@ -1,4 +1,8 @@
 import { readFileSync } from "node:fs";
+import {
+  buildHighlightCandidates,
+  hasHighlightMatch,
+} from "../shared/highlight-match.js";
 
 const languageItems = readJson("../data/language_items.json");
 const taxonomy = readJson("../data/taxonomy.json");
@@ -76,7 +80,12 @@ for (const [index, item] of languageItems.entries()) {
       );
     }
 
-    if (!containsNormalizedText(linkedPattern.english, item.english)) {
+    if (
+      !hasHighlightMatch(
+        linkedPattern.english,
+        buildHighlightCandidates(item.english, item.highlightOverrides),
+      )
+    ) {
       errors.push(
         `${location}: linked pattern "${item.examplePatternId}" must contain "${item.english}" for highlighting`,
       );
@@ -129,23 +138,4 @@ function readJson(relativePath) {
   return JSON.parse(
     readFileSync(new URL(relativePath, import.meta.url), "utf8"),
   );
-}
-
-function normalizeText(value) {
-  return String(value)
-    .toLowerCase()
-    .replace(/[^a-z0-9 ]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function containsNormalizedText(haystack, needle) {
-  const normalizedHaystack = normalizeText(haystack);
-  const normalizedNeedle = normalizeText(needle);
-
-  if (!normalizedNeedle) {
-    return false;
-  }
-
-  return ` ${normalizedHaystack} `.includes(` ${normalizedNeedle} `);
 }

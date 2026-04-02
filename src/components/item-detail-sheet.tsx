@@ -71,7 +71,7 @@ export function ItemDetailSheet({
               <div className="rounded-2xl border bg-slate-50 px-4 py-4">
                 <p className="text-base leading-8 text-foreground/80">
                   <HighlightedText
-                    needle={item.english}
+                    item={item}
                     text={examplePattern.english}
                   />
                 </p>

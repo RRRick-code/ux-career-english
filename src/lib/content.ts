@@ -1,6 +1,10 @@
 import { Fragment, createElement, type ReactNode } from "react";
 import languageItems from "../../data/language_items.json";
 import taxonomyData from "../../data/taxonomy.json";
+import {
+  buildHighlightCandidates,
+  findHighlightMatch,
+} from "../../shared/highlight-match.js";
 import type {
   LanguageItem,
   StudyScope,
@@ -63,10 +67,13 @@ export function getPatternUsageItems(patternId: string) {
 
 export function renderHighlightedText(
   text: string,
-  needle: string,
+  item: LanguageItem,
   className = "rounded bg-amber-200/80 px-1 py-0.5 font-medium text-foreground",
 ): ReactNode {
-  const match = createFlexibleMatch(text, needle);
+  const match = findHighlightMatch(
+    text,
+    buildHighlightCandidates(item.english, item.highlightOverrides),
+  );
   if (!match) {
     return text;
   }
@@ -82,28 +89,4 @@ export function renderHighlightedText(
     createElement("mark", { className }, highlighted),
     after,
   );
-}
-
-function createFlexibleMatch(text: string, needle: string) {
-  const tokens = needle
-    .toLowerCase()
-    .match(/[a-z0-9]+/g)
-    ?.map((token) => token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-
-  if (!tokens || tokens.length === 0) {
-    return null;
-  }
-
-  const pattern = tokens.join("[^a-z0-9]+");
-  const regex = new RegExp(pattern, "i");
-  const match = regex.exec(text);
-
-  if (!match || match.index == null) {
-    return null;
-  }
-
-  return {
-    index: match.index,
-    length: match[0].length,
-  };
 }
