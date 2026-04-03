@@ -68,7 +68,7 @@ export function getPatternUsageItems(patternId: string) {
 export function renderHighlightedText(
   text: string,
   item: LanguageItem,
-  className = "rounded bg-amber-200/80 px-1 py-0.5 font-medium text-foreground",
+  className = "bg-transparent px-0 py-0 font-medium text-primary",
 ): ReactNode {
   const match = findHighlightMatch(
     text,

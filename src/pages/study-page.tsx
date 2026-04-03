@@ -44,6 +44,7 @@ export function StudyPage() {
   const chineseTextWrapperRef = useRef<HTMLDivElement | null>(null);
   const chineseTextRef = useRef<HTMLDivElement | null>(null);
   const englishTextRef = useRef<HTMLDivElement | null>(null);
+  const exampleTextRef = useRef<HTMLDivElement | null>(null);
 
   const routeState = useMemo(
     () => parseStudyRoute(scopeOrMode, routeMode),
@@ -91,27 +92,29 @@ export function StudyPage() {
       const chineseWrapper = chineseTextWrapperRef.current;
       const chineseText = chineseTextRef.current;
       const englishText = englishTextRef.current;
-      const { width, height } = chineseWrapper.getBoundingClientRect();
+      const exampleText = exampleTextRef.current;
 
       const timeline = gsap.timeline({
-        defaults: { duration: 0.42, ease: "power2.out" },
+        defaults: { duration: 0.46, ease: "power2.out" },
       });
 
-      gsap.set(chineseWrapper, {
-        width,
-        height,
-        maxWidth: "100%",
-      });
       gsap.set(chineseText, {
         transformOrigin: "center center",
       });
+      gsap.set(englishText, {
+        opacity: 0,
+      });
+      if (exampleText) {
+        gsap.set(exampleText, {
+          opacity: 0,
+        });
+      }
 
       timeline
         .to(
           chineseWrapper,
           {
-            y: -18,
-            height: height * (2 / 3),
+            y: -42,
           },
           0,
         )
@@ -126,10 +129,21 @@ export function StudyPage() {
         )
         .fromTo(
           englishText,
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.4 },
+          { opacity: 0 },
+          { opacity: 1, duration: 0.4 },
           0.08,
         );
+
+      if (exampleText) {
+        timeline.to(
+          exampleText,
+          {
+            opacity: 1,
+            duration: 0.38,
+          },
+          0.16,
+        );
+      }
     },
     {
       scope: cardRef,
@@ -233,12 +247,15 @@ export function StudyPage() {
             </div>
             <div className="flex items-center justify-between gap-4 text-xs text-muted-foreground">
               <div>{currentItem.id}</div>
-              <div>{currentIndex + 1} / {total}</div>
+              <div>
+                {getTaxonomyLabel("scene", currentItem.scene)} /{" "}
+                {getTaxonomyLabel("intent", currentItem.intent)}
+              </div>
             </div>
           </div>
           <button
             ref={cardRef}
-            className="relative min-h-[24rem] w-full rounded-3xl border bg-white px-6 py-8 text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
+            className="relative min-h-[24rem] w-full rounded-3xl border bg-white text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
             onClick={() => setRevealed(true)}
             type="button"
           >
@@ -250,47 +267,50 @@ export function StudyPage() {
             >
               {getStatusLabel(getRecord(currentItem.id).status)}
             </div>
-            <div
-              className="flex min-h-full flex-col items-center justify-center space-y-6 text-center -translate-y-5"
-            >
+            <div className="absolute inset-x-6 top-8 bottom-8 flex flex-col">
               <div
-                ref={chineseTextWrapperRef}
-                className="flex max-w-full items-center justify-center"
+                className={cn(
+                  "relative flex flex-1 items-center justify-center text-center",
+                  revealed ? "-translate-y-2" : "-translate-y-5",
+                )}
               >
                 <div
-                  ref={chineseTextRef}
-                  className="text-2xl font-semibold leading-10 text-foreground"
+                  ref={chineseTextWrapperRef}
+                  className="absolute inset-x-0 top-1/2 flex max-w-full -translate-y-1/2 items-center justify-center"
                 >
-                  {currentItem.chinese}
+                  <div
+                    ref={chineseTextRef}
+                    className="text-2xl font-semibold leading-10 text-foreground"
+                  >
+                    {currentItem.chinese}
+                  </div>
                 </div>
-              </div>
-              {revealed ? (
-                <div className="w-full space-y-4 pt-6">
+                {revealed ? (
                   <div
                     ref={englishTextRef}
-                    className="text-2xl font-medium leading-10"
+                    className="absolute inset-x-0 top-1/2 text-2xl font-medium leading-10"
                   >
                     {currentItem.english}
                   </div>
-                  {routeState.scope === "term_phrase" ? (
-                    examplePattern ? (
-                      <div className="rounded-2xl border bg-slate-50 px-4 py-4 text-left">
-                        <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                          Example
-                        </div>
-                        <p className="mt-2 text-base leading-8 text-foreground/80">
-                          <HighlightedText
-                            item={currentItem}
-                            text={examplePattern.english}
-                          />
-                        </p>
-                      </div>
-                    ) : (
-                      <div className="rounded-2xl border border-dashed px-4 py-4 text-left text-sm text-muted-foreground">
-                        Example sentence pending.
-                      </div>
-                    )
-                  ) : null}
+                ) : null}
+              </div>
+              {revealed && routeState.scope === "term_phrase" ? (
+                <div
+                  ref={exampleTextRef}
+                  className="-mx-6 w-auto border-t border-border/70 px-6 pt-5 text-left"
+                >
+                  {examplePattern ? (
+                    <p className="text-base leading-8 text-foreground/80">
+                      <HighlightedText
+                        item={currentItem}
+                        text={examplePattern.english}
+                      />
+                    </p>
+                  ) : (
+                    <p className="text-sm leading-7 text-muted-foreground">
+                      Example sentence pending.
+                    </p>
+                  )}
                 </div>
               ) : null}
             </div>
