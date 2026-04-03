@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { AppShell } from "@/components/app-shell";
 import {
@@ -12,15 +13,36 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { items } from "@/lib/content";
 import { countStatuses, getStatusLabel } from "@/lib/learning";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 
 export function HomePage() {
   const { records, resetProgress } = useLearningRecords();
-  const statusCounts = countStatuses(items, records);
-  const totalCount = items.length;
   const hasProgress = Object.keys(records).length > 0;
+  const termPhraseItems = useMemo(
+    () => items.filter((item) => item.kind !== "pattern"),
+    [],
+  );
+  const patternItems = useMemo(
+    () => items.filter((item) => item.kind === "pattern"),
+    [],
+  );
+  const termPhraseStats = useMemo(
+    () => ({
+      total: termPhraseItems.length,
+      statuses: countStatuses(termPhraseItems, records),
+    }),
+    [records, termPhraseItems],
+  );
+  const patternStats = useMemo(
+    () => ({
+      total: patternItems.length,
+      statuses: countStatuses(patternItems, records),
+    }),
+    [patternItems, records],
+  );
 
   return (
     <AppShell
@@ -28,14 +50,60 @@ export function HomePage() {
       description="Review your current learning state and jump directly into a focused round."
     >
       <section className="space-y-5">
-        <div className="flex items-start justify-between gap-4">
-          <h2 className="text-xl font-semibold tracking-tight">Learning overview</h2>
-          {hasProgress ? (
+        <Tabs className="space-y-4" defaultValue="terms">
+          <TabsList className="h-11 w-full rounded-full bg-slate-200 p-1">
+            <TabsTrigger className="h-full rounded-full px-4" value="terms">
+              Terms &amp; Phrases
+            </TabsTrigger>
+            <TabsTrigger className="h-full rounded-full px-4" value="patterns">
+              Patterns
+            </TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="terms">
+            <OverviewPanel
+              actions={
+                <>
+                  <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
+                    <Link to="/study/term-phrase/reinforcement">
+                      Reinforcement Study
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
+                  >
+                    <Link to="/study/term-phrase/random">Random Study</Link>
+                  </Button>
+                </>
+              }
+              stats={termPhraseStats}
+            />
+          </TabsContent>
+
+          <TabsContent value="patterns">
+            <OverviewPanel
+              actions={
+                <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
+                  <Link to="/study/pattern">Pattern Practice</Link>
+                </Button>
+              }
+              stats={patternStats}
+            />
+          </TabsContent>
+        </Tabs>
+
+        <Button asChild className="h-auto w-full rounded-xl px-4 py-4" variant="outline">
+          <Link to="/library">Open Library</Link>
+        </Button>
+
+        {hasProgress ? (
+          <div className="flex justify-center">
             <AlertDialog>
               <AlertDialogTrigger asChild>
                 <Button
                   size="sm"
-                  variant="ghost"
+                  variant="link"
                   className="px-0 text-muted-foreground hover:text-foreground"
                 >
                   Clear Progress
@@ -57,43 +125,33 @@ export function HomePage() {
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
-          ) : null}
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <StatCard label="total" count={totalCount} />
-          <StatCard label="not_started" count={statusCounts.not_started} />
-          <StatCard label="in_progress" count={statusCounts.in_progress} />
-          <StatCard label="mastered" count={statusCounts.mastered} />
-        </div>
-      </section>
-
-      <div className="border-t" />
-
-      <section className="space-y-3">
-        <div className="space-y-3">
-          <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
-            <Link to="/study/term-phrase/reinforcement">
-              Reinforcement Study
-            </Link>
-          </Button>
-          <Button
-            asChild
-            className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
-          >
-            <Link to="/study/term-phrase/random">Random Study</Link>
-          </Button>
-          <Button
-            asChild
-            className="h-auto w-full rounded-xl border border-border bg-white px-4 py-4 text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
-          >
-            <Link to="/study/pattern">Pattern Practice</Link>
-          </Button>
-          <Button asChild className="h-auto w-full rounded-xl px-4 py-4" variant="outline">
-            <Link to="/library">Open Library</Link>
-          </Button>
-        </div>
+          </div>
+        ) : null}
       </section>
     </AppShell>
+  );
+}
+
+function OverviewPanel({
+  stats,
+  actions,
+}: {
+  stats: {
+    total: number;
+    statuses: ReturnType<typeof countStatuses>;
+  };
+  actions: React.ReactNode;
+}) {
+  return (
+    <div className="space-y-4">
+      <div className="grid grid-cols-2 gap-4">
+        <StatCard label="total" count={stats.total} />
+        <StatCard label="not_started" count={stats.statuses.not_started} />
+        <StatCard label="in_progress" count={stats.statuses.in_progress} />
+        <StatCard label="mastered" count={stats.statuses.mastered} />
+      </div>
+      <div className="space-y-3">{actions}</div>
+    </div>
   );
 }
 

@@ -94,6 +94,7 @@ export function LibraryPage() {
                 key={item.id}
                 displayMode={displayMode}
                 item={item}
+                progress={getRecord(item.id).progress}
                 onClick={() => setSelectedItem(item)}
               />
             ))}

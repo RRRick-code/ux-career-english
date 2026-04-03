@@ -1,24 +1,20 @@
-import {
-  getExamplePatternForItem,
-  getPatternUsageItems,
-  getTaxonomyLabel,
-} from "@/lib/content";
+import { getTaxonomyLabel } from "@/lib/content";
+import { cn } from "@/lib/utils";
 import type { DisplayMode, LanguageItem } from "@/types";
 
 export function ItemCard({
   item,
   displayMode,
+  progress,
   onClick,
 }: {
   item: LanguageItem;
   displayMode: DisplayMode;
+  progress: number;
   onClick: () => void;
 }) {
   const showEnglish = displayMode !== "chinese";
   const showChinese = displayMode !== "english";
-  const examplePattern = getExamplePatternForItem(item);
-  const patternUsageItems =
-    item.kind === "pattern" ? getPatternUsageItems(item.id) : [];
 
   return (
     <button
@@ -40,22 +36,43 @@ export function ItemCard({
           ) : null}
         </div>
         <div className="border-t border-border/70 pt-3">
-          <div className="text-sm font-medium leading-6 text-muted-foreground">
-            {getTaxonomyLabel("intent", item.intent)}
-          </div>
-          <div className="mt-1 text-xs leading-5 text-muted-foreground">
-            {item.kind === "pattern"
-              ? patternUsageItems.length > 0
-                ? `Used by ${patternUsageItems.length} item${
-                    patternUsageItems.length === 1 ? "" : "s"
-                  }`
-                : "Standalone pattern"
-              : examplePattern
-                ? "Example sentence linked"
-                : "Example sentence pending"}
+          <div className="flex items-center justify-between gap-3 text-xs leading-5 text-muted-foreground">
+            <div className="min-w-0 truncate">
+              {getTaxonomyLabel("scene", item.scene)} /{" "}
+              {getTaxonomyLabel("intent", item.intent)}
+            </div>
+            <ProgressDots progress={progress} />
           </div>
         </div>
       </div>
     </button>
+  );
+}
+
+function ProgressDots({ progress }: { progress: number }) {
+  const totalSteps = 5;
+  const activeSteps = Math.min(
+    totalSteps,
+    Math.max(0, progress <= 0 ? 0 : Math.ceil(progress / 20)),
+  );
+
+  return (
+    <div
+      aria-label={`Progress ${progress} out of 100`}
+      className="shrink-0"
+      role="img"
+    >
+      <div className="flex items-center gap-0.5">
+        {Array.from({ length: totalSteps }, (_, index) => (
+          <span
+            key={index}
+            className={cn(
+              "size-1 rounded-full bg-slate-200",
+              index < activeSteps && "bg-primary",
+            )}
+          />
+        ))}
+      </div>
+    </div>
   );
 }

@@ -255,7 +255,10 @@ export function StudyPage() {
           </div>
           <button
             ref={cardRef}
-            className="relative min-h-[24rem] w-full rounded-3xl border bg-white text-left transition-[border-color,box-shadow] hover:border-primary/40 hover:shadow-sm sm:min-h-[28rem]"
+            className={cn(
+              "relative min-h-[24rem] w-full rounded-3xl border bg-white text-left sm:min-h-[28rem]",
+              revealed ? "cursor-default" : "cursor-pointer group",
+            )}
             onClick={() => setRevealed(true)}
             type="button"
           >
@@ -315,7 +318,7 @@ export function StudyPage() {
               ) : null}
             </div>
             {!revealed ? (
-              <div className="absolute right-0 bottom-8 left-0 text-center text-base text-muted-foreground">
+              <div className="absolute right-0 bottom-8 left-0 text-center text-base text-muted-foreground transition-colors group-hover:text-primary">
                 Tap to reveal
               </div>
             ) : null}

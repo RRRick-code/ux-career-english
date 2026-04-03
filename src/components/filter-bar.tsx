@@ -27,7 +27,7 @@ const filterDefaults: ItemFilters = {
   scene: "all",
   module: "all",
   intent: "all",
-  kind: "all",
+  kind: "term_phrase",
   status: "all",
 };
 
