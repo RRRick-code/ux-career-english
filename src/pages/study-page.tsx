@@ -192,12 +192,6 @@ export function StudyPage() {
               <Button asChild variant="link" className="h-auto w-fit px-0">
                 <Link to="/">Back Home</Link>
               </Button>
-              <Button
-                asChild
-                className="h-12 w-full rounded-xl border border-border bg-white text-foreground hover:border-foreground/20 hover:bg-slate-50 hover:shadow-sm"
-              >
-                <Link to="/library">Open Library</Link>
-              </Button>
             </>
           }
         />
@@ -208,24 +202,26 @@ export function StudyPage() {
   if (roundComplete) {
     return (
       <StudyShell title={`${title} complete`}>
-        <section className="space-y-5 rounded-3xl border bg-white px-6 py-6">
-          <div className="space-y-2">
-            <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
-            <p className="text-sm leading-6 text-muted-foreground">
-              You completed {feedbackHistory.length} item
-              {feedbackHistory.length === 1 ? "" : "s"} in this round.
-            </p>
-          </div>
-          <div className="divide-y">
-            <SummaryRow label="Hard" value={summary.hard} />
-            <SummaryRow label="Uncertain" value={summary.uncertain} />
-            <SummaryRow label="Easy" value={summary.easy} />
-            <SummaryRow label="Newly Mastered" value={newlyMasteredCount} />
-          </div>
-        </section>
-        <Button className="h-12 w-full rounded-xl" onClick={() => navigate("/")}>
-          Finish
-        </Button>
+        <div className="space-y-6">
+          <section className="space-y-5 rounded-3xl border bg-white px-6 py-6">
+            <div className="space-y-2">
+              <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
+              <p className="text-sm leading-6 text-muted-foreground">
+                You completed {feedbackHistory.length} item
+                {feedbackHistory.length === 1 ? "" : "s"} in this round.
+              </p>
+            </div>
+            <div className="divide-y">
+              <SummaryRow label="Hard" value={summary.hard} />
+              <SummaryRow label="Uncertain" value={summary.uncertain} />
+              <SummaryRow label="Easy" value={summary.easy} />
+              <SummaryRow label="Newly Mastered" value={newlyMasteredCount} />
+            </div>
+          </section>
+          <Button className="h-12 w-full rounded-xl" onClick={() => navigate("/")}>
+            Finish
+          </Button>
+        </div>
       </StudyShell>
     );
   }
@@ -344,9 +340,6 @@ export function StudyPage() {
             Easy
           </Button>
         </div>
-        <div className="space-y-2 text-sm text-muted-foreground">
-          <div>Module: {getTaxonomyLabel("module", currentItem.module)}</div>
-        </div>
       </div>
     </StudyShell>
   );
@@ -361,7 +354,10 @@ function parseStudyRoute(
   }
 
   if (scopeOrMode === "pattern") {
-    return { scope: "pattern", mode: "random" };
+    return {
+      scope: "pattern",
+      mode: mode === "reinforcement" ? "reinforcement" : "random",
+    };
   }
 
   if (scopeOrMode === "term-phrase" || scopeOrMode === "term_phrase") {
@@ -380,7 +376,9 @@ function parseStudyRoute(
 
 function getStudyTitle(routeState: { scope: StudyScope; mode: StudyMode }) {
   if (routeState.scope === "pattern") {
-    return "Pattern Practice";
+    return routeState.mode === "reinforcement"
+      ? "Reinforcement Study"
+      : "Random Study";
   }
 
   return routeState.mode === "reinforcement"
@@ -395,11 +393,42 @@ function StudyShell({
   title: string;
   children: React.ReactNode;
 }) {
+  const contentRef = useRef<HTMLDivElement | null>(null);
+
+  useGSAP(
+    () => {
+      if (!contentRef.current) {
+        return;
+      }
+
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+      }
+
+      gsap.fromTo(
+        contentRef.current,
+        {
+          y: 18,
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.28,
+          ease: "power2.out",
+          clearProps: "transform,opacity",
+        },
+      );
+    },
+    { scope: contentRef },
+  );
+
   return (
     <AppShell
       title={title}
       actionsPlacement="top-right"
       showHeaderDivider={false}
+      showBrandLink={false}
       actions={
         <Button
           asChild
@@ -412,7 +441,7 @@ function StudyShell({
         </Button>
       }
     >
-      {children}
+      <div ref={contentRef}>{children}</div>
     </AppShell>
   );
 }

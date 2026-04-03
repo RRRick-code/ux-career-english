@@ -46,8 +46,8 @@ export function HomePage() {
 
   return (
     <AppShell
-      title="Daily learning, without extra friction"
-      description="Review your current learning state and jump directly into a focused round."
+      title="UX Career English"
+      description="Build vocabulary, phrases, and patterns for interviews and work."
     >
       <section className="space-y-5">
         <Tabs className="space-y-4" defaultValue="terms">
@@ -84,19 +84,24 @@ export function HomePage() {
           <TabsContent value="patterns">
             <OverviewPanel
               actions={
-                <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
-                  <Link to="/study/pattern">Pattern Practice</Link>
-                </Button>
+                <>
+                  <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
+                    <Link to="/study/pattern/reinforcement">
+                      Reinforcement Study
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
+                  >
+                    <Link to="/study/pattern/random">Random Study</Link>
+                  </Button>
+                </>
               }
               stats={patternStats}
             />
           </TabsContent>
         </Tabs>
-
-        <Button asChild className="h-auto w-full rounded-xl px-4 py-4" variant="outline">
-          <Link to="/library">Open Library</Link>
-        </Button>
-
         {hasProgress ? (
           <div className="flex justify-center">
             <AlertDialog>
