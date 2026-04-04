@@ -63,6 +63,27 @@ export function pruneLearningRecords(
   };
 }
 
+export function removeLearningRecords(
+  records: LearningRecordMap,
+  itemIdsToRemove: Iterable<string>,
+) {
+  const idsToRemove = new Set(itemIdsToRemove);
+  let removed = false;
+
+  const nextRecords = Object.fromEntries(
+    Object.entries(records).filter(([id]) => {
+      const keep = !idsToRemove.has(id);
+      removed ||= !keep;
+      return keep;
+    }),
+  );
+
+  return {
+    records: nextRecords,
+    removed,
+  };
+}
+
 export function saveLearningRecords(records: LearningRecordMap) {
   if (typeof window === "undefined") {
     return;

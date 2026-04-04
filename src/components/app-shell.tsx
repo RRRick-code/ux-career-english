@@ -10,6 +10,7 @@ type AppShellProps = PropsWithChildren<{
   contentWidth?: "compact" | "wide";
   showHeaderDivider?: boolean;
   showBrandLink?: boolean;
+  reserveBrandSpace?: boolean;
 }>;
 
 export function AppShell({
@@ -20,6 +21,7 @@ export function AppShell({
   contentWidth = "compact",
   showHeaderDivider = true,
   showBrandLink = true,
+  reserveBrandSpace = false,
   children,
 }: AppShellProps) {
   const location = useLocation();
@@ -45,7 +47,7 @@ export function AppShell({
                   to="/"
                   className="inline-block text-sm font-semibold tracking-tight text-primary transition-colors hover:text-primary/80"
                 >
-                  UX English Library
+                  UX CAREER ENGLISH
                 </Link>
                 {showLibraryAction ? (
                   <Button
@@ -59,6 +61,9 @@ export function AppShell({
                   </Button>
                 ) : null}
               </div>
+            ) : null}
+            {!showBrandLink && reserveBrandSpace ? (
+              <div aria-hidden="true" className="h-5" />
             ) : null}
             {actionsPlacement === "top-right" ? (
               <div className="flex items-start justify-between gap-4">

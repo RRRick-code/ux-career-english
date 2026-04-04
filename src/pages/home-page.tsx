@@ -20,7 +20,6 @@ import { useLearningRecords } from "@/hooks/use-learning-records";
 
 export function HomePage() {
   const { records, resetProgress } = useLearningRecords();
-  const hasProgress = Object.keys(records).length > 0;
   const termPhraseItems = useMemo(
     () => items.filter((item) => item.kind !== "pattern"),
     [],
@@ -43,10 +42,16 @@ export function HomePage() {
     }),
     [patternItems, records],
   );
+  const termPhraseHasProgress =
+    termPhraseStats.statuses.in_progress > 0 ||
+    termPhraseStats.statuses.mastered > 0;
+  const patternHasProgress =
+    patternStats.statuses.in_progress > 0 ||
+    patternStats.statuses.mastered > 0;
 
   return (
     <AppShell
-      title="UX Career English"
+      title="Practice Hub"
       description="Build vocabulary, phrases, and patterns for interviews and work."
     >
       <section className="space-y-5">
@@ -77,6 +82,15 @@ export function HomePage() {
                   </Button>
                 </>
               }
+              footer={
+                termPhraseHasProgress ? (
+                  <ClearProgressDialog
+                    onClear={() => resetProgress("term_phrase")}
+                    preservedScopeLabel="Patterns"
+                    scopeLabel="Terms & Phrases"
+                  />
+                ) : null
+              }
               stats={termPhraseStats}
             />
           </TabsContent>
@@ -98,40 +112,19 @@ export function HomePage() {
                   </Button>
                 </>
               }
+              footer={
+                patternHasProgress ? (
+                  <ClearProgressDialog
+                    onClear={() => resetProgress("pattern")}
+                    preservedScopeLabel="Terms & Phrases"
+                    scopeLabel="Patterns"
+                  />
+                ) : null
+              }
               stats={patternStats}
             />
           </TabsContent>
         </Tabs>
-        {hasProgress ? (
-          <div className="flex justify-center">
-            <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <Button
-                  size="sm"
-                  variant="link"
-                  className="px-0 text-muted-foreground hover:text-foreground"
-                >
-                  Clear Progress
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent size="sm">
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Clear all learning progress?</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    This will permanently remove your local study progress for this
-                    browser. Content data will stay unchanged.
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction onClick={resetProgress} variant="destructive">
-                    Clear Progress
-                  </AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
-          </div>
-        ) : null}
       </section>
     </AppShell>
   );
@@ -140,12 +133,14 @@ export function HomePage() {
 function OverviewPanel({
   stats,
   actions,
+  footer,
 }: {
   stats: {
     total: number;
     statuses: ReturnType<typeof countStatuses>;
   };
   actions: React.ReactNode;
+  footer?: React.ReactNode;
 }) {
   return (
     <div className="space-y-4">
@@ -156,7 +151,48 @@ function OverviewPanel({
         <StatCard label="mastered" count={stats.statuses.mastered} />
       </div>
       <div className="space-y-3">{actions}</div>
+      {footer ? <div className="flex justify-center">{footer}</div> : null}
     </div>
+  );
+}
+
+function ClearProgressDialog({
+  onClear,
+  scopeLabel,
+  preservedScopeLabel,
+}: {
+  onClear: () => void;
+  scopeLabel: string;
+  preservedScopeLabel: string;
+}) {
+  return (
+    <AlertDialog>
+      <AlertDialogTrigger asChild>
+        <Button
+          size="sm"
+          variant="link"
+          className="px-0 text-muted-foreground hover:text-foreground"
+        >
+          Clear Progress
+        </Button>
+      </AlertDialogTrigger>
+      <AlertDialogContent size="sm">
+        <AlertDialogHeader>
+          <AlertDialogTitle>Clear {scopeLabel} progress?</AlertDialogTitle>
+          <AlertDialogDescription>
+            This will permanently remove your local {scopeLabel} study progress
+            for this browser. {preservedScopeLabel} progress and content data
+            will stay unchanged.
+          </AlertDialogDescription>
+        </AlertDialogHeader>
+        <AlertDialogFooter>
+          <AlertDialogCancel>Cancel</AlertDialogCancel>
+          <AlertDialogAction onClick={onClear} variant="destructive">
+            Clear Progress
+          </AlertDialogAction>
+        </AlertDialogFooter>
+      </AlertDialogContent>
+    </AlertDialog>
   );
 }
 

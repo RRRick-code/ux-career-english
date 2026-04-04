@@ -5,6 +5,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { X } from "lucide-react";
 import { HighlightedText } from "@/components/highlighted-text";
 import { AppShell } from "@/components/app-shell";
+import { ProgressDots } from "@/components/progress-dots";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
@@ -13,7 +14,6 @@ import {
   items,
 } from "@/lib/content";
 import { EmptyState } from "@/components/empty-state";
-import { getStatusLabel } from "@/lib/learning";
 import { cn } from "@/lib/utils";
 import { summarizeFeedback, buildStudyRound } from "@/lib/study";
 import { useLearningRecords } from "@/hooks/use-learning-records";
@@ -40,7 +40,7 @@ export function StudyPage() {
   const [feedbackHistory, setFeedbackHistory] = useState<FeedbackRating[]>([]);
   const [newlyMasteredCount, setNewlyMasteredCount] = useState(0);
   const [roundComplete, setRoundComplete] = useState(false);
-  const cardRef = useRef<HTMLButtonElement | null>(null);
+  const cardRef = useRef<HTMLDivElement | null>(null);
   const chineseTextWrapperRef = useRef<HTMLDivElement | null>(null);
   const chineseTextRef = useRef<HTMLDivElement | null>(null);
   const englishTextRef = useRef<HTMLDivElement | null>(null);
@@ -69,6 +69,7 @@ export function StudyPage() {
   }, [navigate, routeState]);
 
   const currentItem = roundItems[currentIndex] ?? null;
+  const currentRecord = currentItem ? getRecord(currentItem.id) : null;
   const isEmpty = roundReady && roundItems.length === 0;
   const total = roundItems.length;
   const summary = useMemo(
@@ -249,23 +250,28 @@ export function StudyPage() {
               </div>
             </div>
           </div>
-          <button
+          <article
             ref={cardRef}
             className={cn(
               "relative min-h-[24rem] w-full rounded-3xl border bg-white text-left sm:min-h-[28rem]",
-              revealed ? "cursor-default" : "cursor-pointer group",
+              revealed ? "cursor-default" : "group",
             )}
-            onClick={() => setRevealed(true)}
-            type="button"
           >
-            <div
-              className={cn(
-                "absolute top-6 right-6 text-xs",
-                getStatusTone(getRecord(currentItem.id).status),
-              )}
-            >
-              {getStatusLabel(getRecord(currentItem.id).status)}
-            </div>
+            {!revealed ? (
+              <button
+                aria-label="Reveal study card"
+                className="absolute inset-0 z-10 rounded-3xl cursor-pointer"
+                onClick={() => setRevealed(true)}
+                type="button"
+              >
+                <span className="sr-only">Reveal study card</span>
+              </button>
+            ) : null}
+            {currentRecord ? (
+              <div className="absolute top-6 left-6">
+                <ProgressDots progress={currentRecord.progress} />
+              </div>
+            ) : null}
             <div className="absolute inset-x-6 top-8 bottom-8 flex flex-col">
               <div
                 className={cn(
@@ -287,7 +293,7 @@ export function StudyPage() {
                 {revealed ? (
                   <div
                     ref={englishTextRef}
-                    className="absolute inset-x-0 top-1/2 text-2xl font-medium leading-10"
+                    className="absolute inset-x-0 top-1/2 cursor-text select-text text-2xl font-medium leading-10"
                   >
                     {currentItem.english}
                   </div>
@@ -299,7 +305,7 @@ export function StudyPage() {
                   className="-mx-6 w-auto border-t border-border/70 px-6 pt-5 text-left"
                 >
                   {examplePattern ? (
-                    <p className="text-base leading-8 text-foreground/80">
+                    <p className="cursor-text select-text text-base leading-8 text-foreground/80">
                       <HighlightedText
                         item={currentItem}
                         text={examplePattern.english}
@@ -318,7 +324,7 @@ export function StudyPage() {
                 Tap to reveal
               </div>
             ) : null}
-          </button>
+          </article>
         </section>
         <div className="grid grid-cols-3 gap-3">
           <Button
@@ -429,6 +435,7 @@ function StudyShell({
       actionsPlacement="top-right"
       showHeaderDivider={false}
       showBrandLink={false}
+      reserveBrandSpace
       actions={
         <Button
           asChild
@@ -453,15 +460,4 @@ function SummaryRow({ label, value }: { label: string; value: number }) {
       <div className="mt-1 text-2xl font-semibold">{value}</div>
     </div>
   );
-}
-
-function getStatusTone(status: "not_started" | "in_progress" | "mastered") {
-  switch (status) {
-    case "in_progress":
-      return "text-emerald-400";
-    case "not_started":
-      return "text-orange-300";
-    case "mastered":
-      return "text-emerald-600";
-  }
 }

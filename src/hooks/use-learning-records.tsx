@@ -9,6 +9,7 @@ import type {
   FeedbackRating,
   LearningRecord,
   LearningRecordMap,
+  StudyScope,
 } from "@/types";
 import { items } from "@/lib/content";
 import {
@@ -17,13 +18,14 @@ import {
   getLearningRecord,
   loadLearningRecords,
   pruneLearningRecords,
+  removeLearningRecords,
   saveLearningRecords,
 } from "@/lib/storage";
 
 type LearningRecordsContextValue = {
   records: LearningRecordMap;
   getRecord: (itemId: string) => LearningRecord;
-  resetProgress: () => void;
+  resetProgress: (scope: StudyScope) => void;
   updateWithFeedback: (
     itemId: string,
     feedback: FeedbackRating,
@@ -32,6 +34,15 @@ type LearningRecordsContextValue = {
 
 const LearningRecordsContext =
   createContext<LearningRecordsContextValue | null>(null);
+
+const scopeItemIds: Record<StudyScope, string[]> = {
+  term_phrase: items
+    .filter((item) => item.kind !== "pattern")
+    .map((item) => item.id),
+  pattern: items
+    .filter((item) => item.kind === "pattern")
+    .map((item) => item.id),
+};
 
 export function LearningRecordsProvider({ children }: PropsWithChildren) {
   const [records, setRecords] = useState<LearningRecordMap>(() => {
@@ -52,9 +63,24 @@ export function LearningRecordsProvider({ children }: PropsWithChildren) {
     () => ({
       records,
       getRecord: (itemId) => getLearningRecord(records, itemId),
-      resetProgress: () => {
-        setRecords({});
-        clearLearningRecords();
+      resetProgress: (scope) => {
+        const { records: nextRecords, removed } = removeLearningRecords(
+          records,
+          scopeItemIds[scope],
+        );
+
+        if (!removed) {
+          return;
+        }
+
+        setRecords(nextRecords);
+
+        if (Object.keys(nextRecords).length === 0) {
+          clearLearningRecords();
+          return;
+        }
+
+        saveLearningRecords(nextRecords);
       },
       updateWithFeedback: (itemId, feedback) => {
         const previous = getLearningRecord(records, itemId);

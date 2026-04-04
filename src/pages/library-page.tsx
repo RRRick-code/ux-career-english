@@ -56,7 +56,7 @@ export function LibraryPage() {
   return (
     <AppShell
       contentWidth="wide"
-      title="Content library"
+      title="Library"
       description="Browse every language item, review core content on each card, and open the full details in a side sheet."
     >
       <div className="space-y-6">
