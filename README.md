@@ -1,6 +1,6 @@
 # UX Career English
 
-Try it in your browser 👉 **[Live Demo](https://example.github.io/placeholder)**
+Try it in your browser 👉 **[Live Demo](https://rrrick-code.github.io/ux-career-english/)**
 
 ![App Screenshot](./docs/screenshot.png)
 
