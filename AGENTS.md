@@ -2,17 +2,13 @@
 
 ## Project Overview
 
-This project helps a UX/UI/Product Designer prepare English for North American job search, interviews, and workplace communication.
-
-Its core output is a structured, reusable English content library, including vocabulary, phrases, sentence patterns, mock answers, and communication scripts.
-
-The same content should also support a simple GitHub Pages web app for reading, search, and practice.
+This project helps a UX/UI/Product Designer prepare English for North American job search, interviews, and workplace communication. Its core output is structured, reusable English learning content for study and practice, including vocabulary, phrases, and sentence patterns.
 
 ## User Profile
 
 The user is a staff-level UX/UI designer with 12 years of experience at top Chinese tech companies, combining management, design, and technical depth. The profile is especially strong in consumer product design, platform-scale work, leadership, and business impact.
 
-Use `USER_PROFILE.md` as the detailed source of truth whenever output should reflect the user's real background.
+Use `docs/USER_PROFILE.md` as the detailed source of truth whenever output should reflect the user's real background.
 
 ## Tech Stack
 
@@ -29,36 +25,15 @@ Use `USER_PROFILE.md` as the detailed source of truth whenever output should ref
 - Use the local shadcn components in `src/components/ui` as the default UI layer, and add new shadcn components via the `shadcn` CLI so they stay aligned with the repo setup.
 - Treat `components.json`, `src/index.css`, and `package.json` as the source of truth for shadcn setup details.
 - Use light mode only; do not design or implement dark mode.
-- Keep the interface simple and clear; avoid over-design.
+- Keep the interface simple and clear; avoid over-design, card-inside-card, and frame-inside-frame compositions.
 
-## Working Rules
+## Content Sourcing and Authoring Rules
 
 - Use North American workplace English as the default reference scope; keep Vancouver/Canada as the user's job target context, not the only source boundary.
 - Prioritize spoken, interview-ready, and workplace-usable English over academic or overly formal language.
-- Follow `DATA_ARCHITECTURE.md` for direct-consumption content storage and file organization.
+- Follow `docs/DATA_ARCHITECTURE.md` for direct-consumption content storage and file organization.
 
 ## Content Editing Protocol
 
-- Before changing `data/language_items.json`, first read `DATA_ARCHITECTURE.md` and `data/id_counters.json`.
-- Treat `examplePatternId` as part of the canonical content model for every `term` and `phrase`.
-- Classify every data mutation as exactly one of: `ADD`, `EDIT_KEEP_ID`, `DELETE`, `REPLACE`.
-- `ADD`:
-  - Allocate the new `id` from `data/id_counters.json`.
-  - Treat `data/id_counters.json` as the source of truth for the next assignable number.
-  - Update the counter in the same change as the new item.
-  - Any new `term` or `phrase` must be created together with a valid linked example `pattern`, unless an existing compatible pattern is explicitly reused.
-- `EDIT_KEEP_ID`:
-  - Keep the existing `id` when the learning unit is still the same.
-  - Wording cleanup, translation refinement, and taxonomy updates do not justify a new `id`.
-  - Adding or correcting `examplePatternId` is an `EDIT_KEEP_ID` operation when the learning unit stays the same.
-- `DELETE`:
-  - Remove the item from `data/language_items.json`.
-  - Do not reuse its `id`, and do not decrement counters.
-- `REPLACE`:
-  - Use this when the old and new content are not the same learning unit.
-  - Remove the old item and create a new item with a newly allocated `id`.
-- Never generate new IDs by scanning only active items in `data/language_items.json`.
-- Every `term` and `phrase` must have a linked example `pattern`.
-- The linked pattern's English sentence must contain the target `term` or `phrase` so the app can highlight it after reveal.
-- If you edit the English text of a `term`, `phrase`, or linked `pattern`, re-check that the relationship still validates.
-- Run `npm run validate:content` after data changes that touch content, taxonomy, or counters.
+- When a task changes `data/language_items.json`, `data/taxonomy.json`, or `data/id_counters.json`, treat `docs/DATA_ARCHITECTURE.md` as the canonical editing protocol.
+- Read `docs/DATA_ARCHITECTURE.md` before the change. It defines the content model, mutation types (`ADD`, `EDIT_KEEP_ID`, `DELETE`, `REPLACE`), ID allocation rules, example-pattern linking rules, and required validation.
