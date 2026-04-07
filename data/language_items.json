@@ -175,8 +175,8 @@
   {
     "id": "personal_branding.019",
     "kind": "pattern",
-    "english": "In a North American team, I would position myself as a senior builder who can also align people around direction.",
-    "chinese": "在北美团队里，我会把自己定位成既能亲自做事、也能推动方向对齐的高级建设者。",
+    "english": "I position myself as a senior builder who can also align people around direction.",
+    "chinese": "我把自己定位成既能亲自做事、也能推动方向对齐的高级建设者。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
@@ -3207,16 +3207,6 @@
     "examplePatternId": "ai_product_and_design_workflow.020"
   },
   {
-    "id": "ai_product_and_design_workflow.002",
-    "kind": "term",
-    "english": "human-in-the-loop",
-    "chinese": "人类介入回路",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope",
-    "examplePatternId": "ai_product_and_design_workflow.021"
-  },
-  {
     "id": "ai_product_and_design_workflow.003",
     "kind": "term",
     "english": "confidence signal",
@@ -3370,28 +3360,10 @@
     "intent": "explain_process_and_reasoning"
   },
   {
-    "id": "ai_product_and_design_workflow.019",
-    "kind": "pattern",
-    "english": "The interaction had to balance automation with clear points of human control.",
-    "chinese": "这个交互必须在自动化和清晰的人类控制点之间取得平衡。",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
     "id": "ai_product_and_design_workflow.020",
     "kind": "pattern",
     "english": "We treated it as an agentic workflow, which meant the system had to do work on the user's behalf while staying understandable.",
     "chinese": "我们把它当成 agentic workflow 来设计，这意味着系统要替用户做事，同时又必须让过程可理解。",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "describe_scope"
-  },
-  {
-    "id": "ai_product_and_design_workflow.021",
-    "kind": "pattern",
-    "english": "Keeping a human-in-the-loop was important because the output still needed review and judgment.",
-    "chinese": "保留 human-in-the-loop 很重要，因为输出仍然需要人的判断和审核。",
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
     "intent": "describe_scope"
@@ -3506,16 +3478,6 @@
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "ai_product_and_design_workflow.016"
-  },
-  {
-    "id": "ai_product_and_design_workflow.034",
-    "kind": "phrase",
-    "english": "clear points of human control",
-    "chinese": "清晰的人类控制节点",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ai_product_and_design_workflow.019"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.001",
