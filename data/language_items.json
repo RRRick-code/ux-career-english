@@ -53,7 +53,7 @@
     "id": "personal_branding.006",
     "kind": "phrase",
     "english": "bring hands-on depth",
-    "chinese": "具备很强的一线实操深度",
+    "chinese": "亲自下场，带来实操层面的深度",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
@@ -2916,16 +2916,6 @@
     "examplePatternId": "accessibility_and_content_clarity.023"
   },
   {
-    "id": "accessibility_and_content_clarity.005",
-    "kind": "phrase",
-    "english": "write for comprehension",
-    "chinese": "为了易懂而写",
-    "scene": "workplace",
-    "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence",
-    "examplePatternId": "accessibility_and_content_clarity.024"
-  },
-  {
     "id": "accessibility_and_content_clarity.006",
     "kind": "phrase",
     "english": "reduce ambiguity in the UI",
@@ -3092,15 +3082,6 @@
     "scene": "workplace",
     "module": "accessibility_and_content_clarity",
     "intent": "describe_scope"
-  },
-  {
-    "id": "accessibility_and_content_clarity.024",
-    "kind": "pattern",
-    "english": "When the feature is unfamiliar, I try to write for comprehension rather than sound clever.",
-    "chinese": "当功能本身陌生时，我会优先为理解而写，而不是为了显得聪明。",
-    "scene": "workplace",
-    "module": "accessibility_and_content_clarity",
-    "intent": "collaborate_and_influence"
   },
   {
     "id": "accessibility_and_content_clarity.025",
@@ -3324,15 +3305,6 @@
     "intent": "explain_process_and_reasoning"
   },
   {
-    "id": "ai_product_and_design_workflow.015",
-    "kind": "pattern",
-    "english": "We designed the system so that users could inspect, edit, and recover from AI-generated output.",
-    "chinese": "我们这样设计系统，是为了让用户能查看、编辑，并从AI生成结果中恢复。",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
     "id": "ai_product_and_design_workflow.016",
     "kind": "pattern",
     "english": "Trust increases when the product is honest about confidence, uncertainty, and failure modes.",
@@ -3458,16 +3430,6 @@
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "ai_product_and_design_workflow.012"
-  },
-  {
-    "id": "ai_product_and_design_workflow.032",
-    "kind": "phrase",
-    "english": "recover from AI-generated output",
-    "chinese": "从 AI 生成内容中修正和恢复",
-    "scene": "interview",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ai_product_and_design_workflow.015"
   },
   {
     "id": "ai_product_and_design_workflow.033",
@@ -3601,8 +3563,8 @@
   {
     "id": "engineering_collaboration_and_technical_fluency.013",
     "kind": "pattern",
-    "english": "I do not need to write production code every day to collaborate effectively with engineers.",
-    "chinese": "我并不需要每天写生产代码，才能和工程团队高效协作。",
+    "english": "One of my strengths is that I can collaborate effectively with engineers from early exploration all the way through launch.",
+    "chinese": "我的一个优势是，我能从早期探索一直到上线，全程和工程师高效协作。",
     "scene": "interview",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "position_self"
@@ -4708,8 +4670,8 @@
   {
     "id": "impact_and_credibility.014",
     "kind": "pattern",
-    "english": "To make the story credible, I try to include scope, constraints, decisions, and measurable outcomes.",
-    "chinese": "为了让故事更可信，我会尽量同时说清范围、约束、决策和可衡量结果。",
+    "english": "When I walk through a case study, I always tie design decisions back to measurable outcomes.",
+    "chinese": "在讲案例的时候，我总会把设计决策和可衡量的结果联系起来。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
