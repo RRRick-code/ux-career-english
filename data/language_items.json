@@ -1231,25 +1231,6 @@
     "intent": "describe_scope"
   },
   {
-    "id": "product_strategy_and_business.073",
-    "kind": "phrase",
-    "english": "pressure-test the proposal",
-    "chinese": "提前压力测试方案",
-    "scene": "workplace",
-    "module": "product_strategy_and_business",
-    "intent": "collaborate_and_influence",
-    "examplePatternId": "product_strategy_and_business.074"
-  },
-  {
-    "id": "product_strategy_and_business.074",
-    "kind": "pattern",
-    "english": "We used the design review to pressure-test the proposal before taking it to leadership.",
-    "chinese": "我们利用设计评审提前压力测试这个方案，然后再拿给管理层。",
-    "scene": "workplace",
-    "module": "product_strategy_and_business",
-    "intent": "collaborate_and_influence"
-  },
-  {
     "id": "product_strategy_and_business.075",
     "kind": "phrase",
     "english": "narrow the scope for this release",
@@ -1799,6 +1780,25 @@
     "intent": "collaborate_and_influence"
   },
   {
+    "id": "ux_research_and_interaction.053",
+    "kind": "term",
+    "english": "first pass",
+    "chinese": "初稿",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.054"
+  },
+  {
+    "id": "ux_research_and_interaction.054",
+    "kind": "pattern",
+    "english": "Let me do a first pass on the wireframes and we can review together tomorrow.",
+    "chinese": "让我先出一版线框稿，明天我们一起看。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
     "id": "visual_ui_and_design_systems.001",
     "kind": "term",
     "english": "visual hierarchy",
@@ -2296,16 +2296,6 @@
     "examplePatternId": "prototyping_motion_and_3d.029"
   },
   {
-    "id": "prototyping_motion_and_3d.011",
-    "kind": "phrase",
-    "english": "use fidelity intentionally",
-    "chinese": "有意识地控制原型保真度",
-    "scene": "workplace",
-    "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "prototyping_motion_and_3d.030"
-  },
-  {
     "id": "prototyping_motion_and_3d.012",
     "kind": "pattern",
     "english": "I use prototypes to make abstract behavior tangible for the team.",
@@ -2463,15 +2453,6 @@
     "kind": "pattern",
     "english": "We were able to de-risk decisions through prototyping before the team committed engineering time.",
     "chinese": "我们通过原型先把关键决策降风险，再决定是否投入工程资源。",
-    "scene": "workplace",
-    "module": "prototyping_motion_and_3d",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
-    "id": "prototyping_motion_and_3d.030",
-    "kind": "pattern",
-    "english": "I try to use fidelity intentionally based on the question the prototype needs to answer.",
-    "chinese": "我会根据原型要回答的问题来有意识地选择保真度，而不是默认越高越好。",
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -4894,25 +4875,6 @@
     "kind": "pattern",
     "english": "I always show what changed for users instead of only describing what the team built.",
     "chinese": "我总会展示用户真正发生了什么变化，而不只是描述团队做了什么。",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact"
-  },
-  {
-    "id": "impact_and_credibility.039",
-    "kind": "phrase",
-    "english": "close with the impact",
-    "chinese": "用影响结果收尾",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact",
-    "examplePatternId": "impact_and_credibility.040"
-  },
-  {
-    "id": "impact_and_credibility.040",
-    "kind": "pattern",
-    "english": "I close with the impact so the audience remembers what the work changed.",
-    "chinese": "我会用影响结果收尾，让听众记住这项工作真正改变了什么。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
