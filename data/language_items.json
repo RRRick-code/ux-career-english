@@ -724,8 +724,8 @@
   {
     "id": "product_strategy_and_business.019",
     "kind": "pattern",
-    "english": "I like to connect the user story to the business story so the team can make better decisions together.",
-    "chinese": "我习惯把用户故事和业务故事连接起来，这样团队才能一起做出更好的决策。",
+    "english": "In this project, I needed to connect the user story to the business story, because the same friction point was hurting both activation and retention.",
+    "chinese": "在这个项目里，我需要把用户故事和业务故事连接起来，因为同一个摩擦点同时影响了激活和留存。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
@@ -1053,8 +1053,8 @@
   {
     "id": "product_strategy_and_business.054",
     "kind": "pattern",
-    "english": "I usually start with the problem space before showing screens or solutions.",
-    "chinese": "我通常会先从问题空间讲起，再展示界面或方案。",
+    "english": "To start with the problem space, users had to switch between three tools before they could finish one task.",
+    "chinese": "先从问题空间讲起的话，这个项目里用户在完成一个任务前必须切换三个工具。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
@@ -1072,8 +1072,8 @@
   {
     "id": "product_strategy_and_business.056",
     "kind": "pattern",
-    "english": "I highlight the key tradeoffs so the team can understand why we chose this direction.",
-    "chinese": "我会强调关键取舍，让团队理解为什么我们选择了这个方向。",
+    "english": "Let me highlight the key tradeoffs first: speed versus coverage, and simplicity versus control.",
+    "chinese": "我先强调一下关键取舍：速度还是覆盖面，简化还是控制力。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
@@ -1091,8 +1091,8 @@
   {
     "id": "product_strategy_and_business.058",
     "kind": "pattern",
-    "english": "I try to tie each decision back to the goal so the story stays focused.",
-    "chinese": "我会尽量把每个决策都拉回到目标上，这样叙述就不会跑偏。",
+    "english": "In this case, we had to tie each decision back to the goal of reducing drop-off in the first-run experience.",
+    "chinese": "在这个案例里，我们必须把每个决策都拉回到首轮体验降低流失的目标上。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
@@ -1110,8 +1110,8 @@
   {
     "id": "product_strategy_and_business.060",
     "kind": "pattern",
-    "english": "I also call out what did not work so the case study feels honest and complete.",
-    "chinese": "我也会明确指出哪些地方没有奏效，这样案例会更真实完整。",
+    "english": "I want to call out what did not work in the first version: users understood the layout, but still hesitated at the decision point.",
+    "chinese": "我想明确指出第一版哪里没有奏效：用户看懂了布局，但在关键决策点还是会犹豫。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
@@ -1427,8 +1427,8 @@
   {
     "id": "ux_research_and_interaction.015",
     "kind": "pattern",
-    "english": "I usually look for the moment where users hesitate, because that is where design can help most.",
-    "chinese": "我通常会去找用户犹豫的那个时刻，因为那往往是设计最能发挥作用的地方。",
+    "english": "In this flow, the most important moment was where users hesitate, because that pause was driving abandonment.",
+    "chinese": "在这个流程里，最关键的时刻就是用户开始犹豫的那个点，因为那一下停顿直接带来了流失。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1436,8 +1436,8 @@
   {
     "id": "ux_research_and_interaction.016",
     "kind": "pattern",
-    "english": "When a flow feels complex, I try to separate what is essential from what can be progressive.",
-    "chinese": "当一个流程显得复杂时，我会先分清哪些是必需的，哪些可以渐进式呈现。",
+    "english": "In this flow, we separated what was essential from what could be progressive, because the original sequence felt too complex.",
+    "chinese": "在这个流程里，我们把必需内容和可以渐进呈现的内容拆开了，因为原来的顺序显得太复杂。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1454,8 +1454,8 @@
   {
     "id": "ux_research_and_interaction.018",
     "kind": "pattern",
-    "english": "I try to remove unnecessary decisions so users can focus on the one choice that matters.",
-    "chinese": "我会尽量去掉不必要的选择，让用户专注在真正重要的那个决策上。",
+    "english": "One goal in this redesign was to remove unnecessary decisions so users could focus on the one choice that mattered.",
+    "chinese": "这次改版的一个目标，就是去掉不必要的决策点，让用户只专注在真正重要的那个选择上。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1716,8 +1716,8 @@
   {
     "id": "ux_research_and_interaction.046",
     "kind": "pattern",
-    "english": "I want to show how the design evolved as we learned more from research and testing.",
-    "chinese": "我想展示设计是如何随着研究和测试不断演变的。",
+    "english": "This sequence helps show how the design evolved after research challenged our first assumption.",
+    "chinese": "这一段能展示设计是如何演变的，因为研究推翻了我们最初的假设。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1735,8 +1735,8 @@
   {
     "id": "ux_research_and_interaction.048",
     "kind": "pattern",
-    "english": "I explain what we learned along the way because the process mattered as much as the outcome.",
-    "chinese": "我会说明过程中我们学到了什么，因为过程和结果同样重要。",
+    "english": "As I walk through the iterations, I'll explain what we learned along the way, because each round changed the next decision.",
+    "chinese": "在讲这些迭代时，我会解释过程中学到了什么，因为每一轮发现都会改变下一步决策。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1911,8 +1911,8 @@
   {
     "id": "visual_ui_and_design_systems.012",
     "kind": "pattern",
-    "english": "Visual design matters because it shapes how fast users understand and trust the product.",
-    "chinese": "视觉设计之所以重要，是因为它直接影响用户理解和信任产品的速度。",
+    "english": "In this project, visual design mattered because users had to understand the next action at a glance.",
+    "chinese": "在这个项目里，视觉设计之所以重要，是因为用户必须一眼看懂下一步该做什么。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "show_impact"
@@ -1938,8 +1938,8 @@
   {
     "id": "visual_ui_and_design_systems.015",
     "kind": "pattern",
-    "english": "I try to make interfaces feel intentional, not just clean.",
-    "chinese": "我会努力让界面显得有明确设计意图，而不只是干净。",
+    "english": "The interface needed to feel intentional, not just clean, because it was shaping trust in a high-visibility flow.",
+    "chinese": "这个界面不仅要干净，还必须显得有明确设计意图，因为它影响的是一个高关注流程中的用户信任。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "show_impact"
@@ -1956,8 +1956,8 @@
   {
     "id": "visual_ui_and_design_systems.017",
     "kind": "pattern",
-    "english": "Good UI is not decoration for me; it is part of how the product communicates structure and confidence.",
-    "chinese": "对我来说，好的UI不是装饰，而是产品传达结构和信心的一部分。",
+    "english": "In this flow, UI was not decoration; it communicated structure and confidence at each step.",
+    "chinese": "在这个流程里，UI 不是装饰，而是在每一步传达结构感和信心。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "show_impact"
@@ -1965,8 +1965,8 @@
   {
     "id": "visual_ui_and_design_systems.018",
     "kind": "pattern",
-    "english": "I look for places where a local design choice can become a scalable system asset.",
-    "chinese": "我会特别留意那些可以从局部设计决策升级为系统资产的机会。",
+    "english": "This local solution became a scalable system asset once we turned it into a reusable pattern across surfaces.",
+    "chinese": "当我们把这个局部方案沉淀为跨触点可复用的模式后，它就变成了一个可扩展的系统资产。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "show_impact"
@@ -2298,8 +2298,8 @@
   {
     "id": "prototyping_motion_and_3d.012",
     "kind": "pattern",
-    "english": "I use prototypes to make abstract behavior tangible for the team.",
-    "chinese": "我用原型把抽象行为变成团队可以直接感知和讨论的东西。",
+    "english": "In this project, I used a prototype to make the abstract behavior of the system tangible for the team.",
+    "chinese": "在这个项目里，我用原型把系统的抽象行为变成了团队可以直接感知的东西。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2307,8 +2307,8 @@
   {
     "id": "prototyping_motion_and_3d.013",
     "kind": "pattern",
-    "english": "When the idea is complex, I would rather prototype it than debate it in the abstract for too long.",
-    "chinese": "当想法比较复杂时，我更愿意先把它做成原型，而不是长时间停留在抽象讨论里。",
+    "english": "Because the interaction was complex, I chose to prototype it instead of debating it in the abstract for too long.",
+    "chinese": "因为这个交互比较复杂，我选择先把它做成原型，而不是长时间停留在抽象讨论里。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2334,8 +2334,8 @@
   {
     "id": "prototyping_motion_and_3d.016",
     "kind": "pattern",
-    "english": "I do not prototype for polish alone; I prototype to surface decision points.",
-    "chinese": "我做原型并不只是为了视觉精致，而是为了暴露关键决策点。",
+    "english": "I built this prototype to surface decision points early, before the team committed to the final flow.",
+    "chinese": "我做这个原型，不只是为了展示效果，更是为了尽早暴露关键决策点。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2343,8 +2343,8 @@
   {
     "id": "prototyping_motion_and_3d.017",
     "kind": "pattern",
-    "english": "The right level of fidelity depends on the question we are trying to answer.",
-    "chinese": "原型该做到什么保真度，取决于我们当下想回答什么问题。",
+    "english": "For this case, the right level of fidelity was high enough to test timing, but light enough to iterate quickly.",
+    "chinese": "对这个案例来说，合适的保真度要既能验证时间节奏，又足够轻便，方便快速迭代。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2352,8 +2352,8 @@
   {
     "id": "prototyping_motion_and_3d.018",
     "kind": "pattern",
-    "english": "For stakeholder alignment, I often use high-fidelity prototypes because they reduce interpretation gaps.",
-    "chinese": "为了和利益相关方更快对齐，我经常用高保真原型，因为它能减少理解偏差。",
+    "english": "I used a high-fidelity prototype here because it helped reduce interpretation gaps across design, product, and engineering.",
+    "chinese": "这里我用了高保真原型，因为它能减少设计、产品和工程之间的理解偏差。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2361,8 +2361,8 @@
   {
     "id": "prototyping_motion_and_3d.019",
     "kind": "pattern",
-    "english": "Prototyping is especially useful when the interaction involves timing, uncertainty, or multiple states.",
-    "chinese": "当交互涉及时间节奏、不确定性或多个状态时，原型尤其有用。",
+    "english": "Prototyping was especially useful in this case because the interaction depended on timing, uncertainty, and multiple states.",
+    "chinese": "在这个案例里，原型尤其有用，因为这个交互同时涉及时间节奏、不确定性和多个状态。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "explain_process_and_reasoning"
@@ -2968,8 +2968,8 @@
   {
     "id": "accessibility_and_content_clarity.013",
     "kind": "pattern",
-    "english": "I try to make interfaces understandable by reducing assumptions and explaining states more clearly.",
-    "chinese": "我会通过减少隐含前提、把状态表达得更清楚，来让界面更易理解。",
+    "english": "In this flow, reducing assumptions made the interface easier to understand for first-time users.",
+    "chinese": "在这个流程里，减少对用户的预设让界面对首次使用者更容易理解。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -2977,8 +2977,8 @@
   {
     "id": "accessibility_and_content_clarity.014",
     "kind": "pattern",
-    "english": "Clear content matters because even a strong visual layout can fail if the wording creates doubt.",
-    "chinese": "清晰的内容之所以重要，是因为即便视觉结构很好，只要文字让人迟疑，体验仍然会失败。",
+    "english": "In this project, clear content mattered because users were already uncertain at the point of decision.",
+    "chinese": "在这个项目里，清晰的内容之所以重要，是因为用户在做决定时本来就已经不够确定。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -2986,8 +2986,8 @@
   {
     "id": "accessibility_and_content_clarity.015",
     "kind": "pattern",
-    "english": "When users are under pressure, small wording choices can have a big effect on confidence.",
-    "chinese": "当用户处在压力之下时，细微的用词差别都会显著影响他们的信心。",
+    "english": "Because users were under pressure in this scenario, small wording changes had a big effect on confidence.",
+    "chinese": "因为用户在这个场景下处在压力之中，细微的文案变化都会明显影响他们的信心。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -2995,8 +2995,8 @@
   {
     "id": "accessibility_and_content_clarity.016",
     "kind": "pattern",
-    "english": "One small wording change can remove a surprising amount of friction.",
-    "chinese": "一个很小的文案调整，有时就能消除大量摩擦。",
+    "english": "In this flow, one small wording change removed a surprising amount of friction at the confirmation step.",
+    "chinese": "在这个流程里，一个很小的文案调整就在确认步骤上消除了大量摩擦。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -3004,8 +3004,8 @@
   {
     "id": "accessibility_and_content_clarity.017",
     "kind": "pattern",
-    "english": "I treat accessibility as part of product quality, not as a separate compliance task.",
-    "chinese": "我把可访问性视为产品质量的一部分，而不是单独的合规任务。",
+    "english": "In this project, I treated accessibility as part of product quality, so it shaped the interaction and content from the start.",
+    "chinese": "在这个项目里，我把可访问性当成产品质量的一部分，所以它从一开始就影响了交互和内容设计。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -3022,8 +3022,8 @@
   {
     "id": "accessibility_and_content_clarity.019",
     "kind": "pattern",
-    "english": "The interface should help people recover from mistakes, not punish them for making one.",
-    "chinese": "界面应该帮助用户从错误中恢复，而不是因为犯错就惩罚他们。",
+    "english": "This interface had to help people recover from mistakes quickly, especially after an input error.",
+    "chinese": "这个界面必须帮助用户尽快从错误中恢复，尤其是在输入出错之后。",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning"
@@ -3249,16 +3249,6 @@
     "examplePatternId": "ai_product_and_design_workflow.029"
   },
   {
-    "id": "ai_product_and_design_workflow.011",
-    "kind": "phrase",
-    "english": "prototype non-deterministic behavior",
-    "chinese": "原型化非确定性行为",
-    "scene": "workplace",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ai_product_and_design_workflow.030"
-  },
-  {
     "id": "ai_product_and_design_workflow.012",
     "kind": "pattern",
     "english": "AI experiences need stronger expectation setting because the system may not behave the same way every time.",
@@ -3389,15 +3379,6 @@
     "kind": "pattern",
     "english": "The experience worked better once we could turn AI output into editable material instead of final answers.",
     "chinese": "当我们能把 AI 输出转成可编辑材料，而不是把它当成最终答案时，整个体验就更好用了。",
-    "scene": "workplace",
-    "module": "ai_product_and_design_workflow",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
-    "id": "ai_product_and_design_workflow.030",
-    "kind": "pattern",
-    "english": "We had to prototype non-deterministic behavior because static mockups could not show how variable the system was.",
-    "chinese": "我们必须把非确定性行为做成原型，因为静态稿根本无法表现系统的变化性。",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning"
@@ -4601,16 +4582,6 @@
     "examplePatternId": "impact_and_credibility.027"
   },
   {
-    "id": "impact_and_credibility.009",
-    "kind": "phrase",
-    "english": "speak to scale and complexity",
-    "chinese": "说明规模和复杂度",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact",
-    "examplePatternId": "impact_and_credibility.028"
-  },
-  {
     "id": "impact_and_credibility.010",
     "kind": "phrase",
     "english": "connect craft to outcomes",
@@ -4651,8 +4622,8 @@
   {
     "id": "impact_and_credibility.014",
     "kind": "pattern",
-    "english": "When I walk through a case study, I always tie design decisions back to measurable outcomes.",
-    "chinese": "在讲案例的时候，我总会把设计决策和可衡量的结果联系起来。",
+    "english": "In this case, I tied the redesign to measurable outcomes like activation, completion rate, and support volume.",
+    "chinese": "在这个案例里，我把这次改版和可衡量的结果联系起来，比如激活率、完成率和客服请求量。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4660,8 +4631,8 @@
   {
     "id": "impact_and_credibility.015",
     "kind": "pattern",
-    "english": "I try to quantify impact whenever possible, but I also explain the mechanism behind the number.",
-    "chinese": "只要可能，我都会量化影响，但我也会解释这个数字背后的作用机制。",
+    "english": "The impact was not just a number; I also explained the mechanism behind it, including where the friction was removed.",
+    "chinese": "这次影响不只是一个数字，我也解释了它背后的机制，包括我们到底去掉了哪里的不必要摩擦。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4678,8 +4649,8 @@
   {
     "id": "impact_and_credibility.017",
     "kind": "pattern",
-    "english": "The business outcome was important, but I also wanted the team to understand what design actually did to create it.",
-    "chinese": "业务结果当然重要，但我也希望团队理解设计究竟做了什么，才产生这个结果。",
+    "english": "The business outcome mattered, but the design contribution was simplifying the decision point that had been blocking activation.",
+    "chinese": "业务结果当然重要，但设计真正的贡献，是简化了那个一直阻碍激活的关键决策点。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4687,8 +4658,8 @@
   {
     "id": "impact_and_credibility.018",
     "kind": "pattern",
-    "english": "Credibility comes from being specific enough that other people can see the logic of the work.",
-    "chinese": "可信度来自足够具体，让别人能看见这项工作的内在逻辑。",
+    "english": "Once you see the constraint, the design decision, and the result together, the logic of the work becomes easier to follow.",
+    "chinese": "只要把约束、设计决策和结果放在一起看，这项工作的内在逻辑就会更容易被理解。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4696,8 +4667,8 @@
   {
     "id": "impact_and_credibility.019",
     "kind": "pattern",
-    "english": "I want the audience to understand not only what I made, but why it mattered at that scale.",
-    "chinese": "我希望听众理解的不只是我做了什么，还包括它在那个规模下为什么重要。",
+    "english": "What mattered in this project was not just what we shipped, but why it mattered at that scale.",
+    "chinese": "这个项目真正重要的，不只是我们交付了什么，而是它为什么在那个规模下有意义。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4741,8 +4712,8 @@
   {
     "id": "impact_and_credibility.024",
     "kind": "pattern",
-    "english": "I always try to quantify the business impact when I present the outcome.",
-    "chinese": "我在讲结果时，总会尽量量化业务影响。",
+    "english": "For this project, I can quantify the business impact in terms of activation lift and reduced support volume.",
+    "chinese": "在这个项目里，我可以量化业务影响，比如激活率提升和客服请求量下降。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4750,8 +4721,8 @@
   {
     "id": "impact_and_credibility.025",
     "kind": "pattern",
-    "english": "A case study is much stronger when you can back the story with evidence.",
-    "chinese": "只要你能用证据撑住故事，case study 的说服力就会强很多。",
+    "english": "I can back the story with evidence from the funnel data, user feedback, and the post-launch metrics.",
+    "chinese": "我可以用漏斗数据、用户反馈和上线后的指标来用证据支撑这个故事。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4759,8 +4730,8 @@
   {
     "id": "impact_and_credibility.026",
     "kind": "pattern",
-    "english": "To build trust, I try to show proof of execution rather than relying on claims.",
-    "chinese": "为了建立信任，我会尽量展示执行层面的证据，而不是只给判断。",
+    "english": "To show proof of execution, I included the iterations, the tradeoffs, and the shipped outcome.",
+    "chinese": "为了展示执行层面的证据，我把迭代过程、关键取舍和最终上线结果都放了进来。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4768,17 +4739,8 @@
   {
     "id": "impact_and_credibility.027",
     "kind": "pattern",
-    "english": "The story landed better once we could demonstrate strategic value, not just visual polish.",
-    "chinese": "当我们能够证明战略价值，而不只是展示视觉打磨时，整个故事就更有说服力。",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact"
-  },
-  {
-    "id": "impact_and_credibility.028",
-    "kind": "pattern",
-    "english": "In interviews, I make sure to speak to scale and complexity, not just deliverables.",
-    "chinese": "在面试里，我会确保自己能讲清规模和复杂度，而不是只讲交付物。",
+    "english": "This case helped demonstrate strategic value, not just visual polish, because it changed both user behavior and business results.",
+    "chinese": "这个案例能展示战略价值，而不只是视觉打磨，因为它同时改变了用户行为和业务结果。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4786,8 +4748,8 @@
   {
     "id": "impact_and_credibility.029",
     "kind": "pattern",
-    "english": "In a case study, I try to connect craft to outcomes so the audience sees why those details mattered.",
-    "chinese": "在 case study 里，我会尽量把设计质量连接到结果，让听众看见这些细节为什么重要。",
+    "english": "In this redesign, we had to connect craft to outcomes, so even small interaction details were tied to conversion.",
+    "chinese": "在这次改版里，我们必须把设计质量连接到结果上，所以连很小的交互细节也要对应到转化。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4795,8 +4757,8 @@
   {
     "id": "impact_and_credibility.030",
     "kind": "pattern",
-    "english": "The fastest way to build credibility through specifics is to show the decisions, constraints, and results together.",
-    "chinese": "通过具体细节建立可信度的最快方式，就是把决策、约束和结果一起讲清楚。",
+    "english": "What helped build credibility through specifics was showing the constraint, the design choice, and the result together.",
+    "chinese": "真正帮助我们通过具体细节建立可信度的，是把约束、设计选择和结果放在一起讲清楚。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4854,8 +4816,8 @@
   {
     "id": "impact_and_credibility.036",
     "kind": "pattern",
-    "english": "I compare the before and after to make the impact of the redesign easier to see.",
-    "chinese": "我会对比改版前后，让重设计带来的影响更容易看出来。",
+    "english": "At this point, I compare the before and after at the key decision step so the redesign impact is easier to see.",
+    "chinese": "在这里，我会对比前后变化的关键决策步骤，让改版带来的影响更容易看出来。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4873,8 +4835,8 @@
   {
     "id": "impact_and_credibility.038",
     "kind": "pattern",
-    "english": "I always show what changed for users instead of only describing what the team built.",
-    "chinese": "我总会展示用户真正发生了什么变化，而不只是描述团队做了什么。",
+    "english": "In this section, I show what changed for users, including faster completion and less hesitation.",
+    "chinese": "在这一部分，我会展示用户真正发生了什么变化，包括更快完成任务和更少犹豫。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
