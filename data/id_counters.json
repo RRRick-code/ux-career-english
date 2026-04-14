@@ -1,13 +1,13 @@
 {
-  "accessibility_and_content_clarity": 35,
+  "accessibility_and_content_clarity": 39,
   "ai_product_and_design_workflow": 35,
-  "data_metrics_and_experimentation": 39,
-  "engineering_collaboration_and_technical_fluency": 47,
-  "impact_and_credibility": 41,
-  "leadership_and_management": 71,
+  "data_metrics_and_experimentation": 53,
+  "engineering_collaboration_and_technical_fluency": 71,
+  "impact_and_credibility": 43,
+  "leadership_and_management": 109,
   "personal_branding": 59,
-  "product_strategy_and_business": 81,
-  "prototyping_motion_and_3d": 35,
-  "ux_research_and_interaction": 55,
-  "visual_ui_and_design_systems": 43
+  "product_strategy_and_business": 109,
+  "prototyping_motion_and_3d": 43,
+  "ux_research_and_interaction": 75,
+  "visual_ui_and_design_systems": 67
 }
