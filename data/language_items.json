@@ -1723,25 +1723,6 @@
     "intent": "explain_process_and_reasoning"
   },
   {
-    "id": "ux_research_and_interaction.047",
-    "kind": "phrase",
-    "english": "explain what we learned along the way",
-    "chinese": "解释过程中学到了什么",
-    "scene": "portfolio",
-    "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ux_research_and_interaction.048"
-  },
-  {
-    "id": "ux_research_and_interaction.048",
-    "kind": "pattern",
-    "english": "As I walk through the iterations, I'll explain what we learned along the way, because each round changed the next decision.",
-    "chinese": "在讲这些迭代时，我会解释过程中学到了什么，因为每一轮发现都会改变下一步决策。",
-    "scene": "portfolio",
-    "module": "ux_research_and_interaction",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
     "id": "ux_research_and_interaction.049",
     "kind": "phrase",
     "english": "translate complexity into a simple flow",
