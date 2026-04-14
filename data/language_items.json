@@ -1224,8 +1224,8 @@
   {
     "id": "product_strategy_and_business.072",
     "kind": "pattern",
-    "english": "The priority shift came after leadership narrowed the launch goal to activation.",
-    "chinese": "这次优先级调整，是因为管理层把上线目标收窄到了激活。",
+    "english": "A mature team should stay flexible when facing a major priority shift.",
+    "chinese": "成熟的团队在面临重大优先级调整时应该保持灵活。",
     "scene": "workplace",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
@@ -1281,8 +1281,8 @@
   {
     "id": "product_strategy_and_business.080",
     "kind": "pattern",
-    "english": "I try to make the tradeoffs explicit so stakeholders understand what we gain and what we give up.",
-    "chinese": "我会把取舍讲清楚，让相关方知道我们得到了什么，又放弃了什么。",
+    "english": "Before we make a decision, let me make the tradeoffs explicit.",
+    "chinese": "在做决定之前，让我先把取舍讲清楚。",
     "scene": "workplace",
     "module": "product_strategy_and_business",
     "intent": "collaborate_and_influence"
@@ -2763,8 +2763,8 @@
   {
     "id": "data_metrics_and_experimentation.029",
     "kind": "pattern",
-    "english": "I try to connect design changes to measurable outcomes whenever I present the work.",
-    "chinese": "我在呈现设计时，会尽量把设计变化和可衡量结果连接起来。",
+    "english": "We need to connect design changes to measurable outcomes so we know if the new version actually works.",
+    "chinese": "我们需要把设计变化连接到可衡量的结果上，这样才知道新版本到底有没有效。",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
     "intent": "show_impact"
@@ -3341,8 +3341,8 @@
   {
     "id": "ai_product_and_design_workflow.025",
     "kind": "pattern",
-    "english": "Even with automation, I always want to keep the user in control of the final decision.",
-    "chinese": "即使有自动化，我也始终希望最终决定权仍然掌握在用户手里。",
+    "english": "Our goal is to simplify the experience while keeping the user in control.",
+    "chinese": "我们的目标是在简化体验的同时，让用户保持控制权。",
     "scene": "workplace",
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning"
