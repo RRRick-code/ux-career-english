@@ -4573,16 +4573,6 @@
     "examplePatternId": "impact_and_credibility.029"
   },
   {
-    "id": "impact_and_credibility.011",
-    "kind": "phrase",
-    "english": "build credibility through specifics",
-    "chinese": "通过具体事实建立可信度",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact",
-    "examplePatternId": "impact_and_credibility.030"
-  },
-  {
     "id": "impact_and_credibility.012",
     "kind": "pattern",
     "english": "The strongest evidence of impact was that the work changed both user behavior and business results.",
@@ -4731,15 +4721,6 @@
     "kind": "pattern",
     "english": "In this redesign, we had to connect craft to outcomes, so even small interaction details were tied to conversion.",
     "chinese": "在这次改版里，我们必须把设计质量连接到结果上，所以连很小的交互细节也要对应到转化。",
-    "scene": "portfolio",
-    "module": "impact_and_credibility",
-    "intent": "show_impact"
-  },
-  {
-    "id": "impact_and_credibility.030",
-    "kind": "pattern",
-    "english": "What helped build credibility through specifics was showing the constraint, the design choice, and the result together.",
-    "chinese": "真正帮助我们通过具体细节建立可信度的，是把约束、设计选择和结果放在一起讲清楚。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -6226,6 +6207,63 @@
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "data_metrics_and_experimentation.051"
+  },
+  {
+    "id": "data_metrics_and_experimentation.053",
+    "kind": "pattern",
+    "english": "We decided on a phased rollout to monitor system stability before releasing the feature to all users.",
+    "chinese": "我们决定采用分阶段发布的方式，在向所有用户开放功能前先监控系统稳定性。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.054",
+    "kind": "term",
+    "english": "phased rollout",
+    "chinese": "分阶段发布（小流量发布）",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.053"
+  },
+  {
+    "id": "data_metrics_and_experimentation.055",
+    "kind": "pattern",
+    "english": "To minimize risk, we kept the initial traffic allocation at 5% for the first week of the experiment.",
+    "chinese": "为了最小化风险，我们在实验第一周将初始流量分配保持在 5%。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.056",
+    "kind": "term",
+    "english": "traffic allocation",
+    "chinese": "流量分配",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.055"
+  },
+  {
+    "id": "data_metrics_and_experimentation.057",
+    "kind": "pattern",
+    "english": "We ran a crossover experiment to ensure the observed uplift was actually caused by the feature.",
+    "chinese": "我们做了一个交叉反转实验，以确保观察到的提升确实是由新功能引起的。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.058",
+    "kind": "term",
+    "english": "crossover experiment",
+    "chinese": "交叉反转实验",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.057"
   },
   {
     "id": "visual_ui_and_design_systems.059",
