@@ -3103,7 +3103,7 @@
     "id": "accessibility_and_content_clarity.031",
     "kind": "phrase",
     "english": "reducing assumptions",
-    "chinese": "减少界面对用户的预设",
+    "chinese": "减少主观预设",
     "scene": "portfolio",
     "module": "accessibility_and_content_clarity",
     "intent": "explain_process_and_reasoning",
