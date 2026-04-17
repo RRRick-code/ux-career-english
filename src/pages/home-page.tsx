@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Star } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
@@ -20,6 +20,15 @@ import { countStatuses, getStatusLabel } from "@/lib/learning";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 
 export function HomePage() {
+  const [activeTab, setActiveTab] = useState(() => {
+    return localStorage.getItem("ux-english2.home-tab") || "terms";
+  });
+
+  const handleTabChange = (value: string) => {
+    setActiveTab(value);
+    localStorage.setItem("ux-english2.home-tab", value);
+  };
+
   const { records, resetProgress } = useLearningRecords();
   const termPhraseItems = useMemo(
     () => items.filter((item) => item.kind !== "pattern"),
@@ -65,7 +74,11 @@ export function HomePage() {
       description="Build vocabulary, phrases, and patterns for interviews and work."
     >
       <section className="space-y-5">
-        <Tabs className="space-y-4" defaultValue="terms">
+        <Tabs
+          className="space-y-4"
+          value={activeTab}
+          onValueChange={handleTabChange}
+        >
           <TabsList className="h-11 w-full rounded-full bg-slate-200 p-1">
             <TabsTrigger className="h-full rounded-full px-4" value="terms">
               Terms &amp; Phrases
