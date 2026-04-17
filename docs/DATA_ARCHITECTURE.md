@@ -97,3 +97,9 @@ Every data mutation must be classified as exactly one of: `ADD`, `EDIT_KEEP_ID`,
 - Every `examplePatternId` must reference an existing `pattern` item.
 - The referenced `pattern` must be in the same `module` as the `term` or `phrase`.
 - The referenced `pattern.english` must contain the linked `term.english` or `phrase.english`, or a declared `highlightOverrides` form, after case-insensitive token normalization and built-in inflection matching.
+
+## Local User Data
+
+- Learning progress and star statuses (`starred` boolean) are strictly maintained in the browser's `localStorage`.
+- They belong to the local user session and should never be saved into or pollute the source JSON content files (`data/language_items.json`).
+- This ensures backward compatibility and zero data loss for existing users when the canonical content updates.

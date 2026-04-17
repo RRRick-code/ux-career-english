@@ -30,6 +30,7 @@ type LearningRecordsContextValue = {
     itemId: string,
     feedback: FeedbackRating,
   ) => { previous: LearningRecord; next: LearningRecord };
+  toggleStar: (itemId: string) => void;
 };
 
 const LearningRecordsContext =
@@ -94,6 +95,21 @@ export function LearningRecordsProvider({ children }: PropsWithChildren) {
         saveLearningRecords(nextRecords);
 
         return { previous, next };
+      },
+      toggleStar: (itemId) => {
+        const previous = getLearningRecord(records, itemId);
+        const next: LearningRecord = {
+          ...previous,
+          starred: !previous.starred,
+        };
+
+        const nextRecords = {
+          ...records,
+          [itemId]: next,
+        };
+
+        setRecords(nextRecords);
+        saveLearningRecords(nextRecords);
       },
     }),
     [records],

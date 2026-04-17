@@ -29,6 +29,8 @@ export function buildStudyRound(
   const candidates =
     mode === "random"
       ? scopeItems
+      : mode === "starred"
+      ? scopeItems.filter((item) => getLearningRecord(records, item.id).starred)
       : scopeItems.filter((item) => {
           const record = getLearningRecord(records, item.id);
           return (

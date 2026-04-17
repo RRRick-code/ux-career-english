@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
+import { Star } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import {
   AlertDialog,
@@ -49,6 +50,15 @@ export function HomePage() {
     patternStats.statuses.in_progress > 0 ||
     patternStats.statuses.mastered > 0;
 
+  const termPhraseStarredCount = useMemo(
+    () => termPhraseItems.filter((item) => records[item.id]?.starred).length,
+    [termPhraseItems, records],
+  );
+  const patternStarredCount = useMemo(
+    () => patternItems.filter((item) => records[item.id]?.starred).length,
+    [patternItems, records],
+  );
+
   return (
     <AppShell
       title="Practice Hub"
@@ -80,6 +90,17 @@ export function HomePage() {
                   >
                     <Link to="/study/term-phrase/random">Random Study</Link>
                   </Button>
+                  {termPhraseStarredCount > 0 ? (
+                    <Button
+                      asChild
+                      className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
+                    >
+                      <Link to="/study/term-phrase/starred">
+                        <Star className="size-3.5 fill-current" />
+                        Study Starred
+                      </Link>
+                    </Button>
+                  ) : null}
                 </>
               }
               footer={
@@ -110,6 +131,17 @@ export function HomePage() {
                   >
                     <Link to="/study/pattern/random">Random Study</Link>
                   </Button>
+                  {patternStarredCount > 0 ? (
+                    <Button
+                      asChild
+                      className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
+                    >
+                      <Link to="/study/pattern/starred">
+                        <Star className="size-3.5 fill-current" />
+                        Study Starred
+                      </Link>
+                    </Button>
+                  ) : null}
                 </>
               }
               footer={

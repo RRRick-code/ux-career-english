@@ -19,8 +19,11 @@ import {
   getPatternUsageItems,
   getTaxonomyLabel,
 } from "@/lib/content";
+import { Star } from "lucide-react";
 import { getStatusLabel } from "@/lib/learning";
 import { HighlightedText } from "@/components/highlighted-text";
+import { useLearningRecords } from "@/hooks/use-learning-records";
+import { cn } from "@/lib/utils";
 import type { LanguageItem, LearningRecord } from "@/types";
 
 export function ItemDetailSheet({
@@ -48,12 +51,27 @@ export function ItemDetailSheet({
   const examplePattern = getExamplePatternForItem(item);
   const patternUsageItems =
     item.kind === "pattern" ? getPatternUsageItems(item.id) : [];
+  const { toggleStar } = useLearningRecords();
 
   const content = (
     <ScrollArea className="min-h-0 flex-1">
       <div className="space-y-8 px-6 pb-8 pt-6 md:px-8 md:pb-10">
         <section className="space-y-3">
-          <SectionLabel>English</SectionLabel>
+          <div className="flex items-center justify-between">
+            <SectionLabel>English</SectionLabel>
+            <button
+              type="button"
+              className="-mr-1 cursor-pointer p-1 text-slate-300 transition-colors hover:text-slate-400"
+              onClick={() => toggleStar(item.id)}
+            >
+              <Star
+                className={cn(
+                  "h-4 w-4",
+                  record.starred ? "fill-yellow-400 text-yellow-400" : "",
+                )}
+              />
+            </button>
+          </div>
           <p className="text-2xl font-semibold leading-10 text-foreground">
             {item.english}
           </p>

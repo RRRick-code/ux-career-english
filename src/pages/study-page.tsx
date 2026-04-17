@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { X } from "lucide-react";
+import { Star, X } from "lucide-react";
 import { HighlightedText } from "@/components/highlighted-text";
 import { AppShell } from "@/components/app-shell";
 import { ProgressDots } from "@/components/progress-dots";
@@ -32,7 +32,7 @@ export function StudyPage() {
     mode?: string;
   }>();
   const navigate = useNavigate();
-  const { records, getRecord, updateWithFeedback } = useLearningRecords();
+  const { records, getRecord, updateWithFeedback, toggleStar } = useLearningRecords();
   const [roundItems, setRoundItems] = useState<LanguageItem[]>([]);
   const [roundReady, setRoundReady] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -267,11 +267,30 @@ export function StudyPage() {
                 <span className="sr-only">Reveal study card</span>
               </button>
             ) : null}
-            {currentRecord ? (
-              <div className="absolute top-6 left-6">
-                <ProgressDots progress={currentRecord.progress} />
+            <div className="absolute left-6 right-5 top-5 z-20 flex items-center justify-between">
+              <div>
+                {currentRecord ? (
+                  <ProgressDots progress={currentRecord.progress} />
+                ) : null}
               </div>
-            ) : null}
+              <button
+                type="button"
+                className="-m-3 cursor-pointer p-3 text-slate-300 transition-colors hover:text-slate-400"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleStar(currentItem.id);
+                }}
+              >
+                <Star
+                  className={cn(
+                    "h-4 w-4",
+                    currentRecord?.starred
+                      ? "fill-yellow-400 text-yellow-400"
+                      : "",
+                  )}
+                />
+              </button>
+            </div>
             <div className="absolute inset-x-6 top-8 bottom-8 flex flex-col">
               <div
                 className={cn(
@@ -359,28 +378,42 @@ function parseStudyRoute(
     return null;
   }
 
+  const resolveMode = (m?: string): StudyMode => {
+    if (m === "reinforcement") return "reinforcement";
+    if (m === "starred") return "starred";
+    return "random";
+  };
+
   if (scopeOrMode === "pattern") {
     return {
       scope: "pattern",
-      mode: mode === "reinforcement" ? "reinforcement" : "random",
+      mode: resolveMode(mode),
     };
   }
 
   if (scopeOrMode === "term-phrase" || scopeOrMode === "term_phrase") {
     return {
       scope: "term_phrase",
-      mode: mode === "reinforcement" ? "reinforcement" : "random",
+      mode: resolveMode(mode),
     };
   }
 
-  if (scopeOrMode === "random" || scopeOrMode === "reinforcement") {
-    return { scope: "term_phrase", mode: scopeOrMode };
+  if (
+    scopeOrMode === "random" ||
+    scopeOrMode === "reinforcement" ||
+    scopeOrMode === "starred"
+  ) {
+    return { scope: "term_phrase", mode: scopeOrMode as StudyMode };
   }
 
   return null;
 }
 
 function getStudyTitle(routeState: { scope: StudyScope; mode: StudyMode }) {
+  if (routeState.mode === "starred") {
+    return "Starred Items";
+  }
+
   if (routeState.scope === "pattern") {
     return routeState.mode === "reinforcement"
       ? "Reinforcement Study"

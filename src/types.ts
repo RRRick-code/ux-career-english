@@ -24,7 +24,7 @@ export type TaxonomyMap = {
   intent: TaxonomyEntry[];
 };
 
-export type StudyMode = "random" | "reinforcement";
+export type StudyMode = "random" | "reinforcement" | "starred";
 export type StudyScope = "term_phrase" | "pattern";
 export type LearningStatus = "not_started" | "in_progress" | "mastered";
 export type DisplayMode = "bilingual" | "english" | "chinese";
@@ -33,6 +33,7 @@ export type FeedbackRating = "hard" | "uncertain" | "easy";
 export type LearningRecord = {
   progress: number;
   status: LearningStatus;
+  starred?: boolean;
 };
 
 export type LearningRecordMap = Record<string, LearningRecord>;

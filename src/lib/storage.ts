@@ -34,6 +34,7 @@ export function loadLearningRecords(): LearningRecordMap {
         {
           progress: clampProgress(record.progress ?? 0),
           status: normalizeStatus(record.status),
+          ...(record.starred ? { starred: true } : {}),
         },
       ]),
     );
@@ -71,11 +72,24 @@ export function removeLearningRecords(
   let removed = false;
 
   const nextRecords = Object.fromEntries(
-    Object.entries(records).filter(([id]) => {
-      const keep = !idsToRemove.has(id);
-      removed ||= !keep;
-      return keep;
-    }),
+    Object.entries(records)
+      .map(([id, record]) => {
+        if (!idsToRemove.has(id)) {
+          return [id, record] as const;
+        }
+
+        if (record.starred) {
+          removed = true; // Indicates we "changed" the record collection by clearing progress
+          return [
+            id,
+            { ...record, progress: 0, status: "not_started" },
+          ] as const;
+        }
+
+        removed = true;
+        return [id, null] as const;
+      })
+      .filter((entry): entry is [string, LearningRecord] => entry[1] !== null),
   );
 
   return {
@@ -143,5 +157,6 @@ export function applyFeedback(
   return {
     progress: nextProgress,
     status: nextStatus,
+    ...(record.starred ? { starred: true } : {}),
   };
 }

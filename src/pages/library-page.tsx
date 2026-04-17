@@ -93,6 +93,7 @@ export function LibraryPage() {
               <ItemCard
                 key={item.id}
                 displayMode={displayMode}
+                isStarred={getRecord(item.id).starred}
                 item={item}
                 progress={getRecord(item.id).progress}
                 onClick={() => setSelectedItem(item)}
