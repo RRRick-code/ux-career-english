@@ -87,14 +87,14 @@ export function HomePage() {
                 <>
                   <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
                     <Link to="/study/term-phrase/reinforcement">
-                      Reinforcement Study
+                      Study Unmastered
                     </Link>
                   </Button>
                   <Button
                     asChild
                     className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
                   >
-                    <Link to="/study/term-phrase/random">Random Study</Link>
+                    <Link to="/study/term-phrase/random">Study Random</Link>
                   </Button>
                   {termPhraseStats.starred > 0 ? (
                     <Button
@@ -128,14 +128,14 @@ export function HomePage() {
                 <>
                   <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
                     <Link to="/study/pattern/reinforcement">
-                      Reinforcement Study
+                      Study Unmastered
                     </Link>
                   </Button>
                   <Button
                     asChild
                     className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
                   >
-                    <Link to="/study/pattern/random">Random Study</Link>
+                    <Link to="/study/pattern/random">Study Random</Link>
                   </Button>
                   {patternStats.starred > 0 ? (
                     <Button
