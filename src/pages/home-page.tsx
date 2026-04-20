@@ -16,7 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { items } from "@/lib/content";
-import { countStatuses, getStatusLabel } from "@/lib/learning";
+import { countStarred, countStatuses, getStatusLabel } from "@/lib/learning";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 
 export function HomePage() {
@@ -41,6 +41,7 @@ export function HomePage() {
   const termPhraseStats = useMemo(
     () => ({
       total: termPhraseItems.length,
+      starred: countStarred(termPhraseItems, records),
       statuses: countStatuses(termPhraseItems, records),
     }),
     [records, termPhraseItems],
@@ -48,6 +49,7 @@ export function HomePage() {
   const patternStats = useMemo(
     () => ({
       total: patternItems.length,
+      starred: countStarred(patternItems, records),
       statuses: countStatuses(patternItems, records),
     }),
     [patternItems, records],
@@ -58,15 +60,6 @@ export function HomePage() {
   const patternHasProgress =
     patternStats.statuses.in_progress > 0 ||
     patternStats.statuses.mastered > 0;
-
-  const termPhraseStarredCount = useMemo(
-    () => termPhraseItems.filter((item) => records[item.id]?.starred).length,
-    [termPhraseItems, records],
-  );
-  const patternStarredCount = useMemo(
-    () => patternItems.filter((item) => records[item.id]?.starred).length,
-    [patternItems, records],
-  );
 
   return (
     <AppShell
@@ -103,7 +96,7 @@ export function HomePage() {
                   >
                     <Link to="/study/term-phrase/random">Random Study</Link>
                   </Button>
-                  {termPhraseStarredCount > 0 ? (
+                  {termPhraseStats.starred > 0 ? (
                     <Button
                       asChild
                       className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
@@ -144,7 +137,7 @@ export function HomePage() {
                   >
                     <Link to="/study/pattern/random">Random Study</Link>
                   </Button>
-                  {patternStarredCount > 0 ? (
+                  {patternStats.starred > 0 ? (
                     <Button
                       asChild
                       className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
@@ -182,6 +175,7 @@ function OverviewPanel({
 }: {
   stats: {
     total: number;
+    starred: number;
     statuses: ReturnType<typeof countStatuses>;
   };
   actions: React.ReactNode;
@@ -191,7 +185,7 @@ function OverviewPanel({
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-4">
         <StatCard label="total" count={stats.total} />
-        <StatCard label="not_started" count={stats.statuses.not_started} />
+        <StatCard label="starred" count={stats.starred} />
         <StatCard label="in_progress" count={stats.statuses.in_progress} />
         <StatCard label="mastered" count={stats.statuses.mastered} />
       </div>
@@ -245,14 +239,19 @@ function StatCard({
   label,
   count,
 }: {
-  label: "total" | "not_started" | "in_progress" | "mastered";
+  label: "total" | "starred" | "not_started" | "in_progress" | "mastered";
   count: number;
 }) {
+  const labelText =
+    label === "total"
+      ? "Total"
+      : label === "starred"
+        ? "Starred"
+        : getStatusLabel(label);
+
   return (
     <div className="rounded-3xl border bg-white px-5 py-5">
-      <div className="text-sm text-muted-foreground">
-        {label === "total" ? "Total" : getStatusLabel(label)}
-      </div>
+      <div className="text-sm text-muted-foreground">{labelText}</div>
       <div className="mt-2 text-3xl font-semibold tracking-tight">{count}</div>
     </div>
   );

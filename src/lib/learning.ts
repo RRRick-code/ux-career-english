@@ -4,7 +4,7 @@ import type {
   LearningStatus,
   TaxonomyMap,
 } from "@/types";
-import { getLearningRecord } from "@/lib/storage";
+import { getLearningRecord } from "./storage.ts";
 
 export const learningStatusLabels: Record<LearningStatus, string> = {
   not_started: "Not Started",
@@ -28,6 +28,15 @@ export function countStatuses(
     },
     { not_started: 0, in_progress: 0, mastered: 0 },
   );
+}
+
+export function countStarred(
+  items: LanguageItem[],
+  records: LearningRecordMap,
+): number {
+  return items.reduce((summary, item) => {
+    return summary + (getLearningRecord(records, item.id).starred ? 1 : 0);
+  }, 0);
 }
 
 export function sortTaxonomyEntries<T extends keyof TaxonomyMap>(

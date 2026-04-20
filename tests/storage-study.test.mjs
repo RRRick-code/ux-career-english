@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { countStarred } from "../src/lib/learning.ts";
 import { applyFeedback, removeLearningRecords } from "../src/lib/storage.ts";
 import { buildStudyRound } from "../src/lib/study.ts";
 
@@ -17,6 +18,45 @@ test("storage: applyFeedback propagates starred status", () => {
   assert.equal(nextWithoutStar.progress, 100);
   assert.equal(nextWithoutStar.status, "mastered");
   assert.equal(nextWithoutStar.starred, undefined);
+});
+
+test("learning: countStarred counts starred items in the given item set", () => {
+  const items = [
+    {
+      id: "term.001",
+      kind: "term",
+      english: "Test 1",
+      chinese: "测试 1",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+    {
+      id: "term.002",
+      kind: "term",
+      english: "Test 2",
+      chinese: "测试 2",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+    {
+      id: "term.003",
+      kind: "term",
+      english: "Test 3",
+      chinese: "测试 3",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+  ];
+  const records = {
+    "term.001": { progress: 0, status: "not_started", starred: true },
+    "term.002": { progress: 50, status: "in_progress" },
+    "term.999": { progress: 0, status: "not_started", starred: true },
+  };
+
+  assert.equal(countStarred(items, records), 1);
 });
 
 test("storage: removeLearningRecords preserves starred items but resets progress", () => {

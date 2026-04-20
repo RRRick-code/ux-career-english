@@ -5,7 +5,7 @@ import type {
   StudyScope,
   StudyMode,
 } from "@/types";
-import { getLearningRecord } from "@/lib/storage";
+import { getLearningRecord } from "./storage.ts";
 
 export function shuffleItems<T>(input: T[]): T[] {
   const array = [...input];
