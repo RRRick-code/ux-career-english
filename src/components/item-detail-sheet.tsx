@@ -54,9 +54,8 @@ export function ItemDetailSheet({
   const { toggleStar } = useLearningRecords();
 
   const content = (
-    <ScrollArea className="min-h-0 flex-1">
-      <div className="space-y-8 px-6 pb-8 pt-6 md:px-8 md:pb-10">
-        <section className="space-y-3">
+    <div className="space-y-8 px-6 pb-8 pt-6 md:px-8 md:pb-10">
+      <section className="space-y-3">
           <div className="flex items-center justify-between">
             <SectionLabel>English</SectionLabel>
             <button
@@ -145,7 +144,6 @@ export function ItemDetailSheet({
           </div>
         </section>
       </div>
-    </ScrollArea>
   );
 
   if (isDesktop) {
@@ -165,7 +163,9 @@ export function ItemDetailSheet({
                 Review the full language item without leaving the library.
               </SheetDescription>
             </SheetHeader>
-            {content}
+            <ScrollArea className="min-h-0 flex-1">
+              {content}
+            </ScrollArea>
           </div>
         </SheetContent>
       </Sheet>
@@ -182,7 +182,9 @@ export function ItemDetailSheet({
               Review the full language item without leaving the library.
             </DrawerDescription>
           </DrawerHeader>
-          {content}
+          <div className="min-h-0 flex-1 overflow-y-auto">
+            {content}
+          </div>
         </div>
       </DrawerContent>
     </Drawer>
