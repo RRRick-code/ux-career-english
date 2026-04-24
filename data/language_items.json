@@ -6416,5 +6416,556 @@
     "module": "visual_ui_and_design_systems",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "visual_ui_and_design_systems.065"
+  },
+  {
+    "id": "ux_research_and_interaction.075",
+    "kind": "pattern",
+    "english": "Users kept swiping left to go back even after we redesigned the nav — pure muscle memory from the old pattern. We had to work with it, not against it.",
+    "chinese": "我们重新设计了导航，但用户还是习惯性地向左滑返回——这就是旧模式留下的肌肉记忆。我们只能顺着它设计，而不是和它对抗。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.076",
+    "kind": "term",
+    "english": "muscle memory",
+    "chinese": "肌肉记忆",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.075"
+  },
+  {
+    "id": "ux_research_and_interaction.077",
+    "kind": "pattern",
+    "english": "The original checkout had seven steps on one screen. We broke it down because we were putting too much cognitive load on users right when they're most likely to abandon.",
+    "chinese": "原来的结账流程把七个步骤堆在一个屏幕上。我们之所以拆开，是因为在用户最容易放弃的节点给他们叠加了太多认知负荷。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.078",
+    "kind": "term",
+    "english": "cognitive load",
+    "chinese": "认知负荷",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.077"
+  },
+  {
+    "id": "ux_research_and_interaction.079",
+    "kind": "pattern",
+    "english": "The pushback on replacing the hamburger menu wasn't about data — it was status quo bias. We ran a quick prototype test to separate genuine preference from familiarity.",
+    "chinese": "对替换汉堡菜单的抵触并不来自数据，而是现状偏见。我们做了一轮快速原型测试，区分了真实偏好和单纯的习惯惯性。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.080",
+    "kind": "term",
+    "english": "status quo bias",
+    "chinese": "现状偏见",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.079"
+  },
+  {
+    "id": "ux_research_and_interaction.081",
+    "kind": "pattern",
+    "english": "We were all excited about the new direction, which is exactly when confirmation bias is most dangerous. I asked someone outside the team to run usability sessions so we weren't selectively hearing what we wanted.",
+    "chinese": "我们对新方向都很兴奋，而这恰恰是确认偏差最危险的时候。我请了团队外的人来主持可用性测试，这样我们就不会只听自己想听的反馈。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.082",
+    "kind": "term",
+    "english": "confirmation bias",
+    "chinese": "确认偏差",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.081"
+  },
+  {
+    "id": "ux_research_and_interaction.083",
+    "kind": "pattern",
+    "english": "The core flow covered 60% of transactions. But the long tail — address exceptions, payment failures, partial refunds — that's where trust broke down. We had to design for the whole distribution.",
+    "chinese": "核心流程覆盖了60%的交易。但长尾——地址异常、支付失败、部分退款——恰恰是信任断裂的地方。我们必须为整个分布设计，而不只是主路径。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.084",
+    "kind": "term",
+    "english": "long tail",
+    "chinese": "长尾",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.083"
+  },
+  {
+    "id": "ux_research_and_interaction.085",
+    "kind": "pattern",
+    "english": "After launch we got hundreds of pieces of feedback — separating signal vs. noise is where design judgment matters most.",
+    "chinese": "上线后我们收到了数百条反馈——把信号从噪声中分离出来，正是设计判断力最关键的地方。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.086",
+    "kind": "term",
+    "english": "signal vs. noise",
+    "chinese": "信号与噪声",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.085"
+  },
+  {
+    "id": "product_strategy_and_business.109",
+    "kind": "pattern",
+    "english": "The component structure we chose in year one created path dependency that made scaling painful later. It taught me to pressure-test early architectural decisions more carefully.",
+    "chinese": "第一年选定的组件结构形成了路径依赖，让后来的规模化变得非常痛苦。这件事让我学会了更认真地压力测试早期的架构决策。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.110",
+    "kind": "term",
+    "english": "path dependency",
+    "chinese": "路径依赖",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.109"
+  },
+  {
+    "id": "product_strategy_and_business.111",
+    "kind": "pattern",
+    "english": "We spent six weeks on a feature research consistently showed users didn't care about. The team kept going because of what we'd invested — classic sunk cost fallacy. I eventually escalated to kill it.",
+    "chinese": "我们在一个用户研究反复证明他们不在意的功能上花了六周。团队因为已经投入了这么多而继续推进——典型的沉没成本谬误。最终我选择升级决策，把它砍掉了。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.112",
+    "kind": "term",
+    "english": "sunk cost fallacy",
+    "chinese": "沉没成本谬误",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.111"
+  },
+  {
+    "id": "product_strategy_and_business.113",
+    "kind": "pattern",
+    "english": "The review feature created a network effect: more reviews made the product more useful for new users, which drove sign-ups, which drove more reviews. Design had to support that loop.",
+    "chinese": "评价功能产生了网络效应：评价越多，产品对新用户越有价值，进而带来更多注册，进而带来更多评价。设计必须支撑这个循环。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.114",
+    "kind": "term",
+    "english": "network effect",
+    "chinese": "网络效应",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.113"
+  },
+  {
+    "id": "product_strategy_and_business.115",
+    "kind": "pattern",
+    "english": "Simplifying the filter UI tested well — but we hadn't mapped the second-order effects. Power users relied on those controls, and support tickets spiked after launch.",
+    "chinese": "简化筛选界面的测试结果很好——但我们没有梳理二阶效应。高级用户依赖那些精细控件，上线后支持工单激增。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.116",
+    "kind": "term",
+    "english": "second-order effects",
+    "chinese": "二阶效应",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.115"
+  },
+  {
+    "id": "product_strategy_and_business.117",
+    "kind": "pattern",
+    "english": "After the third polish round, I called it. We were hitting diminishing returns — each change was smaller and more contentious, and bigger problems were waiting.",
+    "chinese": "第三轮打磨之后，我叫停了。我们已经到了边际效益递减的阶段——每次改动越来越小、争议越来越大，而更重要的问题还在等待。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.118",
+    "kind": "term",
+    "english": "diminishing returns",
+    "chinese": "边际效益递减",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.117"
+  },
+  {
+    "id": "product_strategy_and_business.119",
+    "kind": "pattern",
+    "english": "The brief was 'improve search results,' but I used that as a chance to reframe the problem entirely: users needed better recovery when results were poor.",
+    "chinese": "需求文档写的是「优化搜索结果」，但我把这当成一个重新定义问题的机会：用户真正需要的是在结果不好时更好的兜底体验。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.120",
+    "kind": "term",
+    "english": "reframe",
+    "chinese": "重新定义问题",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.119"
+  },
+  {
+    "id": "product_strategy_and_business.121",
+    "kind": "pattern",
+    "english": "Two weeks, one engineer — I've learned to treat constraint as catalyst. It forces you to find the smallest thing that validates the core hypothesis.",
+    "chinese": "两周时间，一名工程师——我学会了把限制当作催化剂。它逼你找到能验证核心假设的最小解法。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.122",
+    "kind": "term",
+    "english": "constraint as catalyst",
+    "chinese": "限制即催化剂",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.121"
+  },
+  {
+    "id": "product_strategy_and_business.123",
+    "kind": "pattern",
+    "english": "Rather than looking at how competitors solved it, I started from first-principles thinking: what does this user need to accomplish, and what's the simplest path to get there?",
+    "chinese": "我没有去参考竞品是怎么做的，而是从第一性原理出发：这个用户需要完成什么，到达那里最简单的路径是什么？",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.124",
+    "kind": "term",
+    "english": "first-principles thinking",
+    "chinese": "第一性原理",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.123"
+  },
+  {
+    "id": "product_strategy_and_business.125",
+    "kind": "pattern",
+    "english": "There's a real Conway's Law dynamic on that product — checkout, account settings, and post-purchase are owned by three separate teams, and users feel that fragmentation directly.",
+    "chinese": "那个产品上存在明显的康威定律现象——结账、账户设置和购后体验分别归三个不同的团队负责，用户能直接感受到这种割裂。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.126",
+    "kind": "term",
+    "english": "Conway's Law",
+    "chinese": "康威定律",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.125"
+  },
+  {
+    "id": "leadership_and_management.109",
+    "kind": "pattern",
+    "english": "I stopped showing high-fidelity mocks first in reviews. Once stakeholders see a polished version, the anchoring effect kicks in — every critique becomes relative to that frame, not the actual problem.",
+    "chinese": "我不再在评审会上先展示高保真稿。一旦利益相关方看到精致版本，锚定效应就会生效——之后所有评论都会以那个稿子为参照，而不是真正的用户问题。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.110",
+    "kind": "term",
+    "english": "anchoring effect",
+    "chinese": "锚定效应",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.109"
+  },
+  {
+    "id": "leadership_and_management.111",
+    "kind": "pattern",
+    "english": "With four designers covering three product areas, I kept asking: what's the high-leverage work right now? Sometimes that was a two-hour doc that unblocked three engineers.",
+    "chinese": "四个设计师覆盖三个产品方向，我一直在问：现在最高杠杆的工作是什么？有时候是花两小时写一份文档，解锁了三名工程师。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "leadership_and_management.112",
+    "kind": "term",
+    "english": "high-leverage work",
+    "chinese": "高杠杆工作",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "leadership_and_management.111"
+  },
+  {
+    "id": "leadership_and_management.113",
+    "kind": "pattern",
+    "english": "When I joined, so much context lived as tribal knowledge in a few engineers' heads. I made it a priority to document that in the first 60 days — both for myself and for future hires.",
+    "chinese": "加入团队时，大量背景信息以部落知识的形式藏在几位工程师脑子里。我把文档化这些内容列为前60天的首要任务——既是为了自己，也是为了未来的新成员。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.114",
+    "kind": "term",
+    "english": "tribal knowledge",
+    "chinese": "部落知识",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.113"
+  },
+  {
+    "id": "leadership_and_management.115",
+    "kind": "pattern",
+    "english": "Cross-functional work at that scale comes with a high alignment tax. I introduced a lightweight decision log and it cut our recurring sync meetings by half.",
+    "chinese": "那个规模的跨职能协作本身就带有很高的对齐成本。我引入了一个轻量级的决策日志，把例行同步会议减少了一半。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.116",
+    "kind": "term",
+    "english": "alignment tax",
+    "chinese": "对齐成本",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.115"
+  },
+  {
+    "id": "leadership_and_management.117",
+    "kind": "pattern",
+    "english": "The team had been overruled on so many quality calls that they'd stopped pushing back. It wasn't apathy — it was learned helplessness. Rebuilding the expectation that design input changes outcomes was part of my job.",
+    "chinese": "团队在太多质量决策上被推翻，已经停止反驳了。这不是冷漠，是习得性无助。重建「设计输入真的能影响结果」的预期，是我工作的一部分。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.118",
+    "kind": "term",
+    "english": "learned helplessness",
+    "chinese": "习得性无助",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.117"
+  },
+  {
+    "id": "leadership_and_management.119",
+    "kind": "pattern",
+    "english": "Small regressions, inconsistent spacing, minor interaction bugs — nobody flagged them individually. But the bar had been slipping for two years. That's normalization of deviance; by the time I joined, users were noticing.",
+    "chinese": "小的视觉回退、不一致的间距、轻微的交互 bug——没有人单独去标记这些。但标准已经滑坡了两年。这就是偏差正常化；等我加入时，用户已经感受到了。",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.120",
+    "kind": "term",
+    "english": "normalization of deviance",
+    "chinese": "偏差正常化",
+    "scene": "interview",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.119"
+  },
+  {
+    "id": "data_metrics_and_experimentation.059",
+    "kind": "pattern",
+    "english": "After a major bug incident, the team wanted to overhaul the entire error flow. I pushed back — I was worried recency bias was making one high-visibility failure look like a systemic pattern.",
+    "chinese": "一次重大 bug 事件之后，团队想要全面重做错误处理流程。我提出了异议——我担心近因偏差让一个高曝光的失败看起来像是系统性问题。",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.060",
+    "kind": "term",
+    "english": "recency bias",
+    "chinese": "近因偏差",
+    "scene": "workplace",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.059"
+  },
+  {
+    "id": "data_metrics_and_experimentation.061",
+    "kind": "pattern",
+    "english": "We made task-completion rate our primary metric. Six months later, teams were optimizing for the number in ways that hurt the actual experience — that's Goodhart's Law in action.",
+    "chinese": "我们把任务完成率定为核心指标。六个月后，团队开始以损害实际体验的方式优化这个数字——这就是古德哈特定律的活生生演示。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.062",
+    "kind": "term",
+    "english": "Goodhart's Law",
+    "chinese": "古德哈特定律",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.061"
+  },
+  {
+    "id": "visual_ui_and_design_systems.067",
+    "kind": "pattern",
+    "english": "We treated the design system as a flywheel effect in action — the first few months felt slow, but once engineers started shipping faster, the whole org leaned in and it became self-reinforcing.",
+    "chinese": "我们把设计系统看作飞轮效应的实践——前几个月感觉很慢，但一旦工程师们开始更快地交付，整个组织都投入其中，它变成了自我强化的循环。",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact"
+  },
+  {
+    "id": "visual_ui_and_design_systems.068",
+    "kind": "term",
+    "english": "flywheel effect",
+    "chinese": "飞轮效应",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.067"
+  },
+  {
+    "id": "visual_ui_and_design_systems.069",
+    "kind": "pattern",
+    "english": "Investing in the design system early gave us compounding returns — by year two, new surfaces were launching in half the time because teams weren't rebuilding foundational components from scratch.",
+    "chinese": "早期投入设计系统让我们获得了复利效应——到第二年，新产品界面的上线时间缩短了一半，因为团队不再需要从头重建基础组件。",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact"
+  },
+  {
+    "id": "visual_ui_and_design_systems.070",
+    "kind": "term",
+    "english": "compounding returns",
+    "chinese": "复利效应",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.069"
+  },
+  {
+    "id": "visual_ui_and_design_systems.071",
+    "kind": "pattern",
+    "english": "Sometimes you look at a screen and something feels off before you can explain why — that's a design smell. I've learned to trust that instinct; it usually points to a structural problem.",
+    "chinese": "有时候看一个屏幕，在你能解释清楚之前就觉得哪里不对——那就是设计异味。我学会了信任这种直觉；它通常指向一个结构性问题。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.072",
+    "kind": "term",
+    "english": "design smell",
+    "chinese": "设计异味",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.071"
+  },
+  {
+    "id": "personal_branding.059",
+    "kind": "pattern",
+    "english": "Design taste isn't about having opinions — it's calibrated judgment, knowing when something is off and being able to diagnose why. That develops over time and through a lot of critical review.",
+    "chinese": "设计品味不是关于有没有观点——而是一种经过校准的判断力，知道什么时候有问题，并且能够诊断出原因。这需要时间积累和大量批判性评审。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.060",
+    "kind": "term",
+    "english": "design taste",
+    "chinese": "设计品味",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.059"
+  },
+  {
+    "id": "personal_branding.061",
+    "kind": "pattern",
+    "english": "At my level, I try to be a force multiplier for the team rather than just an individual contributor — the systems I build and the culture I set should make everyone around me more effective.",
+    "chinese": "在我这个层级，我努力成为团队的力量倍增器，而不只是个人贡献者——我搭建的系统和我树立的文化，应该让我身边的每个人都更高效。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.062",
+    "kind": "term",
+    "english": "force multiplier",
+    "chinese": "力量倍增器",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.061"
+  },
+  {
+    "id": "personal_branding.063",
+    "kind": "pattern",
+    "english": "One thing I look for in a role is how much autonomy design actually has — not just visual decisions, but framing problems, pushing back on scope, and having a seat at the table when product direction is set.",
+    "chinese": "我在评估一个职位时，很看重设计能有多大的自主性——不只是视觉决策，还包括定义问题框架、对需求提出异议，以及在产品方向制定时有发言权。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.064",
+    "kind": "term",
+    "english": "autonomy",
+    "chinese": "自主性",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.063"
   }
 ]
