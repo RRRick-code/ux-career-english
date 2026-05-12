@@ -1883,7 +1883,7 @@
     "id": "visual_ui_and_design_systems.011",
     "kind": "phrase",
     "english": "codify patterns for reuse",
-    "chinese": "把模式沉淀成可复用规范",
+    "chinese": "把模式沉淀以复用",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
     "intent": "collaborate_and_influence",
