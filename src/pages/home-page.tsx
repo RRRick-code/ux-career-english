@@ -233,7 +233,7 @@ function StudyActions({
 
 function getPoolButtonClassName(pool: StudyPool) {
   return cn(
-    "h-auto rounded-xl border-0 px-3 py-3 text-white",
+    "h-auto rounded-xl border-0 px-3 py-4 text-white",
     pool === "starred"
       ? "bg-emerald-600 hover:bg-emerald-500"
       : "bg-primary text-primary-foreground hover:bg-primary/90",
