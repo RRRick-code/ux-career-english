@@ -24,7 +24,8 @@ export type TaxonomyMap = {
   intent: TaxonomyEntry[];
 };
 
-export type StudyMode = "random" | "reinforcement" | "starred";
+export type StudyMode = "random" | "reinforcement";
+export type StudyPool = "total" | "starred";
 export type StudyScope = "term_phrase" | "pattern";
 export type LearningStatus = "not_started" | "in_progress" | "mastered";
 export type DisplayMode = "bilingual" | "english" | "chinese";

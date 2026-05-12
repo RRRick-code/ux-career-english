@@ -21,14 +21,16 @@ import type {
   FeedbackRating,
   LanguageItem,
   StudyMode,
+  StudyPool,
   StudyScope,
 } from "@/types";
 
 gsap.registerPlugin(useGSAP);
 
 export function StudyPage() {
-  const { scopeOrMode, mode: routeMode } = useParams<{
+  const { scopeOrMode, pool: routePool, mode: routeMode } = useParams<{
     scopeOrMode?: string;
+    pool?: string;
     mode?: string;
   }>();
   const navigate = useNavigate();
@@ -47,8 +49,8 @@ export function StudyPage() {
   const exampleTextRef = useRef<HTMLDivElement | null>(null);
 
   const routeState = useMemo(
-    () => parseStudyRoute(scopeOrMode, routeMode),
-    [scopeOrMode, routeMode],
+    () => parseStudyRoute(scopeOrMode, routePool, routeMode),
+    [scopeOrMode, routePool, routeMode],
   );
 
   useEffect(() => {
@@ -58,7 +60,13 @@ export function StudyPage() {
     }
 
     // Current round is fixed for the session; record updates must not rebuild it.
-    const round = buildStudyRound(items, records, routeState.mode, routeState.scope);
+    const round = buildStudyRound(
+      items,
+      records,
+      routeState.scope,
+      routeState.pool,
+      routeState.mode,
+    );
     setRoundItems(round.selected);
     setCurrentIndex(0);
     setRevealed(false);
@@ -185,7 +193,7 @@ export function StudyPage() {
           title="No items available"
           description={
             routeState.mode === "reinforcement"
-              ? "All items are currently mastered. Return home or review the library."
+              ? "All items in this pool are currently mastered. Return home or review the library."
               : "There are no language items in the content set yet."
           }
           actions={
@@ -372,57 +380,82 @@ export function StudyPage() {
 
 function parseStudyRoute(
   scopeOrMode?: string,
+  poolOrMode?: string,
   mode?: string,
-): { scope: StudyScope; mode: StudyMode } | null {
+): { scope: StudyScope; pool: StudyPool; mode: StudyMode } | null {
   if (!scopeOrMode) {
     return null;
   }
 
+  const resolveScope = (scope: string): StudyScope | null => {
+    if (scope === "pattern") return "pattern";
+    if (scope === "term-phrase" || scope === "term_phrase") return "term_phrase";
+    return null;
+  };
+
+  const resolvePool = (pool?: string): StudyPool | null => {
+    if (pool === "starred") return "starred";
+    if (pool === "total") return "total";
+    return null;
+  };
+
   const resolveMode = (m?: string): StudyMode => {
     if (m === "reinforcement") return "reinforcement";
-    if (m === "starred") return "starred";
     return "random";
   };
 
-  if (scopeOrMode === "pattern") {
-    return {
-      scope: "pattern",
-      mode: resolveMode(mode),
-    };
-  }
+  const resolvedScope = resolveScope(scopeOrMode);
+  if (resolvedScope) {
+    const scopedPoolOrMode = poolOrMode ?? mode;
+    const resolvedPool = resolvePool(poolOrMode);
+    if (resolvedPool) {
+      return {
+        scope: resolvedScope,
+        pool: resolvedPool,
+        mode: resolveMode(mode),
+      };
+    }
 
-  if (scopeOrMode === "term-phrase" || scopeOrMode === "term_phrase") {
     return {
-      scope: "term_phrase",
-      mode: resolveMode(mode),
+      scope: resolvedScope,
+      pool: scopedPoolOrMode === "starred" ? "starred" : "total",
+      mode:
+        scopedPoolOrMode === "starred" ? "random" : resolveMode(scopedPoolOrMode),
     };
   }
 
   if (
     scopeOrMode === "random" ||
-    scopeOrMode === "reinforcement" ||
-    scopeOrMode === "starred"
+    scopeOrMode === "reinforcement"
   ) {
-    return { scope: "term_phrase", mode: scopeOrMode as StudyMode };
+    return {
+      scope: "term_phrase",
+      pool: "total",
+      mode: scopeOrMode as StudyMode,
+    };
+  }
+
+  if (scopeOrMode === "starred") {
+    return {
+      scope: "term_phrase",
+      pool: "starred",
+      mode: "random",
+    };
   }
 
   return null;
 }
 
-function getStudyTitle(routeState: { scope: StudyScope; mode: StudyMode }) {
-  if (routeState.mode === "starred") {
-    return "Starred Items";
-  }
+function getStudyTitle(routeState: {
+  scope: StudyScope;
+  pool: StudyPool;
+  mode: StudyMode;
+}) {
+  const poolLabel = routeState.pool === "starred" ? "Starred" : "";
+  const modeLabel =
+    routeState.mode === "reinforcement" ? "Reinforcement Study" : "Random Study";
 
-  if (routeState.scope === "pattern") {
-    return routeState.mode === "reinforcement"
-      ? "Reinforcement Study"
-      : "Random Study";
-  }
-
-  return routeState.mode === "reinforcement"
-    ? "Reinforcement Study"
-    : "Random Study";
+  return poolLabel ? `${poolLabel} ${modeLabel}` : modeLabel;
 }
 
 function StudyShell({

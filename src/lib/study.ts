@@ -2,6 +2,7 @@ import type {
   FeedbackRating,
   LanguageItem,
   LearningRecordMap,
+  StudyPool,
   StudyScope,
   StudyMode,
 } from "@/types";
@@ -19,19 +20,23 @@ export function shuffleItems<T>(input: T[]): T[] {
 export function buildStudyRound(
   allItems: LanguageItem[],
   records: LearningRecordMap,
-  mode: StudyMode,
   scope: StudyScope,
+  pool: StudyPool,
+  mode: StudyMode,
 ) {
   const scopeItems = allItems.filter((item) =>
     scope === "pattern" ? item.kind === "pattern" : item.kind !== "pattern",
   );
 
+  const poolItems =
+    pool === "starred"
+      ? scopeItems.filter((item) => getLearningRecord(records, item.id).starred)
+      : scopeItems;
+
   const candidates =
     mode === "random"
-      ? scopeItems
-      : mode === "starred"
-      ? scopeItems.filter((item) => getLearningRecord(records, item.id).starred)
-      : scopeItems.filter((item) => {
+      ? poolItems
+      : poolItems.filter((item) => {
           const record = getLearningRecord(records, item.id);
           return (
             record.status === "not_started" || record.status === "in_progress"

@@ -94,7 +94,7 @@ test("storage: removeLearningRecords preserves starred items but resets progress
   assert.equal(nextRecords["module.003"]?.starred, true);
 });
 
-test("study: buildStudyRound with 'starred' mode only includes starred items", () => {
+test("study: buildStudyRound with starred random includes all starred items", () => {
   const allItems = [
     {
       id: "term.001",
@@ -131,11 +131,73 @@ test("study: buildStudyRound with 'starred' mode only includes starred items", (
     "term.003": { progress: 100, status: "mastered", starred: true },
   };
 
-  const round = buildStudyRound(allItems, records, "starred", "term_phrase");
+  const round = buildStudyRound(
+    allItems,
+    records,
+    "term_phrase",
+    "starred",
+    "random",
+  );
 
   assert.equal(round.candidates.length, 2);
   const ids = round.candidates.map((i) => i.id);
   assert.ok(ids.includes("term.001"));
   assert.ok(!ids.includes("term.002"));
   assert.ok(ids.includes("term.003"));
+});
+
+test("study: buildStudyRound with starred reinforcement excludes mastered items", () => {
+  const allItems = [
+    {
+      id: "term.001",
+      kind: "term",
+      english: "Test 1",
+      chinese: "测试 1",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+    {
+      id: "term.002",
+      kind: "term",
+      english: "Test 2",
+      chinese: "测试 2",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+    {
+      id: "term.003",
+      kind: "term",
+      english: "Test 3",
+      chinese: "测试 3",
+      scene: "general",
+      module: "test",
+      intent: "test",
+    },
+  ];
+
+  const records = {
+    "term.001": { progress: 0, status: "not_started", starred: true },
+    "term.002": {
+      progress: 50,
+      status: "in_progress",
+      starred: true,
+    },
+    "term.003": { progress: 100, status: "mastered", starred: true },
+  };
+
+  const round = buildStudyRound(
+    allItems,
+    records,
+    "term_phrase",
+    "starred",
+    "reinforcement",
+  );
+
+  assert.equal(round.candidates.length, 2);
+  const ids = round.candidates.map((i) => i.id);
+  assert.ok(ids.includes("term.001"));
+  assert.ok(ids.includes("term.002"));
+  assert.ok(!ids.includes("term.003"));
 });

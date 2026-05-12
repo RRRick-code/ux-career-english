@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Star } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import {
   AlertDialog,
@@ -14,10 +13,25 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { items } from "@/lib/content";
-import { countStarred, countStatuses, getStatusLabel } from "@/lib/learning";
+import { countStatuses, getStatusLabel } from "@/lib/learning";
+import { getLearningRecord } from "@/lib/storage";
 import { useLearningRecords } from "@/hooks/use-learning-records";
+import type {
+  LanguageItem,
+  LearningRecordMap,
+  StudyMode,
+  StudyPool,
+  StudyScope,
+} from "@/types";
 
 export function HomePage() {
   const [activeTab, setActiveTab] = useState(() => {
@@ -39,27 +53,19 @@ export function HomePage() {
     [],
   );
   const termPhraseStats = useMemo(
-    () => ({
-      total: termPhraseItems.length,
-      starred: countStarred(termPhraseItems, records),
-      statuses: countStatuses(termPhraseItems, records),
-    }),
+    () => buildOverviewStats(termPhraseItems, records),
     [records, termPhraseItems],
   );
   const patternStats = useMemo(
-    () => ({
-      total: patternItems.length,
-      starred: countStarred(patternItems, records),
-      statuses: countStatuses(patternItems, records),
-    }),
+    () => buildOverviewStats(patternItems, records),
     [patternItems, records],
   );
   const termPhraseHasProgress =
-    termPhraseStats.statuses.in_progress > 0 ||
-    termPhraseStats.statuses.mastered > 0;
+    termPhraseStats.total.statuses.in_progress > 0 ||
+    termPhraseStats.total.statuses.mastered > 0;
   const patternHasProgress =
-    patternStats.statuses.in_progress > 0 ||
-    patternStats.statuses.mastered > 0;
+    patternStats.total.statuses.in_progress > 0 ||
+    patternStats.total.statuses.mastered > 0;
 
   return (
     <AppShell
@@ -83,32 +89,6 @@ export function HomePage() {
 
           <TabsContent value="terms">
             <OverviewPanel
-              actions={
-                <>
-                  <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
-                    <Link to="/study/term-phrase/reinforcement">
-                      Study Unmastered
-                    </Link>
-                  </Button>
-                  <Button
-                    asChild
-                    className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
-                  >
-                    <Link to="/study/term-phrase/random">Study Random</Link>
-                  </Button>
-                  {termPhraseStats.starred > 0 ? (
-                    <Button
-                      asChild
-                      className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
-                    >
-                      <Link to="/study/term-phrase/starred">
-                        <Star className="size-3.5 fill-current" />
-                        Study Starred
-                      </Link>
-                    </Button>
-                  ) : null}
-                </>
-              }
               footer={
                 termPhraseHasProgress ? (
                   <ClearProgressDialog
@@ -118,38 +98,13 @@ export function HomePage() {
                   />
                 ) : null
               }
+              scope="term_phrase"
               stats={termPhraseStats}
             />
           </TabsContent>
 
           <TabsContent value="patterns">
             <OverviewPanel
-              actions={
-                <>
-                  <Button asChild className="h-auto w-full rounded-xl px-4 py-4">
-                    <Link to="/study/pattern/reinforcement">
-                      Study Unmastered
-                    </Link>
-                  </Button>
-                  <Button
-                    asChild
-                    className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
-                  >
-                    <Link to="/study/pattern/random">Study Random</Link>
-                  </Button>
-                  {patternStats.starred > 0 ? (
-                    <Button
-                      asChild
-                      className="h-auto w-full rounded-xl border-0 bg-emerald-600 px-4 py-4 text-white hover:bg-emerald-500"
-                    >
-                      <Link to="/study/pattern/starred">
-                        <Star className="size-3.5 fill-current" />
-                        Study Starred
-                      </Link>
-                    </Button>
-                  ) : null}
-                </>
-              }
               footer={
                 patternHasProgress ? (
                   <ClearProgressDialog
@@ -159,6 +114,7 @@ export function HomePage() {
                   />
                 ) : null
               }
+              scope="pattern"
               stats={patternStats}
             />
           </TabsContent>
@@ -170,27 +126,129 @@ export function HomePage() {
 
 function OverviewPanel({
   stats,
-  actions,
+  scope,
   footer,
 }: {
-  stats: {
-    total: number;
-    starred: number;
-    statuses: ReturnType<typeof countStatuses>;
-  };
-  actions: React.ReactNode;
+  stats: OverviewStats;
+  scope: StudyScope;
   footer?: React.ReactNode;
 }) {
   return (
-    <div className="space-y-4">
-      <div className="grid grid-cols-2 gap-4">
-        <StatCard label="total" count={stats.total} />
-        <StatCard label="starred" count={stats.starred} />
-        <StatCard label="in_progress" count={stats.statuses.in_progress} />
-        <StatCard label="mastered" count={stats.statuses.mastered} />
-      </div>
-      <div className="space-y-3">{actions}</div>
+    <div className="flex flex-col gap-4">
+      <StudyPoolCard
+        pool="total"
+        scope={scope}
+        stats={stats.total}
+        title="Total"
+      />
+      {stats.starred.total > 0 ? (
+        <StudyPoolCard
+          pool="starred"
+          scope={scope}
+          stats={stats.starred}
+          title="Starred"
+        />
+      ) : null}
       {footer ? <div className="flex justify-center">{footer}</div> : null}
+    </div>
+  );
+}
+
+type PoolStats = {
+  total: number;
+  statuses: ReturnType<typeof countStatuses>;
+};
+
+type OverviewStats = {
+  total: PoolStats;
+  starred: PoolStats;
+};
+
+function buildOverviewStats(
+  scopeItems: LanguageItem[],
+  records: LearningRecordMap,
+): OverviewStats {
+  const starredItems = scopeItems.filter(
+    (item) => getLearningRecord(records, item.id).starred,
+  );
+
+  return {
+    total: buildPoolStats(scopeItems, records),
+    starred: buildPoolStats(starredItems, records),
+  };
+}
+
+function buildPoolStats(
+  poolItems: LanguageItem[],
+  records: LearningRecordMap,
+): PoolStats {
+  return {
+    total: poolItems.length,
+    statuses: countStatuses(poolItems, records),
+  };
+}
+
+function StudyPoolCard({
+  title,
+  stats,
+  scope,
+  pool,
+}: {
+  title: "Total" | "Starred";
+  stats: PoolStats;
+  scope: StudyScope;
+  pool: StudyPool;
+}) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid grid-cols-3 gap-3">
+          <StatMetric label={title} count={stats.total} />
+          <StatMetric
+            label={getStatusLabel("in_progress")}
+            count={stats.statuses.in_progress}
+          />
+          <StatMetric
+            label={getStatusLabel("mastered")}
+            count={stats.statuses.mastered}
+          />
+        </div>
+      </CardContent>
+      <CardFooter className="grid grid-cols-2 gap-3">
+        <Button asChild className="h-auto rounded-xl px-3 py-3">
+          <Link to={buildStudyPath(scope, pool, "reinforcement")}>
+            Study Unmastered
+          </Link>
+        </Button>
+        <Button
+          asChild
+          className="h-auto rounded-xl px-3 py-3"
+          variant="secondary"
+        >
+          <Link to={buildStudyPath(scope, pool, "random")}>Study Random</Link>
+        </Button>
+      </CardFooter>
+    </Card>
+  );
+}
+
+function buildStudyPath(scope: StudyScope, pool: StudyPool, mode: StudyMode) {
+  const routeScope = scope === "pattern" ? "pattern" : "term-phrase";
+  return `/study/${routeScope}/${pool}/${mode}`;
+}
+
+function StatMetric({ label, count }: { label: string; count: number }) {
+  return (
+    <div className="min-w-0">
+      <div className="truncate text-xs text-muted-foreground sm:text-sm">
+        {label}
+      </div>
+      <div className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
+        {count}
+      </div>
     </div>
   );
 }
@@ -232,27 +290,5 @@ function ClearProgressDialog({
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>
-  );
-}
-
-function StatCard({
-  label,
-  count,
-}: {
-  label: "total" | "starred" | "not_started" | "in_progress" | "mastered";
-  count: number;
-}) {
-  const labelText =
-    label === "total"
-      ? "Total"
-      : label === "starred"
-        ? "Starred"
-        : getStatusLabel(label);
-
-  return (
-    <div className="rounded-3xl border bg-white px-5 py-5">
-      <div className="text-sm text-muted-foreground">{labelText}</div>
-      <div className="mt-2 text-3xl font-semibold tracking-tight">{count}</div>
-    </div>
   );
 }

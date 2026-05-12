@@ -11,6 +11,7 @@ export function App() {
         <Routes>
           <Route element={<HomePage />} path="/" />
           <Route element={<LibraryPage />} path="/library" />
+          <Route element={<StudyPage />} path="/study/:scopeOrMode/:pool/:mode" />
           <Route element={<StudyPage />} path="/study/:scopeOrMode/:mode?" />
           <Route element={<Navigate replace to="/" />} path="*" />
         </Routes>
