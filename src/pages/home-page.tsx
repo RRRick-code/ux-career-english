@@ -285,8 +285,9 @@ function StudyPoolCard({
       role="radio"
       tabIndex={0}
     >
-      <CardHeader>
+      <CardHeader className="grid-cols-[1fr_auto] items-center gap-3 pt-1">
         <CardTitle className="font-semibold">{title}</CardTitle>
+        <PoolProgressBar pool={pool} progress={stats.progress} title={title} />
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-3 divide-x divide-border">
@@ -308,6 +309,11 @@ function StudyPoolCard({
 type PoolStats = {
   total: number;
   statuses: ReturnType<typeof countStatuses>;
+  progress: {
+    earnedPoints: number;
+    totalPoints: number;
+    percent: number;
+  };
 };
 
 type OverviewStats = {
@@ -333,9 +339,20 @@ function buildPoolStats(
   poolItems: LanguageItem[],
   records: LearningRecordMap,
 ): PoolStats {
+  const earnedPoints = poolItems.reduce((summary, item) => {
+    const record = getLearningRecord(records, item.id);
+    return summary + Math.min(5, Math.max(0, record.progress / 20));
+  }, 0);
+  const totalPoints = poolItems.length * 5;
+
   return {
     total: poolItems.length,
     statuses: countStatuses(poolItems, records),
+    progress: {
+      earnedPoints,
+      totalPoints,
+      percent: totalPoints === 0 ? 0 : (earnedPoints / totalPoints) * 100,
+    },
   };
 }
 
@@ -352,6 +369,42 @@ function StatMetric({ label, count }: { label: string; count: number }) {
       </div>
       <div className="mt-1 text-2xl font-semibold tracking-tight sm:text-3xl">
         {count}
+      </div>
+    </div>
+  );
+}
+
+function PoolProgressBar({
+  pool,
+  progress,
+  title,
+}: {
+  pool: StudyPool;
+  progress: PoolStats["progress"];
+  title: string;
+}) {
+  const percentLabel = `${Math.round(progress.percent)}%`;
+
+  return (
+    <div className="flex items-center gap-2">
+      <span className="w-7 text-right text-xs text-muted-foreground opacity-0 transition-opacity group-hover/card:opacity-100 group-focus-within/card:opacity-100">
+        {percentLabel}
+      </span>
+      <div
+        aria-label={`${title} progress`}
+        aria-valuemax={progress.totalPoints}
+        aria-valuemin={0}
+        aria-valuenow={progress.earnedPoints}
+        className="h-1 w-14 overflow-hidden rounded-full bg-muted sm:w-16"
+        role="progressbar"
+      >
+        <div
+          className={cn(
+            "h-full rounded-full transition-all",
+            pool === "starred" ? "bg-emerald-600" : "bg-primary",
+          )}
+          style={{ width: `${progress.percent}%` }}
+        />
       </div>
     </div>
   );
