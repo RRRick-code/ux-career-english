@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppShell } from "@/components/app-shell";
 import {
@@ -16,7 +16,6 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -24,6 +23,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { items } from "@/lib/content";
 import { countStatuses, getStatusLabel } from "@/lib/learning";
 import { getLearningRecord } from "@/lib/storage";
+import { cn } from "@/lib/utils";
 import { useLearningRecords } from "@/hooks/use-learning-records";
 import type {
   LanguageItem,
@@ -37,10 +37,21 @@ export function HomePage() {
   const [activeTab, setActiveTab] = useState(() => {
     return localStorage.getItem("ux-english2.home-tab") || "terms";
   });
+  const [selectedPoolByScope, setSelectedPoolByScope] = useState<
+    Record<StudyScope, StudyPool>
+  >({
+    term_phrase: "total",
+    pattern: "total",
+  });
 
   const handleTabChange = (value: string) => {
     setActiveTab(value);
     localStorage.setItem("ux-english2.home-tab", value);
+  };
+  const handlePoolChange = (scope: StudyScope, pool: StudyPool) => {
+    setSelectedPoolByScope((current) =>
+      current[scope] === pool ? current : { ...current, [scope]: pool },
+    );
   };
 
   const { records, resetProgress } = useLearningRecords();
@@ -66,6 +77,31 @@ export function HomePage() {
   const patternHasProgress =
     patternStats.total.statuses.in_progress > 0 ||
     patternStats.total.statuses.mastered > 0;
+
+  useEffect(() => {
+    setSelectedPoolByScope((current) => {
+      let next = current;
+
+      if (
+        termPhraseStats.starred.total === 0 &&
+        current.term_phrase === "starred"
+      ) {
+        next = { ...next, term_phrase: "total" };
+      }
+
+      if (patternStats.starred.total === 0 && current.pattern === "starred") {
+        next =
+          next === current
+            ? { ...next, pattern: "total" }
+            : {
+                ...next,
+                pattern: "total",
+              };
+      }
+
+      return next;
+    });
+  }, [patternStats.starred.total, termPhraseStats.starred.total]);
 
   return (
     <AppShell
@@ -98,7 +134,9 @@ export function HomePage() {
                   />
                 ) : null
               }
+              onPoolChange={handlePoolChange}
               scope="term_phrase"
+              selectedPool={selectedPoolByScope.term_phrase}
               stats={termPhraseStats}
             />
           </TabsContent>
@@ -114,7 +152,9 @@ export function HomePage() {
                   />
                 ) : null
               }
+              onPoolChange={handlePoolChange}
               scope="pattern"
+              selectedPool={selectedPoolByScope.pattern}
               stats={patternStats}
             />
           </TabsContent>
@@ -127,30 +167,141 @@ export function HomePage() {
 function OverviewPanel({
   stats,
   scope,
+  selectedPool,
+  onPoolChange,
   footer,
 }: {
   stats: OverviewStats;
   scope: StudyScope;
+  selectedPool: StudyPool;
+  onPoolChange: (scope: StudyScope, pool: StudyPool) => void;
   footer?: React.ReactNode;
 }) {
+  const effectiveSelectedPool =
+    selectedPool === "starred" && stats.starred.total === 0
+      ? "total"
+      : selectedPool;
+
   return (
     <div className="flex flex-col gap-4">
-      <StudyPoolCard
-        pool="total"
-        scope={scope}
-        stats={stats.total}
-        title="Total"
-      />
-      {stats.starred.total > 0 ? (
+      <div className="flex flex-col gap-4" role="radiogroup">
         <StudyPoolCard
-          pool="starred"
-          scope={scope}
-          stats={stats.starred}
-          title="Starred"
+          isSelected={effectiveSelectedPool === "total"}
+          onSelect={() => onPoolChange(scope, "total")}
+          pool="total"
+          stats={stats.total}
+          title="Total"
         />
-      ) : null}
+        {stats.starred.total > 0 ? (
+          <StudyPoolCard
+            isSelected={effectiveSelectedPool === "starred"}
+            onSelect={() => onPoolChange(scope, "starred")}
+            pool="starred"
+            stats={stats.starred}
+            title="Starred"
+          />
+        ) : null}
+      </div>
+      <StudyActions pool={effectiveSelectedPool} scope={scope} />
       {footer ? <div className="flex justify-center">{footer}</div> : null}
     </div>
+  );
+}
+
+function StudyActions({
+  scope,
+  pool,
+}: {
+  scope: StudyScope;
+  pool: StudyPool;
+}) {
+  const buttonClassName = getPoolButtonClassName(pool);
+
+  return (
+    <div className="grid grid-cols-2 gap-3">
+      <Button asChild className={buttonClassName}>
+        <Link to={buildStudyPath(scope, pool, "reinforcement")}>
+          Study Unmastered
+        </Link>
+      </Button>
+      <Button asChild className={buttonClassName}>
+        <Link to={buildStudyPath(scope, pool, "random")}>Study Random</Link>
+      </Button>
+    </div>
+  );
+}
+
+function getPoolButtonClassName(pool: StudyPool) {
+  return cn(
+    "h-auto rounded-xl border-0 px-3 py-3 text-white",
+    pool === "starred"
+      ? "bg-emerald-600 hover:bg-emerald-500"
+      : "bg-primary text-primary-foreground hover:bg-primary/90",
+  );
+}
+
+function getPoolCardClassName(pool: StudyPool, isSelected: boolean) {
+  return cn(
+    "cursor-pointer outline-none transition hover:bg-accent/50 focus-visible:ring-[3px] focus-visible:ring-ring/50",
+    isSelected
+      ? pool === "starred"
+        ? "ring-2 ring-emerald-600"
+        : "ring-2 ring-primary"
+      : "",
+  );
+}
+
+function handlePoolCardKeyDown(
+  event: React.KeyboardEvent<HTMLDivElement>,
+  onSelect: () => void,
+) {
+  if (event.key !== "Enter" && event.key !== " ") {
+    return;
+  }
+
+  event.preventDefault();
+  onSelect();
+}
+
+function StudyPoolCard({
+  title,
+  stats,
+  pool,
+  isSelected,
+  onSelect,
+}: {
+  title: "Total" | "Starred";
+  stats: PoolStats;
+  pool: StudyPool;
+  isSelected: boolean;
+  onSelect: () => void;
+}) {
+  return (
+    <Card
+      aria-checked={isSelected}
+      className={getPoolCardClassName(pool, isSelected)}
+      onClick={onSelect}
+      onKeyDown={(event) => handlePoolCardKeyDown(event, onSelect)}
+      role="radio"
+      tabIndex={0}
+    >
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="grid grid-cols-3 gap-3">
+          <StatMetric label={title} count={stats.total} />
+          <StatMetric
+            label={getStatusLabel("in_progress")}
+            count={stats.statuses.in_progress}
+          />
+          <StatMetric
+            label={getStatusLabel("mastered")}
+            count={stats.statuses.mastered}
+          />
+        </div>
+      </CardContent>
+    </Card>
   );
 }
 
@@ -186,53 +337,6 @@ function buildPoolStats(
     total: poolItems.length,
     statuses: countStatuses(poolItems, records),
   };
-}
-
-function StudyPoolCard({
-  title,
-  stats,
-  scope,
-  pool,
-}: {
-  title: "Total" | "Starred";
-  stats: PoolStats;
-  scope: StudyScope;
-  pool: StudyPool;
-}) {
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-3 gap-3">
-          <StatMetric label={title} count={stats.total} />
-          <StatMetric
-            label={getStatusLabel("in_progress")}
-            count={stats.statuses.in_progress}
-          />
-          <StatMetric
-            label={getStatusLabel("mastered")}
-            count={stats.statuses.mastered}
-          />
-        </div>
-      </CardContent>
-      <CardFooter className="grid grid-cols-2 gap-3">
-        <Button asChild className="h-auto rounded-xl px-3 py-3">
-          <Link to={buildStudyPath(scope, pool, "reinforcement")}>
-            Study Unmastered
-          </Link>
-        </Button>
-        <Button
-          asChild
-          className="h-auto rounded-xl px-3 py-3"
-          variant="secondary"
-        >
-          <Link to={buildStudyPath(scope, pool, "random")}>Study Random</Link>
-        </Button>
-      </CardFooter>
-    </Card>
-  );
 }
 
 function buildStudyPath(scope: StudyScope, pool: StudyPool, mode: StudyMode) {
