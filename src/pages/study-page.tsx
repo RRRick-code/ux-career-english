@@ -85,6 +85,7 @@ export function StudyPage() {
     [feedbackHistory],
   );
   const title = routeState ? getStudyTitle(routeState) : "";
+  const theme = getStudyTheme(routeState?.pool ?? "total");
   const examplePattern = currentItem ? getExamplePatternForItem(currentItem) : null;
 
   useGSAP(
@@ -227,7 +228,10 @@ export function StudyPage() {
               <SummaryRow label="Newly Mastered" value={newlyMasteredCount} />
             </div>
           </section>
-          <Button className="h-12 w-full rounded-xl" onClick={() => navigate("/")}>
+          <Button
+            className={cn("h-12 w-full rounded-xl", theme.primaryButtonClassName)}
+            onClick={() => navigate("/")}
+          >
             Finish
           </Button>
         </div>
@@ -247,6 +251,7 @@ export function StudyPage() {
             <div className="space-y-2">
               <Progress
                 className="h-2 bg-slate-200"
+                indicatorClassName={theme.progressClassName}
                 value={total > 0 ? ((currentIndex + 1) / total) * 100 : 0}
               />
             </div>
@@ -278,7 +283,10 @@ export function StudyPage() {
             <div className="absolute left-6 right-5 top-5 z-20 flex items-center justify-between">
               <div>
                 {currentRecord ? (
-                  <ProgressDots progress={currentRecord.progress} />
+                  <ProgressDots
+                    activeClassName={theme.progressClassName}
+                    progress={currentRecord.progress}
+                  />
                 ) : null}
               </div>
               <button
@@ -347,7 +355,12 @@ export function StudyPage() {
               ) : null}
             </div>
             {!revealed ? (
-              <div className="absolute right-0 bottom-8 left-0 text-center text-base text-muted-foreground transition-colors group-hover:text-primary">
+              <div
+                className={cn(
+                  "absolute right-0 bottom-8 left-0 text-center text-base text-muted-foreground transition-colors",
+                  theme.revealPromptClassName,
+                )}
+              >
                 Tap to reveal
               </div>
             ) : null}
@@ -367,7 +380,7 @@ export function StudyPage() {
             Uncertain
           </Button>
           <Button
-            className="h-12 w-full rounded-xl"
+            className={cn("h-12 w-full rounded-xl", theme.primaryButtonClassName)}
             onClick={() => handleFeedback("easy")}
           >
             Easy
@@ -456,6 +469,18 @@ function getStudyTitle(routeState: {
     routeState.mode === "reinforcement" ? "Reinforcement Study" : "Random Study";
 
   return poolLabel ? `${poolLabel} ${modeLabel}` : modeLabel;
+}
+
+function getStudyTheme(pool: StudyPool) {
+  return {
+    progressClassName: pool === "starred" ? "bg-emerald-600" : "bg-primary",
+    primaryButtonClassName:
+      pool === "starred"
+        ? "border-0 bg-emerald-600 text-white hover:bg-emerald-500"
+        : "",
+    revealPromptClassName:
+      pool === "starred" ? "group-hover:text-emerald-600" : "group-hover:text-primary",
+  };
 }
 
 function StudyShell({

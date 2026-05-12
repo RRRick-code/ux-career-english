@@ -1,6 +1,12 @@
 import { cn } from "@/lib/utils";
 
-export function ProgressDots({ progress }: { progress: number }) {
+export function ProgressDots({
+  progress,
+  activeClassName,
+}: {
+  progress: number;
+  activeClassName?: string;
+}) {
   const totalSteps = 5;
   const activeSteps = Math.min(
     totalSteps,
@@ -19,7 +25,7 @@ export function ProgressDots({ progress }: { progress: number }) {
             key={index}
             className={cn(
               "size-1 rounded-full bg-slate-200",
-              index < activeSteps && "bg-primary",
+              index < activeSteps && (activeClassName ?? "bg-primary"),
             )}
           />
         ))}
