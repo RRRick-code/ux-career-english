@@ -218,7 +218,7 @@ function StudyActions({
   const buttonClassName = getPoolButtonClassName(pool);
 
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="flex flex-col gap-3">
       <Button asChild className={buttonClassName}>
         <Link to={buildStudyPath(scope, pool, "reinforcement")}>
           Study Unmastered
@@ -279,17 +279,17 @@ function StudyPoolCard({
   return (
     <Card
       aria-checked={isSelected}
-      className={getPoolCardClassName(pool, isSelected)}
+      className={cn("gap-2 py-4", getPoolCardClassName(pool, isSelected))}
       onClick={onSelect}
       onKeyDown={(event) => handlePoolCardKeyDown(event, onSelect)}
       role="radio"
       tabIndex={0}
     >
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="font-semibold">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 divide-x divide-border">
           <StatMetric label={title} count={stats.total} />
           <StatMetric
             label={getStatusLabel("in_progress")}
@@ -346,7 +346,7 @@ function buildStudyPath(scope: StudyScope, pool: StudyPool, mode: StudyMode) {
 
 function StatMetric({ label, count }: { label: string; count: number }) {
   return (
-    <div className="min-w-0">
+    <div className="min-w-0 pl-5 pr-3 first:pl-0 last:pr-0">
       <div className="truncate text-xs text-muted-foreground sm:text-sm">
         {label}
       </div>
