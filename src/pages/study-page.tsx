@@ -342,6 +342,7 @@ export function StudyPage() {
                   {examplePattern ? (
                     <p className="cursor-text select-text text-base leading-8 text-foreground/80">
                       <HighlightedText
+                        className={theme.highlightClassName}
                         item={currentItem}
                         text={examplePattern.english}
                       />
@@ -480,6 +481,10 @@ function getStudyTheme(pool: StudyPool) {
         : "",
     revealPromptClassName:
       pool === "starred" ? "group-hover:text-emerald-600" : "group-hover:text-primary",
+    highlightClassName:
+      pool === "starred"
+        ? "bg-transparent px-0 py-0 font-medium text-emerald-600"
+        : undefined,
   };
 }
 
