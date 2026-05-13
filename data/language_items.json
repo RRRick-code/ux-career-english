@@ -2822,7 +2822,7 @@
     "id": "data_metrics_and_experimentation.037",
     "kind": "phrase",
     "english": "sync on the success criteria",
-    "chinese": "先对齐成功标准",
+    "chinese": "对齐成功标准",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
     "intent": "collaborate_and_influence",
