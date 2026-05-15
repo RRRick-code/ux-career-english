@@ -639,16 +639,6 @@
     "examplePatternId": "product_strategy_and_business.028"
   },
   {
-    "id": "product_strategy_and_business.010",
-    "kind": "phrase",
-    "english": "identify the highest-leverage opportunity",
-    "chinese": "识别杠杆效应最大的机会",
-    "scene": "interview",
-    "module": "product_strategy_and_business",
-    "intent": "describe_scope",
-    "examplePatternId": "product_strategy_and_business.029"
-  },
-  {
     "id": "product_strategy_and_business.011",
     "kind": "phrase",
     "english": "align design decisions with product strategy",
@@ -807,15 +797,6 @@
     "kind": "pattern",
     "english": "A big part of my role is to turn ambiguity into direction that product, design, and engineering can act on.",
     "chinese": "我很重要的一部分价值，就是把模糊转化为产品、设计和工程都能执行的方向。",
-    "scene": "interview",
-    "module": "product_strategy_and_business",
-    "intent": "describe_scope"
-  },
-  {
-    "id": "product_strategy_and_business.029",
-    "kind": "pattern",
-    "english": "Before the team goes deep into execution, I try to identify the highest-leverage opportunity first.",
-    "chinese": "在团队深入执行之前，我会先识别杠杆效应最大的机会点。",
     "scene": "interview",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
@@ -1870,16 +1851,6 @@
     "examplePatternId": "visual_ui_and_design_systems.028"
   },
   {
-    "id": "visual_ui_and_design_systems.010",
-    "kind": "phrase",
-    "english": "sweat the details",
-    "chinese": "非常在意细节",
-    "scene": "workplace",
-    "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence",
-    "examplePatternId": "visual_ui_and_design_systems.029"
-  },
-  {
     "id": "visual_ui_and_design_systems.011",
     "kind": "phrase",
     "english": "codify patterns for reuse",
@@ -2038,15 +2009,6 @@
     "kind": "pattern",
     "english": "We had to make states explicit so users could tell what had happened and what would happen next.",
     "chinese": "我们必须把状态表达清楚，这样用户才能知道刚刚发生了什么、下一步会发生什么。",
-    "scene": "workplace",
-    "module": "visual_ui_and_design_systems",
-    "intent": "collaborate_and_influence"
-  },
-  {
-    "id": "visual_ui_and_design_systems.029",
-    "kind": "pattern",
-    "english": "I still sweat the details because small polish choices shape trust in the product.",
-    "chinese": "我仍然会在意细节，因为这些微小的打磨会直接影响用户对产品的信任。",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
     "intent": "collaborate_and_influence"
@@ -6798,25 +6760,6 @@
     "examplePatternId": "leadership_and_management.117"
   },
   {
-    "id": "leadership_and_management.119",
-    "kind": "pattern",
-    "english": "Small regressions, inconsistent spacing, minor interaction bugs — nobody flagged them individually. But the bar had been slipping for two years. That's normalization of deviance; by the time I joined, users were noticing.",
-    "chinese": "小的视觉回退、不一致的间距、轻微的交互 bug——没有人单独去标记这些。但标准已经滑坡了两年。这就是偏差正常化；等我加入时，用户已经感受到了。",
-    "scene": "interview",
-    "module": "leadership_and_management",
-    "intent": "manage_and_coach"
-  },
-  {
-    "id": "leadership_and_management.120",
-    "kind": "term",
-    "english": "normalization of deviance",
-    "chinese": "偏差正常化",
-    "scene": "interview",
-    "module": "leadership_and_management",
-    "intent": "manage_and_coach",
-    "examplePatternId": "leadership_and_management.119"
-  },
-  {
     "id": "data_metrics_and_experimentation.059",
     "kind": "pattern",
     "english": "After a major bug incident, the team wanted to overhaul the entire error flow. I pushed back — I was worried recency bias was making one high-visibility failure look like a systemic pattern.",
@@ -6891,25 +6834,6 @@
     "module": "visual_ui_and_design_systems",
     "intent": "show_impact",
     "examplePatternId": "visual_ui_and_design_systems.069"
-  },
-  {
-    "id": "visual_ui_and_design_systems.071",
-    "kind": "pattern",
-    "english": "Sometimes you look at a screen and something feels off before you can explain why — that's a design smell. I've learned to trust that instinct; it usually points to a structural problem.",
-    "chinese": "有时候看一个屏幕，在你能解释清楚之前就觉得哪里不对——那就是设计异味。我学会了信任这种直觉；它通常指向一个结构性问题。",
-    "scene": "portfolio",
-    "module": "visual_ui_and_design_systems",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
-    "id": "visual_ui_and_design_systems.072",
-    "kind": "term",
-    "english": "design smell",
-    "chinese": "设计异味",
-    "scene": "portfolio",
-    "module": "visual_ui_and_design_systems",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "visual_ui_and_design_systems.071"
   },
   {
     "id": "personal_branding.059",
