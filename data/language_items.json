@@ -53,7 +53,7 @@
     "id": "personal_branding.006",
     "kind": "phrase",
     "english": "bring hands-on depth",
-    "chinese": "亲自下场，带来实操层面的深度",
+    "chinese": "带来深厚实操经验",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
@@ -4096,7 +4096,7 @@
     "id": "leadership_and_management.034",
     "kind": "phrase",
     "english": "bottleneck for every decision",
-    "chinese": "每个决策都卡在自己这里",
+    "chinese": "所有决策的瓶颈",
     "scene": "interview",
     "module": "leadership_and_management",
     "intent": "manage_and_coach",
@@ -6777,25 +6777,6 @@
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "data_metrics_and_experimentation.059"
-  },
-  {
-    "id": "data_metrics_and_experimentation.061",
-    "kind": "pattern",
-    "english": "We made task-completion rate our primary metric. Six months later, teams were optimizing for the number in ways that hurt the actual experience — that's Goodhart's Law in action.",
-    "chinese": "我们把任务完成率定为核心指标。六个月后，团队开始以损害实际体验的方式优化这个数字——这就是古德哈特定律的活生生演示。",
-    "scene": "portfolio",
-    "module": "data_metrics_and_experimentation",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
-    "id": "data_metrics_and_experimentation.062",
-    "kind": "term",
-    "english": "Goodhart's Law",
-    "chinese": "古德哈特定律",
-    "scene": "portfolio",
-    "module": "data_metrics_and_experimentation",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "data_metrics_and_experimentation.061"
   },
   {
     "id": "visual_ui_and_design_systems.067",
