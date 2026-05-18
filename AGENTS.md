@@ -31,7 +31,7 @@ Use `docs/USER_PROFILE.md` as the detailed source of truth whenever output shoul
 
 - Use North American workplace English as the default reference scope; keep Vancouver/Canada as the user's job target context, not the only source boundary.
 - Prioritize spoken, interview-ready, and workplace-usable English over academic or overly formal language.
-- Follow `docs/DATA_ARCHITECTURE.md` for direct-consumption content storage and file organization.
+- Follow `specs/DATA_ARCHITECTURE.md` for direct-consumption content storage and file organization.
 
 ## Content Editing Protocol
 
