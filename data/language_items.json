@@ -175,11 +175,11 @@
   {
     "id": "personal_branding.019",
     "kind": "pattern",
-    "english": "I position myself as a senior builder who can also align people around direction.",
-    "chinese": "我把自己定位成既能亲自做事、也能推动方向对齐的高级建设者。",
-    "scene": "interview",
+    "english": "For major Baidu App redesigns, I used prototypes, data, and clear design rationale to align teams around a direction.",
+    "chinese": "在百度 App 重大改版中，我用原型、数据和清晰的设计理由让团队围绕方向达成一致。",
+    "scene": "workplace",
     "module": "personal_branding",
-    "intent": "position_self"
+    "intent": "collaborate_and_influence"
   },
   {
     "id": "personal_branding.020",
@@ -313,11 +313,11 @@
   {
     "id": "personal_branding.034",
     "kind": "phrase",
-    "english": "align people around direction",
-    "chinese": "围绕方向推动大家对齐",
-    "scene": "interview",
+    "english": "align teams around a direction",
+    "chinese": "让团队围绕方向达成一致",
+    "scene": "workplace",
     "module": "personal_branding",
-    "intent": "position_self",
+    "intent": "collaborate_and_influence",
     "examplePatternId": "personal_branding.019"
   },
   {
@@ -342,8 +342,8 @@
   {
     "id": "personal_branding.037",
     "kind": "term",
-    "english": "product judgment",
-    "chinese": "产品判断力",
+    "english": "product design judgment",
+    "chinese": "产品设计判断力",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
@@ -352,8 +352,8 @@
   {
     "id": "personal_branding.038",
     "kind": "pattern",
-    "english": "I have developed strong product judgment by working on fast-moving products with real business pressure.",
-    "chinese": "我在快节奏、真实业务压力下的产品工作中，逐渐形成了较强的产品判断力。",
+    "english": "My product design judgment was shaped by years of working on search, content discovery, AI assistants, and platform systems.",
+    "chinese": "我的产品设计判断力来自多年搜索、内容分发、AI 助手和平台系统经验。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
@@ -1252,21 +1252,21 @@
   {
     "id": "product_strategy_and_business.079",
     "kind": "phrase",
-    "english": "make the tradeoffs explicit",
+    "english": "make trade-offs explicit",
     "chinese": "把取舍讲清楚",
-    "scene": "workplace",
+    "scene": "portfolio",
     "module": "product_strategy_and_business",
-    "intent": "collaborate_and_influence",
+    "intent": "explain_process_and_reasoning",
     "examplePatternId": "product_strategy_and_business.080"
   },
   {
     "id": "product_strategy_and_business.080",
     "kind": "pattern",
-    "english": "Before we make a decision, let me make the tradeoffs explicit.",
-    "chinese": "在做决定之前，让我先把取舍讲清楚。",
-    "scene": "workplace",
+    "english": "In large platform projects, I make trade-offs explicit so stakeholders understand what we are optimizing for and what risks we are accepting.",
+    "chinese": "在大型平台项目中，我会把取舍讲清楚，让利益相关方理解我们在优化什么，以及接受哪些风险。",
+    "scene": "portfolio",
     "module": "product_strategy_and_business",
-    "intent": "collaborate_and_influence"
+    "intent": "explain_process_and_reasoning"
   },
   {
     "id": "ux_research_and_interaction.001",
@@ -1390,8 +1390,8 @@
   {
     "id": "ux_research_and_interaction.013",
     "kind": "pattern",
-    "english": "The interaction model had to support both speed and confidence.",
-    "chinese": "这个交互模型必须同时支持效率和信心。",
+    "english": "One of my key contributions was defining a new interaction model for AI digital human assistants.",
+    "chinese": "我的关键贡献之一是为 AI 数字人助手定义新的交互模型。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1611,8 +1611,8 @@
   {
     "id": "ux_research_and_interaction.037",
     "kind": "term",
-    "english": "mental model",
-    "chinese": "心智模型",
+    "english": "user mental model",
+    "chinese": "用户心智模型",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
@@ -1621,8 +1621,8 @@
   {
     "id": "ux_research_and_interaction.038",
     "kind": "pattern",
-    "english": "Our research showed that the user's mental model did not match how the navigation was structured.",
-    "chinese": "研究表明，用户的心智模型和当前导航结构并不一致。",
+    "english": "We had to evolve the homepage without breaking the existing user mental model around search.",
+    "chinese": "我们需要演进首页，同时不能破坏用户围绕搜索形成的既有心智模型。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
@@ -1767,7 +1767,7 @@
     "chinese": "视觉层级",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope",
+    "intent": "explain_process_and_reasoning",
     "examplePatternId": "visual_ui_and_design_systems.020"
   },
   {
@@ -1935,11 +1935,11 @@
   {
     "id": "visual_ui_and_design_systems.020",
     "kind": "pattern",
-    "english": "A stronger visual hierarchy made the page easier to scan and reduced decision fatigue.",
-    "chinese": "更强的视觉层级让页面更容易扫读，也减少了决策负担。",
+    "english": "I use visual hierarchy to make complex information easier to scan and act on.",
+    "chinese": "我通过视觉层级让复杂信息更容易浏览和操作。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
-    "intent": "describe_scope"
+    "intent": "explain_process_and_reasoning"
   },
   {
     "id": "visual_ui_and_design_systems.021",
@@ -2132,8 +2132,8 @@
   {
     "id": "visual_ui_and_design_systems.042",
     "kind": "pattern",
-    "english": "We used the design review to align on tradeoffs before handing the flow to engineering.",
-    "chinese": "我们会利用设计评审先对齐取舍，再把流程交给工程团队。",
+    "english": "I use design reviews to improve quality, align trade-offs, and catch implementation risks early.",
+    "chinese": "我使用设计评审来提升质量、对齐取舍，并尽早发现实现风险。",
     "scene": "workplace",
     "module": "visual_ui_and_design_systems",
     "intent": "collaborate_and_influence"
@@ -2145,7 +2145,7 @@
     "chinese": "高保真原型",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope",
+    "intent": "explain_process_and_reasoning",
     "examplePatternId": "prototyping_motion_and_3d.020"
   },
   {
@@ -2313,11 +2313,11 @@
   {
     "id": "prototyping_motion_and_3d.020",
     "kind": "pattern",
-    "english": "I used a high-fidelity prototype because the team needed to react to the interaction, not just the layout.",
-    "chinese": "我用了高保真原型，因为团队需要感受的是交互本身，而不只是静态布局。",
+    "english": "I use high-fidelity prototypes to align teams around complex interactions before engineering investment becomes too high.",
+    "chinese": "我使用高保真原型，在工程投入变高之前帮助团队对齐复杂交互。",
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
-    "intent": "describe_scope"
+    "intent": "explain_process_and_reasoning"
   },
   {
     "id": "prototyping_motion_and_3d.021",
@@ -3531,8 +3531,8 @@
   {
     "id": "engineering_collaboration_and_technical_fluency.020",
     "kind": "pattern",
-    "english": "The design changed once we understood the real technical constraint behind the interaction.",
-    "chinese": "当我们真正搞清背后的技术约束之后，设计方案也跟着变了。",
+    "english": "I try to understand technical constraints early so the design direction stays realistic.",
+    "chinese": "我会尽早理解技术约束，让设计方向保持现实可行。",
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "describe_scope"
@@ -3672,7 +3672,7 @@
     "kind": "term",
     "english": "technical fluency",
     "chinese": "技术理解力",
-    "scene": "interview",
+    "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "position_self",
     "examplePatternId": "engineering_collaboration_and_technical_fluency.036"
@@ -3680,9 +3680,9 @@
   {
     "id": "engineering_collaboration_and_technical_fluency.036",
     "kind": "pattern",
-    "english": "My technical fluency helps me work with engineers in a way that is practical and efficient.",
-    "chinese": "我的技术理解力让我能以更务实、更高效的方式和工程师合作。",
-    "scene": "interview",
+    "english": "My technical fluency helps me communicate with engineers and turn design ideas into feasible implementation paths.",
+    "chinese": "我的技术理解力帮助我和工程师沟通，并把设计想法转化为可实现路径。",
+    "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "position_self"
   },
@@ -4029,8 +4029,8 @@
   {
     "id": "leadership_and_management.027",
     "kind": "pattern",
-    "english": "I see leadership as helping the team raise the quality bar together.",
-    "chinese": "我理解的领导力，是帮团队一起把质量标准抬高。",
+    "english": "I helped raise the quality bar through design reviews, reusable standards, high-fidelity prototypes, and close engineering collaboration.",
+    "chinese": "我通过设计评审、可复用标准、高保真原型和紧密工程协作帮助提高质量标准。",
     "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "manage_and_coach"
@@ -4126,7 +4126,7 @@
     "kind": "term",
     "english": "stakeholder alignment",
     "chinese": "利益相关方对齐",
-    "scene": "interview",
+    "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "collaborate_and_influence",
     "examplePatternId": "leadership_and_management.038"
@@ -4134,9 +4134,9 @@
   {
     "id": "leadership_and_management.038",
     "kind": "pattern",
-    "english": "A lot of the progress in that project came from early stakeholder alignment rather than only from design output.",
-    "chinese": "那个项目之所以推进顺利，很大程度上来自前期的利益相关方对齐，而不只是设计产出本身。",
-    "scene": "interview",
+    "english": "On large initiatives, I often used prototypes, data, and clear frameworks to build stakeholder alignment.",
+    "chinese": "在大型项目中，我经常用原型、数据和清晰框架来推动利益相关方对齐。",
+    "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "collaborate_and_influence"
   },
@@ -4467,8 +4467,8 @@
   {
     "id": "impact_and_credibility.003",
     "kind": "term",
-    "english": "design award",
-    "chinese": "设计奖项",
+    "english": "international design awards",
+    "chinese": "国际设计奖项",
     "scene": "interview",
     "module": "impact_and_credibility",
     "intent": "show_impact",
@@ -4627,8 +4627,8 @@
   {
     "id": "impact_and_credibility.022",
     "kind": "pattern",
-    "english": "A design award can be helpful external validation, but I care more about whether the work changed the product.",
-    "chinese": "设计奖可以作为外部认可，但我更在意这项工作是否真的改变了产品。",
+    "english": "Duxiaoxiao received six international design awards, including Red Dot and iF awards.",
+    "chinese": "度晓晓获得了六项国际设计奖，包括红点和 iF 奖。",
     "scene": "interview",
     "module": "impact_and_credibility",
     "intent": "show_impact"
@@ -4980,9 +4980,9 @@
   {
     "id": "ux_research_and_interaction.063",
     "kind": "pattern",
-    "english": "The fundamental issue here isn't the UI, it's that the information architecture doesn't match the user's mental model.",
-    "chinese": "这里的根本问题不是 UI，而是信息架构不符合用户的心智模型。",
-    "scene": "workplace",
+    "english": "My work often involves information architecture across search, feeds, vertical services, and content consumption.",
+    "chinese": "我的工作经常涉及搜索、信息流、垂类服务和内容消费的信息架构。",
+    "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
   },
@@ -4991,7 +4991,7 @@
     "kind": "term",
     "english": "information architecture",
     "chinese": "信息架构",
-    "scene": "workplace",
+    "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "ux_research_and_interaction.063"
@@ -4999,30 +4999,27 @@
   {
     "id": "data_metrics_and_experimentation.039",
     "kind": "pattern",
-    "english": "Instead of debating which layout is better, let's run an A/B test and let the data decide.",
-    "chinese": "与其争论哪种布局更好，不如我们跑个 A/B 测试让数据来做决定。",
-    "scene": "workplace",
+    "english": "I have long used A/B testing to validate design decisions in high-traffic product environments.",
+    "chinese": "我长期使用 A/B 测试在高流量产品环境中验证设计决策。",
+    "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
-    "intent": "collaborate_and_influence"
+    "intent": "explain_process_and_reasoning"
   },
   {
     "id": "data_metrics_and_experimentation.040",
     "kind": "term",
-    "english": "A/B Testing",
-    "chinese": "A/B测试",
-    "scene": "workplace",
+    "english": "A/B testing",
+    "chinese": "A/B 测试",
+    "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
-    "intent": "collaborate_and_influence",
-    "examplePatternId": "data_metrics_and_experimentation.039",
-    "highlightOverrides": [
-      "A/B test"
-    ]
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.039"
   },
   {
     "id": "data_metrics_and_experimentation.041",
     "kind": "pattern",
-    "english": "Simplifying the form from five steps down to two increased our conversion rate by almost twenty percent.",
-    "chinese": "把表单从五步精简到两步，让我们的转化率提升了近百分之二十。",
+    "english": "In local commerce and homepage work, design changes were often evaluated through conversion rate and user engagement.",
+    "chinese": "在本地生活和首页项目中，设计变化经常通过转化率和用户参与度来评估。",
     "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "show_impact"
@@ -5689,20 +5686,20 @@
   {
     "id": "engineering_collaboration_and_technical_fluency.059",
     "kind": "pattern",
-    "english": "In our retrospective, we realized that involving QA earlier in the design process would have prevented those bugs.",
-    "chinese": "在我们的复盘中，我们意识到如果在设计早期就把测试拉进来，就能避免那些 Bug 了。",
-    "scene": "portfolio",
-    "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "explain_process_and_reasoning"
+    "english": "I value retrospectives because they turn project experience into reusable team learning.",
+    "chinese": "我重视复盘，因为它能把项目经验转化为可复用的团队学习。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.060",
     "kind": "term",
-    "english": "retrospective",
+    "english": "retrospectives",
     "chinese": "复盘",
-    "scene": "portfolio",
-    "module": "engineering_collaboration_and_technical_fluency",
-    "intent": "explain_process_and_reasoning",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
     "examplePatternId": "engineering_collaboration_and_technical_fluency.059"
   },
   {
@@ -6173,8 +6170,8 @@
   {
     "id": "data_metrics_and_experimentation.053",
     "kind": "pattern",
-    "english": "We decided on a phased rollout to monitor system stability before releasing the feature to all users.",
-    "chinese": "我们决定采用分阶段发布的方式，在向所有用户开放功能前先监控系统稳定性。",
+    "english": "For complex platform changes, I prefer a phased rollout with validation at each step.",
+    "chinese": "对复杂平台变化，我倾向于分阶段上线，并在每一步做验证。",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning"
@@ -6183,7 +6180,7 @@
     "id": "data_metrics_and_experimentation.054",
     "kind": "term",
     "english": "phased rollout",
-    "chinese": "分阶段发布（小流量发布）",
+    "chinese": "分阶段上线",
     "scene": "workplace",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
@@ -6211,9 +6208,9 @@
   {
     "id": "data_metrics_and_experimentation.057",
     "kind": "pattern",
-    "english": "We ran a crossover experiment to ensure the observed uplift was actually caused by the feature.",
-    "chinese": "我们做了一个交叉反转实验，以确保观察到的提升确实是由新功能引起的。",
-    "scene": "interview",
+    "english": "The team also used crossover experiments to reduce the risk of misreading the homepage redesign results.",
+    "chinese": "团队还使用交叉实验来降低误读首页改版结果的风险。",
+    "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning"
   },
@@ -6221,8 +6218,8 @@
     "id": "data_metrics_and_experimentation.058",
     "kind": "term",
     "english": "crossover experiment",
-    "chinese": "交叉反转实验",
-    "scene": "interview",
+    "chinese": "交叉实验",
+    "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
     "examplePatternId": "data_metrics_and_experimentation.057"
@@ -6872,5 +6869,2962 @@
     "module": "personal_branding",
     "intent": "position_self",
     "examplePatternId": "personal_branding.063"
+  },
+  {
+    "id": "personal_branding.065",
+    "kind": "term",
+    "english": "hybrid IC/people-manager role",
+    "chinese": "兼具 IC 和人员管理职责的角色",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.066"
+  },
+  {
+    "id": "personal_branding.066",
+    "kind": "pattern",
+    "english": "My background is closest to a hybrid IC/people-manager role, where I led people while still owning high-priority design work.",
+    "chinese": "我的背景更接近兼具 IC 和人员管理职责的角色，既带团队，也负责高优先级设计工作。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "impact_and_credibility.043",
+    "kind": "term",
+    "english": "large-scale platform UX",
+    "chinese": "大规模平台 UX",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope",
+    "examplePatternId": "impact_and_credibility.044"
+  },
+  {
+    "id": "impact_and_credibility.044",
+    "kind": "pattern",
+    "english": "A large part of my experience is in large-scale platform UX, especially products with hundreds of millions of active users.",
+    "chinese": "我很大一部分经验来自大规模平台 UX，尤其是拥有数亿活跃用户的产品。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "impact_and_credibility.045",
+    "kind": "term",
+    "english": "billion-user ecosystem",
+    "chinese": "十亿级用户生态",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.046"
+  },
+  {
+    "id": "impact_and_credibility.046",
+    "kind": "pattern",
+    "english": "Baidu App gave me the opportunity to design within a billion-user ecosystem where small experience changes could have major impact.",
+    "chinese": "百度 App 让我有机会在十亿级用户生态中做设计，微小体验变化也可能带来巨大影响。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.047",
+    "kind": "term",
+    "english": "flagship mobile app",
+    "chinese": "旗舰移动应用",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope",
+    "examplePatternId": "impact_and_credibility.048",
+    "highlightOverrides": [
+      "flagship mobile search and information app"
+    ]
+  },
+  {
+    "id": "impact_and_credibility.048",
+    "kind": "pattern",
+    "english": "I spent multiple years designing for Baidu App, Baidu's flagship mobile search and information app.",
+    "chinese": "我多年参与百度 App 的设计，它是百度的旗舰移动搜索和信息应用。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "personal_branding.067",
+    "kind": "term",
+    "english": "consumer-facing product",
+    "chinese": "面向消费者的产品",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.068"
+  },
+  {
+    "id": "personal_branding.068",
+    "kind": "pattern",
+    "english": "Most of my career has been focused on consumer-facing products with high-frequency usage.",
+    "chinese": "我的职业经历大多聚焦在高频使用的 C 端产品上。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "product_strategy_and_business.127",
+    "kind": "term",
+    "english": "business awareness",
+    "chinese": "商业意识",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "position_self",
+    "examplePatternId": "product_strategy_and_business.128"
+  },
+  {
+    "id": "product_strategy_and_business.128",
+    "kind": "pattern",
+    "english": "I bring business awareness to design decisions, especially when user experience and monetization need to be balanced.",
+    "chinese": "我在设计决策中会带入商业意识，尤其是在用户体验和商业化需要平衡时。",
+    "scene": "interview",
+    "module": "product_strategy_and_business",
+    "intent": "position_self"
+  },
+  {
+    "id": "product_strategy_and_business.129",
+    "kind": "term",
+    "english": "outcome-driven design",
+    "chinese": "结果导向设计",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.130"
+  },
+  {
+    "id": "product_strategy_and_business.130",
+    "kind": "pattern",
+    "english": "I try to practice outcome-driven design, connecting design choices with user behavior, business metrics, and delivery constraints.",
+    "chinese": "我倾向于做结果导向设计，把设计选择和用户行为、业务指标、交付约束联系起来。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "impact_and_credibility.049",
+    "kind": "term",
+    "english": "platform-scale systems",
+    "chinese": "平台级系统",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope",
+    "examplePatternId": "impact_and_credibility.050"
+  },
+  {
+    "id": "impact_and_credibility.050",
+    "kind": "pattern",
+    "english": "I am used to designing platform-scale systems rather than isolated features.",
+    "chinese": "我习惯设计平台级系统，而不是孤立功能。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.087",
+    "kind": "term",
+    "english": "experience framework",
+    "chinese": "体验框架",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.088"
+  },
+  {
+    "id": "ux_research_and_interaction.088",
+    "kind": "pattern",
+    "english": "For Duxiaoxiao, I helped define an experience framework that connected character, conversation, spatial containers, and controls.",
+    "chinese": "在度晓晓项目中，我帮助定义了连接角色、对话、空间容器和控件的体验框架。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.089",
+    "kind": "term",
+    "english": "multimodal interaction",
+    "chinese": "多模态交互",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.090"
+  },
+  {
+    "id": "ux_research_and_interaction.090",
+    "kind": "pattern",
+    "english": "My AI product work involved multimodal interaction across voice, facial expression, motion, lip sync, and interface controls.",
+    "chinese": "我的 AI 产品工作涉及语音、表情、动作、口型同步和界面控件等多模态交互。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.091",
+    "kind": "term",
+    "english": "emotionally expressive interaction",
+    "chinese": "有情感表达力的交互",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.092"
+  },
+  {
+    "id": "ux_research_and_interaction.092",
+    "kind": "pattern",
+    "english": "Duxiaoxiao taught me how emotionally expressive interaction can change the way users perceive an AI assistant.",
+    "chinese": "度晓晓让我理解有情感表达力的交互如何改变用户对 AI 助手的感知。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.093",
+    "kind": "term",
+    "english": "conversational intent",
+    "chinese": "对话意图",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.094"
+  },
+  {
+    "id": "ux_research_and_interaction.094",
+    "kind": "pattern",
+    "english": "In the AI search flow, we had to distinguish conversational intent from traditional search intent.",
+    "chinese": "在 AI 搜索流程中，我们需要区分对话意图和传统搜索意图。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.095",
+    "kind": "term",
+    "english": "search intent",
+    "chinese": "搜索意图",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.096",
+    "highlightOverrides": [
+      "surface search results"
+    ]
+  },
+  {
+    "id": "ux_research_and_interaction.096",
+    "kind": "pattern",
+    "english": "A key design challenge was deciding when to keep the user in conversation and when to surface search results.",
+    "chinese": "一个关键设计挑战是判断什么时候让用户留在对话中，什么时候展示搜索结果。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.073",
+    "kind": "term",
+    "english": "character and brand asset system",
+    "chinese": "角色与品牌资产系统",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.074"
+  },
+  {
+    "id": "visual_ui_and_design_systems.074",
+    "kind": "pattern",
+    "english": "I led the creation of a character and brand asset system to support Duxiaoxiao's content and commercial use cases.",
+    "chinese": "我主导建立了角色与品牌资产系统，用于支持度晓晓的内容和商业场景。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.043",
+    "kind": "term",
+    "english": "3D content production pipeline",
+    "chinese": "3D 内容生产流程",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.044"
+  },
+  {
+    "id": "prototyping_motion_and_3d.044",
+    "kind": "pattern",
+    "english": "We built a 3D content production pipeline so the team could support campaigns, videos, and brand collaborations more efficiently.",
+    "chinese": "我们建立了 3D 内容生产流程，让团队更高效地支持活动、视频和品牌合作。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "prototyping_motion_and_3d.045",
+    "kind": "term",
+    "english": "reusable asset library",
+    "chinese": "可复用资产库",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.046"
+  },
+  {
+    "id": "prototyping_motion_and_3d.046",
+    "kind": "pattern",
+    "english": "For high-frequency production needs, I pushed the team toward reusable asset libraries instead of one-off creative work.",
+    "chinese": "面对高频生产需求，我推动团队建设可复用资产库，而不是每次都做一次性创意。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.131",
+    "kind": "term",
+    "english": "algorithmic feed",
+    "chinese": "算法信息流",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.132"
+  },
+  {
+    "id": "product_strategy_and_business.132",
+    "kind": "pattern",
+    "english": "I advocated for making the algorithmic feed more prominent on the Baidu App homepage.",
+    "chinese": "我主张提高算法信息流在百度 App 首页上的战略位置。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.133",
+    "kind": "term",
+    "english": "homepage redesign",
+    "chinese": "首页改版",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact",
+    "examplePatternId": "product_strategy_and_business.134"
+  },
+  {
+    "id": "product_strategy_and_business.134",
+    "kind": "pattern",
+    "english": "One of my portfolio-defining projects was the Baidu App homepage redesign, which connected product strategy with measurable business impact.",
+    "chinese": "我作品集中最有代表性的项目之一是百度 App 首页改版，它把产品策略和可衡量业务影响连接起来。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact"
+  },
+  {
+    "id": "product_strategy_and_business.135",
+    "kind": "term",
+    "english": "homepage hierarchy",
+    "chinese": "首页层级",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.136"
+  },
+  {
+    "id": "product_strategy_and_business.136",
+    "kind": "pattern",
+    "english": "We adjusted the homepage hierarchy to better balance search, content discovery, and business needs.",
+    "chinese": "我们调整了首页层级，以更好平衡搜索、内容发现和业务需求。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.137",
+    "kind": "term",
+    "english": "content discovery",
+    "chinese": "内容发现",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.138"
+  },
+  {
+    "id": "product_strategy_and_business.138",
+    "kind": "pattern",
+    "english": "Improving content discovery was a major theme in my Baidu App homepage work.",
+    "chinese": "改善内容发现是我在百度 App 首页工作中的重要主题。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.139",
+    "kind": "term",
+    "english": "attention routing",
+    "chinese": "用户注意力引导",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.140",
+    "highlightOverrides": [
+      "directed users toward search, content, and business surfaces"
+    ]
+  },
+  {
+    "id": "product_strategy_and_business.140",
+    "kind": "pattern",
+    "english": "The homepage directed users toward search, content, and business surfaces, so every design decision required careful trade-offs.",
+    "chinese": "首页会把用户引导到搜索、内容和业务界面，因此每个设计决策都需要谨慎权衡。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.141",
+    "kind": "term",
+    "english": "content distribution strategy",
+    "chinese": "内容分发策略",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.142"
+  },
+  {
+    "id": "product_strategy_and_business.142",
+    "kind": "pattern",
+    "english": "I learned how design connects with content distribution strategy in a high-traffic product.",
+    "chinese": "我学会了设计如何与高流量产品的内容分发策略相连接。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.143",
+    "kind": "term",
+    "english": "mature, highly competitive market",
+    "chinese": "成熟且竞争激烈的市场",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.144"
+  },
+  {
+    "id": "product_strategy_and_business.144",
+    "kind": "pattern",
+    "english": "The homepage redesign happened in a mature, highly competitive market where time spent and retention became critical.",
+    "chinese": "首页改版发生在成熟且竞争激烈的市场中，用户时长和留存变得非常关键。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.145",
+    "kind": "term",
+    "english": "business constraints",
+    "chinese": "业务约束",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.146"
+  },
+  {
+    "id": "product_strategy_and_business.146",
+    "kind": "pattern",
+    "english": "I am comfortable designing under business constraints, especially when different teams have competing priorities.",
+    "chinese": "我能在业务约束下做设计，尤其是不同团队优先级冲突时。",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "leadership_and_management.121",
+    "kind": "term",
+    "english": "organizational constraints",
+    "chinese": "组织约束",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "leadership_and_management.122"
+  },
+  {
+    "id": "leadership_and_management.122",
+    "kind": "pattern",
+    "english": "Large-company design work taught me to treat organizational constraints as part of the design problem.",
+    "chinese": "大公司设计经验让我学会把组织约束也视为设计问题的一部分。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "leadership_and_management.123",
+    "kind": "term",
+    "english": "cross-functional collaboration",
+    "chinese": "跨职能协作",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.124"
+  },
+  {
+    "id": "leadership_and_management.124",
+    "kind": "pattern",
+    "english": "My work required close cross-functional collaboration with product, engineering, AI, data, growth, marketing, and commercial teams.",
+    "chinese": "我的工作需要和产品、工程、AI、数据、增长、市场和商业团队紧密跨职能协作。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.125",
+    "kind": "term",
+    "english": "distributed resources",
+    "chinese": "分散资源",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.126",
+    "highlightOverrides": [
+      "resources are distributed"
+    ]
+  },
+  {
+    "id": "leadership_and_management.126",
+    "kind": "pattern",
+    "english": "I have experience moving projects forward even when resources are distributed across many teams.",
+    "chinese": "我有在资源分散于多个团队时仍推进项目的经验。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.127",
+    "kind": "term",
+    "english": "ambiguous goals",
+    "chinese": "模糊目标",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.128"
+  },
+  {
+    "id": "leadership_and_management.128",
+    "kind": "pattern",
+    "english": "In emerging AI projects, I often had to turn ambiguous goals into clear workstreams.",
+    "chinese": "在新兴 AI 项目中，我经常需要把模糊目标转化为清晰工作流。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.129",
+    "kind": "term",
+    "english": "executable path",
+    "chinese": "可执行路径",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.130"
+  },
+  {
+    "id": "leadership_and_management.130",
+    "kind": "pattern",
+    "english": "My role was often to translate an abstract direction into an executable path for design and engineering teams.",
+    "chinese": "我的角色经常是把抽象方向转化为设计和工程团队可以执行的路径。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.131",
+    "kind": "term",
+    "english": "workstream",
+    "chinese": "工作流",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "describe_scope",
+    "examplePatternId": "leadership_and_management.132"
+  },
+  {
+    "id": "leadership_and_management.132",
+    "kind": "pattern",
+    "english": "I broke the digital human project into workstreams across interaction, character assets, 3D production, and commercial scenarios.",
+    "chinese": "我把数字人项目拆成交互、角色资产、3D 生产和商业场景等工作流。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "data_metrics_and_experimentation.063",
+    "kind": "term",
+    "english": "traffic-split experiment",
+    "chinese": "流量拆分实验",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.064"
+  },
+  {
+    "id": "data_metrics_and_experimentation.064",
+    "kind": "pattern",
+    "english": "We used traffic-split experiments to evaluate whether the homepage redesign improved user behavior.",
+    "chinese": "我们使用流量拆分实验来评估首页改版是否改善用户行为。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.065",
+    "kind": "term",
+    "english": "data-informed design",
+    "chinese": "数据辅助设计",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.066"
+  },
+  {
+    "id": "data_metrics_and_experimentation.066",
+    "kind": "pattern",
+    "english": "My approach is data-informed design, combining metrics with product judgment and user feedback.",
+    "chinese": "我的方式是数据辅助设计，把指标、产品判断和用户反馈结合起来。",
+    "scene": "interview",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.067",
+    "kind": "term",
+    "english": "experimental validation",
+    "chinese": "实验验证",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.068"
+  },
+  {
+    "id": "data_metrics_and_experimentation.068",
+    "kind": "pattern",
+    "english": "Experimental validation helped us make design decisions that were easier for stakeholders to trust.",
+    "chinese": "实验验证帮助我们做出更容易被利益相关方信任的设计决策。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.069",
+    "kind": "term",
+    "english": "user satisfaction",
+    "chinese": "用户满意度",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.070"
+  },
+  {
+    "id": "data_metrics_and_experimentation.070",
+    "kind": "pattern",
+    "english": "We looked at user satisfaction alongside engagement metrics, because growth alone was not enough.",
+    "chinese": "我们把用户满意度和参与度指标一起看，因为只看增长是不够的。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.071",
+    "kind": "term",
+    "english": "time spent",
+    "chinese": "用户时长",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.072"
+  },
+  {
+    "id": "data_metrics_and_experimentation.072",
+    "kind": "pattern",
+    "english": "Time spent was one of the key metrics in the Baidu App homepage redesigns.",
+    "chinese": "用户时长是百度 App 首页改版中的关键指标之一。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.073",
+    "kind": "term",
+    "english": "daily active users",
+    "chinese": "日活跃用户",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.074"
+  },
+  {
+    "id": "data_metrics_and_experimentation.074",
+    "kind": "pattern",
+    "english": "Baidu App reached about 200 million daily active users, so design decisions had to be made very carefully.",
+    "chinese": "百度 App 日活约 2 亿，因此设计决策必须非常谨慎。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "data_metrics_and_experimentation.075",
+    "kind": "term",
+    "english": "monthly active users",
+    "chinese": "月活跃用户",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact",
+    "examplePatternId": "data_metrics_and_experimentation.076"
+  },
+  {
+    "id": "data_metrics_and_experimentation.076",
+    "kind": "pattern",
+    "english": "Designing for a product with about 700 million monthly active users taught me to think at system scale.",
+    "chinese": "为月活约 7 亿的产品做设计让我学会从系统规模思考。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.051",
+    "kind": "term",
+    "english": "annualized revenue growth",
+    "chinese": "年化收入增长",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.052"
+  },
+  {
+    "id": "impact_and_credibility.052",
+    "kind": "pattern",
+    "english": "The 2019 homepage redesign was estimated by the data science team to contribute roughly RMB 100 million in annualized revenue growth.",
+    "chinese": "数据科学团队估算，2019 年首页改版带来了约 1 亿元人民币的年化收入增长。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.053",
+    "kind": "term",
+    "english": "monetization revenue",
+    "chinese": "商业化收入",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.054"
+  },
+  {
+    "id": "impact_and_credibility.054",
+    "kind": "pattern",
+    "english": "Duxiaoxiao supported over RMB 100 million in monetization revenue through content operations and brand collaborations.",
+    "chinese": "度晓晓通过内容运营和品牌合作支持了超过 1 亿元人民币的商业化收入。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "product_strategy_and_business.147",
+    "kind": "term",
+    "english": "commercial use case",
+    "chinese": "商业场景",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.148"
+  },
+  {
+    "id": "product_strategy_and_business.148",
+    "kind": "pattern",
+    "english": "I try to understand not only the user journey, but also the commercial use cases behind the product.",
+    "chinese": "我不仅会理解用户旅程，也会理解产品背后的商业场景。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.149",
+    "kind": "term",
+    "english": "in-product campaign",
+    "chinese": "产品内活动",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.150"
+  },
+  {
+    "id": "product_strategy_and_business.150",
+    "kind": "pattern",
+    "english": "I helped build in-product campaign capabilities for Baidu App's high-traffic homepage.",
+    "chinese": "我帮助建设了百度 App 高流量首页的产品内活动能力。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.151",
+    "kind": "term",
+    "english": "monetization surface",
+    "chinese": "商业化界面位置",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope",
+    "examplePatternId": "product_strategy_and_business.152"
+  },
+  {
+    "id": "product_strategy_and_business.152",
+    "kind": "pattern",
+    "english": "The homepage became a monetization surface, but we needed strict rules to protect the core user experience.",
+    "chinese": "首页成为商业化界面位置，但我们需要严格规则来保护核心用户体验。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.075",
+    "kind": "term",
+    "english": "mutual-exclusion rules",
+    "chinese": "互斥规则",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.076"
+  },
+  {
+    "id": "visual_ui_and_design_systems.076",
+    "kind": "pattern",
+    "english": "We created mutual-exclusion rules so promotional placements would not overwhelm the homepage.",
+    "chinese": "我们建立互斥规则，避免促销位置过度占据首页。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.077",
+    "kind": "term",
+    "english": "review process",
+    "chinese": "评审流程",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.078"
+  },
+  {
+    "id": "visual_ui_and_design_systems.078",
+    "kind": "pattern",
+    "english": "I pushed for a review process to control the quality and frequency of homepage marketing placements.",
+    "chinese": "我推动建立评审流程，控制首页营销位置的质量和频率。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.079",
+    "kind": "term",
+    "english": "design infrastructure",
+    "chinese": "设计基础设施",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.080"
+  },
+  {
+    "id": "visual_ui_and_design_systems.080",
+    "kind": "pattern",
+    "english": "I see design infrastructure as a way to improve consistency, delivery efficiency, and implementation quality across teams.",
+    "chinese": "我认为设计基础设施能提升跨团队一致性、交付效率和实现质量。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.081",
+    "kind": "term",
+    "english": "platform-level design system",
+    "chinese": "平台级设计系统",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.082"
+  },
+  {
+    "id": "visual_ui_and_design_systems.082",
+    "kind": "pattern",
+    "english": "I have led platform-level design system work for Baidu App and Baidu's mobile product ecosystem.",
+    "chinese": "我主导过百度 App 和百度移动产品生态的平台级设计系统工作。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.083",
+    "kind": "term",
+    "english": "design guidelines",
+    "chinese": "设计规范",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.084"
+  },
+  {
+    "id": "visual_ui_and_design_systems.084",
+    "kind": "pattern",
+    "english": "I often turn recurring design decisions into clear design guidelines that other teams can follow.",
+    "chinese": "我经常把反复出现的设计决策转化为其他团队可遵循的清晰设计规范。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.085",
+    "kind": "term",
+    "english": "reusable patterns",
+    "chinese": "可复用模式",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.086"
+  },
+  {
+    "id": "visual_ui_and_design_systems.086",
+    "kind": "pattern",
+    "english": "Reusable patterns helped us reduce repeated communication and improve design consistency.",
+    "chinese": "可复用模式帮助我们减少重复沟通，并提升设计一致性。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.071",
+    "kind": "term",
+    "english": "implementation fidelity",
+    "chinese": "实现还原度",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.072"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.072",
+    "kind": "pattern",
+    "english": "I care about implementation fidelity because the final user experience depends on what actually ships.",
+    "chinese": "我重视实现还原度，因为最终用户体验取决于真正上线的东西。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.087",
+    "kind": "term",
+    "english": "delivery efficiency",
+    "chinese": "交付效率",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact",
+    "examplePatternId": "visual_ui_and_design_systems.088"
+  },
+  {
+    "id": "visual_ui_and_design_systems.088",
+    "kind": "pattern",
+    "english": "Good design infrastructure improved delivery efficiency across many parallel business teams.",
+    "chinese": "好的设计基础设施提升了多个并行业务团队的交付效率。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "show_impact"
+  },
+  {
+    "id": "visual_ui_and_design_systems.089",
+    "kind": "term",
+    "english": "design quality standards and review process",
+    "chinese": "设计质量标准和评审流程",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "manage_and_coach",
+    "examplePatternId": "visual_ui_and_design_systems.090",
+    "highlightOverrides": [
+      "design quality standards and a clear review process"
+    ]
+  },
+  {
+    "id": "visual_ui_and_design_systems.090",
+    "kind": "pattern",
+    "english": "In large organizations, design quality standards and a clear review process are just as important as individual design craft.",
+    "chinese": "在大型组织中，设计质量标准和清晰的评审流程与个人设计手艺同样重要。",
+    "scene": "workplace",
+    "module": "visual_ui_and_design_systems",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "visual_ui_and_design_systems.091",
+    "kind": "term",
+    "english": "dark mode system",
+    "chinese": "深色模式系统",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.092"
+  },
+  {
+    "id": "visual_ui_and_design_systems.092",
+    "kind": "pattern",
+    "english": "I led the dark mode system for Baidu's mobile products, covering visual hierarchy, readability, and engineering rollout.",
+    "chinese": "我主导了百度移动产品的深色模式系统，覆盖视觉层级、可读性和工程落地。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.093",
+    "kind": "term",
+    "english": "readability",
+    "chinese": "可读性",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.094"
+  },
+  {
+    "id": "visual_ui_and_design_systems.094",
+    "kind": "pattern",
+    "english": "In dark mode design, I paid close attention to readability, contrast, and low-light usage contexts.",
+    "chinese": "在深色模式设计中，我非常关注可读性、对比度和低光使用场景。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.095",
+    "kind": "term",
+    "english": "motion system",
+    "chinese": "动效系统",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.096"
+  },
+  {
+    "id": "visual_ui_and_design_systems.096",
+    "kind": "pattern",
+    "english": "I led Baidu App's motion system work to make feedback, transitions, and promotional animations more consistent.",
+    "chinese": "我主导了百度 App 的动效系统，让反馈、转场和营销活动动画更加一致。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.097",
+    "kind": "term",
+    "english": "state feedback",
+    "chinese": "状态反馈",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.098"
+  },
+  {
+    "id": "visual_ui_and_design_systems.098",
+    "kind": "pattern",
+    "english": "Motion should support state feedback, not just make the interface look more dynamic.",
+    "chinese": "动效应该支持状态反馈，而不只是让界面看起来更动。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.099",
+    "kind": "term",
+    "english": "page transition",
+    "chinese": "页面转场",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.100"
+  },
+  {
+    "id": "visual_ui_and_design_systems.100",
+    "kind": "pattern",
+    "english": "We defined page transition principles so navigation felt more natural across the app.",
+    "chinese": "我们定义了页面转场原则，让整个 App 的导航更自然。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.047",
+    "kind": "term",
+    "english": "prototype validation",
+    "chinese": "原型验证",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.048"
+  },
+  {
+    "id": "prototyping_motion_and_3d.048",
+    "kind": "pattern",
+    "english": "Prototype validation is especially useful when static screens cannot explain motion, AI, or 3D interaction clearly.",
+    "chinese": "当静态页面无法清楚解释动效、AI 或 3D 交互时，原型验证尤其有用。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.049",
+    "kind": "term",
+    "english": "design-to-code prototyping",
+    "chinese": "设计到代码原型",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope",
+    "examplePatternId": "prototyping_motion_and_3d.050"
+  },
+  {
+    "id": "prototyping_motion_and_3d.050",
+    "kind": "pattern",
+    "english": "My design-to-code prototyping experience includes React, Three.js, GSAP, HTML, and CSS.",
+    "chinese": "我的设计到代码原型经验包括 React、Three.js、GSAP、HTML 和 CSS。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.073",
+    "kind": "term",
+    "english": "frontend collaboration",
+    "chinese": "前端协作",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.074",
+    "highlightOverrides": [
+      "collaborate with engineers"
+    ]
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.074",
+    "kind": "pattern",
+    "english": "Because I understand frontend implementation, I can collaborate with engineers with more precision.",
+    "chinese": "因为我理解前端实现，所以能更精准地和工程师协作。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "prototyping_motion_and_3d.051",
+    "kind": "term",
+    "english": "feasibility validation",
+    "chinese": "可行性验证",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.052"
+  },
+  {
+    "id": "prototyping_motion_and_3d.052",
+    "kind": "pattern",
+    "english": "For emerging interaction ideas, I often use prototypes for feasibility validation before committing to a full product direction.",
+    "chinese": "对新兴交互想法，我经常先用原型做可行性验证，再决定完整产品方向。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.075",
+    "kind": "term",
+    "english": "design-engineering fluency",
+    "chinese": "设计工程沟通能力",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.076"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.076",
+    "kind": "pattern",
+    "english": "My design-engineering fluency allows me to move between concept, prototype, and implementation discussion.",
+    "chinese": "我的设计工程沟通能力让我能在概念、原型和实现讨论之间切换。",
+    "scene": "interview",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "position_self"
+  },
+  {
+    "id": "ai_product_and_design_workflow.035",
+    "kind": "term",
+    "english": "AI-assisted coding",
+    "chinese": "AI 辅助编码",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope",
+    "examplePatternId": "ai_product_and_design_workflow.036"
+  },
+  {
+    "id": "ai_product_and_design_workflow.036",
+    "kind": "pattern",
+    "english": "I use AI-assisted coding mainly to accelerate design prototypes and explore interaction ideas.",
+    "chinese": "我使用 AI 辅助编码主要是为了加速设计原型和探索交互想法。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "visual_ui_and_design_systems.101",
+    "kind": "term",
+    "english": "implementation-ready UI",
+    "chinese": "可实现的 UI",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope",
+    "examplePatternId": "visual_ui_and_design_systems.102"
+  },
+  {
+    "id": "visual_ui_and_design_systems.102",
+    "kind": "pattern",
+    "english": "I try to produce implementation-ready UI, not just visually attractive concepts.",
+    "chinese": "我会尽量产出可实现的 UI，而不只是视觉上好看的概念。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.097",
+    "kind": "term",
+    "english": "end-to-end experience",
+    "chinese": "端到端体验",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.098"
+  },
+  {
+    "id": "ux_research_and_interaction.098",
+    "kind": "pattern",
+    "english": "In the Life+ business, I refined the end-to-end experience from service discovery to consumption conversion.",
+    "chinese": "在 Life+ 业务中，我优化了从服务发现到消费转化的端到端体验。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.099",
+    "kind": "term",
+    "english": "service discovery",
+    "chinese": "服务发现",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.100"
+  },
+  {
+    "id": "ux_research_and_interaction.100",
+    "kind": "pattern",
+    "english": "For local commerce, service discovery had to be fast, relevant, and easy to act on.",
+    "chinese": "对本地生活业务来说，服务发现必须快速、相关且便于行动。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.101",
+    "kind": "term",
+    "english": "benefit redemption",
+    "chinese": "权益领取",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.102"
+  },
+  {
+    "id": "ux_research_and_interaction.102",
+    "kind": "pattern",
+    "english": "We optimized the flow from benefit redemption to completed consumption in Baidu App's local services.",
+    "chinese": "我们优化了百度 App 本地服务中从权益领取到完成消费的流程。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.103",
+    "kind": "term",
+    "english": "local commerce",
+    "chinese": "本地生活商业",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.104"
+  },
+  {
+    "id": "ux_research_and_interaction.104",
+    "kind": "pattern",
+    "english": "My local commerce work helped Baidu App connect search-driven intent with offline service consumption.",
+    "chinese": "我的本地生活项目帮助百度 App 把搜索驱动的意图和线下服务消费连接起来。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "impact_and_credibility.055",
+    "kind": "term",
+    "english": "GMV growth",
+    "chinese": "交易额增长",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.056"
+  },
+  {
+    "id": "impact_and_credibility.056",
+    "kind": "pattern",
+    "english": "In the local commerce vertical, design supported GMV growth by improving entry points, benefits, and conversion paths.",
+    "chinese": "在本地生活垂类中，设计通过优化入口、权益和转化路径支持 GMV 增长。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "ux_research_and_interaction.105",
+    "kind": "term",
+    "english": "content consumption",
+    "chinese": "内容消费",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.106"
+  },
+  {
+    "id": "ux_research_and_interaction.106",
+    "kind": "pattern",
+    "english": "The web fiction project extended Baidu App from information retrieval into content consumption.",
+    "chinese": "小说阅读项目让百度 App 从信息检索延伸到内容消费。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.107",
+    "kind": "term",
+    "english": "immersive reading experience",
+    "chinese": "沉浸式阅读体验",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.108"
+  },
+  {
+    "id": "ux_research_and_interaction.108",
+    "kind": "pattern",
+    "english": "I improved the immersive reading experience across book discovery, detail pages, chapter lists, and the reader interface.",
+    "chinese": "我优化了从找书、详情页、目录到阅读器界面的沉浸式阅读体验。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.109",
+    "kind": "term",
+    "english": "information retrieval",
+    "chinese": "信息检索",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.110"
+  },
+  {
+    "id": "ux_research_and_interaction.110",
+    "kind": "pattern",
+    "english": "Search products are not only about information retrieval; they also shape how users discover, trust, and act on information.",
+    "chinese": "搜索产品不只是信息检索，也影响用户如何发现、信任并使用信息。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.153",
+    "kind": "term",
+    "english": "proactive recommendation",
+    "chinese": "主动推荐",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.154"
+  },
+  {
+    "id": "product_strategy_and_business.154",
+    "kind": "pattern",
+    "english": "Baidu App's contextual cards explored a shift from active search to proactive recommendation.",
+    "chinese": "百度 App 的情境卡片探索了从主动搜索到主动推荐的转变。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.111",
+    "kind": "term",
+    "english": "contextual card system",
+    "chinese": "情境卡片系统",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.112"
+  },
+  {
+    "id": "ux_research_and_interaction.112",
+    "kind": "pattern",
+    "english": "Early in my Baidu career, I owned the contextual card system on the Baidu App homepage.",
+    "chinese": "在百度早期，我负责过百度 App 首页的情境卡片系统。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.113",
+    "kind": "term",
+    "english": "geofencing",
+    "chinese": "地理围栏",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope",
+    "examplePatternId": "ux_research_and_interaction.114"
+  },
+  {
+    "id": "ux_research_and_interaction.114",
+    "kind": "pattern",
+    "english": "The contextual card experience used signals like geofencing, time, search history, and user interests.",
+    "chinese": "情境卡片体验使用了地理围栏、时间、搜索历史和用户兴趣等信号。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "product_strategy_and_business.155",
+    "kind": "term",
+    "english": "strategy to attract younger users",
+    "chinese": "吸引年轻用户的策略",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.156",
+    "highlightOverrides": [
+      "attract younger users"
+    ]
+  },
+  {
+    "id": "product_strategy_and_business.156",
+    "kind": "pattern",
+    "english": "I led a research initiative on how Baidu App could attract younger users by identifying gaps in content, community, personalization, and visual perception.",
+    "chinese": "我主导过一项关于百度 App 如何吸引年轻用户的研究，识别内容、社区、个性化和视觉感知方面的差距。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.157",
+    "kind": "term",
+    "english": "competitive landscape",
+    "chinese": "竞争格局",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.158"
+  },
+  {
+    "id": "product_strategy_and_business.158",
+    "kind": "pattern",
+    "english": "I often combine user behavior, market trends, and the competitive landscape when forming design strategy.",
+    "chinese": "我在形成设计策略时经常结合用户行为、市场趋势和竞争格局。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.159",
+    "kind": "term",
+    "english": "market trend",
+    "chinese": "市场趋势",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.160"
+  },
+  {
+    "id": "product_strategy_and_business.160",
+    "kind": "pattern",
+    "english": "My homepage redesign judgment was partly based on the market trend toward algorithmic content feeds.",
+    "chinese": "我对首页改版的判断部分基于算法内容流这一市场趋势。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.161",
+    "kind": "term",
+    "english": "product positioning",
+    "chinese": "产品定位",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.162"
+  },
+  {
+    "id": "product_strategy_and_business.162",
+    "kind": "pattern",
+    "english": "For Baidu News, I helped translate a new product positioning into tone, information hierarchy, and reading experience.",
+    "chinese": "在百度新闻项目中，我帮助把新的产品定位转化为语气、信息层级和阅读体验。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.163",
+    "kind": "term",
+    "english": "product tone and personality",
+    "chinese": "产品语气和气质",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.164",
+    "highlightOverrides": [
+      "professional tone",
+      "trustworthy personality"
+    ]
+  },
+  {
+    "id": "product_strategy_and_business.164",
+    "kind": "pattern",
+    "english": "The Baidu News redesign gave the product a clearer professional tone and a more trustworthy personality.",
+    "chinese": "百度新闻改版让产品形成了更清晰的专业语气和更可信的产品气质。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.115",
+    "kind": "term",
+    "english": "trustworthy experience",
+    "chinese": "可信体验",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.116"
+  },
+  {
+    "id": "ux_research_and_interaction.116",
+    "kind": "pattern",
+    "english": "For news products, a trustworthy experience depends on tone, hierarchy, readability, and content presentation.",
+    "chinese": "对新闻产品来说，可信体验取决于语气、层级、可读性和内容呈现。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.103",
+    "kind": "term",
+    "english": "design craft",
+    "chinese": "设计手艺",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "position_self",
+    "examplePatternId": "visual_ui_and_design_systems.104"
+  },
+  {
+    "id": "visual_ui_and_design_systems.104",
+    "kind": "pattern",
+    "english": "I care about design craft, but I usually connect it back to product structure and user outcomes.",
+    "chinese": "我重视设计手艺，但通常会把它连接回产品结构和用户结果。",
+    "scene": "interview",
+    "module": "visual_ui_and_design_systems",
+    "intent": "position_self"
+  },
+  {
+    "id": "visual_ui_and_design_systems.105",
+    "kind": "term",
+    "english": "visual polish",
+    "chinese": "视觉打磨",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.106"
+  },
+  {
+    "id": "visual_ui_and_design_systems.106",
+    "kind": "pattern",
+    "english": "Visual polish matters, but in my work it needs to support clarity, hierarchy, and product goals.",
+    "chinese": "视觉打磨很重要，但在我的工作中它需要服务于清晰度、层级和产品目标。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.107",
+    "kind": "term",
+    "english": "brand expression",
+    "chinese": "品牌表达",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.108"
+  },
+  {
+    "id": "visual_ui_and_design_systems.108",
+    "kind": "pattern",
+    "english": "In Duxiaoxiao, brand expression was deeply connected with character behavior, interaction, and content production.",
+    "chinese": "在度晓晓中，品牌表达和角色行为、交互及内容生产紧密相关。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.165",
+    "kind": "term",
+    "english": "product narrative",
+    "chinese": "产品叙事",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.166"
+  },
+  {
+    "id": "product_strategy_and_business.166",
+    "kind": "pattern",
+    "english": "I try to build a clear product narrative that explains the problem, the constraints, the design choices, and the results.",
+    "chinese": "我会构建清晰的产品叙事，解释问题、约束、设计选择和结果。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "personal_branding.069",
+    "kind": "term",
+    "english": "portfolio-defining project",
+    "chinese": "代表性作品集项目",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.070"
+  },
+  {
+    "id": "personal_branding.070",
+    "kind": "pattern",
+    "english": "Duxiaoxiao and Baidu App are my two portfolio-defining projects.",
+    "chinese": "度晓晓和百度 App 是我最具代表性的两个作品集项目。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "impact_and_credibility.057",
+    "kind": "term",
+    "english": "measurable impact",
+    "chinese": "可衡量影响",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.058"
+  },
+  {
+    "id": "impact_and_credibility.058",
+    "kind": "pattern",
+    "english": "I prefer to discuss design work through measurable impact, not only process and visuals.",
+    "chinese": "我更愿意通过可衡量影响来讨论设计工作，而不只是过程和视觉。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.059",
+    "kind": "term",
+    "english": "granted patents in China",
+    "chinese": "中国授权专利",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.060",
+    "highlightOverrides": [
+      "patents granted in China"
+    ]
+  },
+  {
+    "id": "impact_and_credibility.060",
+    "kind": "pattern",
+    "english": "I hold three invention patents and twenty-two GUI design patents granted in China.",
+    "chinese": "我拥有三项中国授权发明专利和二十二项中国授权 GUI 外观设计专利。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.061",
+    "kind": "term",
+    "english": "internal instructor",
+    "chinese": "内部讲师",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.062"
+  },
+  {
+    "id": "impact_and_credibility.062",
+    "kind": "pattern",
+    "english": "I served as a Baidu-authorized internal instructor for high-fidelity prototyping and exploratory innovation design.",
+    "chinese": "我曾担任百度认证内部讲师，教授高保真原型和探索式创新设计。",
+    "scene": "portfolio",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "leadership_and_management.133",
+    "kind": "term",
+    "english": "talent development",
+    "chinese": "人才发展",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.134"
+  },
+  {
+    "id": "leadership_and_management.134",
+    "kind": "pattern",
+    "english": "As a manager, I focused on talent development, design standards, collaboration quality, and hands-on project outcomes.",
+    "chinese": "作为管理者，我关注人才发展、设计标准、协作质量和一线项目结果。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "impact_and_credibility.063",
+    "kind": "term",
+    "english": "final-round design interviews",
+    "chinese": "终面设计面试",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.064"
+  },
+  {
+    "id": "impact_and_credibility.064",
+    "kind": "pattern",
+    "english": "I was authorized to conduct final-round design interviews at Baidu, which helped me develop strong assessment judgment.",
+    "chinese": "我曾获得百度授权进行设计终面，这帮助我形成了较强的评估判断力。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "leadership_and_management.135",
+    "kind": "term",
+    "english": "performance review",
+    "chinese": "绩效评审",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.136"
+  },
+  {
+    "id": "leadership_and_management.136",
+    "kind": "pattern",
+    "english": "I completed Baidu's people-manager training and approval process, including performance reviews and promotion-related responsibilities.",
+    "chinese": "我完成过百度人员管理者培训和审批流程，包括绩效评审和晋升相关职责。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.137",
+    "kind": "term",
+    "english": "promotion success rate",
+    "chinese": "晋升成功率",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "show_impact",
+    "examplePatternId": "leadership_and_management.138",
+    "highlightOverrides": [
+      "promotion had a 100 percent success rate"
+    ]
+  },
+  {
+    "id": "leadership_and_management.138",
+    "kind": "pattern",
+    "english": "During the period I managed the team, eligible team members who pursued promotion had a 100 percent success rate.",
+    "chinese": "在我管理团队期间，符合条件并申请晋升的成员晋升成功率为 100%。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.065",
+    "kind": "term",
+    "english": "domain expert",
+    "chinese": "领域专家",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.066"
+  },
+  {
+    "id": "impact_and_credibility.066",
+    "kind": "pattern",
+    "english": "Baidu's investment and M&A team invited me as a digital human domain expert to evaluate potential investment targets.",
+    "chinese": "百度投资并购团队曾邀请我作为数字人领域专家评估潜在投资标的。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "impact_and_credibility.067",
+    "kind": "term",
+    "english": "industry insight",
+    "chinese": "行业洞察",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact",
+    "examplePatternId": "impact_and_credibility.068"
+  },
+  {
+    "id": "impact_and_credibility.068",
+    "kind": "pattern",
+    "english": "I have shared industry insights on AI digital humans, intelligent interaction, and design practice at conferences and universities.",
+    "chinese": "我曾在会议和高校分享关于 AI 数字人、智能交互和设计实践的行业洞察。",
+    "scene": "interview",
+    "module": "impact_and_credibility",
+    "intent": "show_impact"
+  },
+  {
+    "id": "personal_branding.071",
+    "kind": "phrase",
+    "english": "available to start immediately",
+    "chinese": "可立即入职",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.072"
+  },
+  {
+    "id": "personal_branding.072",
+    "kind": "pattern",
+    "english": "I am available to interview immediately and available to start immediately.",
+    "chinese": "我可以立即面试，也可以立即入职。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.073",
+    "kind": "phrase",
+    "english": "open to remote, hybrid, and onsite work",
+    "chinese": "接受远程、混合和现场办公",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.074"
+  },
+  {
+    "id": "personal_branding.074",
+    "kind": "pattern",
+    "english": "I am open to remote, hybrid, and onsite work, with a preference for Canada-based opportunities.",
+    "chinese": "我接受远程、混合和现场办公，优先考虑加拿大机会。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.075",
+    "kind": "term",
+    "english": "role fit",
+    "chinese": "岗位匹配度",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.076"
+  },
+  {
+    "id": "personal_branding.076",
+    "kind": "pattern",
+    "english": "I see a strong role fit when the team values product complexity, design systems, technical fluency, and business impact.",
+    "chinese": "当团队重视产品复杂度、设计系统、技术理解力和业务影响时，我认为岗位匹配度会很高。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.077",
+    "kind": "term",
+    "english": "career transition",
+    "chinese": "职业转型",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.078"
+  },
+  {
+    "id": "personal_branding.078",
+    "kind": "pattern",
+    "english": "My career transition to Canada was about expanding my technical foundation and broadening my product perspective beyond one market.",
+    "chinese": "我转向加拿大的职业阶段，是为了拓展技术基础，并让产品视角不局限于单一市场。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.079",
+    "kind": "term",
+    "english": "comfort zone",
+    "chinese": "舒适区",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.080"
+  },
+  {
+    "id": "personal_branding.080",
+    "kind": "pattern",
+    "english": "Leaving Baidu was a decision to step outside my comfort zone after ten years in one major product ecosystem.",
+    "chinese": "离开百度是我在一个大型产品生态工作十年后，走出舒适区的决定。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.081",
+    "kind": "term",
+    "english": "hands-on contribution",
+    "chinese": "一线贡献",
+    "scene": "workplace",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.082"
+  },
+  {
+    "id": "personal_branding.082",
+    "kind": "pattern",
+    "english": "Even while managing designers, I continued to make hands-on contributions to high-impact projects.",
+    "chinese": "即使在管理设计师期间，我仍持续对高影响力项目做一线贡献。",
+    "scene": "workplace",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "personal_branding.083",
+    "kind": "term",
+    "english": "strategic design judgment",
+    "chinese": "战略性设计判断",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.084"
+  },
+  {
+    "id": "personal_branding.084",
+    "kind": "pattern",
+    "english": "My strategic design judgment comes from connecting user needs, market shifts, technical possibilities, and business goals.",
+    "chinese": "我的战略性设计判断来自对用户需求、市场变化、技术可能性和业务目标的连接。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "product_strategy_and_business.167",
+    "kind": "term",
+    "english": "strategic input",
+    "chinese": "战略输入",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.168"
+  },
+  {
+    "id": "product_strategy_and_business.168",
+    "kind": "pattern",
+    "english": "In senior design roles, I see design as an important source of strategic input, not only execution support.",
+    "chinese": "在高级设计角色中，我认为设计是重要的战略输入来源，而不只是执行支持。",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.169",
+    "kind": "term",
+    "english": "project scoping",
+    "chinese": "项目范围定义",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.170"
+  },
+  {
+    "id": "product_strategy_and_business.170",
+    "kind": "pattern",
+    "english": "I often contribute to project scoping by clarifying user value, technical risk, business priority, and delivery effort.",
+    "chinese": "我经常通过澄清用户价值、技术风险、业务优先级和交付成本来参与项目范围定义。",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.171",
+    "kind": "term",
+    "english": "prioritization decision",
+    "chinese": "优先级决策",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.172"
+  },
+  {
+    "id": "product_strategy_and_business.172",
+    "kind": "pattern",
+    "english": "Good prioritization decisions require a shared understanding of impact, effort, risk, and timing.",
+    "chinese": "好的优先级决策需要共同理解影响、成本、风险和时机。",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.173",
+    "kind": "term",
+    "english": "shared value",
+    "chinese": "共同价值",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.174"
+  },
+  {
+    "id": "product_strategy_and_business.174",
+    "kind": "pattern",
+    "english": "My goal is usually to find shared value across users, the business, and the teams that need to deliver the product.",
+    "chinese": "我的目标通常是在用户、业务和交付团队之间找到共同价值。",
+    "scene": "workplace",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.077",
+    "kind": "term",
+    "english": "implementation mechanism",
+    "chinese": "实现机制",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.078"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.078",
+    "kind": "pattern",
+    "english": "For dark mode, we worked with engineering to define implementation mechanisms across multiple technology stacks.",
+    "chinese": "在深色模式项目中，我们和工程团队一起定义了跨多个技术栈的实现机制。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.079",
+    "kind": "term",
+    "english": "one-click conversion tool",
+    "chinese": "一键转换工具",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.080",
+    "highlightOverrides": [
+      "one-click conversion"
+    ]
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.080",
+    "kind": "pattern",
+    "english": "We developed design tool plugins for one-click conversion to dark mode and night mode.",
+    "chinese": "我们开发了设计工具插件，用于一键转换深色模式和夜间模式。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "describe_scope"
+  },
+  {
+    "id": "ux_research_and_interaction.117",
+    "kind": "term",
+    "english": "user acceptance",
+    "chinese": "用户接受度",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.118"
+  },
+  {
+    "id": "ux_research_and_interaction.118",
+    "kind": "pattern",
+    "english": "In AI digital human work, user acceptance was as important as technical novelty.",
+    "chinese": "在 AI 数字人项目中，用户接受度和技术新颖性同样重要。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.037",
+    "kind": "term",
+    "english": "trust mechanism",
+    "chinese": "信任机制",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.038"
+  },
+  {
+    "id": "ai_product_and_design_workflow.038",
+    "kind": "pattern",
+    "english": "AI products need trust mechanisms that help users understand what the system can and cannot do.",
+    "chinese": "AI 产品需要信任机制，帮助用户理解系统能做什么、不能做什么。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.119",
+    "kind": "term",
+    "english": "emotional dependence",
+    "chinese": "情感依赖",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.120"
+  },
+  {
+    "id": "ux_research_and_interaction.120",
+    "kind": "pattern",
+    "english": "Duxiaoxiao made me aware that emotional dependence on AI assistants can become a serious long-term design issue.",
+    "chinese": "度晓晓让我意识到，对 AI 助手的情感依赖可能成为长期严肃的设计议题。",
+    "scene": "workplace",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.121",
+    "kind": "term",
+    "english": "privacy concern",
+    "chinese": "隐私顾虑",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.122"
+  },
+  {
+    "id": "ux_research_and_interaction.122",
+    "kind": "pattern",
+    "english": "In multimodal AI interaction, privacy concerns can strongly affect whether users feel comfortable engaging.",
+    "chinese": "在多模态 AI 交互中，隐私顾虑会强烈影响用户是否愿意参与。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.123",
+    "kind": "term",
+    "english": "efficiency-focused interaction",
+    "chinese": "效率导向的交互",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.124",
+    "highlightOverrides": [
+      "optimized for efficiency"
+    ]
+  },
+  {
+    "id": "ux_research_and_interaction.124",
+    "kind": "pattern",
+    "english": "Search is usually optimized for efficiency, so adding a digital human had to be justified by real user value.",
+    "chinese": "搜索通常是为效率而优化的，因此加入数字人必须有真实用户价值支撑。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.125",
+    "kind": "term",
+    "english": "long-term human-AI relationship",
+    "chinese": "长期人机关系",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.126"
+  },
+  {
+    "id": "ux_research_and_interaction.126",
+    "kind": "pattern",
+    "english": "I believe long-term human-AI relationships involve not only usefulness, but also trust, boundaries, and responsibility.",
+    "chinese": "我认为长期人机关系不仅涉及有用性，也涉及信任、边界和责任。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.175",
+    "kind": "term",
+    "english": "design as a strategic function",
+    "chinese": "作为战略职能的设计",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.176",
+    "highlightOverrides": [
+      "design into a more strategic function"
+    ]
+  },
+  {
+    "id": "product_strategy_and_business.176",
+    "kind": "pattern",
+    "english": "A consistent theme in my career has been turning design into a more strategic function inside product organizations.",
+    "chinese": "我职业经历中持续的主题，是把设计变成产品组织中更具战略性的职能。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.077",
+    "kind": "term",
+    "english": "treatment group",
+    "chinese": "实验组",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.078"
+  },
+  {
+    "id": "data_metrics_and_experimentation.078",
+    "kind": "pattern",
+    "english": "The treatment group saw the redesigned homepage, while the control group stayed on the existing version.",
+    "chinese": "实验组看到了改版后的首页，而对照组继续使用现有版本。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.079",
+    "kind": "term",
+    "english": "control group",
+    "chinese": "对照组",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.080"
+  },
+  {
+    "id": "data_metrics_and_experimentation.080",
+    "kind": "pattern",
+    "english": "We compared the treatment group against the control group to measure the impact of the redesign.",
+    "chinese": "我们将实验组和对照组进行比较，以衡量改版的影响。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.081",
+    "kind": "phrase",
+    "english": "bridge design and engineering",
+    "chinese": "连接设计与工程",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.082"
+  },
+  {
+    "id": "engineering_collaboration_and_technical_fluency.082",
+    "kind": "pattern",
+    "english": "Because I understand frontend and Web3D implementation, I often bridge design and engineering when the interaction is hard to explain with static screens.",
+    "chinese": "因为我理解前端和 Web3D 实现，所以当交互很难用静态页面解释时，我经常连接设计与工程。",
+    "scene": "workplace",
+    "module": "engineering_collaboration_and_technical_fluency",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.139",
+    "kind": "phrase",
+    "english": "turn ambiguity into a clear path",
+    "chinese": "把模糊问题变成清晰路径",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.140"
+  },
+  {
+    "id": "leadership_and_management.140",
+    "kind": "pattern",
+    "english": "On Duxiaoxiao, my role was to turn ambiguity into a clear path across interaction design, AI capabilities, 3D assets, and commercial use cases.",
+    "chinese": "在度晓晓项目中，我的角色是把交互设计、AI 能力、3D 资产和商业场景中的模糊问题变成清晰路径。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.141",
+    "kind": "phrase",
+    "english": "drive cross-functional alignment",
+    "chinese": "推动跨职能对齐",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.142"
+  },
+  {
+    "id": "leadership_and_management.142",
+    "kind": "pattern",
+    "english": "A major part of my work at Baidu was driving cross-functional alignment across product, engineering, data, growth, and design teams.",
+    "chinese": "我在百度工作中很重要的一部分，是推动产品、工程、数据、增长和设计团队之间的跨职能对齐。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "product_strategy_and_business.177",
+    "kind": "phrase",
+    "english": "balance user needs and business goals",
+    "chinese": "平衡用户需求和业务目标",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.178"
+  },
+  {
+    "id": "product_strategy_and_business.178",
+    "kind": "pattern",
+    "english": "On the Baidu App homepage, I had to balance user needs and business goals because the page carried search, content discovery, and monetization at the same time.",
+    "chinese": "在百度 App 首页项目中，我必须平衡用户需求和业务目标，因为这个页面同时承载搜索、内容发现和商业化。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.179",
+    "kind": "phrase",
+    "english": "connect design decisions to business outcomes",
+    "chinese": "把设计决策连接到业务结果",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact",
+    "examplePatternId": "product_strategy_and_business.180"
+  },
+  {
+    "id": "product_strategy_and_business.180",
+    "kind": "pattern",
+    "english": "I try to connect design decisions to business outcomes, such as how the 2019 homepage redesign contributed to engagement and estimated annualized revenue growth.",
+    "chinese": "我会尽量把设计决策连接到业务结果，比如 2019 年首页改版如何促进参与度和预估年化收入增长。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact"
+  },
+  {
+    "id": "prototyping_motion_and_3d.053",
+    "kind": "phrase",
+    "english": "reduce implementation risk",
+    "chinese": "降低实现风险",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "prototyping_motion_and_3d.054"
+  },
+  {
+    "id": "prototyping_motion_and_3d.054",
+    "kind": "pattern",
+    "english": "I use high-fidelity prototypes to reduce implementation risk before engineering teams invest heavily in complex motion or AI interactions.",
+    "chinese": "我使用高保真原型，在工程团队大量投入复杂动效或 AI 交互之前降低实现风险。",
+    "scene": "workplace",
+    "module": "prototyping_motion_and_3d",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "data_metrics_and_experimentation.081",
+    "kind": "phrase",
+    "english": "validate ideas with real users",
+    "chinese": "用真实用户验证想法",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.082"
+  },
+  {
+    "id": "data_metrics_and_experimentation.082",
+    "kind": "pattern",
+    "english": "For Baidu App and Duxiaoxiao, I was able to validate ideas with real users in high-traffic production environments.",
+    "chinese": "在百度 App 和度晓晓项目中，我能够在高流量生产环境中用真实用户验证想法。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.083",
+    "kind": "phrase",
+    "english": "test at scale",
+    "chinese": "大规模验证",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.084"
+  },
+  {
+    "id": "data_metrics_and_experimentation.084",
+    "kind": "pattern",
+    "english": "Working on Baidu App taught me how to test at scale, where even small design changes needed careful experiment design and rollout.",
+    "chinese": "百度 App 的经历让我学会如何大规模验证，因为即使是小的设计变化也需要谨慎的实验设计和上线策略。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ux_research_and_interaction.127",
+    "kind": "phrase",
+    "english": "define the first version of the experience",
+    "chinese": "定义体验的第一个版本",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ux_research_and_interaction.128"
+  },
+  {
+    "id": "ux_research_and_interaction.128",
+    "kind": "pattern",
+    "english": "For Duxiaoxiao, I helped define the first version of the experience, including how a digital human should enter search, respond, and hand off to results.",
+    "chinese": "在度晓晓项目中，我帮助定义了体验的第一个版本，包括数字人如何进入搜索、回应用户并切换到搜索结果。",
+    "scene": "portfolio",
+    "module": "ux_research_and_interaction",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.039",
+    "kind": "phrase",
+    "english": "bring an AI capability into a real user flow",
+    "chinese": "把 AI 能力带入真实用户流程",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.040"
+  },
+  {
+    "id": "ai_product_and_design_workflow.040",
+    "kind": "pattern",
+    "english": "The challenge was not just the AI capability itself, but how to bring an AI capability into a real user flow inside Baidu App.",
+    "chinese": "挑战不只是 AI 能力本身，而是如何把 AI 能力带入百度 App 内真实的用户流程。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.041",
+    "kind": "phrase",
+    "english": "make AI feel understandable",
+    "chinese": "让 AI 变得可理解",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.042"
+  },
+  {
+    "id": "ai_product_and_design_workflow.042",
+    "kind": "pattern",
+    "english": "In Duxiaoxiao, I focused on making AI feel understandable through voice, facial expressions, motion, and clear interaction states.",
+    "chinese": "在度晓晓中，我关注通过语音、表情、动作和清晰交互状态让 AI 变得可理解。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.043",
+    "kind": "phrase",
+    "english": "build trust through interaction design",
+    "chinese": "通过交互设计建立信任",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.044"
+  },
+  {
+    "id": "ai_product_and_design_workflow.044",
+    "kind": "pattern",
+    "english": "I believe AI products need to build trust through interaction design, especially when users need to understand when the system is answering, searching, or switching modes.",
+    "chinese": "我认为 AI 产品需要通过交互设计建立信任，尤其是当用户需要理解系统是在回答、搜索还是切换模式时。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "ai_product_and_design_workflow.045",
+    "kind": "phrase",
+    "english": "support both task efficiency and emotional response",
+    "chinese": "同时支持任务效率和情感反馈",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "ai_product_and_design_workflow.046"
+  },
+  {
+    "id": "ai_product_and_design_workflow.046",
+    "kind": "pattern",
+    "english": "Duxiaoxiao was challenging because the experience needed to support both task efficiency and emotional response inside a search product.",
+    "chinese": "度晓晓的挑战在于，它需要在搜索产品中同时支持任务效率和情感反馈。",
+    "scene": "portfolio",
+    "module": "ai_product_and_design_workflow",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.181",
+    "kind": "phrase",
+    "english": "design within platform constraints",
+    "chinese": "在平台约束下设计",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.182"
+  },
+  {
+    "id": "product_strategy_and_business.182",
+    "kind": "pattern",
+    "english": "I am used to designing within platform constraints, including existing user habits, business requirements, technical stacks, and release timelines.",
+    "chinese": "我习惯在平台约束下做设计，包括既有用户习惯、业务需求、技术栈和发布节奏。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.109",
+    "kind": "phrase",
+    "english": "improve consistency across teams",
+    "chinese": "提升跨团队一致性",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.110"
+  },
+  {
+    "id": "visual_ui_and_design_systems.110",
+    "kind": "pattern",
+    "english": "My design infrastructure work improved consistency across teams by turning repeated decisions into shared standards and reusable patterns.",
+    "chinese": "我的设计基础设施工作通过把重复决策转化为共享标准和可复用模式，提升了跨团队一致性。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "visual_ui_and_design_systems.111",
+    "kind": "phrase",
+    "english": "turn repeated problems into reusable patterns",
+    "chinese": "把重复问题变成可复用模式",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "visual_ui_and_design_systems.112"
+  },
+  {
+    "id": "visual_ui_and_design_systems.112",
+    "kind": "pattern",
+    "english": "In Baidu App, I often turned repeated problems into reusable patterns, especially for homepage campaigns, dark mode, and motion design.",
+    "chinese": "在百度 App，我经常把重复问题变成可复用模式，尤其是在首页活动、深色模式和动效设计中。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "visual_ui_and_design_systems.113",
+    "kind": "phrase",
+    "english": "create standards other teams can adopt",
+    "chinese": "建立其他团队可采用的标准",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "visual_ui_and_design_systems.114",
+    "highlightOverrides": [
+      "created standards other teams could adopt"
+    ]
+  },
+  {
+    "id": "visual_ui_and_design_systems.114",
+    "kind": "pattern",
+    "english": "For dark mode, we created standards other teams could adopt across Baidu's mobile product ecosystem.",
+    "chinese": "在深色模式项目中，我们建立了百度移动产品生态中其他团队也可以采用的标准。",
+    "scene": "portfolio",
+    "module": "visual_ui_and_design_systems",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "product_strategy_and_business.183",
+    "kind": "phrase",
+    "english": "protect the core user experience",
+    "chinese": "保护核心用户体验",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.184"
+  },
+  {
+    "id": "product_strategy_and_business.184",
+    "kind": "pattern",
+    "english": "When designing homepage monetization capabilities, I pushed for clear rules to protect the core user experience.",
+    "chinese": "在设计首页商业化能力时，我推动建立清晰规则来保护核心用户体验。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.185",
+    "kind": "phrase",
+    "english": "prevent promotions from overwhelming the homepage",
+    "chinese": "防止营销活动过度占据首页",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.186"
+  },
+  {
+    "id": "product_strategy_and_business.186",
+    "kind": "pattern",
+    "english": "We created placement and review rules to prevent promotions from overwhelming the homepage while still supporting business needs.",
+    "chinese": "我们建立了位置和评审规则，防止营销活动过度占据首页，同时仍然支持业务需求。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.187",
+    "kind": "phrase",
+    "english": "improve content discovery",
+    "chinese": "改善内容发现",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact",
+    "examplePatternId": "product_strategy_and_business.188"
+  },
+  {
+    "id": "product_strategy_and_business.188",
+    "kind": "pattern",
+    "english": "The Baidu App homepage redesign improved content discovery by giving the algorithmic feed a clearer role in the overall experience.",
+    "chinese": "百度 App 首页改版通过让算法信息流在整体体验中承担更清晰的角色，改善了内容发现。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "show_impact"
+  },
+  {
+    "id": "product_strategy_and_business.189",
+    "kind": "phrase",
+    "english": "shift from active search to passive discovery",
+    "chinese": "从主动搜索转向被动发现",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.190"
+  },
+  {
+    "id": "product_strategy_and_business.190",
+    "kind": "pattern",
+    "english": "Part of Baidu App's evolution was a shift from active search to passive discovery, while still preserving search as the core capability.",
+    "chinese": "百度 App 演进中的一部分，是从主动搜索转向被动发现，同时仍然保留搜索作为核心能力。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.191",
+    "kind": "phrase",
+    "english": "guide users toward relevant content",
+    "chinese": "引导用户找到相关内容",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.192"
+  },
+  {
+    "id": "product_strategy_and_business.192",
+    "kind": "pattern",
+    "english": "On the homepage, our goal was to guide users toward relevant content without making the product feel noisy or overly commercial.",
+    "chinese": "在首页上，我们的目标是引导用户找到相关内容，同时避免产品显得嘈杂或过度商业化。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "product_strategy_and_business.193",
+    "kind": "phrase",
+    "english": "increase engagement without hurting clarity",
+    "chinese": "提升参与度但不损害清晰度",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.194"
+  },
+  {
+    "id": "product_strategy_and_business.194",
+    "kind": "pattern",
+    "english": "In the homepage redesign, we tried to increase engagement without hurting clarity, which meant balancing feed prominence with a clean search experience.",
+    "chinese": "在首页改版中，我们试图提升参与度但不损害清晰度，这意味着要平衡信息流突出度和清爽的搜索体验。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.085",
+    "kind": "phrase",
+    "english": "use data without losing product judgment",
+    "chinese": "使用数据但不丢失产品判断",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.086"
+  },
+  {
+    "id": "data_metrics_and_experimentation.086",
+    "kind": "pattern",
+    "english": "I use data without losing product judgment, because metrics need to be interpreted alongside user behavior, product strategy, and research feedback.",
+    "chinese": "我使用数据但不会丢失产品判断，因为指标需要结合用户行为、产品策略和研究反馈来解读。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.087",
+    "kind": "phrase",
+    "english": "combine qualitative insight with quantitative validation",
+    "chinese": "结合定性洞察和定量验证",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.088"
+  },
+  {
+    "id": "data_metrics_and_experimentation.088",
+    "kind": "pattern",
+    "english": "In strategic design work, I combine qualitative insight with quantitative validation so the team can understand both the why and the scale of a problem.",
+    "chinese": "在战略性设计工作中，我结合定性洞察和定量验证，让团队既理解问题的原因，也理解问题的规模。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.089",
+    "kind": "phrase",
+    "english": "interpret metrics in context",
+    "chinese": "结合语境解读指标",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "data_metrics_and_experimentation.090"
+  },
+  {
+    "id": "data_metrics_and_experimentation.090",
+    "kind": "pattern",
+    "english": "For homepage experiments, I tried to interpret metrics in context instead of treating DAU, time spent, or conversion as isolated numbers.",
+    "chinese": "在首页实验中，我会结合语境解读指标，而不是把日活、时长或转化当成孤立数字。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "data_metrics_and_experimentation.091",
+    "kind": "phrase",
+    "english": "make the case with evidence",
+    "chinese": "用证据说明观点",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "data_metrics_and_experimentation.092"
+  },
+  {
+    "id": "data_metrics_and_experimentation.092",
+    "kind": "pattern",
+    "english": "When I advocated for homepage changes, I made the case with evidence from experiments, user research, market trends, and product strategy.",
+    "chinese": "当我推动首页变化时，我会用实验、用户研究、市场趋势和产品策略中的证据来说明观点。",
+    "scene": "portfolio",
+    "module": "data_metrics_and_experimentation",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.143",
+    "kind": "phrase",
+    "english": "earn trust from stakeholders",
+    "chinese": "赢得利益相关方信任",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.144"
+  },
+  {
+    "id": "leadership_and_management.144",
+    "kind": "pattern",
+    "english": "I earned trust from stakeholders by being specific about trade-offs and by connecting design proposals to user and business outcomes.",
+    "chinese": "我通过具体说明取舍，并把设计方案连接到用户和业务结果，赢得利益相关方信任。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "leadership_and_management.145",
+    "kind": "phrase",
+    "english": "influence without direct authority",
+    "chinese": "在没有直接权力时施加影响",
+    "scene": "portfolio",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence",
+    "examplePatternId": "leadership_and_management.146"
+  },
+  {
+    "id": "leadership_and_management.146",
+    "kind": "pattern",
+    "english": "Many of my Baidu App projects required me to influence without direct authority because the work depended on many parallel business and engineering teams.",
+    "chinese": "我的许多百度 App 项目都需要在没有直接权力的情况下施加影响，因为工作依赖多个并行的业务和工程团队。",
+    "scene": "portfolio",
+    "module": "leadership_and_management",
+    "intent": "collaborate_and_influence"
+  },
+  {
+    "id": "personal_branding.085",
+    "kind": "phrase",
+    "english": "stay hands-on while leading a team",
+    "chinese": "带团队时仍保持一线参与",
+    "scene": "workplace",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.086",
+    "highlightOverrides": [
+      "leading a team",
+      "stayed hands-on"
+    ]
+  },
+  {
+    "id": "personal_branding.086",
+    "kind": "pattern",
+    "english": "Even while leading a team of designers and 3D artists, I stayed hands-on on the most important Duxiaoxiao experience and system design work.",
+    "chinese": "即使在带领设计师和 3D 艺术家团队时，我仍然在度晓晓最重要的体验和系统设计工作中保持一线参与。",
+    "scene": "workplace",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "leadership_and_management.147",
+    "kind": "phrase",
+    "english": "coach designers through complex projects",
+    "chinese": "指导设计师完成复杂项目",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.148"
+  },
+  {
+    "id": "leadership_and_management.148",
+    "kind": "pattern",
+    "english": "As a design lead, I coached designers through complex projects involving AI interaction, 3D assets, product constraints, and cross-functional delivery.",
+    "chinese": "作为设计负责人，我指导设计师完成涉及 AI 交互、3D 资产、产品约束和跨职能交付的复杂项目。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "leadership_and_management.149",
+    "kind": "phrase",
+    "english": "turn individual expertise into a team capability",
+    "chinese": "把个人能力转化为团队能力",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach",
+    "examplePatternId": "leadership_and_management.150"
+  },
+  {
+    "id": "leadership_and_management.150",
+    "kind": "pattern",
+    "english": "Teaching high-fidelity prototyping at Baidu helped me turn individual expertise into a team capability.",
+    "chinese": "在百度教授高保真原型课程，帮助我把个人能力转化为团队能力。",
+    "scene": "workplace",
+    "module": "leadership_and_management",
+    "intent": "manage_and_coach"
+  },
+  {
+    "id": "prototyping_motion_and_3d.055",
+    "kind": "phrase",
+    "english": "explain complex ideas through prototypes",
+    "chinese": "用原型解释复杂想法",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.056"
+  },
+  {
+    "id": "prototyping_motion_and_3d.056",
+    "kind": "pattern",
+    "english": "I often explain complex ideas through prototypes, especially when the work involves motion, AI, 3D characters, or new interaction models.",
+    "chinese": "我经常用原型解释复杂想法，尤其是当工作涉及动效、AI、3D 角色或新交互模型时。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "prototyping_motion_and_3d.057",
+    "kind": "phrase",
+    "english": "make abstract concepts tangible",
+    "chinese": "让抽象概念变得具体",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "prototyping_motion_and_3d.058"
+  },
+  {
+    "id": "prototyping_motion_and_3d.058",
+    "kind": "pattern",
+    "english": "For Duxiaoxiao, prototypes helped make abstract concepts tangible for product, engineering, AI, and 3D teams.",
+    "chinese": "在度晓晓项目中，原型帮助产品、工程、AI 和 3D 团队把抽象概念变得具体。",
+    "scene": "portfolio",
+    "module": "prototyping_motion_and_3d",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "personal_branding.087",
+    "kind": "phrase",
+    "english": "work at the intersection of design, AI, and product strategy",
+    "chinese": "工作在设计、AI 和产品策略交叉处",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.088",
+    "highlightOverrides": [
+      "work sits at the intersection of design, AI, and product strategy"
+    ]
+  },
+  {
+    "id": "personal_branding.088",
+    "kind": "pattern",
+    "english": "Much of my recent work sits at the intersection of design, AI, and product strategy, especially through Duxiaoxiao and AI search exploration.",
+    "chinese": "我近年的很多工作处在设计、AI 和产品策略的交叉处，尤其体现在度晓晓和 AI 搜索探索中。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
+  },
+  {
+    "id": "product_strategy_and_business.195",
+    "kind": "phrase",
+    "english": "bring a systems lens to product design",
+    "chinese": "用系统视角做产品设计",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning",
+    "examplePatternId": "product_strategy_and_business.196"
+  },
+  {
+    "id": "product_strategy_and_business.196",
+    "kind": "pattern",
+    "english": "I bring a systems lens to product design, which helps me think beyond individual screens and design for patterns, rules, and long-term consistency.",
+    "chinese": "我用系统视角做产品设计，这帮助我跳出单个页面，从模式、规则和长期一致性角度设计。",
+    "scene": "portfolio",
+    "module": "product_strategy_and_business",
+    "intent": "explain_process_and_reasoning"
+  },
+  {
+    "id": "personal_branding.089",
+    "kind": "phrase",
+    "english": "operate in complex product environments",
+    "chinese": "在复杂产品环境中工作",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self",
+    "examplePatternId": "personal_branding.090"
+  },
+  {
+    "id": "personal_branding.090",
+    "kind": "pattern",
+    "english": "I am comfortable operating in complex product environments where user needs, business pressure, technical constraints, and organizational constraints all matter.",
+    "chinese": "我能在复杂产品环境中工作，在这种环境里用户需求、业务压力、技术约束和组织约束都很重要。",
+    "scene": "interview",
+    "module": "personal_branding",
+    "intent": "position_self"
   }
 ]
