@@ -2,7 +2,7 @@
 
 Try it in your browser 👉 **[Live Demo](https://rrrick-code.github.io/ux-career-english/)**
 
-![App Screenshot](./docs/screenshot.png)
+![App Screenshot](./img/screenshot.png)
 
 This is an AI Coding project for building a focused English learning app for a UX/UI/Product Designer preparing for job search, interviews, and workplace communication. All learning content in this project is AI-generated.
 
