@@ -99,7 +99,12 @@ export function LearningRecordsMenu() {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button aria-label="Learning records" size="icon" variant="ghost">
+          <Button
+            aria-label="Learning records"
+            className="bg-transparent hover:bg-slate-300/20 aria-expanded:bg-slate-300/20"
+            size="icon"
+            variant="ghost"
+          >
             <MoreHorizontalIcon />
           </Button>
         </DropdownMenuTrigger>
