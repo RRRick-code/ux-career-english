@@ -87,6 +87,9 @@ export function StudyPage() {
   const title = routeState ? getStudyTitle(routeState) : "";
   const theme = getStudyTheme(routeState?.pool ?? "total");
   const examplePattern = currentItem ? getExamplePatternForItem(currentItem) : null;
+  const examplePatternRecord = examplePattern
+    ? getRecord(examplePattern.id)
+    : null;
 
   useGSAP(
     () => {
@@ -337,16 +340,40 @@ export function StudyPage() {
               {revealed && routeState.scope === "term_phrase" ? (
                 <div
                   ref={exampleTextRef}
-                  className="-mx-6 w-auto border-t border-border/70 px-6 pt-5 text-left"
+                  className="relative -mx-6 w-auto border-t border-border/70 px-6 pt-5 pb-8 pr-12 text-left"
                 >
                   {examplePattern ? (
-                    <p className="cursor-text select-text text-base leading-8 text-foreground/80">
-                      <HighlightedText
-                        className={theme.highlightClassName}
-                        item={currentItem}
-                        text={examplePattern.english}
-                      />
-                    </p>
+                    <>
+                      <p className="cursor-text select-text text-base leading-8 text-foreground/80">
+                        <HighlightedText
+                          className={theme.highlightClassName}
+                          item={currentItem}
+                          text={examplePattern.english}
+                        />
+                      </p>
+                      <button
+                        type="button"
+                        className="group/example-star absolute right-5 bottom-0 -m-2 cursor-pointer p-2 text-slate-300 transition-colors hover:text-slate-400"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleStar(examplePattern.id);
+                        }}
+                      >
+                        <Star
+                          className={cn(
+                            "h-4 w-4",
+                            examplePatternRecord?.starred
+                              ? "fill-yellow-400 text-yellow-400"
+                              : "",
+                          )}
+                        />
+                        <span className="pointer-events-none absolute right-0 bottom-full mb-2 rounded-md border bg-white px-2 py-1 text-xs whitespace-nowrap text-foreground opacity-0 shadow-sm transition-opacity group-hover/example-star:opacity-100">
+                          {examplePatternRecord?.starred
+                            ? "Starred for Patterns"
+                            : "Star this example for Patterns"}
+                        </span>
+                      </button>
+                    </>
                   ) : (
                     <p className="text-sm leading-7 text-muted-foreground">
                       Example sentence pending.
