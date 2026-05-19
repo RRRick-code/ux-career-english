@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppShell } from "@/components/app-shell";
+import { LearningRecordsMenu } from "@/components/learning-records-menu";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -107,6 +108,8 @@ export function HomePage() {
     <AppShell
       title="Practice Hub"
       description="Build vocabulary, phrases, and patterns for interviews and work."
+      actions={<LearningRecordsMenu />}
+      actionsPlacement="top-right"
     >
       <section className="space-y-5">
         <Tabs

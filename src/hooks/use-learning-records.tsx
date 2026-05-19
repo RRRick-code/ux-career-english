@@ -26,6 +26,7 @@ type LearningRecordsContextValue = {
   records: LearningRecordMap;
   getRecord: (itemId: string) => LearningRecord;
   resetProgress: (scope: StudyScope) => void;
+  replaceRecords: (records: LearningRecordMap) => void;
   updateWithFeedback: (
     itemId: string,
     feedback: FeedbackRating,
@@ -74,6 +75,16 @@ export function LearningRecordsProvider({ children }: PropsWithChildren) {
           return;
         }
 
+        setRecords(nextRecords);
+
+        if (Object.keys(nextRecords).length === 0) {
+          clearLearningRecords();
+          return;
+        }
+
+        saveLearningRecords(nextRecords);
+      },
+      replaceRecords: (nextRecords) => {
         setRecords(nextRecords);
 
         if (Object.keys(nextRecords).length === 0) {

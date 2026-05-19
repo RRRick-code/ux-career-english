@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { countStarred } from "../src/lib/learning.ts";
-import { applyFeedback, removeLearningRecords } from "../src/lib/storage.ts";
+import {
+  applyFeedback,
+  buildLearningRecordsExport,
+  isMeaningfulLearningRecord,
+  parseLearningRecordsImport,
+  removeLearningRecords,
+} from "../src/lib/storage.ts";
 import { buildStudyRound } from "../src/lib/study.ts";
 
 test("storage: applyFeedback propagates starred status", () => {
@@ -200,4 +206,150 @@ test("study: buildStudyRound with starred reinforcement excludes mastered items"
   assert.ok(ids.includes("term.001"));
   assert.ok(ids.includes("term.002"));
   assert.ok(!ids.includes("term.003"));
+});
+
+test("storage: buildLearningRecordsExport creates the formal backup format", () => {
+  const exported = buildLearningRecordsExport(
+    {
+      "term.001": { progress: 60, status: "in_progress", starred: true },
+    },
+    new Date("2026-05-19T18:30:00.000Z"),
+  );
+
+  assert.equal(exported.app, "ux-english2");
+  assert.equal(exported.type, "learning-records");
+  assert.equal(exported.schemaVersion, 1);
+  assert.equal(exported.exportedAt, "2026-05-19T18:30:00.000Z");
+  assert.deepEqual(exported.records, {
+    "term.001": { progress: 60, status: "in_progress", starred: true },
+  });
+});
+
+test("storage: buildLearningRecordsExport omits empty default records", () => {
+  const exported = buildLearningRecordsExport(
+    {
+      "term.001": { progress: 0, status: "not_started" },
+      "term.002": { progress: 0, status: "not_started", starred: false },
+      "term.003": { progress: 0, status: "not_started", starred: true },
+      "term.004": { progress: 20, status: "in_progress" },
+    },
+    new Date("2026-05-19T18:30:00.000Z"),
+  );
+
+  assert.deepEqual(exported.records, {
+    "term.003": { progress: 0, status: "not_started", starred: true },
+    "term.004": { progress: 20, status: "in_progress" },
+  });
+});
+
+test("storage: isMeaningfulLearningRecord matches exportable learning records", () => {
+  assert.equal(
+    isMeaningfulLearningRecord({ progress: 0, status: "not_started" }),
+    false,
+  );
+  assert.equal(
+    isMeaningfulLearningRecord({
+      progress: 0,
+      status: "not_started",
+      starred: false,
+    }),
+    false,
+  );
+  assert.equal(
+    isMeaningfulLearningRecord({
+      progress: 0,
+      status: "not_started",
+      starred: true,
+    }),
+    true,
+  );
+  assert.equal(
+    isMeaningfulLearningRecord({ progress: 20, status: "in_progress" }),
+    true,
+  );
+});
+
+test("storage: parseLearningRecordsImport imports only formal backup files", () => {
+  const raw = JSON.stringify({
+    app: "ux-english2",
+    type: "learning-records",
+    schemaVersion: 1,
+    exportedAt: "2026-05-19T18:30:00.000Z",
+    records: {
+      "term.001": { progress: 40, status: "in_progress" },
+    },
+  });
+
+  const result = parseLearningRecordsImport(raw, ["term.001"]);
+
+  assert.equal(result.importedCount, 1);
+  assert.equal(result.ignoredCount, 0);
+  assert.equal(result.totalCount, 1);
+  assert.deepEqual(result.records, {
+    "term.001": { progress: 40, status: "in_progress" },
+  });
+
+  assert.throws(
+    () => parseLearningRecordsImport(JSON.stringify(result.records), [
+      "term.001",
+    ]),
+    /Invalid learning records backup file/,
+  );
+});
+
+test("storage: parseLearningRecordsImport rejects wrong type and schema", () => {
+  const base = {
+    app: "ux-english2",
+    type: "learning-records",
+    schemaVersion: 1,
+    exportedAt: "2026-05-19T18:30:00.000Z",
+    records: {},
+  };
+
+  assert.throws(
+    () =>
+      parseLearningRecordsImport(
+        JSON.stringify({ ...base, type: "content-data" }),
+        [],
+      ),
+    /Invalid learning records backup file/,
+  );
+  assert.throws(
+    () =>
+      parseLearningRecordsImport(
+        JSON.stringify({ ...base, schemaVersion: 2 }),
+        [],
+      ),
+    /Invalid learning records backup file/,
+  );
+});
+
+test("storage: parseLearningRecordsImport filters invalid ids and normalizes records", () => {
+  const raw = JSON.stringify({
+    app: "ux-english2",
+    type: "learning-records",
+    schemaVersion: 1,
+    exportedAt: "2026-05-19T18:30:00.000Z",
+    records: {
+      "term.001": { progress: 120, status: "mastered", starred: true },
+      "term.002": { progress: -10, status: "unknown", starred: false },
+      "term.999": { progress: 80, status: "in_progress" },
+    },
+  });
+
+  const result = parseLearningRecordsImport(raw, ["term.001", "term.002"]);
+
+  assert.equal(result.importedCount, 2);
+  assert.equal(result.ignoredCount, 1);
+  assert.deepEqual(result.records, {
+    "term.001": { progress: 100, status: "mastered", starred: true },
+    "term.002": { progress: 0, status: "not_started" },
+  });
+});
+
+test("storage: parseLearningRecordsImport rejects invalid JSON", () => {
+  assert.throws(
+    () => parseLearningRecordsImport("{", []),
+    /Invalid JSON file/,
+  );
 });
