@@ -7264,16 +7264,13 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "product_strategy_and_business.140",
-    "highlightOverrides": [
-      "directed users toward search, content, and business surfaces"
-    ]
+    "examplePatternId": "product_strategy_and_business.140"
   },
   {
     "id": "product_strategy_and_business.140",
     "kind": "pattern",
-    "english": "The homepage directed users toward search, content, and business surfaces, so every design decision required careful trade-offs.",
-    "chinese": "首页会把用户引导到搜索、内容和业务界面，因此每个设计决策都需要谨慎权衡。",
+    "english": "The homepage required careful attention routing across search, content, and business surfaces, so every design decision involved strict trade-offs.",
+    "chinese": "首页需要在搜索、内容和业务界面之间进行谨慎的用户注意力引导，因此每个设计决策都涉及严格的权衡。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
