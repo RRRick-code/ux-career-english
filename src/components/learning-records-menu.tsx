@@ -152,7 +152,7 @@ export function LearningRecordsMenu() {
           <AlertDialogFooter>
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction onClick={handleConfirmImport}>
-              Import Learning Records
+              Import
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
