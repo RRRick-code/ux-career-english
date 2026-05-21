@@ -6643,25 +6643,6 @@
     "examplePatternId": "product_strategy_and_business.123"
   },
   {
-    "id": "product_strategy_and_business.125",
-    "kind": "pattern",
-    "english": "There's a real Conway's Law dynamic on that product — checkout, account settings, and post-purchase are owned by three separate teams, and users feel that fragmentation directly.",
-    "chinese": "那个产品上存在明显的康威定律现象——结账、账户设置和购后体验分别归三个不同的团队负责，用户能直接感受到这种割裂。",
-    "scene": "portfolio",
-    "module": "product_strategy_and_business",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
-    "id": "product_strategy_and_business.126",
-    "kind": "term",
-    "english": "Conway's Law",
-    "chinese": "康威定律",
-    "scene": "portfolio",
-    "module": "product_strategy_and_business",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "product_strategy_and_business.125"
-  },
-  {
     "id": "leadership_and_management.109",
     "kind": "pattern",
     "english": "I stopped showing high-fidelity mocks first in reviews. Once stakeholders see a polished version, the anchoring effect kicks in — every critique becomes relative to that frame, not the actual problem.",
@@ -7238,25 +7219,6 @@
     "intent": "explain_process_and_reasoning"
   },
   {
-    "id": "product_strategy_and_business.137",
-    "kind": "term",
-    "english": "content discovery",
-    "chinese": "内容发现",
-    "scene": "portfolio",
-    "module": "product_strategy_and_business",
-    "intent": "explain_process_and_reasoning",
-    "examplePatternId": "product_strategy_and_business.138"
-  },
-  {
-    "id": "product_strategy_and_business.138",
-    "kind": "pattern",
-    "english": "Improving content discovery was a major theme in my Baidu App homepage work.",
-    "chinese": "改善内容发现是我在百度 App 首页工作中的重要主题。",
-    "scene": "portfolio",
-    "module": "product_strategy_and_business",
-    "intent": "explain_process_and_reasoning"
-  },
-  {
     "id": "product_strategy_and_business.139",
     "kind": "term",
     "english": "attention routing",
@@ -7529,7 +7491,7 @@
     "id": "data_metrics_and_experimentation.071",
     "kind": "term",
     "english": "time spent",
-    "chinese": "用户时长",
+    "chinese": "时长",
     "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "show_impact",
@@ -9036,7 +8998,7 @@
     "id": "ux_research_and_interaction.125",
     "kind": "term",
     "english": "long-term human-AI relationship",
-    "chinese": "长期人机关系",
+    "chinese": "人与 AI 的长期关系",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
@@ -9767,15 +9729,12 @@
   {
     "id": "personal_branding.087",
     "kind": "phrase",
-    "english": "work at the intersection of design, AI, and product strategy",
-    "chinese": "工作在设计、AI 和产品策略交叉处",
+    "english": "at the intersection of design, AI, and product strategy",
+    "chinese": "在设计、AI 和产品策略的交叉处",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
-    "examplePatternId": "personal_branding.088",
-    "highlightOverrides": [
-      "work sits at the intersection of design, AI, and product strategy"
-    ]
+    "examplePatternId": "personal_branding.088"
   },
   {
     "id": "personal_branding.088",
