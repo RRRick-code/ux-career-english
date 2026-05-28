@@ -8975,15 +8975,12 @@
   {
     "id": "ux_research_and_interaction.123",
     "kind": "term",
-    "english": "efficiency-focused interaction",
-    "chinese": "效率导向的交互",
+    "english": "optimized for efficiency",
+    "chinese": "为效率而优化",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ux_research_and_interaction.124",
-    "highlightOverrides": [
-      "optimized for efficiency"
-    ]
+    "examplePatternId": "ux_research_and_interaction.124"
   },
   {
     "id": "ux_research_and_interaction.124",
