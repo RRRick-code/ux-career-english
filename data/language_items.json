@@ -5905,7 +5905,7 @@
     "id": "data_metrics_and_experimentation.050",
     "kind": "term",
     "english": "baseline",
-    "chinese": "水位",
+    "chinese": "基线",
     "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "describe_scope",
