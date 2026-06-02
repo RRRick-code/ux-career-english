@@ -7586,7 +7586,7 @@
     "id": "product_strategy_and_business.147",
     "kind": "term",
     "english": "commercial use case",
-    "chinese": "商业场景",
+    "chinese": "商业化用例",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "describe_scope",
@@ -7596,7 +7596,7 @@
     "id": "product_strategy_and_business.148",
     "kind": "pattern",
     "english": "I try to understand not only the user journey, but also the commercial use cases behind the product.",
-    "chinese": "我不仅会理解用户旅程，也会理解产品背后的商业场景。",
+    "chinese": "我不仅会理解用户旅程，也会理解产品背后的商业化用例。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
