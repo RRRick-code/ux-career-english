@@ -8,6 +8,11 @@ import type {
 } from "@/types";
 import { getLearningRecord } from "./storage.ts";
 
+const ROUND_SIZE_BY_SCOPE: Record<StudyScope, number> = {
+  term_phrase: 20,
+  pattern: 10,
+};
+
 export function shuffleItems<T>(input: T[]): T[] {
   const array = [...input];
   for (let index = array.length - 1; index > 0; index -= 1) {
@@ -43,7 +48,10 @@ export function buildStudyRound(
           );
         });
 
-  const selected = shuffleItems(candidates).slice(0, 20);
+  const selected = shuffleItems(candidates).slice(
+    0,
+    ROUND_SIZE_BY_SCOPE[scope],
+  );
 
   return {
     candidates,
