@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import {
   getExamplePatternForItem,
+  getPatternUsageItems,
   getTaxonomyLabel,
   items,
 } from "@/lib/content";
@@ -89,6 +90,9 @@ export function StudyPage() {
   const examplePattern = currentItem ? getExamplePatternForItem(currentItem) : null;
   const examplePatternRecord = examplePattern
     ? getRecord(examplePattern.id)
+    : null;
+  const usageItem = routeState?.scope === "pattern" && currentItem 
+    ? getPatternUsageItems(currentItem.id)[0] 
     : null;
 
   useGSAP(
@@ -333,7 +337,15 @@ export function StudyPage() {
                     ref={englishTextRef}
                     className="absolute inset-x-0 top-1/2 cursor-text select-text text-2xl font-medium leading-10"
                   >
-                    {currentItem.english}
+                    {usageItem ? (
+                      <HighlightedText
+                        className={theme.highlightClassName}
+                        item={usageItem}
+                        text={currentItem.english}
+                      />
+                    ) : (
+                      currentItem.english
+                    )}
                   </div>
                 ) : null}
               </div>
