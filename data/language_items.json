@@ -760,7 +760,7 @@
     "id": "product_strategy_and_business.024",
     "kind": "pattern",
     "english": "My first step in ambiguous projects is usually to frame the problem clearly for the whole team.",
-    "chinese": "在模糊项目里，我的第一步通常是先把问题说清楚，让整个团队看到同一个问题。",
+    "chinese": "在面对方向不明确的项目时，我的第一步通常是为整个团队清晰地定义问题。",
     "scene": "interview",
     "module": "product_strategy_and_business",
     "intent": "describe_scope"
