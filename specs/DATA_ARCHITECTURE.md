@@ -100,6 +100,7 @@ Every data mutation must be classified as exactly one of: `ADD`, `EDIT_KEEP_ID`,
 
 ## Local User Data
 
-- Learning progress and star statuses (`starred` boolean) are strictly maintained in the browser's `localStorage`.
+- Learning progress, star statuses (`starred` boolean), and manual highlights (`manualHighlights`, a list of `{ start, end }` character ranges on the pattern's `english` text) are strictly maintained in the browser's `localStorage`.
+- `manualHighlights` is user-authored and stored separately from the content-driven `highlightOverrides`; the two must never be conflated.
 - They belong to the local user session and should never be saved into or pollute the source JSON content files (`data/language_items.json`).
 - This ensures backward compatibility and zero data loss for existing users when the canonical content updates.

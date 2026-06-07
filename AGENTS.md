@@ -35,5 +35,5 @@ Use `docs/USER_PROFILE.md` as the detailed source of truth whenever output shoul
 
 ## Content Editing Protocol
 
-- When a task changes `data/language_items.json`, `data/taxonomy.json`, or `data/id_counters.json`, treat `docs/DATA_ARCHITECTURE.md` as the canonical editing protocol.
-- Read `docs/DATA_ARCHITECTURE.md` before the change. It defines the content model, mutation types (`ADD`, `EDIT_KEEP_ID`, `DELETE`, `REPLACE`), ID allocation rules, example-pattern linking rules, and required validation.
+- When a task changes `data/language_items.json`, `data/taxonomy.json`, or `data/id_counters.json`, treat `specs/DATA_ARCHITECTURE.md` as the canonical editing protocol.
+- Read `specs/DATA_ARCHITECTURE.md` before the change. It defines the content model, mutation types (`ADD`, `EDIT_KEEP_ID`, `DELETE`, `REPLACE`), ID allocation rules, example-pattern linking rules, and required validation.
