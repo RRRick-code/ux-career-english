@@ -1,5 +1,6 @@
 import type {
   FeedbackRating,
+  HighlightRange,
   LearningRecord,
   LearningRecordMap,
   LearningStatus,
@@ -48,6 +49,8 @@ export function normalizeLearningRecord(value: unknown): LearningRecord {
       ? value.progress
       : 0;
 
+  const manualHighlights = normalizeHighlightRanges(value.manualHighlights);
+
   return {
     progress: clampProgress(progress),
     status:
@@ -55,6 +58,7 @@ export function normalizeLearningRecord(value: unknown): LearningRecord {
         ? normalizeStatus(value.status)
         : DEFAULT_RECORD.status,
     ...(value.starred ? { starred: true } : {}),
+    ...(manualHighlights.length > 0 ? { manualHighlights } : {}),
   };
 }
 
@@ -62,7 +66,115 @@ export function isMeaningfulLearningRecord(record: LearningRecord) {
   return (
     record.progress > 0 ||
     record.status !== DEFAULT_RECORD.status ||
-    Boolean(record.starred)
+    Boolean(record.starred) ||
+    (record.manualHighlights?.length ?? 0) > 0
+  );
+}
+
+/**
+ * Cleans an arbitrary value into a sorted, merged list of valid highlight
+ * ranges. Invalid entries (non-integer, negative, or zero-length) are dropped.
+ * Overlapping or touching ranges are merged so storage stays canonical.
+ */
+export function normalizeHighlightRanges(value: unknown): HighlightRange[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  const valid: HighlightRange[] = [];
+  for (const entry of value) {
+    if (!isRecord(entry)) {
+      continue;
+    }
+
+    const { start, end } = entry;
+    if (
+      typeof start !== "number" ||
+      typeof end !== "number" ||
+      !Number.isInteger(start) ||
+      !Number.isInteger(end) ||
+      start < 0 ||
+      end <= start
+    ) {
+      continue;
+    }
+
+    valid.push({ start, end });
+  }
+
+  return mergeHighlightRanges(valid);
+}
+
+function mergeHighlightRanges(ranges: HighlightRange[]): HighlightRange[] {
+  if (ranges.length === 0) {
+    return [];
+  }
+
+  const sorted = [...ranges].sort((a, b) => a.start - b.start);
+  const merged: HighlightRange[] = [{ ...sorted[0] }];
+
+  for (let i = 1; i < sorted.length; i += 1) {
+    const current = sorted[i];
+    const last = merged[merged.length - 1];
+
+    // Merge when overlapping or directly touching (end === start).
+    if (current.start <= last.end) {
+      last.end = Math.max(last.end, current.end);
+    } else {
+      merged.push({ ...current });
+    }
+  }
+
+  return merged;
+}
+
+/** Adds a range to an existing list, merging overlaps. Returns a new array. */
+export function addHighlightRange(
+  ranges: HighlightRange[],
+  range: HighlightRange,
+): HighlightRange[] {
+  return normalizeHighlightRanges([...ranges, range]);
+}
+
+/**
+ * Removes the span covered by `range` from the existing list. A range fully
+ * containing `range` is split into the leading/trailing remainder. Returns a
+ * new array.
+ */
+export function removeHighlightRange(
+  ranges: HighlightRange[],
+  range: HighlightRange,
+): HighlightRange[] {
+  const result: HighlightRange[] = [];
+
+  for (const existing of ranges) {
+    // No overlap: keep as-is.
+    if (existing.end <= range.start || existing.start >= range.end) {
+      result.push(existing);
+      continue;
+    }
+
+    // Leading remainder before the removed span.
+    if (existing.start < range.start) {
+      result.push({ start: existing.start, end: range.start });
+    }
+
+    // Trailing remainder after the removed span.
+    if (existing.end > range.end) {
+      result.push({ start: range.end, end: existing.end });
+    }
+  }
+
+  return normalizeHighlightRanges(result);
+}
+
+/** True when `range` is fully covered by the existing highlight ranges. */
+export function isRangeHighlighted(
+  ranges: HighlightRange[],
+  range: HighlightRange,
+): boolean {
+  return ranges.some(
+    (existing) => existing.start <= range.start && existing.end >= range.end,
   );
 }
 
@@ -264,5 +376,8 @@ export function applyFeedback(
     progress: nextProgress,
     status: nextStatus,
     ...(record.starred ? { starred: true } : {}),
+    ...((record.manualHighlights?.length ?? 0) > 0
+      ? { manualHighlights: record.manualHighlights }
+      : {}),
   };
 }

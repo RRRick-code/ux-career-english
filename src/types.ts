@@ -31,10 +31,21 @@ export type LearningStatus = "not_started" | "in_progress" | "mastered";
 export type DisplayMode = "bilingual" | "english" | "chinese";
 export type FeedbackRating = "hard" | "uncertain" | "easy";
 
+export type HighlightRange = {
+  start: number;
+  end: number;
+};
+
 export type LearningRecord = {
   progress: number;
   status: LearningStatus;
   starred?: boolean;
+  /**
+   * User-authored highlights on the item's English sentence, stored as
+   * character offsets into `LanguageItem.english`. Kept separate from the
+   * content-driven `highlightOverrides` so the two never mix.
+   */
+  manualHighlights?: HighlightRange[];
 };
 
 export type LearningRecordMap = Record<string, LearningRecord>;

@@ -7,17 +7,21 @@ import {
 } from "react";
 import type {
   FeedbackRating,
+  HighlightRange,
   LearningRecord,
   LearningRecordMap,
   StudyScope,
 } from "@/types";
 import { items } from "@/lib/content";
 import {
+  addHighlightRange,
   applyFeedback,
   clearLearningRecords,
   getLearningRecord,
+  isRangeHighlighted,
   loadLearningRecords,
   pruneLearningRecords,
+  removeHighlightRange,
   removeLearningRecords,
   saveLearningRecords,
 } from "@/lib/storage";
@@ -32,6 +36,7 @@ type LearningRecordsContextValue = {
     feedback: FeedbackRating,
   ) => { previous: LearningRecord; next: LearningRecord };
   toggleStar: (itemId: string) => void;
+  toggleHighlight: (itemId: string, range: HighlightRange) => void;
 };
 
 const LearningRecordsContext =
@@ -113,6 +118,31 @@ export function LearningRecordsProvider({ children }: PropsWithChildren) {
           ...previous,
           starred: !previous.starred,
         };
+
+        const nextRecords = {
+          ...records,
+          [itemId]: next,
+        };
+
+        setRecords(nextRecords);
+        saveLearningRecords(nextRecords);
+      },
+      toggleHighlight: (itemId, range) => {
+        const previous = getLearningRecord(records, itemId);
+        const current = previous.manualHighlights ?? [];
+        const nextHighlights = isRangeHighlighted(current, range)
+          ? removeHighlightRange(current, range)
+          : addHighlightRange(current, range);
+
+        const next: LearningRecord = {
+          ...previous,
+          ...(nextHighlights.length > 0
+            ? { manualHighlights: nextHighlights }
+            : {}),
+        };
+        if (nextHighlights.length === 0) {
+          delete next.manualHighlights;
+        }
 
         const nextRecords = {
           ...records,

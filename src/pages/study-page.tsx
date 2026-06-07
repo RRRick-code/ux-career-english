@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Star, X } from "lucide-react";
 import { HighlightedText } from "@/components/highlighted-text";
+import { SelectionHighlightMenu } from "@/components/selection-highlight-menu";
 import { AppShell } from "@/components/app-shell";
 import { ProgressDots } from "@/components/progress-dots";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,8 @@ export function StudyPage() {
     mode?: string;
   }>();
   const navigate = useNavigate();
-  const { records, getRecord, updateWithFeedback, toggleStar } = useLearningRecords();
+  const { records, getRecord, updateWithFeedback, toggleStar, toggleHighlight } =
+    useLearningRecords();
   const [roundItems, setRoundItems] = useState<LanguageItem[]>([]);
   const [roundReady, setRoundReady] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -342,6 +344,11 @@ export function StudyPage() {
                         className={theme.highlightClassName}
                         item={usageItem}
                         text={currentItem.english}
+                        manualHighlights={
+                          routeState.scope === "pattern"
+                            ? (currentRecord?.manualHighlights ?? [])
+                            : undefined
+                        }
                       />
                     ) : (
                       currentItem.english
@@ -405,6 +412,15 @@ export function StudyPage() {
               </div>
             ) : null}
           </article>
+          {revealed && routeState.scope === "pattern" ? (
+            <SelectionHighlightMenu
+              key={currentItem.id}
+              containerRef={englishTextRef}
+              english={currentItem.english}
+              manualHighlights={currentRecord?.manualHighlights ?? []}
+              onToggle={(range) => toggleHighlight(currentItem.id, range)}
+            />
+          ) : null}
         </section>
         <div className="grid grid-cols-3 gap-3">
           <Button
