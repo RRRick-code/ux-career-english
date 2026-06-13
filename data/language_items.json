@@ -7691,7 +7691,7 @@
     "id": "visual_ui_and_design_systems.080",
     "kind": "pattern",
     "english": "I see design infrastructure as a way to improve consistency, delivery efficiency, and implementation quality across teams.",
-    "chinese": "我认为设计基础设施能提升跨团队一致性、交付效率和实现质量。",
+    "chinese": "我视设计基础设施为一种在各个团队中提升一致性、交付效率和落地质量的方法。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "describe_scope"
