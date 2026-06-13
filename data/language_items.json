@@ -7099,7 +7099,7 @@
     "id": "ux_research_and_interaction.096",
     "kind": "pattern",
     "english": "A key design challenge was deciding when to keep the user in conversation and when to surface search results.",
-    "chinese": "一个关键设计挑战是判断什么时候让用户留在对话中，什么时候展示搜索结果。",
+    "chinese": "一个关键的设计挑战是决定何时让用户留在对话中，何时展示搜索结果。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning"
