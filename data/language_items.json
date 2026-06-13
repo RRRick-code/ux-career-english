@@ -7289,7 +7289,7 @@
     "id": "product_strategy_and_business.146",
     "kind": "pattern",
     "english": "I am comfortable designing under business constraints, especially when different teams have competing priorities.",
-    "chinese": "我能在业务约束下做设计，尤其是不同团队优先级冲突时。",
+    "chinese": "我很适应在业务约束下进行设计，尤其是当不同团队有着冲突的优先级时。",
     "scene": "workplace",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
