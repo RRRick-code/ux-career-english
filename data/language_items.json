@@ -1472,7 +1472,7 @@
     "id": "ux_research_and_interaction.022",
     "kind": "pattern",
     "english": "A clearer information hierarchy helped users understand what to pay attention to first.",
-    "chinese": "更清晰的信息层级，帮助用户更快知道什么最值得先关注。",
+    "chinese": "更清晰的信息层级有助于用户理解该先关注什么。",
     "scene": "interview",
     "module": "ux_research_and_interaction",
     "intent": "describe_scope"
