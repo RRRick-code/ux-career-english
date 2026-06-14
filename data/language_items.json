@@ -7558,7 +7558,7 @@
     "id": "impact_and_credibility.052",
     "kind": "pattern",
     "english": "The 2020 homepage redesign was estimated by the data science team to contribute roughly RMB 100 million in annualized revenue growth.",
-    "chinese": "数据科学团队估算，2020 年首页改版带来了约 1 亿元人民币的年化收入增长。",
+    "chinese": "2020 年的首页改版，据数据科学团队估算，贡献了大约 1 亿元人民币的年化收入增长。",
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact"
