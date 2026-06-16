@@ -8505,7 +8505,7 @@
     "id": "impact_and_credibility.060",
     "kind": "pattern",
     "english": "I hold three invention patents and twenty-two GUI design patents granted in China.",
-    "chinese": "我拥有三项中国授权发明专利和二十二项中国授权 GUI 外观设计专利。",
+    "chinese": "我拥有三项发明专利和二十二项 GUI 外观设计专利，均为中国授权专利。",
     "scene": "interview",
     "module": "impact_and_credibility",
     "intent": "show_impact"
