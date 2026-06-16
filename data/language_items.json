@@ -9312,7 +9312,7 @@
     "id": "ai_product_and_design_workflow.046",
     "kind": "pattern",
     "english": "Duxiaoxiao was challenging because the experience needed to support both task efficiency and emotional response inside a search product.",
-    "chinese": "度晓晓的挑战在于，它需要在搜索产品中同时支持任务效率和情感反馈。",
+    "chinese": "度晓晓极具挑战性，因为其体验需要在搜索产品内同时支持任务效率和情感反馈。",
     "scene": "portfolio",
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning"
