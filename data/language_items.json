@@ -9775,7 +9775,7 @@
     "id": "personal_branding.090",
     "kind": "pattern",
     "english": "I am comfortable operating in complex product environments where user needs, business pressure, technical constraints, and organizational constraints all matter.",
-    "chinese": "我能在复杂产品环境中工作，在这种环境里用户需求、业务压力、技术约束和组织约束都很重要。",
+    "chinese": "我很适应在复杂产品环境中工作，在这种环境里，用户需求、业务压力、技术约束和组织约束都很重要。",
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self"
