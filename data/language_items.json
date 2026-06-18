@@ -8985,7 +8985,7 @@
   {
     "id": "ux_research_and_interaction.124",
     "kind": "pattern",
-    "english": "Search is usually optimized for efficiency, so adding a digital human had to be justified by real user value.",
+    "english": "Search is usually optimized for efficiency, so adding a virtual human had to be justified by real user value.",
     "chinese": "搜索通常是为效率而优化的，因此加入数字人必须有真实用户价值支撑。",
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
