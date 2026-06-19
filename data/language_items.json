@@ -9391,7 +9391,7 @@
     "id": "visual_ui_and_design_systems.114",
     "kind": "pattern",
     "english": "For dark mode, we created standards other teams could adopt across Baidu's mobile product ecosystem.",
-    "chinese": "在深色模式项目中，我们建立了百度移动产品生态中其他团队也可以采用的标准。",
+    "chinese": "对于深色模式，我们建立了其他团队可以在整个百度移动产品生态中采用的标准。",
     "scene": "portfolio",
     "module": "visual_ui_and_design_systems",
     "intent": "collaborate_and_influence"
