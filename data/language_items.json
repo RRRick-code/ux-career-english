@@ -9141,7 +9141,7 @@
     "id": "product_strategy_and_business.178",
     "kind": "pattern",
     "english": "On the Baidu App homepage, I had to balance user needs and business goals because the page carried search, content discovery, and monetization at the same time.",
-    "chinese": "在百度 App 首页项目中，我必须平衡用户需求和业务目标，因为这个页面同时承载搜索、内容发现和商业化。",
+    "chinese": "在百度 App 首页上，我必须平衡用户需求和业务目标，因为这个页面同时承载了搜索、内容发现和商业化。",
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning"
