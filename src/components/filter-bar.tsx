@@ -373,13 +373,28 @@ function FilterSelect({
         {label}
       </div>
       <Select value={value} onValueChange={onValueChange}>
-        <SelectTrigger className={triggerClassName} size={size}>
+        <SelectTrigger
+          className={cn(
+            "text-slate-600 hover:bg-slate-50 hover:text-slate-900 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900 font-medium [&_svg]:text-slate-500 [&_svg]:data-[state=open]:text-slate-900",
+            triggerClassName,
+          )}
+          size={size}
+        >
           <SelectValue placeholder={`All ${label}`} />
         </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="all">All {label}</SelectItem>
+        <SelectContent className="p-1">
+          <SelectItem
+            value="all"
+            className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer"
+          >
+            All {label}
+          </SelectItem>
           {options.map((option) => (
-            <SelectItem key={option.value} value={option.value}>
+            <SelectItem
+              key={option.value}
+              value={option.value}
+              className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer"
+            >
               {option.label}
             </SelectItem>
           ))}

@@ -1,5 +1,9 @@
 import { useRef, useState, type ChangeEvent } from "react";
-import { DownloadIcon, MoreHorizontalIcon, UploadIcon } from "lucide-react";
+import {
+  DownloadIcon,
+  MoreHorizontalIcon,
+  UploadIcon,
+} from "lucide-react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -111,15 +115,19 @@ export function LearningRecordsMenu() {
         <DropdownMenuContent align="end" className="w-56">
           <DropdownMenuGroup>
             <DropdownMenuItem
+              className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer"
               disabled={!hasExportableRecords}
               onSelect={handleExport}
             >
               <DownloadIcon />
-              Export Learning Records
+              Export Records
             </DropdownMenuItem>
-            <DropdownMenuItem onSelect={handleImportClick}>
+            <DropdownMenuItem
+              className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer"
+              onSelect={handleImportClick}
+            >
               <UploadIcon />
-              Import Learning Records
+              Import Records
             </DropdownMenuItem>
           </DropdownMenuGroup>
         </DropdownMenuContent>

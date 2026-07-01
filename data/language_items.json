@@ -7,7 +7,10 @@
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
-    "examplePatternId": "personal_branding.020"
+    "examplePatternId": "personal_branding.020",
+    "highlightOverrides": [
+      "hybrid IC and design lead profile"
+    ]
   },
   {
     "id": "personal_branding.002",
@@ -37,7 +40,11 @@
     "scene": "interview",
     "module": "personal_branding",
     "intent": "position_self",
-    "examplePatternId": "personal_branding.023"
+    "examplePatternId": "personal_branding.023",
+    "highlightOverrides": [
+      "platform-scale",
+      "large-scale consumer platforms"
+    ]
   },
   {
     "id": "personal_branding.005",
@@ -318,7 +325,10 @@
     "scene": "workplace",
     "module": "personal_branding",
     "intent": "collaborate_and_influence",
-    "examplePatternId": "personal_branding.019"
+    "examplePatternId": "personal_branding.019",
+    "highlightOverrides": [
+      "align people around a direction"
+    ]
   },
   {
     "id": "personal_branding.035",
@@ -953,7 +963,10 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "product_strategy_and_business.046"
+    "examplePatternId": "product_strategy_and_business.046",
+    "highlightOverrides": [
+      "feedback loops"
+    ]
   },
   {
     "id": "product_strategy_and_business.046",
@@ -2176,7 +2189,11 @@
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "describe_scope",
-    "examplePatternId": "prototyping_motion_and_3d.023"
+    "examplePatternId": "prototyping_motion_and_3d.023",
+    "highlightOverrides": [
+      "3D production workflows",
+      "3D production workflow"
+    ]
   },
   {
     "id": "prototyping_motion_and_3d.005",
@@ -2448,7 +2465,10 @@
     "scene": "interview",
     "module": "data_metrics_and_experimentation",
     "intent": "show_impact",
-    "examplePatternId": "data_metrics_and_experimentation.020"
+    "examplePatternId": "data_metrics_and_experimentation.020",
+    "highlightOverrides": [
+      "success metrics"
+    ]
   },
   {
     "id": "data_metrics_and_experimentation.002",
@@ -3119,7 +3139,10 @@
     "scene": "interview",
     "module": "ai_product_and_design_workflow",
     "intent": "describe_scope",
-    "examplePatternId": "ai_product_and_design_workflow.022"
+    "examplePatternId": "ai_product_and_design_workflow.022",
+    "highlightOverrides": [
+      "confidence signals"
+    ]
   },
   {
     "id": "ai_product_and_design_workflow.004",
@@ -3354,7 +3377,10 @@
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "describe_scope",
-    "examplePatternId": "engineering_collaboration_and_technical_fluency.020"
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.020",
+    "highlightOverrides": [
+      "technical constraints"
+    ]
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.002",
@@ -3635,7 +3661,10 @@
     "scene": "interview",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "position_self",
-    "examplePatternId": "engineering_collaboration_and_technical_fluency.013"
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.013",
+    "highlightOverrides": [
+      "collaborate more effectively with engineering teams"
+    ]
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.032",
@@ -3732,7 +3761,10 @@
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "describe_scope",
-    "examplePatternId": "engineering_collaboration_and_technical_fluency.042"
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.042",
+    "highlightOverrides": [
+      "dependency risks"
+    ]
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.042",
@@ -4453,16 +4485,6 @@
     "module": "impact_and_credibility",
     "intent": "show_impact",
     "examplePatternId": "impact_and_credibility.020"
-  },
-  {
-    "id": "impact_and_credibility.002",
-    "kind": "term",
-    "english": "platform scale",
-    "chinese": "平台规模",
-    "scene": "interview",
-    "module": "impact_and_credibility",
-    "intent": "show_impact",
-    "examplePatternId": "impact_and_credibility.021"
   },
   {
     "id": "impact_and_credibility.003",
@@ -6127,7 +6149,10 @@
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ux_research_and_interaction.069"
+    "examplePatternId": "ux_research_and_interaction.069",
+    "highlightOverrides": [
+      "real user flows"
+    ]
   },
   {
     "id": "ux_research_and_interaction.071",
@@ -6976,7 +7001,10 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "product_strategy_and_business.130"
+    "examplePatternId": "product_strategy_and_business.130",
+    "highlightOverrides": [
+      "outcome-driven product design"
+    ]
   },
   {
     "id": "product_strategy_and_business.130",
@@ -7131,7 +7159,10 @@
     "scene": "portfolio",
     "module": "prototyping_motion_and_3d",
     "intent": "describe_scope",
-    "examplePatternId": "prototyping_motion_and_3d.044"
+    "examplePatternId": "prototyping_motion_and_3d.044",
+    "highlightOverrides": [
+      "3D production systems"
+    ]
   },
   {
     "id": "prototyping_motion_and_3d.044",
@@ -7419,7 +7450,10 @@
     "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "data_metrics_and_experimentation.064"
+    "examplePatternId": "data_metrics_and_experimentation.064",
+    "highlightOverrides": [
+      "traffic-split experiments"
+    ]
   },
   {
     "id": "data_metrics_and_experimentation.064",
@@ -7590,7 +7624,10 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "describe_scope",
-    "examplePatternId": "product_strategy_and_business.148"
+    "examplePatternId": "product_strategy_and_business.148",
+    "highlightOverrides": [
+      "commercial use cases"
+    ]
   },
   {
     "id": "product_strategy_and_business.148",
@@ -7628,7 +7665,10 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "describe_scope",
-    "examplePatternId": "product_strategy_and_business.152"
+    "examplePatternId": "product_strategy_and_business.152",
+    "highlightOverrides": [
+      "monetization surfaces"
+    ]
   },
   {
     "id": "product_strategy_and_business.152",
@@ -8477,7 +8517,10 @@
     "scene": "portfolio",
     "module": "impact_and_credibility",
     "intent": "show_impact",
-    "examplePatternId": "impact_and_credibility.058"
+    "examplePatternId": "impact_and_credibility.058",
+    "highlightOverrides": [
+      "measurable business impact"
+    ]
   },
   {
     "id": "impact_and_credibility.058",
@@ -8863,7 +8906,10 @@
     "scene": "workplace",
     "module": "engineering_collaboration_and_technical_fluency",
     "intent": "collaborate_and_influence",
-    "examplePatternId": "engineering_collaboration_and_technical_fluency.078"
+    "examplePatternId": "engineering_collaboration_and_technical_fluency.078",
+    "highlightOverrides": [
+      "implementation mechanisms"
+    ]
   },
   {
     "id": "engineering_collaboration_and_technical_fluency.078",
@@ -8999,7 +9045,10 @@
     "scene": "portfolio",
     "module": "ux_research_and_interaction",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ux_research_and_interaction.126"
+    "examplePatternId": "ux_research_and_interaction.126",
+    "highlightOverrides": [
+      "long-term human-AI relationships"
+    ]
   },
   {
     "id": "ux_research_and_interaction.126",
@@ -9097,7 +9146,10 @@
     "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "collaborate_and_influence",
-    "examplePatternId": "leadership_and_management.140"
+    "examplePatternId": "leadership_and_management.140",
+    "highlightOverrides": [
+      "turn uncertainty into a clear path"
+    ]
   },
   {
     "id": "leadership_and_management.140",
@@ -9154,7 +9206,10 @@
     "scene": "portfolio",
     "module": "product_strategy_and_business",
     "intent": "show_impact",
-    "examplePatternId": "product_strategy_and_business.180"
+    "examplePatternId": "product_strategy_and_business.180",
+    "highlightOverrides": [
+      "connected design decisions to measurable business outcomes"
+    ]
   },
   {
     "id": "product_strategy_and_business.180",
@@ -9173,7 +9228,10 @@
     "scene": "workplace",
     "module": "prototyping_motion_and_3d",
     "intent": "collaborate_and_influence",
-    "examplePatternId": "prototyping_motion_and_3d.054"
+    "examplePatternId": "prototyping_motion_and_3d.054",
+    "highlightOverrides": [
+      "least implementation risk"
+    ]
   },
   {
     "id": "prototyping_motion_and_3d.054",
@@ -9249,7 +9307,10 @@
     "scene": "portfolio",
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ai_product_and_design_workflow.040"
+    "examplePatternId": "ai_product_and_design_workflow.040",
+    "highlightOverrides": [
+      "bring AI capabilities into real user flows"
+    ]
   },
   {
     "id": "ai_product_and_design_workflow.040",
@@ -9268,7 +9329,10 @@
     "scene": "portfolio",
     "module": "ai_product_and_design_workflow",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "ai_product_and_design_workflow.042"
+    "examplePatternId": "ai_product_and_design_workflow.042",
+    "highlightOverrides": [
+      "make the AI feel understandable"
+    ]
   },
   {
     "id": "ai_product_and_design_workflow.042",
@@ -9384,7 +9448,8 @@
     "intent": "collaborate_and_influence",
     "examplePatternId": "visual_ui_and_design_systems.114",
     "highlightOverrides": [
-      "created standards other teams could adopt"
+      "created standards other teams could adopt",
+      "realistic for other teams to adopt"
     ]
   },
   {
@@ -9556,7 +9621,10 @@
     "scene": "portfolio",
     "module": "data_metrics_and_experimentation",
     "intent": "explain_process_and_reasoning",
-    "examplePatternId": "data_metrics_and_experimentation.090"
+    "examplePatternId": "data_metrics_and_experimentation.090",
+    "highlightOverrides": [
+      "interpreted the data alongside user feedback and product context"
+    ]
   },
   {
     "id": "data_metrics_and_experimentation.090",
@@ -9594,7 +9662,10 @@
     "scene": "workplace",
     "module": "leadership_and_management",
     "intent": "collaborate_and_influence",
-    "examplePatternId": "leadership_and_management.144"
+    "examplePatternId": "leadership_and_management.144",
+    "highlightOverrides": [
+      "earn trust from product and business stakeholders"
+    ]
   },
   {
     "id": "leadership_and_management.144",

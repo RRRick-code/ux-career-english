@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { AppShell } from "@/components/app-shell";
-import { LearningRecordsMenu } from "@/components/learning-records-menu";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -108,8 +107,6 @@ export function HomePage() {
     <AppShell
       title="Practice Hub"
       description="Build vocabulary, phrases, and patterns for interviews and work."
-      actions={<LearningRecordsMenu />}
-      actionsPlacement="top-right"
     >
       <section className="space-y-5">
         <Tabs
@@ -437,9 +434,10 @@ function ClearProgressDialog({
         <AlertDialogHeader>
           <AlertDialogTitle>Clear {scopeLabel} progress?</AlertDialogTitle>
           <AlertDialogDescription>
-            This will permanently remove your local {scopeLabel} study progress
-            for this browser. {preservedScopeLabel} progress and content data
-            will stay unchanged.
+            This will reset local {scopeLabel} study progress for this browser.
+            Stars and manual highlights will stay unchanged.{" "}
+            {preservedScopeLabel} progress and content data will also stay
+            unchanged.
           </AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>

@@ -1,5 +1,6 @@
 import type { PropsWithChildren, ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { LearningRecordsMenu } from "@/components/learning-records-menu";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -62,22 +63,8 @@ export function AppShell({
                 Practice
               </Link>
               <Link
-                to="/interview"
-                data-text="Interview Prep"
-                className={cn(
-                  "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
-                  "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
-                  "before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[3px] before:rounded-full before:transition-all",
-                  location.pathname.startsWith("/interview")
-                    ? "text-primary font-semibold before:bg-primary before:opacity-100"
-                    : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
-                )}
-              >
-                Interview Prep
-              </Link>
-              <Link
                 to="/library"
-                data-text="Vocabulary"
+                data-text="Library"
                 className={cn(
                   "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
                   "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
@@ -87,9 +74,26 @@ export function AppShell({
                     : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
                 )}
               >
-                Vocabulary
+                Library
+              </Link>
+              <Link
+                to="/interview"
+                data-text="Interview"
+                className={cn(
+                  "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
+                  "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
+                  "before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[3px] before:rounded-full before:transition-all",
+                  location.pathname.startsWith("/interview")
+                    ? "text-primary font-semibold before:bg-primary before:opacity-100"
+                    : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
+                )}
+              >
+                Interview
               </Link>
             </nav>
+            <div className="ml-auto flex items-center">
+              <LearningRecordsMenu />
+            </div>
           </div>
         </header>
       ) : null}

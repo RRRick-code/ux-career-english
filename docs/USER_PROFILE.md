@@ -11,10 +11,10 @@
 - Product scope spans consumer-facing mobile platforms, AI assistants, tool products, branding systems, and emerging multimodal interaction.
 - Baidu App experience: multiple years as a design architect for Baidu App, a flagship consumer platform with 200 million daily active users and a billion-level user base.
 - Cross-functional execution: as a Baidu App design architect, led design work across multiple large-scale, cross-department initiatives involving hundreds of stakeholders.
-- Business impact: initiated and delivered design projects for Baidu App that increased annual profit by over RMB 100 million.
-- AI product leadership: design lead and design architect for Duxiaoxiao, China's first interactive AI digital human assistant, across app, Baidu App, design-system, 3D, and brand scenarios.
-- Leadership: 7 years of management experience, including 3 years directly leading a 10-person cross-functional team of designers and artists.
+- Business impact: initiated and delivered design projects for Baidu App that were estimated to contribute over RMB 100 million in annualized revenue growth.
+- AI product leadership: design lead and design architect for Duxiaoxiao, China's first interactive AI virtual human assistant, across app, Baidu App, design-system, 3D, and brand scenarios.
+- Leadership: 6 years of direct people-management experience, including 3 years directly leading a 10-person cross-functional team of designers and artists.
 - Design strengths: design systems and architecture, UX, UI, motion, prototyping, 3D, visual design, graphic design, data-driven design, design engineering, code-based prototyping, and implementation-ready UI; strong with AI image, AI UI, and AI 3D workflows.
 - Technical strengths: computer science fundamentals, React, three.js, and AI-assisted coding.
-- Recognition: 6 international design awards, 20+ Chinese patents, and multiple industry conference experiences.
+- Recognition: 6 international design awards, 3 Chinese invention patents, 22 Chinese GUI design patents, and multiple industry conference experiences.
 - Internal influence: Baidu-certified internal instructor and early advocate for high-fidelity prototyping; known internally as a high-fidelity prototyping expert and early ProtoPie adopter.

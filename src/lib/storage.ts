@@ -296,16 +296,19 @@ export function removeLearningRecords(
           return [id, record] as const;
         }
 
-        if (record.starred) {
-          removed = true; // Indicates we "changed" the record collection by clearing progress
-          return [
-            id,
-            { ...record, progress: 0, status: "not_started" },
-          ] as const;
-        }
-
         removed = true;
-        return [id, null] as const;
+        const nextRecord: LearningRecord = {
+          progress: 0,
+          status: "not_started",
+          ...(record.starred ? { starred: true } : {}),
+          ...((record.manualHighlights?.length ?? 0) > 0
+            ? { manualHighlights: record.manualHighlights }
+            : {}),
+        };
+
+        return isMeaningfulLearningRecord(nextRecord)
+          ? ([id, nextRecord] as const)
+          : ([id, null] as const);
       })
       .filter((entry): entry is [string, LearningRecord] => entry[1] !== null),
   );

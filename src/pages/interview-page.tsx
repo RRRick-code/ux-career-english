@@ -7,6 +7,7 @@ import {
   EyeOff,
   FileText,
   Sparkles,
+  ChevronLeft,
   ChevronRight,
   Bookmark
 } from "lucide-react";
@@ -78,11 +79,12 @@ export function InterviewPage() {
   }, [selectedQuestionId]);
 
   // Blur/Rehearsal mode state
-  const [isBlurred, setIsBlurred] = useState<boolean>(false);
+  const [isBlurred, setIsBlurred] = useState<boolean>(true);
+  const [isSidebarExpanded, setIsSidebarExpanded] = useState<boolean>(false);
 
-  // When selected question changes, reset blur state to prevent confusion
+  // When selected question changes, hide the answer for rehearsal by default
   useEffect(() => {
-    setIsBlurred(false);
+    setIsBlurred(true);
   }, [selectedQuestionId]);
 
   // Selection Highlight Menu Container ref
@@ -218,9 +220,15 @@ export function InterviewPage() {
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
+                if (isBlurred) return;
                 setSelectedVocabItem(item);
               }}
-              className="text-primary hover:underline font-semibold cursor-pointer border-none inline align-baseline p-0 bg-transparent"
+              className={cn(
+                "text-primary font-semibold border-none inline align-baseline p-0 bg-transparent",
+                isBlurred
+                  ? "cursor-default"
+                  : "hover:underline cursor-pointer"
+              )}
             >
               {segment}
             </button>
@@ -240,7 +248,7 @@ export function InterviewPage() {
     }
 
     return nodes;
-  }, [currentQuestion?.standardAnswer, currentQuestion?.id, vocabMatches, records]);
+  }, [currentQuestion?.standardAnswer, currentQuestion?.id, vocabMatches, records, isBlurred]);
 
   return (
     <AppShell
@@ -249,72 +257,120 @@ export function InterviewPage() {
       showHeaderDivider={false}
     >
       <div className="-mx-4 -mt-8 -mb-8 sm:-mx-6 lg:-mx-8 xl:-mx-10 min-h-[calc(100vh-3.5rem)]">
+        <button
+          type="button"
+          aria-label="Close interview navigation"
+          onClick={() => setIsSidebarExpanded(false)}
+          className={cn(
+            "fixed inset-x-0 top-14 bottom-0 z-20 bg-slate-950/5 transition-opacity lg:hidden",
+            isSidebarExpanded
+              ? "pointer-events-auto opacity-100"
+              : "pointer-events-none opacity-0"
+          )}
+        />
         
         {/* Left Sidebar */}
-        <div className="w-full lg:fixed lg:top-14 lg:left-0 lg:w-80 lg:h-[calc(100vh-3.5rem)] bg-white lg:border-r border-slate-200 overflow-hidden lg:z-10">
-          {/* Stage Selector */}
-          <div className="p-4 border-b border-slate-100 bg-slate-50/50">
-            <label className="text-xs font-semibold tracking-wider text-muted-foreground uppercase block mb-1.5">
-              Interview Stage
-            </label>
-            <Select value={selectedCategoryId} onValueChange={setSelectedCategoryId}>
-              <SelectTrigger className="w-full border-slate-200 h-8 bg-white text-xs">
-                <SelectValue placeholder="Select stage" />
-              </SelectTrigger>
-              <SelectContent className="text-xs">
-                {interviewQuestionBank.categories.map((cat) => (
-                  <SelectItem key={cat.id} value={cat.id} className="text-xs">
-                    {cat.categoryNum}. {cat.title}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+        <div
+          className={cn(
+            "fixed top-14 left-0 h-[calc(100vh-3.5rem)] bg-white border-r border-slate-200 overflow-hidden z-30 transition-[width,box-shadow] duration-200 lg:z-10 lg:w-80 lg:shadow-none",
+            isSidebarExpanded ? "w-80 shadow-xl" : "w-12"
+          )}
+        >
+          <div className={cn("h-full lg:hidden", isSidebarExpanded && "hidden")}>
+            <button
+              type="button"
+              aria-label="Open interview navigation"
+              onClick={() => setIsSidebarExpanded(true)}
+              className="flex h-12 w-full items-center justify-center border-b border-slate-100 text-slate-500 transition-colors hover:bg-slate-50 hover:text-slate-900"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+            <div className="flex h-[calc(100%-3rem)] items-center justify-center">
+              <span className="rotate-180 [writing-mode:vertical-rl] text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                Interview
+              </span>
+            </div>
           </div>
 
-          {/* Question List */}
-          <div className="overflow-y-auto lg:h-[calc(100vh-3.5rem-5.5rem)]">
-            <nav className="divide-y divide-slate-100">
-              {currentCategory?.questions.map((q) => {
-                const record = getRecord(q.id);
-                const isSelected = q.id === selectedQuestionId;
+          <div className={cn("h-full", !isSidebarExpanded && "hidden lg:block")}>
+            {/* Stage Selector */}
+            <div className="p-4 border-b border-slate-100 bg-slate-50/50">
+              <div className="mb-1.5 flex items-center justify-between gap-2">
+                <label className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+                  Interview Stage
+                </label>
+                <button
+                  type="button"
+                  aria-label="Collapse interview navigation"
+                  onClick={() => setIsSidebarExpanded(false)}
+                  className="flex h-7 w-7 items-center justify-center rounded-md text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 lg:hidden"
+                >
+                  <ChevronLeft className="h-4 w-4" />
+                </button>
+              </div>
+              <Select value={selectedCategoryId} onValueChange={setSelectedCategoryId}>
+                <SelectTrigger className="w-full border-slate-200 h-8 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900 shadow-xs font-medium [&_svg]:text-slate-500 [&_svg]:data-[state=open]:text-slate-900">
+                  <SelectValue placeholder="Select stage" />
+                </SelectTrigger>
+                <SelectContent className="p-1">
+                  {interviewQuestionBank.categories.map((cat) => (
+                    <SelectItem key={cat.id} value={cat.id} className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">
+                      {cat.categoryNum}. {cat.title}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
 
-                return (
-                  <button
-                    key={q.id}
-                    onClick={() => setSelectedQuestionId(q.id)}
-                    className={cn(
-                      "w-full text-left p-3.5 flex gap-2.5 transition-colors items-start hover:bg-slate-50 cursor-pointer",
-                      isSelected
-                        ? "bg-slate-50/80 border-l-4 border-l-primary text-slate-900"
-                        : "border-l-4 border-l-transparent text-slate-600"
-                    )}
-                  >
-                    <div className="flex items-center gap-1 mt-0.5 shrink-0">
-                      {record.starred && (
-                        <Star className="h-3.5 w-3.5 text-yellow-500 fill-yellow-400 shrink-0" />
+            {/* Question List */}
+            <div className="h-[calc(100vh-3.5rem-5.5rem)] overflow-y-auto">
+              <nav className="divide-y divide-slate-100">
+                {currentCategory?.questions.map((q) => {
+                  const record = getRecord(q.id);
+                  const isSelected = q.id === selectedQuestionId;
+
+                  return (
+                    <button
+                      key={q.id}
+                      onClick={() => {
+                        setSelectedQuestionId(q.id);
+                        setIsSidebarExpanded(false);
+                      }}
+                      className={cn(
+                        "w-full text-left p-3.5 flex gap-2.5 transition-colors items-start hover:bg-slate-50 cursor-pointer",
+                        isSelected
+                          ? "bg-slate-50/80 border-l-4 border-l-primary text-slate-900"
+                          : "border-l-4 border-l-transparent text-slate-600"
                       )}
-                      {record.status === "mastered" && (
-                        <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+                    >
+                      <div className="flex items-center gap-1 mt-0.5 shrink-0">
+                        {record.status === "mastered" && (
+                          <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+                        )}
+                        {record.status === "in_progress" && (
+                          <Sparkles className="h-3.5 w-3.5 text-sky-500 shrink-0" />
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[13px] line-clamp-2 leading-snug">{q.question}</p>
+                      </div>
+                      {record.starred ? (
+                        <Star className="h-3.5 w-3.5 text-yellow-500 fill-yellow-400 self-center shrink-0" />
+                      ) : (
+                        <ChevronRight className="h-4 w-4 text-slate-300 self-center shrink-0" />
                       )}
-                      {record.status === "in_progress" && (
-                        <Sparkles className="h-3.5 w-3.5 text-sky-500 shrink-0" />
-                      )}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-[13px] line-clamp-2 leading-snug">{q.question}</p>
-                    </div>
-                    <ChevronRight className="h-4 w-4 text-slate-300 self-center shrink-0" />
-                  </button>
-                );
-              })}
-            </nav>
+                    </button>
+                  );
+                })}
+              </nav>
+            </div>
           </div>
         </div>
 
         {/* Right Content Area */}
-        <div className="lg:ml-80 px-4 py-8 sm:px-6 lg:px-8 xl:px-10">
+        <div className="ml-12 lg:ml-80 px-4 py-8 sm:px-6 lg:px-8 xl:px-10">
           {currentQuestion ? (
-            <div className="space-y-8 max-w-4xl mx-auto">
+            <div className="space-y-12 max-w-4xl mx-auto">
               
               {/* Question Header */}
               <div className="pb-6 border-b border-slate-200/80 space-y-4">
@@ -387,7 +443,7 @@ export function InterviewPage() {
                     <SelectTrigger className="w-32 h-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900 shadow-xs font-medium [&_svg]:text-slate-500 [&_svg]:data-[state=open]:text-slate-900">
                       <SelectValue />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="p-1">
                       <SelectItem value="not_started" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Not Started</SelectItem>
                       <SelectItem value="in_progress" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Learning</SelectItem>
                       <SelectItem value="mastered" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Mastered</SelectItem>
@@ -422,12 +478,14 @@ export function InterviewPage() {
 
                 <div className="py-2 relative select-text">
                   {/* Custom Selection Highlight Menu */}
-                  <SelectionHighlightMenu
-                    containerRef={answerContainerRef}
-                    english={currentQuestion.standardAnswer}
-                    manualHighlights={getRecord(currentQuestion.id).manualHighlights || []}
-                    onToggle={(range) => toggleHighlight(currentQuestion.id, range)}
-                  />
+                  {!isBlurred ? (
+                    <SelectionHighlightMenu
+                      containerRef={answerContainerRef}
+                      english={currentQuestion.standardAnswer}
+                      manualHighlights={getRecord(currentQuestion.id).manualHighlights || []}
+                      onToggle={(range) => toggleHighlight(currentQuestion.id, range)}
+                    />
+                  ) : null}
 
                   {/* Text Container */}
                   <div
@@ -441,6 +499,14 @@ export function InterviewPage() {
                   >
                     {renderedAnswerSegments}
                   </div>
+                  {isBlurred ? (
+                    <button
+                      type="button"
+                      aria-label="Reveal answer"
+                      onClick={() => setIsBlurred(false)}
+                      className="absolute inset-0 z-10 flex cursor-pointer items-center justify-center"
+                    />
+                  ) : null}
                 </div>
               </div>
 
