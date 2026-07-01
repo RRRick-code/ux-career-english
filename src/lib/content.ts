@@ -1,6 +1,7 @@
 import { Fragment, createElement, type ReactNode } from "react";
 import languageItems from "../../data/language_items.json";
 import taxonomyData from "../../data/taxonomy.json";
+import interviewQuestionsData from "../../data/interview_questions.json";
 import {
   buildHighlightCandidates,
   findHighlightMatch,
@@ -11,11 +12,22 @@ import type {
   StudyScope,
   TaxonomyEntry,
   TaxonomyMap,
+  InterviewQuestionBank,
+  InterviewQuestion,
 } from "@/types";
 import { sentenceCase } from "@/lib/utils";
 
 export const items = languageItems as LanguageItem[];
 export const taxonomy = taxonomyData as TaxonomyMap;
+export const interviewQuestionBank = interviewQuestionsData as InterviewQuestionBank;
+export const interviewQuestions = interviewQuestionBank.categories.flatMap(
+  (cat) => cat.questions
+);
+
+export const allValidItemIds = [
+  ...items.map((item) => item.id),
+  ...interviewQuestions.map((q) => q.id),
+];
 
 export const itemMap = new Map(items.map((item) => [item.id, item]));
 const patternUsageMap = new Map<string, LanguageItem[]>();

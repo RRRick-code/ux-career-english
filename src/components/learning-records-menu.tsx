@@ -18,7 +18,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { items } from "@/lib/content";
+import { allValidItemIds } from "@/lib/content";
 import {
   buildLearningRecordsExport,
   isMeaningfulLearningRecord,
@@ -74,7 +74,7 @@ export function LearningRecordsMenu() {
       const raw = await file.text();
       const importResult = parseLearningRecordsImport(
         raw,
-        items.map((item) => item.id),
+        allValidItemIds,
       );
       setPendingImport(importResult);
     } catch (error) {

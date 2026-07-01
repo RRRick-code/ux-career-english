@@ -57,3 +57,25 @@ export type ItemFilters = {
   kind: string;
   status: string;
 };
+
+export type InterviewQuestion = {
+  id: string;
+  questionNum: number;
+  question: string;
+  include: string[];
+  avoid: string[];
+  standardAnswer: string;
+};
+
+export type InterviewCategory = {
+  id: string;
+  categoryNum: number;
+  title: string;
+  questions: InterviewQuestion[];
+};
+
+export type InterviewQuestionBank = {
+  title: string;
+  evidenceAnchors: { title: string; description: string }[];
+  categories: InterviewCategory[];
+};

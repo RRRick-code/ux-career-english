@@ -12,7 +12,7 @@ import type {
   LearningRecordMap,
   StudyScope,
 } from "@/types";
-import { items } from "@/lib/content";
+import { items, allValidItemIds } from "@/lib/content";
 import {
   addHighlightRange,
   applyFeedback,
@@ -56,7 +56,7 @@ export function LearningRecordsProvider({ children }: PropsWithChildren) {
     const loadedRecords = loadLearningRecords();
     const { records: cleanedRecords, removed } = pruneLearningRecords(
       loadedRecords,
-      items.map((item) => item.id),
+      allValidItemIds,
     );
 
     if (removed) {

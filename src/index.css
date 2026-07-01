@@ -98,6 +98,29 @@
   html {
     @apply font-sans;
   }
+  html, * {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.93 0.005 228) transparent;
+  }
+
+  /* WebKit Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.93 0.005 228);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.85 0.008 228);
+  }
 }
 
 .dark {
