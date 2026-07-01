@@ -76,6 +76,5 @@ export type InterviewCategory = {
 
 export type InterviewQuestionBank = {
   title: string;
-  evidenceAnchors: { title: string; description: string }[];
   categories: InterviewCategory[];
 };

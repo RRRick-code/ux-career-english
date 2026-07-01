@@ -384,3 +384,29 @@ export function applyFeedback(
       : {}),
   };
 }
+
+export const DEFAULT_BLUR_STANDARD_ANSWER_STORAGE_KEY =
+  "ux-english2.default-blur-standard-answer";
+
+export function loadDefaultBlurStandardAnswer(): boolean {
+  if (typeof window === "undefined") {
+    return true;
+  }
+
+  const raw = window.localStorage.getItem(
+    DEFAULT_BLUR_STANDARD_ANSWER_STORAGE_KEY,
+  );
+
+  return raw === null ? true : raw === "true";
+}
+
+export function saveDefaultBlurStandardAnswer(value: boolean) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(
+    DEFAULT_BLUR_STANDARD_ANSWER_STORAGE_KEY,
+    String(value),
+  );
+}

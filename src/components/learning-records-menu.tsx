@@ -1,6 +1,8 @@
 import { useRef, useState, type ChangeEvent } from "react";
+import { useLocation } from "react-router-dom";
 import {
   DownloadIcon,
+  EyeOffIcon,
   MoreHorizontalIcon,
   UploadIcon,
 } from "lucide-react";
@@ -17,9 +19,11 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
+  DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { allValidItemIds } from "@/lib/content";
@@ -30,10 +34,15 @@ import {
   type LearningRecordsImportResult,
 } from "@/lib/storage";
 import { useLearningRecords } from "@/hooks/use-learning-records";
+import { useInterviewSettings } from "@/hooks/use-interview-settings";
 
 export function LearningRecordsMenu() {
+  const location = useLocation();
+  const isInterviewPage = location.pathname.startsWith("/interview");
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { records, replaceRecords } = useLearningRecords();
+  const { defaultBlurStandardAnswer, setDefaultBlurStandardAnswer } =
+    useInterviewSettings();
   const [pendingImport, setPendingImport] =
     useState<LearningRecordsImportResult | null>(null);
   const [importError, setImportError] = useState<string | null>(null);
@@ -130,6 +139,21 @@ export function LearningRecordsMenu() {
               Import Records
             </DropdownMenuItem>
           </DropdownMenuGroup>
+          {isInterviewPage ? (
+            <>
+              <DropdownMenuSeparator />
+              <DropdownMenuGroup>
+                <DropdownMenuCheckboxItem
+                  checked={defaultBlurStandardAnswer}
+                  className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer"
+                  onCheckedChange={setDefaultBlurStandardAnswer}
+                >
+                  <EyeOffIcon />
+                  Blur by Default
+                </DropdownMenuCheckboxItem>
+              </DropdownMenuGroup>
+            </>
+          ) : null}
         </DropdownMenuContent>
       </DropdownMenu>
 

@@ -40,58 +40,76 @@ export function AppShell({
     <div className="min-h-screen bg-slate-100 flex flex-col">
       {showBrandLink ? (
         <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white">
-          <div className="w-full h-14 px-4 sm:px-6 lg:px-8 xl:px-10 flex flex-row items-center justify-start gap-12 sm:gap-24">
+          <div className="relative w-full h-14 px-4 sm:px-6 lg:px-8 xl:px-10 flex flex-row items-center justify-between">
             <Link
               to="/"
               className="inline-block text-base font-bold tracking-tight text-primary transition-colors hover:text-primary/80"
             >
               UXCE
             </Link>
-            <nav className="flex items-center gap-5 sm:gap-12 h-full">
-              <Link
-                to="/"
-                data-text="Practice"
-                className={cn(
-                  "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
-                  "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
-                  "before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[3px] before:rounded-full before:transition-all",
-                  location.pathname === "/" || location.pathname.startsWith("/study")
-                    ? "text-primary font-semibold before:bg-primary before:opacity-100"
-                    : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
-                )}
-              >
-                Practice
+            <nav className="absolute left-1/2 flex h-full -translate-x-1/2 items-center gap-4">
+              <Link to="/" className="relative flex h-full items-center">
+                <span
+                  className={cn(
+                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    location.pathname === "/" || location.pathname.startsWith("/study")
+                      ? "text-primary font-semibold"
+                      : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
+                  )}
+                >
+                  Practice
+                </span>
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-1/2 h-[3px] w-4 -translate-x-1/2 rounded-full transition-all",
+                    location.pathname === "/" || location.pathname.startsWith("/study")
+                      ? "bg-primary opacity-100"
+                      : "bg-transparent opacity-0"
+                  )}
+                />
               </Link>
-              <Link
-                to="/library"
-                data-text="Library"
-                className={cn(
-                  "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
-                  "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
-                  "before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[3px] before:rounded-full before:transition-all",
-                  location.pathname.startsWith("/library")
-                    ? "text-primary font-semibold before:bg-primary before:opacity-100"
-                    : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
-                )}
-              >
-                Library
+              <Link to="/library" className="relative flex h-full items-center">
+                <span
+                  className={cn(
+                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    location.pathname.startsWith("/library")
+                      ? "text-primary font-semibold"
+                      : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
+                  )}
+                >
+                  Library
+                </span>
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-1/2 h-[3px] w-4 -translate-x-1/2 rounded-full transition-all",
+                    location.pathname.startsWith("/library")
+                      ? "bg-primary opacity-100"
+                      : "bg-transparent opacity-0"
+                  )}
+                />
               </Link>
-              <Link
-                to="/interview"
-                data-text="Interview"
-                className={cn(
-                  "h-full px-0 text-sm font-medium transition-colors flex flex-col items-center justify-center relative",
-                  "after:content-[attr(data-text)] after:block after:font-semibold after:h-0 after:invisible after:overflow-hidden",
-                  "before:absolute before:bottom-0 before:left-0 before:right-0 before:h-[3px] before:rounded-full before:transition-all",
-                  location.pathname.startsWith("/interview")
-                    ? "text-primary font-semibold before:bg-primary before:opacity-100"
-                    : "text-muted-foreground hover:text-foreground before:bg-transparent before:opacity-0 hover:before:bg-slate-200 hover:before:opacity-100"
-                )}
-              >
-                Interview
+              <Link to="/interview" className="relative flex h-full items-center">
+                <span
+                  className={cn(
+                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    location.pathname.startsWith("/interview")
+                      ? "text-primary font-semibold"
+                      : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
+                  )}
+                >
+                  Interview
+                </span>
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-1/2 h-[3px] w-4 -translate-x-1/2 rounded-full transition-all",
+                    location.pathname.startsWith("/interview")
+                      ? "bg-primary opacity-100"
+                      : "bg-transparent opacity-0"
+                  )}
+                />
               </Link>
             </nav>
-            <div className="ml-auto flex items-center">
+            <div className="flex items-center">
               <LearningRecordsMenu />
             </div>
           </div>

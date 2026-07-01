@@ -1,43 +1,5 @@
 {
   "title": "UX Designer Interview Question Bank",
-  "evidenceAnchors": [
-    {
-      "title": "Include",
-      "description": "The points a strong answer should cover. These can also be used as scoring criteria."
-    },
-    {
-      "title": "Avoid",
-      "description": "Common traps or weak framing to stay away from."
-    },
-    {
-      "title": "Standard Answer",
-      "description": "A polished sample answer in Hao's voice. Adapt the length based on interview context."
-    },
-    {
-      "title": "Baidu App",
-      "description": "Baidu's flagship mobile search and information app, with about 700 million monthly active users and 200 million daily active users. In North American terms, describe it as a China-specific super app-style product combining search, content discovery, short video, AI assistants, and service entry points."
-    },
-    {
-      "title": "Baidu App homepage redesign",
-      "description": "A strategic shift toward a search-and-algorithmic-feed homepage model. Validated through A/B testing, limited-traffic experiments, and reversal experiments. The 2019-2020 homepage redesign, especially the 2020 upgrade, was estimated by the data science team to contribute roughly RMB 100 million in annualized revenue growth."
-    },
-    {
-      "title": "Duxiaoxiao",
-      "description": "China's first interactive AI virtual human assistant, an avatar-style AI experience before the mainstream LLM era. Hao led 0-to-1 experience definition, multimodal interaction frameworks, AI + search integration, character and brand asset systems, and large-scale production validation. The Duxiaoxiao-related work supported billions of conversations, RMB 100M-level monetization revenue, 3 patents granted in China, and 6 international design awards."
-    },
-    {
-      "title": "Design infrastructure",
-      "description": "Dark mode for Baidu's mobile product ecosystem, Baidu App UI motion system, in-product campaign and monetization design infrastructure, and reusable standards adopted across many teams."
-    },
-    {
-      "title": "Leadership",
-      "description": "Hybrid IC and design leader with 6 years of direct people-management experience, 3 years managing cross-functional teams across interaction, visual, and 3D design, internal instructor experience, final-round design interviewer authorization, and strong promotion outcomes for eligible team members."
-    },
-    {
-      "title": "Current status",
-      "description": "Based in Vancouver, Canada. Looking for product design opportunities. His three-year Canadian post-graduation work permit is being processed, and he currently has legal authorization to work for Canadian employers without sponsorship. Available to interview and start immediately."
-    }
-  ],
   "categories": [
     {
       "id": "cat-1",

@@ -5,7 +5,6 @@ import {
   AlertTriangle,
   Eye,
   EyeOff,
-  FileText,
   Sparkles,
   ChevronLeft,
   ChevronRight,
@@ -23,14 +22,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import { useLearningRecords } from "@/hooks/use-learning-records";
+import { useInterviewSettings } from "@/hooks/use-interview-settings";
 import {
   items,
   itemMap,
@@ -45,6 +38,7 @@ import type { LearningStatus, LanguageItem } from "@/types";
 export function InterviewPage() {
   const { records, getRecord, toggleStar, replaceRecords, toggleHighlight } =
     useLearningRecords();
+  const { defaultBlurStandardAnswer } = useInterviewSettings();
 
   // Selected Category (default to the first stage)
   const [selectedCategoryId, setSelectedCategoryId] = useState<string>(
@@ -78,13 +72,35 @@ export function InterviewPage() {
     return interviewQuestions.find((q) => q.id === selectedQuestionId);
   }, [selectedQuestionId]);
 
+  // Flat list of every question across all stages, for cross-stage prev/next navigation
+  const flatQuestions = useMemo(() => {
+    return interviewQuestionBank.categories.flatMap((cat) =>
+      cat.questions.map((q) => ({ categoryId: cat.id, question: q }))
+    );
+  }, []);
+
+  const currentQuestionIndex = useMemo(() => {
+    return flatQuestions.findIndex((entry) => entry.question.id === selectedQuestionId);
+  }, [flatQuestions, selectedQuestionId]);
+
+  const goToQuestionAt = (index: number) => {
+    const entry = flatQuestions[index];
+    if (!entry) return;
+    setSelectedCategoryId(entry.categoryId);
+    setSelectedQuestionId(entry.question.id);
+  };
+
+  const hasPreviousQuestion = currentQuestionIndex > 0;
+  const hasNextQuestion =
+    currentQuestionIndex >= 0 && currentQuestionIndex < flatQuestions.length - 1;
+
   // Blur/Rehearsal mode state
-  const [isBlurred, setIsBlurred] = useState<boolean>(true);
+  const [isBlurred, setIsBlurred] = useState<boolean>(defaultBlurStandardAnswer);
   const [isSidebarExpanded, setIsSidebarExpanded] = useState<boolean>(false);
 
-  // When selected question changes, hide the answer for rehearsal by default
+  // When selected question changes, reset the answer visibility to the default
   useEffect(() => {
-    setIsBlurred(true);
+    setIsBlurred(defaultBlurStandardAnswer);
   }, [selectedQuestionId]);
 
   // Selection Highlight Menu Container ref
@@ -343,22 +359,22 @@ export function InterviewPage() {
                           : "border-l-4 border-l-transparent text-slate-600"
                       )}
                     >
-                      <div className="flex items-center gap-1 mt-0.5 shrink-0">
-                        {record.status === "mastered" && (
-                          <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
-                        )}
-                        {record.status === "in_progress" && (
-                          <Sparkles className="h-3.5 w-3.5 text-sky-500 shrink-0" />
-                        )}
-                      </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-[13px] line-clamp-2 leading-snug">{q.question}</p>
                       </div>
-                      {record.starred ? (
-                        <Star className="h-3.5 w-3.5 text-yellow-500 fill-yellow-400 self-center shrink-0" />
-                      ) : (
-                        <ChevronRight className="h-4 w-4 text-slate-300 self-center shrink-0" />
-                      )}
+                      <div className="flex items-center gap-1 self-center shrink-0">
+                        {record.status === "mastered" && (
+                          <CheckCircle2 className="h-3 w-3 text-emerald-500 shrink-0" />
+                        )}
+                        {record.status === "in_progress" && (
+                          <Sparkles className="h-3 w-3 text-sky-500 shrink-0" />
+                        )}
+                        {record.starred ? (
+                          <Star className="h-3 w-3 text-yellow-500 fill-yellow-400 shrink-0" />
+                        ) : (
+                          <ChevronRight className="h-4 w-4 text-slate-300 shrink-0" />
+                        )}
+                      </div>
                     </button>
                   );
                 })}
@@ -370,54 +386,18 @@ export function InterviewPage() {
         {/* Right Content Area */}
         <div className="ml-12 lg:ml-80 px-4 py-8 sm:px-6 lg:px-8 xl:px-10">
           {currentQuestion ? (
-            <div className="space-y-12 max-w-4xl mx-auto">
-              
-              {/* Question Header */}
-              <div className="pb-6 border-b border-slate-200/80 space-y-4">
-                <div className="space-y-1">
-                  <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 leading-snug">
-                    {currentQuestion.question}
-                  </h2>
-                </div>
+            <div className="max-w-4xl mx-auto">
 
+              {/* Question Title */}
+              <div className="space-y-1">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 leading-snug">
+                  {currentQuestion.question}
+                </h2>
+              </div>
+
+              {/* Sticky Action Toolbar */}
+              <div className="sticky top-14 z-10 mt-4 flex items-center justify-between gap-2 border-b border-slate-200/80 bg-slate-100 py-3">
                 <div className="flex items-center gap-2">
-                  {/* Reusable Evidence Anchors Trigger */}
-                  <Sheet>
-                    <SheetTrigger asChild>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="h-9 cursor-pointer border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs"
-                      >
-                        Resume Anchors
-                      </Button>
-                    </SheetTrigger>
-                    <SheetContent className="w-full sm:max-w-md overflow-y-auto bg-white p-6 shadow-xl">
-                      <SheetHeader className="mb-6 border-b border-slate-100 pb-4">
-                        <SheetTitle className="text-lg font-bold text-slate-800 flex items-center gap-2">
-                          <FileText className="h-5 w-5 text-primary" />
-                          Resume Evidence Anchors
-                        </SheetTitle>
-                      </SheetHeader>
-                      <div className="space-y-5">
-                        {interviewQuestionBank.evidenceAnchors.map((anchor) => (
-                          <div
-                            key={anchor.title}
-                            className="space-y-1.5 pb-4 border-b border-slate-100 last:border-0 last:pb-0"
-                          >
-                            <h4 className="text-sm font-bold text-slate-800 flex items-center gap-1.5">
-                              <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                              {anchor.title}
-                            </h4>
-                            <p className="text-xs text-slate-600 leading-relaxed pl-3">
-                              {anchor.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </SheetContent>
-                  </Sheet>
-
                   {/* Bookmark Star */}
                   <Button
                     variant="outline"
@@ -428,8 +408,8 @@ export function InterviewPage() {
                     <Star
                       className={cn(
                         "h-4.5 w-4.5 transition-colors",
-                        getRecord(currentQuestion.id).starred 
-                          ? "fill-yellow-400 text-yellow-500" 
+                        getRecord(currentQuestion.id).starred
+                          ? "fill-yellow-400 text-yellow-500"
                           : "text-slate-500"
                       )}
                     />
@@ -450,10 +430,34 @@ export function InterviewPage() {
                     </SelectContent>
                   </Select>
                 </div>
+
+                {/* Cross-stage Previous / Next Navigation */}
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    aria-label="Previous question"
+                    disabled={!hasPreviousQuestion}
+                    onClick={() => goToQuestionAt(currentQuestionIndex - 1)}
+                    className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    aria-label="Next question"
+                    disabled={!hasNextQuestion}
+                    onClick={() => goToQuestionAt(currentQuestionIndex + 1)}
+                    className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
               </div>
 
               {/* Standard Answer Section */}
-              <div className="space-y-3">
+              <div className="mt-12 space-y-3">
                 <div className="flex flex-row items-center justify-between pb-2 border-b border-slate-200/80">
                   <h3 className="text-sm font-bold text-slate-800">
                     Standard Answer
@@ -511,7 +515,7 @@ export function InterviewPage() {
               </div>
 
               {/* Include (要点包含) */}
-              <div className="space-y-3">
+              <div className="mt-12 space-y-3">
                 <h3 className="text-sm font-bold text-emerald-800 pb-2 border-b border-slate-200/60">
                   Include
                 </h3>
@@ -525,7 +529,7 @@ export function InterviewPage() {
               </div>
 
               {/* Avoid (避坑指南) */}
-              <div className="space-y-3">
+              <div className="mt-12 space-y-3">
                 <h3 className="text-sm font-bold text-rose-800 pb-2 border-b border-slate-200/60">
                   Avoid
                 </h3>
