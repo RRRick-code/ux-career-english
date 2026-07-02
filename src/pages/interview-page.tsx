@@ -98,11 +98,36 @@ export function InterviewPage() {
   const [isBlurred, setIsBlurred] = useState<boolean>(defaultBlurStandardAnswer);
   const [isSidebarExpanded, setIsSidebarExpanded] = useState<boolean>(false);
 
+  // Scrollable container ref for right content area to handle scrolling to top
+  const rightContentRef = useRef<HTMLDivElement | null>(null);
+
   // When selected question changes, reset the answer visibility to the default and scroll to top
   useEffect(() => {
     setIsBlurred(defaultBlurStandardAnswer);
-    window.scrollTo(0, 0);
+    if (rightContentRef.current) {
+      rightContentRef.current.scrollTo(0, 0);
+    }
   }, [selectedQuestionId]);
+
+  // Lock root document scroll on mobile/desktop for full height app experience
+  useEffect(() => {
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+    const originalHtmlHeight = document.documentElement.style.height;
+    const originalBodyOverflow = document.body.style.overflow;
+    const originalBodyHeight = document.body.style.height;
+
+    document.documentElement.style.overflow = "hidden";
+    document.documentElement.style.height = "100dvh";
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100dvh";
+
+    return () => {
+      document.documentElement.style.overflow = originalHtmlOverflow;
+      document.documentElement.style.height = originalHtmlHeight;
+      document.body.style.overflow = originalBodyOverflow;
+      document.body.style.height = originalBodyHeight;
+    };
+  }, []);
 
   // Selection Highlight Menu Container ref
   const answerContainerRef = useRef<HTMLDivElement | null>(null);
@@ -385,7 +410,7 @@ export function InterviewPage() {
         </div>
 
         {/* Right Content Area */}
-        <div className="ml-12 lg:ml-80 px-4 pt-8 pb-24 sm:px-6 lg:px-8 xl:px-10">
+        <div ref={rightContentRef} className="ml-12 lg:ml-80 h-[calc(100dvh-3.5rem)] overflow-y-auto px-4 pt-8 pb-24 sm:px-6 lg:px-8 xl:px-10">
           {currentQuestion ? (
             <div className="max-w-4xl mx-auto">
 
