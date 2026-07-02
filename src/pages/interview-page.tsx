@@ -98,9 +98,10 @@ export function InterviewPage() {
   const [isBlurred, setIsBlurred] = useState<boolean>(defaultBlurStandardAnswer);
   const [isSidebarExpanded, setIsSidebarExpanded] = useState<boolean>(false);
 
-  // When selected question changes, reset the answer visibility to the default
+  // When selected question changes, reset the answer visibility to the default and scroll to top
   useEffect(() => {
     setIsBlurred(defaultBlurStandardAnswer);
+    window.scrollTo(0, 0);
   }, [selectedQuestionId]);
 
   // Selection Highlight Menu Container ref

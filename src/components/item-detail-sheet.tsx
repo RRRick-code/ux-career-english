@@ -158,10 +158,7 @@ export function ItemDetailSheet({
         >
           <div className="flex h-full min-h-0 flex-col">
             <SheetHeader className="border-b border-border/70 px-8 py-6 pr-16">
-              <SheetTitle>Item Details</SheetTitle>
-              <SheetDescription>
-                Review the full language item without leaving the library.
-              </SheetDescription>
+              <SheetTitle className="font-bold">Item Details</SheetTitle>
             </SheetHeader>
             <ScrollArea className="min-h-0 flex-1">
               {content}
@@ -174,13 +171,10 @@ export function ItemDetailSheet({
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
-      <DrawerContent className="overflow-hidden">
-        <div className="flex max-h-[88vh] min-h-0 flex-col">
+      <DrawerContent className="overflow-hidden data-[vaul-drawer-direction=bottom]:max-h-[92vh]">
+        <div className="flex h-[90vh] max-h-[90vh] min-h-0 flex-col">
           <DrawerHeader className="border-b border-border/70 px-6 pb-4 pt-4 text-left">
-            <DrawerTitle>Item Details</DrawerTitle>
-            <DrawerDescription>
-              Review the full language item without leaving the library.
-            </DrawerDescription>
+            <DrawerTitle className="font-bold">Item Details</DrawerTitle>
           </DrawerHeader>
           <div className="min-h-0 flex-1 overflow-y-auto">
             {content}

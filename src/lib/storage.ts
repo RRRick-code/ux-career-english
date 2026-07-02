@@ -390,14 +390,14 @@ export const DEFAULT_BLUR_STANDARD_ANSWER_STORAGE_KEY =
 
 export function loadDefaultBlurStandardAnswer(): boolean {
   if (typeof window === "undefined") {
-    return true;
+    return false;
   }
 
   const raw = window.localStorage.getItem(
     DEFAULT_BLUR_STANDARD_ANSWER_STORAGE_KEY,
   );
 
-  return raw === null ? true : raw === "true";
+  return raw === null ? false : raw === "true";
 }
 
 export function saveDefaultBlurStandardAnswer(value: boolean) {
