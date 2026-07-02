@@ -384,77 +384,15 @@ export function InterviewPage() {
         </div>
 
         {/* Right Content Area */}
-        <div className="ml-12 lg:ml-80 px-4 pt-0 pb-8 sm:px-6 lg:px-8 xl:px-10">
+        <div className="ml-12 lg:ml-80 px-4 pt-8 pb-24 sm:px-6 lg:px-8 xl:px-10">
           {currentQuestion ? (
             <div className="max-w-4xl mx-auto">
 
-              {/* Sticky Action Toolbar */}
-              <div className="sticky top-14 z-10 flex items-center justify-between gap-2 border-b border-slate-200/80 bg-slate-100 py-3">
-                <div className="flex items-center gap-2">
-                  {/* Bookmark Star */}
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => toggleStar(currentQuestion.id)}
-                    className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors"
-                  >
-                    <Star
-                      className={cn(
-                        "h-4.5 w-4.5 transition-colors",
-                        getRecord(currentQuestion.id).starred
-                          ? "fill-yellow-400 text-yellow-500"
-                          : "text-slate-500"
-                      )}
-                    />
-                  </Button>
-
-                  {/* Rehearsal Status Dropdown */}
-                  <Select
-                    value={getRecord(currentQuestion.id).status || "not_started"}
-                    onValueChange={(val) => handleStatusChange(val as LearningStatus)}
-                  >
-                    <SelectTrigger className="w-32 h-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900 shadow-xs font-medium [&_svg]:text-slate-500 [&_svg]:data-[state=open]:text-slate-900">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent className="p-1">
-                      <SelectItem value="not_started" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Not Started</SelectItem>
-                      <SelectItem value="in_progress" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Learning</SelectItem>
-                      <SelectItem value="mastered" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Mastered</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                {/* Cross-stage Previous / Next Navigation */}
-                <div className="flex items-center gap-2">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    aria-label="Previous question"
-                    disabled={!hasPreviousQuestion}
-                    onClick={() => goToQuestionAt(currentQuestionIndex - 1)}
-                    className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
-                  >
-                    <ChevronLeft className="h-4 w-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    aria-label="Next question"
-                    disabled={!hasNextQuestion}
-                    onClick={() => goToQuestionAt(currentQuestionIndex + 1)}
-                    className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
-                  >
-                    <ChevronRight className="h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-
               {/* Question Title */}
-              <div className="mt-6 space-y-1.5">
+              <div className="space-y-1">
                 <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 leading-snug">
                   {currentQuestion.question}
                 </h2>
-                <p className="text-[11px] text-slate-400 font-mono">{currentQuestion.id}</p>
               </div>
 
               {/* Standard Answer Section */}
@@ -543,6 +481,71 @@ export function InterviewPage() {
                 </ul>
               </div>
 
+              {/* Fixed Bottom Action Toolbar */}
+              <div className="fixed bottom-0 left-12 lg:left-80 right-0 z-10 border-t border-slate-200/80 bg-slate-100/95 backdrop-blur-xs py-3 px-4 sm:px-6 lg:px-8 xl:px-10 shadow-xs">
+                <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    {/* Bookmark Star */}
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={() => toggleStar(currentQuestion.id)}
+                      className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors"
+                    >
+                      <Star
+                        className={cn(
+                          "h-4.5 w-4.5 transition-colors",
+                          getRecord(currentQuestion.id).starred
+                            ? "fill-yellow-400 text-yellow-500"
+                            : "text-slate-500"
+                        )}
+                      />
+                    </Button>
+
+                    {/* Rehearsal Status Dropdown */}
+                    <Select
+                      value={getRecord(currentQuestion.id).status || "not_started"}
+                      onValueChange={(val) => handleStatusChange(val as LearningStatus)}
+                    >
+                      <SelectTrigger className="w-32 h-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 data-[state=open]:bg-slate-50 data-[state=open]:text-slate-900 shadow-xs font-medium [&_svg]:text-slate-500 [&_svg]:data-[state=open]:text-slate-900">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent className="p-1">
+                        <SelectItem value="not_started" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Not Started</SelectItem>
+                        <SelectItem value="in_progress" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Learning</SelectItem>
+                        <SelectItem value="mastered" className="text-slate-600 font-medium focus:text-slate-900 focus:bg-slate-50 cursor-pointer">Mastered</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Cross-stage Previous / Next Navigation */}
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] text-slate-400 font-mono mr-2 select-all">
+                      {currentQuestion.id}
+                    </span>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      aria-label="Previous question"
+                      disabled={!hasPreviousQuestion}
+                      onClick={() => goToQuestionAt(currentQuestionIndex - 1)}
+                      className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      <ChevronLeft className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      aria-label="Next question"
+                      disabled={!hasNextQuestion}
+                      onClick={() => goToQuestionAt(currentQuestionIndex + 1)}
+                      className="h-9 w-9 border-slate-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 shadow-xs cursor-pointer transition-colors disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
 
             </div>
           ) : (
