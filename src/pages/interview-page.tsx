@@ -384,19 +384,12 @@ export function InterviewPage() {
         </div>
 
         {/* Right Content Area */}
-        <div className="ml-12 lg:ml-80 px-4 py-8 sm:px-6 lg:px-8 xl:px-10">
+        <div className="ml-12 lg:ml-80 px-4 pt-0 pb-8 sm:px-6 lg:px-8 xl:px-10">
           {currentQuestion ? (
             <div className="max-w-4xl mx-auto">
 
-              {/* Question Title */}
-              <div className="space-y-1">
-                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 leading-snug">
-                  {currentQuestion.question}
-                </h2>
-              </div>
-
               {/* Sticky Action Toolbar */}
-              <div className="sticky top-14 z-10 mt-4 flex items-center justify-between gap-2 border-b border-slate-200/80 bg-slate-100 py-3">
+              <div className="sticky top-14 z-10 flex items-center justify-between gap-2 border-b border-slate-200/80 bg-slate-100 py-3">
                 <div className="flex items-center gap-2">
                   {/* Bookmark Star */}
                   <Button
@@ -454,6 +447,14 @@ export function InterviewPage() {
                     <ChevronRight className="h-4 w-4" />
                   </Button>
                 </div>
+              </div>
+
+              {/* Question Title */}
+              <div className="mt-6 space-y-1.5">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-800 leading-snug">
+                  {currentQuestion.question}
+                </h2>
+                <p className="text-[11px] text-slate-400 font-mono">{currentQuestion.id}</p>
               </div>
 
               {/* Standard Answer Section */}
@@ -542,9 +543,6 @@ export function InterviewPage() {
                 </ul>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-slate-100">
-                <p className="text-[11px] text-slate-400 font-mono">{currentQuestion.id}</p>
-              </div>
 
             </div>
           ) : (
