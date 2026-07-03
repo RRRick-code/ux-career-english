@@ -49,17 +49,16 @@
           "questionNum": 3,
           "question": "What kinds of roles are you targeting?",
           "include": [
-            "Mention product design as the primary direction.",
-            "Include Senior, Staff, AI Product Designer, Design Systems, and Product Design Lead roles.",
-            "Explain role fit through experience, not title preference only.",
-            "Keep flexibility around level and scope."
+            "Mention Senior or Staff-level product design roles as the primary target.",
+            "Emphasize combining your technical background with experience in complex platforms and AI.",
+            "Focus on joining teams where design contributes to product strategy and direction."
           ],
           "avoid": [
-            "Saying you only want management or only want IC work.",
-            "Over-positioning as an engineer because of the computer science master's degree.",
-            "Sounding title-driven rather than impact-driven."
+            "Listing out multiple specific job titles like a robotic checklist.",
+            "Sounding title-driven rather than impact-driven.",
+            "Making the technical background sound like a pivot away from design."
           ],
-          "standardAnswer": "I am targeting product design roles where my experience in complex consumer products, AI interaction, design systems, and cross-functional leadership can be useful. The titles I am looking at include Product Designer, Senior Product Designer, Staff Product Designer, AI Product Designer, Design Systems Designer, UX/UI Designer, and Product Design Lead. I am most interested in teams where design is expected to contribute to product direction, user experience quality, experimentation, and implementation quality, beyond interface delivery."
+          "standardAnswer": "I am primarily targeting Senior or Staff-level product design roles where I can combine my technical background with my experience in complex platforms and AI. I am most interested in joining a team where design is expected to contribute to product direction and strategy, rather than just executing interfaces."
         },
         {
           "id": "q-1-4",
