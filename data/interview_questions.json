@@ -11,19 +11,21 @@
           "questionNum": 1,
           "question": "Can you walk me through your background?",
           "include": [
-            "Open with Staff-level Product Designer and design leader, not a long chronological resume.",
-            "Mention 12 years of UX/UI/product design, including Baidu and Alibaba.",
-            "Anchor on large-scale consumer platforms, AI product design, design systems, technical fluency, and business impact.",
-            "Translate Baidu App scale for a North American listener.",
-            "End with current Canada-based job search and target role fit."
+            "Open with Staff-level Product Designer and design leader.",
+            "Mention 12 years of experience at Baidu and Alibaba.",
+            "Highlight Baidu App's scale (200M DAU) and Duxiaoxiao as an avatar-based AI assistant.",
+            "Position the CS Master's as a bridge for design craft, not a career pivot.",
+            "End with Vancouver location and a company-tailored closing hook."
           ],
           "avoid": [
             "Starting with education before professional positioning.",
             "Listing every project without a clear theme.",
-            "Framing yourself as a pure engineer, pure manager, or pure visual designer.",
-            "Overclaiming company-level results as individual-only achievements."
+            "Framing yourself as a pure engineer, manager, or visual designer.",
+            "Overclaiming company-level results as individual achievements.",
+            "Rambling for more than 2 minutes; keep the opening response concise.",
+            "Using overly academic or formal language instead of conversational English."
           ],
-          "standardAnswer": "I am a Staff-level Product Designer and design leader with 12 years of experience across large-scale consumer platforms, AI products, design systems, and design leadership. I spent 10 years at Baidu and 2 years at Alibaba. At Baidu, I worked for multiple years as a design architect for Baidu App, the company's flagship mobile search and information app, with about 700 million monthly active users and 200 million daily active users. My work there focused on homepage redesigns, search and algorithmic-feed experiences, platform design infrastructure, and business-impact-driven design.\n\nMy other flagship project was Duxiaoxiao, China's first interactive AI virtual human assistant. I led design across 0-to-1 experience definition, multimodal interaction, AI + search integration, character and 3D production systems, and commercialization scenarios. My background combines hands-on UX/UI craft, systems thinking, technical fluency, business awareness, and design leadership. I am now based in Vancouver and looking for product design roles where I can contribute to complex product problems, AI experiences, design systems, and cross-functional execution."
+          "standardAnswer": "Certainly, I'd be happy to walk you through my background.\n\nI’m a Staff Product Designer and design leader with 12 years of experience, including 10 years at Baidu and 2 years at Alibaba. Throughout my career, I've focused on bridging deep design craft with technical fluency and business strategy.\n\nAt Baidu, I spent several years as the Design Architect for our flagship Baidu App, which serves over 200 million daily active users. I led high-impact initiatives like homepage redesigns and our platform design systems, helping drive both user growth and monetization.\n\nI also led the design from 0-to-1 for Duxiaoxiao, China's first AI virtual assistant built around an interactive 3D avatar. I defined the multimodal search experience and established our character production systems.\n\nTo bridge my design craft with engineering, I recently completed a master's degree in Applied Computer Science. I’m now based in Vancouver and looking for product design opportunities where I can apply my systems thinking, AI experience, and technical fluency to solve complex product problems.\n\n(Closing options depending on the company):\n- For AI roles: \"...and I'm excited to help shape [Company Name]'s interactive AI experiences.\"\n- For SaaS/Platform roles: \"...and I'm keen to apply this systems perspective to [Company Name]'s design systems and platform scaling.\"\n- For general roles: \"...and I look forward to bringing this hybrid background to the [Job Title] role at [Company Name].\""
         },
         {
           "id": "q-1-2",
