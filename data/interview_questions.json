@@ -42,7 +42,7 @@
             "Sounding uncertain about whether you are a designer or engineer.",
             "Overly narrowing the search to only Staff-level roles."
           ],
-          "standardAnswer": "I am currently based in Vancouver, Canada, and I am looking for product design opportunities. I am primarily targeting Product Designer, Senior Product Designer, Staff Product Designer, UX/UI Designer, AI Product Designer, Design Systems Designer, and Product Design Lead roles. I am open to remote, hybrid, or onsite work, with a preference for Canada-based opportunities. I am available to interview immediately and can start immediately."
+          "standardAnswer": "I am currently based in Vancouver, Canada, and I am looking for product design opportunities.\n\nI am primarily targeting Product Designer, Senior Product Designer, Staff Product Designer, UX/UI Designer, AI Product Designer, Design Systems Designer, and Product Design Lead roles.\n\nI am open to remote, hybrid, or onsite work, with a preference for Canada-based opportunities. I am available to interview immediately and can start immediately."
         },
         {
           "id": "q-1-3",
@@ -58,7 +58,7 @@
             "Sounding title-driven rather than impact-driven.",
             "Making the technical background sound like a pivot away from design."
           ],
-          "standardAnswer": "I am primarily targeting Senior or Staff-level product design roles where I can combine my technical background with my experience in complex platforms and AI. I am most interested in joining a team where design is expected to contribute to product direction and strategy, rather than just executing interfaces."
+          "standardAnswer": "I am primarily targeting Senior or Staff-level product design roles where I can combine my technical background with my experience in complex platforms and AI.\n\nI am most interested in joining a team where design is expected to contribute to product direction and strategy, rather than just executing interfaces."
         },
         {
           "id": "q-1-4",
@@ -75,7 +75,7 @@
             "Repeating the job description without a personal point of view.",
             "Over-indexing on learning opportunities instead of contribution."
           ],
-          "standardAnswer": "I am interested in this role because it seems to need a designer who can work beyond isolated interface execution. My strongest experience is in complex product environments where user needs, business goals, technical constraints, and organizational alignment all matter. At Baidu, I worked on products with hundreds of millions of users, led AI assistant and design infrastructure work, and often had to connect product strategy with measurable outcomes. This role feels like a strong fit because I can bring a systems lens to product design while also staying hands-on in UX, UI, prototyping, and cross-functional execution."
+          "standardAnswer": "I am interested in this role because it seems to need a designer who can work beyond isolated interface execution. My strongest experience is in complex product environments where user needs, business goals, technical constraints, and organizational alignment all matter.\n\nAt Baidu, I worked on products with hundreds of millions of users, led AI assistant and design infrastructure work, and often had to connect product strategy with measurable outcomes.\n\nThis role feels like a strong fit because I can bring a systems lens to product design while also staying hands-on in UX, UI, prototyping, and cross-functional execution."
         },
         {
           "id": "q-1-5",
@@ -92,7 +92,7 @@
             "Sounding like the career gap was unplanned or unmanaged.",
             "Making the master's degree sound like a pivot away from design."
           ],
-          "standardAnswer": "After 10 years at Baidu, I wanted to step outside one major product ecosystem to broaden both my technical foundation and product perspective. I have always believed that technology is one of the core materials of digital product design, so I moved to Canada and completed a master's degree in Applied Computer Science. That experience significantly strengthened my technical fluency and gave me a broader view of the North American product environment. Now I am ready to return to product design work and bring together my design leadership, AI experience, and technical background."
+          "standardAnswer": "After 10 years at Baidu, I wanted to step outside one major product ecosystem to broaden both my technical foundation and product perspective.\n\nI have always believed that technology is one of the core materials of digital product design, so I moved to Canada and completed a master's degree in Applied Computer Science. That experience significantly strengthened my technical fluency and gave me a broader view of the North American product environment.\n\nNow I am ready to return to product design work and bring together my design leadership, AI experience, and technical background."
         },
         {
           "id": "q-1-6",
@@ -109,7 +109,7 @@
             "Saying you left because of dissatisfaction.",
             "Making the move sound disconnected from product design."
           ],
-          "standardAnswer": "I left Baidu after 10 years because I wanted to step outside my comfort zone and upgrade my long-term capability as a technology product designer. At Baidu, I experienced the full mobile internet cycle and worked on large-scale search, content, AI assistant, and platform design problems. The next step I wanted was to strengthen my technical foundation and broaden my perspective beyond one market. That is why I moved to Canada for a master's degree in Applied Computer Science. The transition was intentional, and it has made me better prepared for product design roles that sit closer to AI, systems, and implementation."
+          "standardAnswer": "I left Baidu after 10 years because I wanted to step outside my comfort zone and upgrade my long-term capability as a technology product designer. At Baidu, I experienced the full mobile internet cycle and worked on large-scale search, content, AI assistant, and platform design problems.\n\nThe next step I wanted was to strengthen my technical foundation and broaden my perspective beyond one market. That is why I moved to Canada for a master's degree in Applied Computer Science.\n\nThe transition was intentional, and it has made me better prepared for product design roles that sit closer to AI, systems, and implementation."
         },
         {
           "id": "q-1-7",
@@ -126,7 +126,7 @@
             "Over-telling personal details.",
             "Suggesting uncertainty about staying in Canada."
           ],
-          "standardAnswer": "I moved to Canada to broaden my technical and product perspective after many years working in China's technology industry. I chose a master's program in Applied Computer Science because I wanted to understand technology more deeply as a designer, especially for AI, web applications, and interactive systems. I am now based in Vancouver and looking for product design opportunities where I can apply my previous large-scale consumer product experience in a North American product environment."
+          "standardAnswer": "I moved to Canada to broaden my technical and product perspective after many years working in China's technology industry.\n\nI chose a master's program in Applied Computer Science because I wanted to understand technology more deeply as a designer, especially for AI, web applications, and interactive systems.\n\nI am now based in Vancouver and looking for product design opportunities where I can apply my previous large-scale consumer product experience in a North American product environment."
         },
         {
           "id": "q-1-8",
@@ -143,7 +143,7 @@
             "Getting too technical for a recruiter screen.",
             "Treating the degree as unrelated to prior design experience."
           ],
-          "standardAnswer": "I see the master's degree as an extension of my design career, not a pivot away from design. For technology product designers, technology is like a material. If you understand the material better, you can make better product decisions and collaborate more effectively with engineering teams. In the program, I studied computer science fundamentals such as algorithms, databases, operating systems, software engineering, machine learning, web application development, and Web3D. That helps me design more feasible interactions, build stronger prototypes, and communicate with engineers with more precision, especially in AI, 3D, and complex frontend experiences."
+          "standardAnswer": "I see the master's degree as an extension of my design career, not a pivot away from design. For technology product designers, technology is like a material. If you understand the material better, you can make better product decisions and collaborate more effectively with engineering teams.\n\nIn the program, I studied computer science fundamentals such as algorithms, databases, operating systems, software engineering, machine learning, web application development, and Web3D.\n\nThat helps me design more feasible interactions, build stronger prototypes, and communicate with engineers with more precision, especially in AI, 3D, and complex frontend experiences."
         },
         {
           "id": "q-1-9",
@@ -192,7 +192,7 @@
             "Giving a rigid number before understanding level.",
             "Talking only about salary and ignoring total compensation."
           ],
-          "standardAnswer": "I am still calibrating based on level, scope, location, and total compensation structure. My priority is finding the right product design role where the scope matches my experience and where I can have meaningful impact. If we move forward, I would be happy to discuss a market-aligned range based on the level and compensation structure for this role."
+          "standardAnswer": "I am still calibrating based on level, scope, location, and total compensation structure.\n\nMy priority is finding the right product design role where the scope matches my experience and where I can have meaningful impact.\n\nIf we move forward, I would be happy to discuss a market-aligned range based on the level and compensation structure for this role."
         },
         {
           "id": "q-1-12",
@@ -209,7 +209,7 @@
             "Overloading with China-specific business names.",
             "Making unverified comparisons."
           ],
-          "standardAnswer": "Baidu App is Baidu's flagship mobile search and information app. For a North American audience, I would describe it as a China-specific super app-style product that combines parts of Google Search, Google Discover, YouTube Shorts, Google Assistant, and service entry points inside one high-frequency mobile app. It had about 700 million monthly active users and 200 million daily active users, so even small homepage or interaction changes needed careful design judgment, experimentation, and rollout."
+          "standardAnswer": "Baidu App is Baidu's flagship mobile search and information app.\n\nFor a North American audience, I would describe it as a China-specific super app-style product that combines parts of Google Search, Google Discover, YouTube Shorts, Google Assistant, and service entry points inside one high-frequency mobile app.\n\nIt had about 700 million monthly active users and 200 million daily active users, so even small homepage or interaction changes needed careful design judgment, experimentation, and rollout."
         }
       ]
     },
@@ -232,7 +232,7 @@
             "Saying \"I can do everything.\"",
             "Overemphasizing visual craft without product judgment."
           ],
-          "standardAnswer": "I am strongest in complex product design where the problem is bigger than a single flow or screen. My strongest areas are large-scale platform UX, AI product experience, design systems, and outcome-driven product design. At Baidu App, I worked on homepage redesigns, search and algorithmic-feed experiences, and design infrastructure for a product with hundreds of millions of users. At Duxiaoxiao, I led 0-to-1 AI virtual human assistant design, including multimodal interaction, character systems, AI + search integration, and scalable 3D production workflows. I can move from strategy to execution across product direction, UX architecture, hands-on UI craft, prototyping, and implementation detail, which is useful when a team needs both direction and delivery."
+          "standardAnswer": "I am strongest in complex product design where the problem is bigger than a single flow or screen. My strongest areas are large-scale platform UX, AI product experience, design systems, and outcome-driven product design.\n\nAt Baidu App, I worked on homepage redesigns, search and algorithmic-feed experiences, and design infrastructure for a product with hundreds of millions of users.\n\nAt Duxiaoxiao, I led 0-to-1 AI virtual human assistant design, including multimodal interaction, character systems, AI + search integration, and scalable 3D production workflows.\n\nI can move from strategy to execution across product direction, UX architecture, hands-on UI craft, prototyping, and implementation detail, which is useful when a team needs both direction and delivery."
         },
         {
           "id": "q-2-2",
@@ -248,7 +248,7 @@
             "Sounding like management is the only acceptable path.",
             "Making the answer unclear."
           ],
-          "standardAnswer": "My background is closest to a hybrid IC and design lead profile. My hybrid background lets me operate as both a senior IC and a design lead. I have 6 years of direct people-management experience and have managed cross-functional design teams, including interaction, visual, and 3D designers. At the same time, I have continued to own high-priority hands-on design work, especially around product architecture, AI interaction frameworks, design systems, and executive-level design direction. I am comfortable as a senior IC, Staff-level designer, or product design lead, as long as the role needs both strong hands-on design judgment and cross-functional influence."
+          "standardAnswer": "My background is closest to a hybrid IC and design lead profile. My hybrid background lets me operate as both a senior IC and a design lead.\n\nI have 6 years of direct people-management experience and have managed cross-functional design teams, including interaction, visual, and 3D designers.\n\nAt the same time, I have continued to own high-priority hands-on design work, especially around product architecture, AI interaction frameworks, design systems, and executive-level design direction.\n\nI am comfortable as a senior IC, Staff-level designer, or product design lead, as long as the role needs both strong hands-on design judgment and cross-functional influence."
         },
         {
           "id": "q-2-3",
@@ -264,7 +264,7 @@
             "Making it sound like Staff means less design craft.",
             "Overusing abstract leadership language."
           ],
-          "standardAnswer": "In my experience, Staff-level product design means working at a level where the design problem often includes product direction, systems, organizational alignment, and measurable outcomes, not only interface execution. On Baidu App, for example, homepage redesign was not just a UI change. It involved market shifts, user habits, content distribution strategy, business goals, engineering feasibility, and stakeholder alignment across many teams. A Staff-level designer needs to clarify the problem, make trade-offs explicit, align people around a direction, and still care deeply about the quality of what ships."
+          "standardAnswer": "In my experience, Staff-level product design means working at a level where the design problem often includes product direction, systems, organizational alignment, and measurable outcomes, not only interface execution.\n\nOn Baidu App, for example, homepage redesign was not just a UI change. It involved market shifts, user habits, content distribution strategy, business goals, engineering feasibility, and stakeholder alignment across many teams.\n\nA Staff-level designer needs to clarify the problem, make trade-offs explicit, align people around a direction, and still care deeply about the quality of what ships."
         },
         {
           "id": "q-2-4",
@@ -280,7 +280,7 @@
             "Choosing problems too narrow for your background.",
             "Ignoring team and delivery constraints."
           ],
-          "standardAnswer": "I add the most value to complex product problems where the team needs to connect user needs, business goals, technical constraints, and long-term experience quality. Examples include platform-scale homepage redesigns, AI assistant interaction models, design systems, monetization surfaces, and product infrastructure used by many teams. I am especially useful when the problem is ambiguous at the beginning and needs to be turned into a clear experience framework, phased delivery plan, and measurable success criteria."
+          "standardAnswer": "I add the most value to complex product problems where the team needs to connect user needs, business goals, technical constraints, and long-term experience quality.\n\nExamples include platform-scale homepage redesigns, AI assistant interaction models, design systems, monetization surfaces, and product infrastructure used by many teams.\n\nI am especially useful when the problem is ambiguous at the beginning and needs to be turned into a clear experience framework, phased delivery plan, and measurable success criteria."
         },
         {
           "id": "q-2-5",
@@ -297,7 +297,7 @@
             "Drowning them in product history.",
             "Failing to explain your ownership."
           ],
-          "standardAnswer": "Baidu App was my largest platform UX experience. It is Baidu's flagship mobile search and information app, with about 700 million monthly active users and 200 million daily active users. I worked on it across multiple stages as it evolved from a search-focused mobile app into a broader platform for search, content discovery, short video, local services, and AI assistants. My work included homepage redesigns, the shift toward a search-and-algorithmic-feed architecture, design infrastructure such as dark mode and motion systems, and AI + search exploration. That experience shaped how I think about platform-scale design, experimentation, stakeholder alignment, and business impact."
+          "standardAnswer": "Baidu App was my largest platform UX experience. It is Baidu's flagship mobile search and information app, with about 700 million monthly active users and 200 million daily active users.\n\nI worked on it across multiple stages as it evolved from a search-focused mobile app into a broader platform for search, content discovery, short video, local services, and AI assistants.\n\nMy work included homepage redesigns, the shift toward a search-and-algorithmic-feed architecture, design infrastructure such as dark mode and motion systems, and AI + search exploration.\n\nThat experience shaped how I think about platform-scale design, experimentation, stakeholder alignment, and business impact."
         },
         {
           "id": "q-2-6",
@@ -314,7 +314,7 @@
             "Presenting it as an LLM product if the timing predates mainstream LLMs.",
             "Overstating it as a continuing product after further investment ended in early 2023."
           ],
-          "standardAnswer": "Duxiaoxiao was China's first interactive AI virtual human assistant, an avatar-style AI experience before the mainstream LLM era. It was not just a chatbot or a 3D character; it was an attempt to bring AI capabilities into real user flows through a more humanized, multimodal interaction model. I led the design team through 0-to-1 experience definition, AI + search integration inside Baidu App, multimodal interaction across voice, facial expressions, motion, lip sync, and interface controls, and the creation of character and 3D production systems for content and commercial scenarios. The work supported billions of conversations, RMB 100M-level monetization revenue, 3 patents granted in China, and 6 international design awards. Further investment ended in early 2023 as the team shifted toward LLM + search, and that experience made my AI product judgment more grounded: AI needs to improve a real user path, not only feel expressive or novel."
+          "standardAnswer": "Duxiaoxiao was China's first interactive AI virtual human assistant, an avatar-style AI experience before the mainstream LLM era. It was not just a chatbot or a 3D character; it was an attempt to bring AI capabilities into real user flows through a more humanized, multimodal interaction model.\n\nI led the design team through 0-to-1 experience definition, AI + search integration inside Baidu App, multimodal interaction across voice, facial expressions, motion, lip sync, and interface controls, and the creation of character and 3D production systems for content and commercial scenarios.\n\nThe work supported billions of conversations, RMB 100M-level monetization revenue, 3 patents granted in China, and 6 international design awards.\n\nFurther investment ended in early 2023 as the team shifted toward LLM + search, and that experience made my AI product judgment more grounded: AI needs to improve a real user path, not only feel expressive or novel."
         },
         {
           "id": "q-2-7",
@@ -330,7 +330,7 @@
             "Comparing negatively to other designers.",
             "Using buzzwords without proof."
           ],
-          "standardAnswer": "My differentiation is the combination of large-scale product design, AI product experience, technical fluency, business awareness, and design leadership. I have designed for consumer products with hundreds of millions of users, led 0-to-1 AI assistant experiences, built platform-level design infrastructure, and connected design decisions to measurable business impact. I also have enough technical background to collaborate closely with engineering and build high-fidelity prototypes when static design is not enough. So my value is not limited to UX/UI execution; I can help shape product direction, create systems, align teams, and improve the quality of what actually ships."
+          "standardAnswer": "My differentiation is the combination of large-scale product design, AI product experience, technical fluency, business awareness, and design leadership.\n\nI have designed for consumer products with hundreds of millions of users, led 0-to-1 AI assistant experiences, built platform-level design infrastructure, and connected design decisions to measurable business impact.\n\nI also have enough technical background to collaborate closely with engineering and build high-fidelity prototypes when static design is not enough.\n\nSo my value is not limited to UX/UI execution; I can help shape product direction, create systems, align teams, and improve the quality of what actually ships."
         },
         {
           "id": "q-2-8",
@@ -346,7 +346,7 @@
             "Suggesting you only delegate craft work.",
             "Giving only a philosophical answer."
           ],
-          "standardAnswer": "I try to connect strategy and execution through concrete experience frameworks. At the strategy level, I clarify the user problem, business goal, market context, and technical constraints. Then I translate constraints into design decisions across information architecture, interaction models, prototypes, design standards, and success metrics. In the Baidu App homepage redesign, the strategy was to move the product toward stronger content discovery while preserving search. The hands-on work included homepage hierarchy, feed prominence, search entry behavior, experiment variants, and rollout decisions. I think good senior design work needs both levels because strategy only matters if it can survive execution."
+          "standardAnswer": "I try to connect strategy and execution through concrete experience frameworks.\n\nAt the strategy level, I clarify the user problem, business goal, market context, and technical constraints. Then I translate constraints into design decisions across information architecture, interaction models, prototypes, design standards, and success metrics.\n\nIn the Baidu App homepage redesign, the strategy was to move the product toward stronger content discovery while preserving search. The hands-on work included homepage hierarchy, feed prominence, search entry behavior, experiment variants, and rollout decisions.\n\nI think good senior design work needs both levels because strategy only matters if it can survive execution."
         },
         {
           "id": "q-2-9",
@@ -363,7 +363,7 @@
             "Claiming you alone decided company strategy.",
             "Leaving out validation."
           ],
-          "standardAnswer": "One strong example is the Baidu App homepage redesign. At the time, Baidu App still carried a strong search-first mental model, but the mobile internet market was shifting toward content discovery and algorithmic feeds. I strongly believed the homepage needed to move toward a search-and-algorithmic-feed architecture, where search remained core but the feed had a more prominent role in daily engagement. My role was to turn that product judgment into a design direction, align product and business stakeholders, explore different homepage hierarchies, and validate the direction through limited-traffic experiments and reversal experiments. The 2019-2020 redesign, especially the 2020 homepage upgrade, improved engagement metrics, and the data science team estimated roughly RMB 100 million in annualized revenue growth. That was a case where design helped shape the product model, not just the interface."
+          "standardAnswer": "One strong example is the Baidu App homepage redesign. At the time, Baidu App still carried a strong search-first mental model, but the mobile internet market was shifting toward content discovery and algorithmic feeds.\n\nI strongly believed the homepage needed to move toward a search-and-algorithmic-feed architecture, where search remained core but the feed had a more prominent role in daily engagement.\n\nMy role was to turn that product judgment into a design direction, align product and business stakeholders, explore different homepage hierarchies, and validate the direction through limited-traffic experiments and reversal experiments.\n\nThe 2019-2020 redesign, especially the 2020 homepage upgrade, improved engagement metrics, and the data science team estimated roughly RMB 100 million in annualized revenue growth. That was a case where design helped shape the product model, not just the interface."
         },
         {
           "id": "q-2-10",
@@ -380,7 +380,7 @@
             "Waiting passively for PMs to define everything.",
             "Making ambiguity sound chaotic."
           ],
-          "standardAnswer": "I usually start by separating what we know, what we assume, and what we need to learn. Then I clarify the user value, business goal, technical constraints, stakeholders, and success criteria. For Duxiaoxiao, the initial direction of an AI virtual human assistant was very broad, so I broke it into workstreams: interaction framework, character behavior, multimodal expression, search integration, 3D asset production, and commercial use cases. Prototypes were especially important because static screens could not explain AI, motion, 3D, and conversation clearly. My goal in ambiguous problems is to turn uncertainty into a clear path that teams can discuss, test, and execute."
+          "standardAnswer": "I usually start by separating what we know, what we assume, and what we need to learn. Then I clarify the user value, business goal, technical constraints, stakeholders, and success criteria.\n\nFor Duxiaoxiao, the initial direction of an AI virtual human assistant was very broad, so I broke it into workstreams: interaction framework, character behavior, multimodal expression, search integration, 3D asset production, and commercial use cases.\n\nPrototypes were especially important because static screens could not explain AI, motion, 3D, and conversation clearly.\n\nMy goal in ambiguous problems is to turn uncertainty into a clear path that teams can discuss, test, and execute."
         },
         {
           "id": "q-2-11",
@@ -397,7 +397,7 @@
             "Saying business always wins.",
             "Treating monetization as inherently bad."
           ],
-          "standardAnswer": "I treat that tension as part of the design problem. The first step is to make the trade-offs explicit: what business outcome are we optimizing for, what user cost might we create, and what risk are we accepting? In Baidu App, the homepage was both a core user entry point and a commercial surface. For in-product campaigns and monetization, I helped create placement rules, mutual-exclusion rules, templates, and a review process so the homepage could support business needs without overwhelming the core experience. I try to find shared value: a solution that supports the business while protecting clarity, trust, and long-term user behavior."
+          "standardAnswer": "I treat that tension as part of the design problem. The first step is to make the trade-offs explicit: what business outcome are we optimizing for, what user cost might we create, and what risk are we accepting?\n\nIn Baidu App, the homepage was both a core user entry point and a commercial surface. For in-product campaigns and monetization, I helped create placement rules, mutual-exclusion rules, templates, and a review process so the homepage could support business needs without overwhelming the core experience.\n\nI try to find shared value: a solution that supports the business while protecting clarity, trust, and long-term user behavior."
         },
         {
           "id": "q-2-12",
@@ -413,7 +413,7 @@
             "Listing systems without explaining why they mattered.",
             "Overclaiming engineering ownership."
           ],
-          "standardAnswer": "I have led several platform and design infrastructure efforts. For Baidu's mobile product ecosystem, I led dark mode standards covering visual hierarchy, readability, low-light usage, hardware constraints, and engineering rollout across many teams. For Baidu App, I led motion system work, including motion principles, parameter standards, and implementation mechanisms using Lottie and internal video-based motion capabilities. I also helped build homepage campaign and monetization infrastructure with reusable rules, templates, and review processes. For Duxiaoxiao, I led the character and brand asset system and 3D production workflows. I see design systems as more than components; they are reusable decisions, tooling, governance, and collaboration mechanisms."
+          "standardAnswer": "I have led several platform and design infrastructure efforts.\n\nFor Baidu's mobile product ecosystem, I led dark mode standards covering visual hierarchy, readability, low-light usage, hardware constraints, and engineering rollout across many teams.\n\nFor Baidu App, I led motion system work, including motion principles, parameter standards, and implementation mechanisms using Lottie and internal video-based motion capabilities. I also helped build homepage campaign and monetization infrastructure with reusable rules, templates, and review processes.\n\nFor Duxiaoxiao, I led the character and brand asset system and 3D production workflows.\n\nI see design systems as more than components; they are reusable decisions, tooling, governance, and collaboration mechanisms."
         },
         {
           "id": "q-2-13",
@@ -430,7 +430,7 @@
             "Talking about AI only in current buzzwords.",
             "Ignoring user trust and limitations."
           ],
-          "standardAnswer": "My AI product design experience comes mainly from Duxiaoxiao and AI + search exploration at Baidu. Duxiaoxiao was China's first interactive AI virtual human assistant, and I led the team in defining the interaction model, multimodal expression, character behavior, search integration, and production workflows. We had to decide how users would invoke the assistant, how the system would distinguish conversational intent from search intent, how to switch between AI conversation and search results, and how voice, facial expression, motion, and UI states could make the AI feel understandable. In 2023, my team also worked on LLM + search design exploration. My focus is not algorithm research; it is how AI capabilities enter real user flows in a trustworthy, useful, and scalable way."
+          "standardAnswer": "My AI product design experience comes mainly from Duxiaoxiao and AI + search exploration at Baidu.\n\nDuxiaoxiao was China's first interactive AI virtual human assistant, and I led the team in defining the interaction model, multimodal expression, character behavior, search integration, and production workflows.\n\nWe had to decide how users would invoke the assistant, how the system would distinguish conversational intent from search intent, how to switch between AI conversation and search results, and how voice, facial expression, motion, and UI states could make the AI feel understandable.\n\nIn 2023, my team also worked on LLM + search design exploration. My focus is not algorithm research; it is how AI capabilities enter real user flows in a trustworthy, useful, and scalable way."
         }
       ]
     },
@@ -453,7 +453,7 @@
             "Starting with visuals before product context.",
             "Taking more than 8-10 minutes without checkpoints."
           ],
-          "standardAnswer": "One project I am proud of is the Baidu App homepage redesign, especially the 2019-2020 work that led to the 2020 homepage upgrade. Baidu App was a very high-scale product with about 200 million daily active users, and the homepage was the most important entry point for search, content discovery, user engagement, and monetization. The core challenge was that the market had shifted toward algorithmic feeds and time-spent competition, while Baidu App still carried a strong search-first homepage structure. My role as design architect was to help move the homepage toward a search-and-algorithmic-feed model without breaking the existing search mental model. We explored multiple hierarchy options, aligned stakeholders, validated through A/B and reversal experiments, and gradually moved the product toward a cleaner and more engagement-oriented structure. The redesign improved key engagement metrics, and the data science team estimated roughly RMB 100 million in annualized revenue growth."
+          "standardAnswer": "One project I am proud of is the Baidu App homepage redesign, especially the 2019-2020 work that led to the 2020 homepage upgrade. Baidu App was a very high-scale product with about 200 million daily active users, and the homepage was the most important entry point for search, content discovery, user engagement, and monetization.\n\nThe core challenge was that the market had shifted toward algorithmic feeds and time-spent competition, while Baidu App still carried a strong search-first homepage structure. My role as design architect was to help move the homepage toward a search-and-algorithmic-feed model without breaking the existing search mental model.\n\nWe explored multiple hierarchy options, aligned stakeholders, validated through A/B and reversal experiments, and gradually moved the product toward a cleaner and more engagement-oriented structure. The redesign improved key engagement metrics, and the data science team estimated roughly RMB 100 million in annualized revenue growth."
         },
         {
           "id": "q-3-2",
@@ -469,7 +469,7 @@
             "Focusing only on business metrics.",
             "Ignoring user mental model."
           ],
-          "standardAnswer": "The problem was not simply visual redesign. Baidu App needed to evolve its homepage product model. Users still needed fast access to search, but mobile behavior had shifted toward continuous content discovery through algorithmic feeds. From the business side, engagement, time spent, and downstream conversion had become increasingly important. So the design problem was how to give the algorithmic feed a more central role while preserving the clarity and trust of search, and how to do that safely on a product with hundreds of millions of users."
+          "standardAnswer": "The problem was not simply visual redesign. Baidu App needed to evolve its homepage product model. Users still needed fast access to search, but mobile behavior had shifted toward continuous content discovery through algorithmic feeds.\n\nFrom the business side, engagement, time spent, and downstream conversion had become increasingly important.\n\nSo the design problem was how to give the algorithmic feed a more central role while preserving the clarity and trust of search, and how to do that safely on a product with hundreds of millions of users."
         },
         {
           "id": "q-3-3",
@@ -485,7 +485,7 @@
             "Claiming sole ownership of every decision.",
             "Understating senior-level influence."
           ],
-          "standardAnswer": "I was the project design lead and design architect. My role included shaping the experience strategy, defining homepage hierarchy directions, guiding design exploration, aligning cross-functional stakeholders, and working with product, engineering, and data teams through experiment design and iteration. I also managed designers on the project, but I stayed hands-on in the most important product and interaction decisions. Because the homepage affected many business teams, a major part of my role was making the design rationale clear enough for stakeholders to understand what we were optimizing for and what risks we were managing."
+          "standardAnswer": "I was the project design lead and design architect. My role included shaping the experience strategy, defining homepage hierarchy directions, guiding design exploration, aligning cross-functional stakeholders, and working with product, engineering, and data teams through experiment design and iteration.\n\nI also managed designers on the project, but I stayed hands-on in the most important product and interaction decisions.\n\nBecause the homepage affected many business teams, a major part of my role was making the design rationale clear enough for stakeholders to understand what we were optimizing for and what risks we were managing."
         },
         {
           "id": "q-3-4",
@@ -501,7 +501,7 @@
             "Making collaboration sound like one-way persuasion.",
             "Ignoring engineering or data."
           ],
-          "standardAnswer": "The key collaborators included product managers responsible for homepage and growth, engineering teams responsible for implementation and experiment rollout, data scientists who helped evaluate metrics and estimate business impact, business stakeholders affected by homepage traffic, and design leadership. My design team explored and refined the experience direction. I used prototypes, clear comparison frameworks, experiment results, and design rationale to keep the discussion grounded, because different teams cared about different outcomes: search efficiency, feed engagement, revenue, implementation risk, and user perception."
+          "standardAnswer": "The key collaborators included product managers responsible for homepage and growth, engineering teams responsible for implementation and experiment rollout, data scientists who helped evaluate metrics and estimate business impact, business stakeholders affected by homepage traffic, and design leadership.\n\nMy design team explored and refined the experience direction.\n\nI used prototypes, clear comparison frameworks, experiment results, and design rationale to keep the discussion grounded, because different teams cared about different outcomes: search efficiency, feed engagement, revenue, implementation risk, and user perception."
         },
         {
           "id": "q-3-5",
@@ -516,7 +516,7 @@
             "Saying there were no constraints.",
             "Ignoring release and experimentation constraints."
           ],
-          "standardAnswer": "The biggest constraint was scale. With a product at that level of daily usage, even a small homepage change could affect user behavior, business revenue, and many downstream teams. We also had to respect the existing user mental model around search. If we pushed the feed too aggressively, we could damage clarity and trust. There were also business constraints because many teams depended on homepage traffic, and technical constraints around implementation and experiment rollout. That is why we used phased exploration, limited-traffic experiments, and reversal experiments rather than making one large unvalidated change."
+          "standardAnswer": "The biggest constraint was scale. With a product at that level of daily usage, even a small homepage change could affect user behavior, business revenue, and many downstream teams.\n\nWe also had to respect the existing user mental model around search. If we pushed the feed too aggressively, we could damage clarity and trust. There were also business constraints because many teams depended on homepage traffic, and technical constraints around implementation and experiment rollout.\n\nThat is why we used phased exploration, limited-traffic experiments, and reversal experiments rather than making one large unvalidated change."
         },
         {
           "id": "q-3-6",
@@ -532,7 +532,7 @@
             "Assuming everyone wanted more feed content.",
             "Forgetting search intent."
           ],
-          "standardAnswer": "The core user needs were fast access to search, easy discovery of relevant content, and a homepage that did not feel noisy or confusing. Baidu App users came with both active intent and passive discovery behavior. Sometimes they wanted to search for something directly; sometimes they were open to reading news, watching short videos, or discovering content based on their interests. The design needed to support both modes without making search feel buried or making the homepage feel overly commercial."
+          "standardAnswer": "The core user needs were fast access to search, easy discovery of relevant content, and a homepage that did not feel noisy or confusing. Baidu App users came with both active intent and passive discovery behavior.\n\nSometimes they wanted to search for something directly; sometimes they were open to reading news, watching short videos, or discovering content based on their interests.\n\nThe design needed to support both modes without making search feel buried or making the homepage feel overly commercial."
         },
         {
           "id": "q-3-7",
@@ -548,7 +548,7 @@
             "Pretending business goals did not matter.",
             "Using metrics without explaining why."
           ],
-          "standardAnswer": "The business goals were to improve Baidu App's overall engagement and strengthen the homepage as a product growth engine. Key metrics included daily active users, time spent, conversion from homepage visits into search, and engagement with the algorithmic feed. There was also downstream business value because stronger engagement and better attention routing could support monetization. My focus was to connect those goals with a user experience that still felt clear, useful, and trustworthy."
+          "standardAnswer": "The business goals were to improve Baidu App's overall engagement and strengthen the homepage as a product growth engine. Key metrics included daily active users, time spent, conversion from homepage visits into search, and engagement with the algorithmic feed.\n\nThere was also downstream business value because stronger engagement and better attention routing could support monetization.\n\nMy focus was to connect those goals with a user experience that still felt clear, useful, and trustworthy."
         },
         {
           "id": "q-3-8",
@@ -564,7 +564,7 @@
             "Using one metric in isolation.",
             "Ignoring negative guardrail metrics."
           ],
-          "standardAnswer": "We defined success through a combination of engagement, conversion, user perception, and rollout quality. Quantitatively, we looked at DAU, time spent, homepage-to-search conversion, homepage-to-feed engagement, and business impact estimates. Qualitatively, we cared about whether users still understood the homepage, whether the search entry remained clear, and whether the experience felt cleaner rather than more cluttered. For a platform homepage, success also meant the design could be adopted by multiple teams without creating long-term maintenance problems."
+          "standardAnswer": "We defined success through a combination of engagement, conversion, user perception, and rollout quality. Quantitatively, we looked at DAU, time spent, homepage-to-search conversion, homepage-to-feed engagement, and business impact estimates.\n\nQualitatively, we cared about whether users still understood the homepage, whether the search entry remained clear, and whether the experience felt cleaner rather than more cluttered.\n\nFor a platform homepage, success also meant the design could be adopted by multiple teams without creating long-term maintenance problems."
         },
         {
           "id": "q-3-9",
@@ -580,7 +580,7 @@
             "Treating qualitative research as less important.",
             "Overclaiming statistical certainty."
           ],
-          "standardAnswer": "We used multiple forms of evidence. Quantitatively, we used A/B testing, limited-traffic experiments, reversal experiments, and behavioral metrics such as DAU, time spent, and conversion from homepage visits into search and feed engagement. We also used user research and feedback to understand whether the experience felt cleaner, whether search was still easy to find, and whether the feed prominence felt acceptable. Beyond direct research, we looked at market trends and competitive behavior because algorithmic feeds had become a validated model for mobile content discovery. My approach was data-informed: metrics mattered, but they needed to be interpreted with product judgment and user understanding."
+          "standardAnswer": "We used multiple forms of evidence. Quantitatively, we used A/B testing, limited-traffic experiments, reversal experiments, and behavioral metrics such as DAU, time spent, and conversion from homepage visits into search and feed engagement.\n\nWe also used user research and feedback to understand whether the experience felt cleaner, whether search was still easy to find, and whether the feed prominence felt acceptable.\n\nBeyond direct research, we looked at market trends and competitive behavior because algorithmic feeds had become a validated model for mobile content discovery. My approach was data-informed: metrics mattered, but they needed to be interpreted with product judgment and user understanding."
         },
         {
           "id": "q-3-10",
@@ -596,7 +596,7 @@
             "Comparing alternatives only visually.",
             "Leaving out why rejected options failed."
           ],
-          "standardAnswer": "We considered several homepage structures. One option was to keep the search-first structure with only a secondary feed, which protected the existing mental model but limited content discovery. Another was a more balanced structure that reduced some traditional vertical entries and made the feed more visible. The most progressive option made the algorithmic feed the primary homepage experience while keeping search clear and accessible. We compared these options based on user clarity, engagement potential, business impact, implementation risk, and how much change users could accept at each stage."
+          "standardAnswer": "We considered several homepage structures. One option was to keep the search-first structure with only a secondary feed, which protected the existing mental model but limited content discovery.\n\nAnother was a more balanced structure that reduced some traditional vertical entries and made the feed more visible. The most progressive option made the algorithmic feed the primary homepage experience while keeping search clear and accessible.\n\nWe compared these options based on user clarity, engagement potential, business impact, implementation risk, and how much change users could accept at each stage."
         },
         {
           "id": "q-3-11",
@@ -613,7 +613,7 @@
             "Presenting every trade-off as perfectly solved.",
             "Ignoring accepted risks."
           ],
-          "standardAnswer": "The main trade-off was between increasing feed prominence and protecting search clarity. If the homepage stayed too search-heavy, we would miss the opportunity to improve content discovery and engagement. If we moved too aggressively toward the feed, users might feel that search was less central or that the product had become noisy. We also had to balance business needs with user trust, because the homepage carried monetization and campaign requirements. We accepted a phased approach because it was slower, but it gave us better evidence and reduced the risk of disrupting a very large user base."
+          "standardAnswer": "The main trade-off was between increasing feed prominence and protecting search clarity. If the homepage stayed too search-heavy, we would miss the opportunity to improve content discovery and engagement.\n\nIf we moved too aggressively toward the feed, users might feel that search was less central or that the product had become noisy. We also had to balance business needs with user trust, because the homepage carried monetization and campaign requirements.\n\nWe accepted a phased approach because it was slower, but it gave us better evidence and reduced the risk of disrupting a very large user base."
         },
         {
           "id": "q-3-12",
@@ -629,7 +629,7 @@
             "Overloading with version numbers.",
             "Leaving out why gradual change mattered."
           ],
-          "standardAnswer": "The design evolved gradually over several generations. Earlier homepage versions had search, vertical service entry points, and contextual cards. Then we introduced and increased the role of the algorithmic feed, first as an exploratory layer and later as a more central experience. By the 2019/2020 redesign, the homepage moved much closer to a search-and-algorithmic-feed model. That gradual evolution was important because users had a strong search mental model, and the organization had many stakeholders depending on homepage structure. Each stage helped us validate direction and reduce risk before moving further."
+          "standardAnswer": "The design evolved gradually over several generations. Earlier homepage versions had search, vertical service entry points, and contextual cards. Then we introduced and increased the role of the algorithmic feed, first as an exploratory layer and later as a more central experience.\n\nBy the 2019/2020 redesign, the homepage moved much closer to a search-and-algorithmic-feed model.\n\nThat gradual evolution was important because users had a strong search mental model, and the organization had many stakeholders depending on homepage structure. Each stage helped us validate direction and reduce risk before moving further."
         },
         {
           "id": "q-3-13",
@@ -644,7 +644,7 @@
             "Ignoring causality.",
             "Failing to mention production-scale learning."
           ],
-          "standardAnswer": "We validated the design through a combination of user research, high-fidelity prototypes, limited-traffic experiments, A/B testing, and reversal experiments. The experiments helped us compare the redesigned homepage against the existing version and observe changes in DAU, time spent, search conversion, and feed engagement. We also monitored user perception and experience quality so we were not optimizing only for short-term engagement. For a platform at that scale, validation needed to happen in production with real users, but in a controlled and staged way."
+          "standardAnswer": "We validated the design through a combination of user research, high-fidelity prototypes, limited-traffic experiments, A/B testing, and reversal experiments.\n\nThe experiments helped us compare the redesigned homepage against the existing version and observe changes in DAU, time spent, search conversion, and feed engagement.\n\nWe also monitored user perception and experience quality so we were not optimizing only for short-term engagement. For a platform at that scale, validation needed to happen in production with real users, but in a controlled and staged way."
         },
         {
           "id": "q-3-14",
@@ -660,7 +660,7 @@
             "Getting too technical unless interviewer asks.",
             "Claiming perfect isolation if not true."
           ],
-          "standardAnswer": "The control group continued to see the existing homepage experience. The treatment group saw the redesigned homepage with adjusted hierarchy, stronger algorithmic-feed prominence, and a cleaner structure around search and content discovery. We tried to keep other major variables stable so the team could better understand whether changes in behavior were related to the homepage design itself. In later reversal experiments, we swapped configurations to reduce the risk that the result came from audience differences rather than the design change."
+          "standardAnswer": "The control group continued to see the existing homepage experience. The treatment group saw the redesigned homepage with adjusted hierarchy, stronger algorithmic-feed prominence, and a cleaner structure around search and content discovery.\n\nWe tried to keep other major variables stable so the team could better understand whether changes in behavior were related to the homepage design itself.\n\nIn later reversal experiments, we swapped configurations to reduce the risk that the result came from audience differences rather than the design change."
         },
         {
           "id": "q-3-15",
@@ -676,7 +676,7 @@
             "Ignoring confounding factors.",
             "Using revenue estimate without caveat."
           ],
-          "standardAnswer": "We could not claim perfect certainty, but we reduced risk through experiment design. We used traffic-split experiments so the treatment and control groups could be compared during the same period. We also used reversal experiments, where the configurations were swapped, to check whether the metric movement followed the design rather than a particular user segment. We looked for consistent movement across DAU, time spent, and search/feed engagement, and we interpreted the data alongside user feedback and product context. For the revenue estimate, the data science team used the best available method to isolate the homepage redesign, but I would still describe it as an estimate rather than an absolute fact."
+          "standardAnswer": "We could not claim perfect certainty, but we reduced risk through experiment design. We used traffic-split experiments so the treatment and control groups could be compared during the same period.\n\nWe also used reversal experiments, where the configurations were swapped, to check whether the metric movement followed the design rather than a particular user segment. We looked for consistent movement across DAU, time spent, and search/feed engagement, and we interpreted the data alongside user feedback and product context.\n\nFor the revenue estimate, the data science team used the best available method to isolate the homepage redesign, but I would still describe it as an estimate rather than an absolute fact."
         },
         {
           "id": "q-3-16",
@@ -692,7 +692,7 @@
             "Talking about revenue only.",
             "Forgetting user experience findings."
           ],
-          "standardAnswer": "The redesign improved key product metrics including Baidu App DAU, time spent, and conversion from homepage visits into search and algorithmic-feed engagement. Based on the experiment results, the data science team estimated that the 2020 homepage upgrade generated roughly several hundred thousand RMB in incremental revenue per day, or about RMB 100 million in annualized revenue growth. I would present that as an estimate with some statistical-confidence limitations, because the data systems could not perfectly trace homepage-level changes to final revenue. User research also indicated that the experience felt cleaner and more orderly."
+          "standardAnswer": "The redesign improved key product metrics including Baidu App DAU, time spent, and conversion from homepage visits into search and algorithmic-feed engagement.\n\nBased on the experiment results, the data science team estimated that the 2020 homepage upgrade generated roughly several hundred thousand RMB in incremental revenue per day, or about RMB 100 million in annualized revenue growth.\n\nI would present that as an estimate with some statistical-confidence limitations, because the data systems could not perfectly trace homepage-level changes to final revenue. User research also indicated that the experience felt cleaner and more orderly."
         },
         {
           "id": "q-3-17",
@@ -708,7 +708,7 @@
             "Over-apologizing for a successful project.",
             "Rewriting history with hindsight arrogance."
           ],
-          "standardAnswer": "I would still support the main direction, but I would invest even more in understanding different user segments and long-term behavior. At that time, we were very focused on validating homepage hierarchy and engagement impact, which made sense for the business context. Now I would add more guardrail metrics around content quality, perceived trust, and long-term retention, not just immediate engagement. I would also document the decision framework more explicitly so future teams could understand why each trade-off was made, not only what design shipped."
+          "standardAnswer": "I would still support the main direction, but I would invest even more in understanding different user segments and long-term behavior.\n\nAt that time, we were very focused on validating homepage hierarchy and engagement impact, which made sense for the business context. Now I would add more guardrail metrics around content quality, perceived trust, and long-term retention, not just immediate engagement.\n\nI would also document the decision framework more explicitly so future teams could understand why each trade-off was made, not only what design shipped."
         },
         {
           "id": "q-3-18",
@@ -724,7 +724,7 @@
             "Making the answer sound purely subjective.",
             "Ignoring stakeholder pressure."
           ],
-          "standardAnswer": "The hardest decision was how far to move the homepage away from its traditional search-first identity. Baidu App had a strong user mental model around search, and that was also the product's core advantage. At the same time, the market was clearly moving toward algorithmic content discovery, and the homepage needed to support engagement in a more competitive environment. We had to decide how much prominence the feed should receive without making search feel secondary. The decision was difficult because it affected user trust, business metrics, and many internal teams, so we relied on staged experiments and user feedback rather than one big subjective decision."
+          "standardAnswer": "The hardest decision was how far to move the homepage away from its traditional search-first identity. Baidu App had a strong user mental model around search, and that was also the product's core advantage.\n\nAt the same time, the market was clearly moving toward algorithmic content discovery, and the homepage needed to support engagement in a more competitive environment. We had to decide how much prominence the feed should receive without making search feel secondary.\n\nThe decision was difficult because it affected user trust, business metrics, and many internal teams, so we relied on staged experiments and user feedback rather than one big subjective decision."
         },
         {
           "id": "q-3-19",
@@ -740,7 +740,7 @@
             "Making controversy sound political only.",
             "Avoiding the real tension."
           ],
-          "standardAnswer": "The most controversial part was homepage priority. Different teams depended on the homepage for search traffic, feed engagement, vertical service entry points, campaigns, and monetization. Moving toward a stronger algorithmic feed meant some existing entry points became less prominent, which naturally created concern. I tried to handle that by making the design rationale explicit, comparing alternatives, using data from experiments, and separating short-term traffic loss concerns from long-term product direction. The goal was not to make every team equally happy, but to help the organization make a better product-level decision."
+          "standardAnswer": "The most controversial part was homepage priority. Different teams depended on the homepage for search traffic, feed engagement, vertical service entry points, campaigns, and monetization.\n\nMoving toward a stronger algorithmic feed meant some existing entry points became less prominent, which naturally created concern. I tried to handle that by making the design rationale explicit, comparing alternatives, using data from experiments, and separating short-term traffic loss concerns from long-term product direction.\n\nThe goal was not to make every team equally happy, but to help the organization make a better product-level decision."
         },
         {
           "id": "q-3-20",
@@ -756,7 +756,7 @@
             "Using design jargon.",
             "Hiding uncertainty."
           ],
-          "standardAnswer": "For leadership communication, I focused on the product decision, not only the interface. I explained the market shift, the user behavior change, the business opportunity, and the risk of staying with the old homepage model. Then I showed the design alternatives, the trade-offs behind each one, experiment results, and my recommendation. I also made the risks clear: how users might react, what metrics we needed to watch, and why a phased rollout was safer. That helped leadership evaluate the design as a product strategy decision rather than a visual preference."
+          "standardAnswer": "For leadership communication, I focused on the product decision, not only the interface. I explained the market shift, the user behavior change, the business opportunity, and the risk of staying with the old homepage model.\n\nThen I showed the design alternatives, the trade-offs behind each one, experiment results, and my recommendation. I also made the risks clear: how users might react, what metrics we needed to watch, and why a phased rollout was safer.\n\nThat helped leadership evaluate the design as a product strategy decision rather than a visual preference."
         },
         {
           "id": "q-3-21",
@@ -772,7 +772,7 @@
             "Saying \"I handed off designs.\"",
             "Ignoring implementation quality."
           ],
-          "standardAnswer": "I worked with engineering early, especially because homepage changes affected performance, experiment setup, release timing, and multiple product modules. I used prototypes and detailed interaction specs to clarify behavior, but I also discussed feasibility and implementation risk with engineers before the design became too fixed. During rollout, we needed to support experiment variants, monitor behavior, and make sure implementation fidelity was high. My technical fluency helped because I could discuss frontend constraints and interaction details more precisely instead of only handing off static screens."
+          "standardAnswer": "I worked with engineering early, especially because homepage changes affected performance, experiment setup, release timing, and multiple product modules.\n\nI used prototypes and detailed interaction specs to clarify behavior, but I also discussed feasibility and implementation risk with engineers before the design became too fixed.\n\nDuring rollout, we needed to support experiment variants, monitor behavior, and make sure implementation fidelity was high. My technical fluency helped because I could discuss frontend constraints and interaction details more precisely instead of only handing off static screens."
         },
         {
           "id": "q-3-22",
@@ -788,7 +788,7 @@
             "Overclaiming that design alone changed the business.",
             "Forgetting long-term product direction."
           ],
-          "standardAnswer": "The project helped Baidu App move toward the search-and-algorithmic-feed architecture that became its long-term homepage model. It improved engagement metrics such as DAU, time spent, and conversion into search and feed usage, and the data science team estimated roughly RMB 100 million in annualized revenue growth from the 2020 homepage upgrade. Beyond the numbers, it changed how the organization thought about the homepage: not just as a search entry point, but as a platform surface that routes user attention across search, content discovery, and business needs. That made the design impact both experiential and strategic."
+          "standardAnswer": "The project helped Baidu App move toward the search-and-algorithmic-feed architecture that became its long-term homepage model.\n\nIt improved engagement metrics such as DAU, time spent, and conversion into search and feed usage, and the data science team estimated roughly RMB 100 million in annualized revenue growth from the 2020 homepage upgrade.\n\nBeyond the numbers, it changed how the organization thought about the homepage: not just as a search entry point, but as a platform surface that routes user attention across search, content discovery, and business needs. That made the design impact both experiential and strategic."
         },
         {
           "id": "q-3-23",
@@ -896,7 +896,7 @@
             "Critiquing without understanding business goals.",
             "Designing for yourself instead of target users."
           ],
-          "standardAnswer": "I would start by clarifying the goal of the flow, the primary user segment, the business objective, and any technical or organizational constraints. Then I would map the current journey and identify where users lose clarity, confidence, or motivation. After that, I would prioritize based on impact, starting with the biggest user friction and the clearest business opportunity. Then I would sketch a few alternative directions and define how we would test them. My goal would be to improve the flow in a way that is easier for users, measurable for the business, and realistic for the team to ship."
+          "standardAnswer": "I would start by clarifying the goal of the flow, the primary user segment, the business objective, and any technical or organizational constraints.\n\nThen I would map the current journey and identify where users lose clarity, confidence, or motivation. After that, I would prioritize based on impact, starting with the biggest user friction and the clearest business opportunity.\n\nThen I would sketch a few alternative directions and define how we would test them. My goal would be to improve the flow in a way that is easier for users, measurable for the business, and realistic for the team to ship."
         },
         {
           "id": "q-4-2",
@@ -912,7 +912,7 @@
             "Saying \"everything needs redesign.\"",
             "Ignoring constraints."
           ],
-          "standardAnswer": "I would solve the problem that creates the biggest user drop-off or misunderstanding while also affecting the product goal. I usually look for the bottleneck: where users hesitate, make errors, abandon the flow, or fail to understand value. If the data shows a clear drop-off, I would start there. If data is not available, I would form a hypothesis based on the journey, then validate it quickly through usability testing or a lightweight experiment. I would not start with visual polish unless the visual issue is directly causing comprehension or trust problems."
+          "standardAnswer": "I would solve the problem that creates the biggest user drop-off or misunderstanding while also affecting the product goal.\n\nI usually look for the bottleneck: where users hesitate, make errors, abandon the flow, or fail to understand value. If the data shows a clear drop-off, I would start there. If data is not available, I would form a hypothesis based on the journey, then validate it quickly through usability testing or a lightweight experiment.\n\nI would not start with visual polish unless the visual issue is directly causing comprehension or trust problems."
         },
         {
           "id": "q-4-3",
@@ -928,7 +928,7 @@
             "Asking overly broad research questions.",
             "Forgetting feasibility assumptions."
           ],
-          "standardAnswer": "I would validate several assumptions. First, what is the user's real intent when they enter the flow? Second, do they understand the value proposition and the next step? Third, what information do they need before they feel comfortable continuing? Fourth, where are we assuming trust that users may not actually have? I would also validate business assumptions, such as whether the proposed change is likely to improve conversion or retention, and technical assumptions around what can be shipped. Depending on risk, I would use usability testing, prototype testing, analytics review, or a small experiment to validate ideas with real users before scaling the solution."
+          "standardAnswer": "I would validate several assumptions. First, what is the user's real intent when they enter the flow? Second, do they understand the value proposition and the next step? Third, what information do they need before they feel comfortable continuing? Fourth, where are we assuming trust that users may not actually have?\n\nI would also validate business assumptions, such as whether the proposed change is likely to improve conversion or retention, and technical assumptions around what can be shipped.\n\nDepending on risk, I would use usability testing, prototype testing, analytics review, or a small experiment to validate ideas with real users before scaling the solution."
         },
         {
           "id": "q-4-4",
@@ -944,7 +944,7 @@
             "Making unsupported claims too confidently.",
             "Listing many issues without priority."
           ],
-          "standardAnswer": "I look for friction in a few places: whether users understand what the product is asking them to do, whether the next step is visually and conceptually clear, whether the information hierarchy supports decision-making, and whether users receive feedback after taking action. I also look for trust friction, especially if the product asks for personal information, payment, or reliance on AI output. The biggest friction is usually the place where user uncertainty and product importance overlap. I would confirm that through analytics, session observation, or usability testing."
+          "standardAnswer": "I look for friction in a few places: whether users understand what the product is asking them to do, whether the next step is visually and conceptually clear, whether the information hierarchy supports decision-making, and whether users receive feedback after taking action.\n\nI also look for trust friction, especially if the product asks for personal information, payment, or reliance on AI output.\n\nThe biggest friction is usually the place where user uncertainty and product importance overlap. I would confirm that through analytics, session observation, or usability testing."
         },
         {
           "id": "q-4-5",
@@ -960,7 +960,7 @@
             "Hiding critical information.",
             "Removing business-critical steps without understanding why they exist."
           ],
-          "standardAnswer": "I would simplify the experience by first identifying what decision the user needs to make at each step. Then I would remove or defer information that does not support that decision. I would also look for repeated choices, unclear labels, unnecessary navigation, and places where the system could provide smarter defaults. But I would not remove complexity blindly. In many products, some complexity is necessary for trust or compliance, so the goal is to make complexity understandable through better hierarchy, grouping, progressive disclosure, and clearer feedback."
+          "standardAnswer": "I would simplify the experience by first identifying what decision the user needs to make at each step. Then I would remove or defer information that does not support that decision.\n\nI would also look for repeated choices, unclear labels, unnecessary navigation, and places where the system could provide smarter defaults. But I would not remove complexity blindly.\n\nIn many products, some complexity is necessary for trust or compliance, so the goal is to make complexity understandable through better hierarchy, grouping, progressive disclosure, and clearer feedback."
         },
         {
           "id": "q-4-6",
@@ -976,7 +976,7 @@
             "Prioritizing business messages over user needs without justification.",
             "Treating prominence as only font size."
           ],
-          "standardAnswer": "The most prominent information should be whatever helps the user make the next important decision. That usually includes the value of the action, the current state, the primary next step, and any trust or risk information needed to continue. I would use hierarchy, grouping, spacing, contrast, and interaction states to make that information easier to scan. A common mistake is making too many elements compete for attention. Good hierarchy should make the primary path obvious while still keeping secondary information available."
+          "standardAnswer": "The most prominent information should be whatever helps the user make the next important decision. That usually includes the value of the action, the current state, the primary next step, and any trust or risk information needed to continue.\n\nI would use hierarchy, grouping, spacing, contrast, and interaction states to make that information easier to scan.\n\nA common mistake is making too many elements compete for attention. Good hierarchy should make the primary path obvious while still keeping secondary information available."
         },
         {
           "id": "q-4-7",
@@ -992,7 +992,7 @@
             "Optimizing one metric only.",
             "Ignoring quality and long-term effects."
           ],
-          "standardAnswer": "I would define one or two primary metrics based on the product goal, such as task completion, conversion, activation, engagement, or retention. Then I would add guardrail metrics to make sure the solution does not create harm, such as error rate, support tickets, time to complete, user satisfaction, trust perception, or long-term retention. For high-scale products, I would also look at segment differences because an improvement for one user group may not help another. My goal is to connect metrics to the actual user behavior we want to improve."
+          "standardAnswer": "I would define one or two primary metrics based on the product goal, such as task completion, conversion, activation, engagement, or retention.\n\nThen I would add guardrail metrics to make sure the solution does not create harm, such as error rate, support tickets, time to complete, user satisfaction, trust perception, or long-term retention.\n\nFor high-scale products, I would also look at segment differences because an improvement for one user group may not help another. My goal is to connect metrics to the actual user behavior we want to improve."
         },
         {
           "id": "q-4-8",
@@ -1008,7 +1008,7 @@
             "Launching directly without validation for high-risk changes.",
             "Treating stakeholder approval as user validation."
           ],
-          "standardAnswer": "I would choose the testing method based on risk. For an early concept, I would use a prototype to test comprehension, task flow, and user expectations. If the design has complex interaction, I would create a high-fidelity prototype because static screens may not reveal the real experience. Before launch, I would review technical feasibility with engineering and define success metrics with product and data partners. For a high-traffic or business-critical flow, I would prefer a staged rollout or A/B test so we can measure impact and catch issues before full release."
+          "standardAnswer": "I would choose the testing method based on risk. For an early concept, I would use a prototype to test comprehension, task flow, and user expectations.\n\nIf the design has complex interaction, I would create a high-fidelity prototype because static screens may not reveal the real experience. Before launch, I would review technical feasibility with engineering and define success metrics with product and data partners.\n\nFor a high-traffic or business-critical flow, I would prefer a staged rollout or A/B test so we can measure impact and catch issues before full release."
         },
         {
           "id": "q-4-9",
@@ -1025,7 +1025,7 @@
             "Cutting scope randomly.",
             "Sacrificing critical usability."
           ],
-          "standardAnswer": "If engineering capacity were limited, I would separate the ideal experience from the smallest useful version. I would work with engineering to understand which parts are expensive and which changes are relatively easy. Then I would prioritize improvements that reduce the biggest user friction with the least implementation risk, such as copy, hierarchy, defaults, layout, or reusing existing components. I would still document the longer-term direction, but the first release should protect the core user value and create a path for future iteration."
+          "standardAnswer": "If engineering capacity were limited, I would separate the ideal experience from the smallest useful version.\n\nI would work with engineering to understand which parts are expensive and which changes are relatively easy. Then I would prioritize improvements that reduce the biggest user friction with the least implementation risk, such as copy, hierarchy, defaults, layout, or reusing existing components.\n\nI would still document the longer-term direction, but the first release should protect the core user value and create a path for future iteration."
         },
         {
           "id": "q-4-10",
@@ -1041,7 +1041,7 @@
             "Hiding AI limitations.",
             "Overpromising accuracy."
           ],
-          "standardAnswer": "I would improve trust by making the AI's role, capability, and limitations clear in the interaction. Users need to understand what the AI is doing, whether it is answering, searching, generating, or asking for clarification. I try to build trust through interaction design, not only through copy or policy language. I would provide clear states, confidence signals when appropriate, sources or evidence for factual answers, easy ways to correct or refine the output, and privacy clarity when personal data is involved. From my Duxiaoxiao work, I learned that emotionally expressive interaction can make AI feel more approachable, but trust still depends on usefulness, transparency, control, and consistent behavior."
+          "standardAnswer": "I would improve trust by making the AI's role, capability, and limitations clear in the interaction. Users need to understand what the AI is doing, whether it is answering, searching, generating, or asking for clarification.\n\nI try to build trust through interaction design, not only through copy or policy language. I would provide clear states, confidence signals when appropriate, sources or evidence for factual answers, easy ways to correct or refine the output, and privacy clarity when personal data is involved.\n\nFrom my Duxiaoxiao work, I learned that emotionally expressive interaction can make AI feel more approachable, but trust still depends on usefulness, transparency, control, and consistent behavior."
         }
       ]
     },
@@ -1064,7 +1064,7 @@
             "Saying design only starts after requirements.",
             "Turning disagreement into personal conflict."
           ],
-          "standardAnswer": "I work with product managers as partners in problem framing and prioritization. I like to understand the business goal, user problem, constraints, and success metrics early, then contribute design judgment before the solution is fixed. In Baidu App homepage work, for example, I worked closely with PMs to connect market trends, user behavior, homepage architecture, and experiment results. I often use prototypes, comparison frameworks, and data to make trade-offs easier to discuss. Good PM-design collaboration should create a clearer product decision, not just a better-looking interface."
+          "standardAnswer": "I work with product managers as partners in problem framing and prioritization. I like to understand the business goal, user problem, constraints, and success metrics early, then contribute design judgment before the solution is fixed.\n\nIn Baidu App homepage work, for example, I worked closely with PMs to connect market trends, user behavior, homepage architecture, and experiment results.\n\nI often use prototypes, comparison frameworks, and data to make trade-offs easier to discuss. Good PM-design collaboration should create a clearer product decision, not just a better-looking interface."
         },
         {
           "id": "q-5-2",
@@ -1079,7 +1079,7 @@
             "Going too deep into coding identity.",
             "Ignoring engineering ownership."
           ],
-          "standardAnswer": "I try to involve engineers early, especially when the design includes complex interaction, motion, AI, 3D, or platform constraints. My technical background helps me discuss feasibility, implementation mechanisms, and trade-offs more precisely. For example, in Baidu App's dark mode rollout, we worked with engineering across multiple technology stacks and developed tool-based workflows to improve efficiency. In motion and AI projects, I often used high-fidelity prototypes to reduce ambiguity before engineering investment became too high. I see engineering collaboration as a way to improve both feasibility and final experience quality."
+          "standardAnswer": "I try to involve engineers early, especially when the design includes complex interaction, motion, AI, 3D, or platform constraints. My technical background helps me discuss feasibility, implementation mechanisms, and trade-offs more precisely.\n\nFor example, in Baidu App's dark mode rollout, we worked with engineering across multiple technology stacks and developed tool-based workflows to improve efficiency. In motion and AI projects, I often used high-fidelity prototypes to reduce ambiguity before engineering investment became too high.\n\nI see engineering collaboration as a way to improve both feasibility and final experience quality."
         },
         {
           "id": "q-5-3",
@@ -1095,7 +1095,7 @@
             "Using data only after launch.",
             "Ignoring statistical limitations."
           ],
-          "standardAnswer": "I work with data partners early to define what success should mean and how we can measure it responsibly. On Baidu App homepage redesigns, data scientists helped us evaluate DAU, time spent, conversion into search and feed engagement, and estimated business impact. We also used traffic-split experiments and reversal experiments to reduce the risk of misreading results. I do not treat data as a replacement for product judgment; I treat it as evidence that needs to be interpreted with user behavior, research feedback, market context, and experiment limitations."
+          "standardAnswer": "I work with data partners early to define what success should mean and how we can measure it responsibly. On Baidu App homepage redesigns, data scientists helped us evaluate DAU, time spent, conversion into search and feed engagement, and estimated business impact.\n\nWe also used traffic-split experiments and reversal experiments to reduce the risk of misreading results.\n\nI do not treat data as a replacement for product judgment; I treat it as evidence that needs to be interpreted with user behavior, research feedback, market context, and experiment limitations."
         },
         {
           "id": "q-5-4",
@@ -1111,7 +1111,7 @@
             "Making yourself always right.",
             "Hiding the conflict."
           ],
-          "standardAnswer": "One recurring disagreement in Baidu App homepage work was how much homepage space should be given to business or growth needs versus the core user experience. Product partners often had strong goals around engagement or monetization, while I was concerned about clarity, trust, and long-term experience quality. I did not treat it as design versus product. I tried to reframe the discussion around trade-offs: what metric we were trying to move, what user cost we might create, and what guardrails we needed. In the homepage campaign infrastructure work, that led to clearer placement rules, mutual-exclusion rules, and a review process so business goals could be supported without overwhelming the homepage."
+          "standardAnswer": "One recurring disagreement in Baidu App homepage work was how much homepage space should be given to business or growth needs versus the core user experience. Product partners often had strong goals around engagement or monetization, while I was concerned about clarity, trust, and long-term experience quality.\n\nI did not treat it as design versus product. I tried to reframe the discussion around trade-offs: what metric we were trying to move, what user cost we might create, and what guardrails we needed.\n\nIn the homepage campaign infrastructure work, that led to clearer placement rules, mutual-exclusion rules, and a review process so business goals could be supported without overwhelming the homepage."
         },
         {
           "id": "q-5-5",
@@ -1127,7 +1127,7 @@
             "Insisting on pixel-perfect at all costs.",
             "Giving no concrete resolution."
           ],
-          "standardAnswer": "In motion and dark mode system work, engineering pushback often came from implementation complexity across multiple codebases and product modules. For dark mode, the design standard could not just be visually correct; it had to be implementable across many teams on a unified timeline. I worked with engineers to turn design principles into more systematic rules and tool-supported conversion workflows. In motion work, we clarified which effects should use Lottie and which needed Baidu's internal transparent-video mechanism. The final solution was not about forcing the original design through; it was about preserving the experience goal while making implementation realistic."
+          "standardAnswer": "In motion and dark mode system work, engineering pushback often came from implementation complexity across multiple codebases and product modules. For dark mode, the design standard could not just be visually correct; it had to be implementable across many teams on a unified timeline.\n\nI worked with engineers to turn design principles into more systematic rules and tool-supported conversion workflows. In motion work, we clarified which effects should use Lottie and which needed Baidu's internal transparent-video mechanism.\n\nThe final solution was not about forcing the original design through; it was about preserving the experience goal while making implementation realistic."
         },
         {
           "id": "q-5-6",
@@ -1143,7 +1143,7 @@
             "Saying you persuaded people through seniority only.",
             "Leaving out stakeholder incentives."
           ],
-          "standardAnswer": "Baidu App dark mode is a good example. The project required many business departments to adopt a unified standard and complete implementation on a shared timeline, but I did not directly manage those teams. I influenced through clear standards, research-backed rationale, tooling, and a cross-functional working group. I explained why dark mode was different from traditional night mode, defined principles around readability and visual hierarchy, and worked with engineering on implementation mechanisms. Because the path was specific and practical, teams were more willing to adopt it, and we were able to roll it out efficiently across the mobile product ecosystem."
+          "standardAnswer": "Baidu App dark mode is a good example. The project required many business departments to adopt a unified standard and complete implementation on a shared timeline, but I did not directly manage those teams.\n\nI influenced through clear standards, research-backed rationale, tooling, and a cross-functional working group. I explained why dark mode was different from traditional night mode, defined principles around readability and visual hierarchy, and worked with engineering on implementation mechanisms.\n\nBecause the path was specific and practical, teams were more willing to adopt it, and we were able to roll it out efficiently across the mobile product ecosystem."
         },
         {
           "id": "q-5-7",
@@ -1159,7 +1159,7 @@
             "Trying to get agreement without decision criteria.",
             "Ignoring hidden incentives."
           ],
-          "standardAnswer": "I build alignment by making the decision structure visible. First, I clarify the product goal, user value, business goal, constraints, and success metrics. Then I show alternatives with explicit trade-offs so stakeholders can see what we gain and what risk we accept. For complex interaction problems, I use prototypes because they make abstract ideas tangible. In Baidu App and Duxiaoxiao projects, I also tailored the conversation: leadership needed product and business logic, engineers needed feasibility details, and designers needed experience principles. Alignment becomes easier when everyone can evaluate the same decision instead of reacting to personal preferences."
+          "standardAnswer": "I build alignment by making the decision structure visible. First, I clarify the product goal, user value, business goal, constraints, and success metrics. Then I show alternatives with explicit trade-offs so stakeholders can see what we gain and what risk we accept.\n\nFor complex interaction problems, I use prototypes because they make abstract ideas tangible.\n\nIn Baidu App and Duxiaoxiao projects, I also tailored the conversation: leadership needed product and business logic, engineers needed feasibility details, and designers needed experience principles. Alignment becomes easier when everyone can evaluate the same decision instead of reacting to personal preferences."
         },
         {
           "id": "q-5-8",
@@ -1175,7 +1175,7 @@
             "Using design terminology without translation.",
             "Assuming stakeholders share design taste."
           ],
-          "standardAnswer": "I try to explain design rationale in product language. Instead of saying a design is cleaner or more modern, I explain how it improves user understanding, reduces decision cost, supports a business goal, or lowers implementation risk. I also show alternatives and explain why one direction is stronger under the current constraints. For complex ideas, especially motion, AI, or 3D interaction, I explain complex ideas through prototypes so non-designers can experience the behavior instead of imagining it from static screens."
+          "standardAnswer": "I try to explain design rationale in product language. Instead of saying a design is cleaner or more modern, I explain how it improves user understanding, reduces decision cost, supports a business goal, or lowers implementation risk.\n\nI also show alternatives and explain why one direction is stronger under the current constraints.\n\nFor complex ideas, especially motion, AI, or 3D interaction, I explain complex ideas through prototypes so non-designers can experience the behavior instead of imagining it from static screens."
         },
         {
           "id": "q-5-9",
@@ -1192,7 +1192,7 @@
             "Avoiding conflict until late.",
             "Treating stakeholder requests as requirements automatically."
           ],
-          "standardAnswer": "I first try to understand the goal behind each stakeholder's request. On large platform products, conflicts often come from legitimate but competing goals, such as engagement, revenue, user clarity, technical cost, or brand perception. Then I create a decision framework around impact, user value, business priority, effort, risk, and timing. If trade-offs are still difficult, I present clear options and consequences rather than forcing a hidden compromise. My goal is to help the team make an explicit product decision."
+          "standardAnswer": "I first try to understand the goal behind each stakeholder's request. On large platform products, conflicts often come from legitimate but competing goals, such as engagement, revenue, user clarity, technical cost, or brand perception.\n\nThen I create a decision framework around impact, user value, business priority, effort, risk, and timing.\n\nIf trade-offs are still difficult, I present clear options and consequences rather than forcing a hidden compromise. My goal is to help the team make an explicit product decision."
         },
         {
           "id": "q-5-10",
@@ -1208,7 +1208,7 @@
             "Saying you always compromise.",
             "Making it about personal preference."
           ],
-          "standardAnswer": "I push back when a decision would damage core user value, trust, clarity, accessibility, or long-term product quality without a strong reason. I also push back when the assumption behind a decision is weak and we have a better way to validate it. I compromise when the core experience goal can still be preserved through a simpler implementation, phased rollout, or reuse of existing patterns. For me, the key is separating the principle from the execution detail. I try to protect the principle and stay flexible on the path."
+          "standardAnswer": "I push back when a decision would damage core user value, trust, clarity, accessibility, or long-term product quality without a strong reason. I also push back when the assumption behind a decision is weak and we have a better way to validate it.\n\nI compromise when the core experience goal can still be preserved through a simpler implementation, phased rollout, or reuse of existing patterns.\n\nFor me, the key is separating the principle from the execution detail. I try to protect the principle and stay flexible on the path."
         },
         {
           "id": "q-5-11",
@@ -1224,7 +1224,7 @@
             "Writing guidelines nobody uses.",
             "Ignoring engineering implementation."
           ],
-          "standardAnswer": "I start by identifying repeated decisions that are creating inconsistency or unnecessary communication cost. Then I define principles, reusable patterns, examples, and implementation guidance. For Baidu App's dark mode, we built standards around readability, contrast, visual hierarchy, and low-light usage, but we also worked with engineering on implementation mechanisms and tool support. For homepage campaigns, we created placement rules, mutual-exclusion rules, templates, and a review process. Shared standards only work when they are clear, useful, and realistic for other teams to adopt."
+          "standardAnswer": "I start by identifying repeated decisions that are creating inconsistency or unnecessary communication cost. Then I define principles, reusable patterns, examples, and implementation guidance.\n\nFor Baidu App's dark mode, we built standards around readability, contrast, visual hierarchy, and low-light usage, but we also worked with engineering on implementation mechanisms and tool support. For homepage campaigns, we created placement rules, mutual-exclusion rules, templates, and a review process.\n\nShared standards only work when they are clear, useful, and realistic for other teams to adopt."
         },
         {
           "id": "q-5-12",
@@ -1240,7 +1240,7 @@
             "Forcing adoption without team incentives.",
             "Ignoring maintenance."
           ],
-          "standardAnswer": "Adoption depends on whether the system solves real problems for teams. I try to connect the system to daily workflow: reusable components or patterns, clear examples, tool support, and implementation guidance. I also use design reviews and feedback loops to improve the system after teams start using it. In large organizations, governance matters, but governance alone is not enough. Teams adopt a design system when it reduces their work, improves quality, and gives them confidence that the final product will be consistent."
+          "standardAnswer": "Adoption depends on whether the system solves real problems for teams. I try to connect the system to daily workflow: reusable components or patterns, clear examples, tool support, and implementation guidance.\n\nI also use design reviews and feedback loops to improve the system after teams start using it.\n\nIn large organizations, governance matters, but governance alone is not enough. Teams adopt a design system when it reduces their work, improves quality, and gives them confidence that the final product will be consistent."
         }
       ]
     },
@@ -1263,7 +1263,7 @@
             "Blaming market, leadership, or technology only.",
             "Making the answer too negative."
           ],
-          "standardAnswer": "One difficult learning experience was Duxiaoxiao. From a design and innovation perspective, the project achieved a lot: it validated AI virtual human interaction at large scale, supported commercial revenue, and won international design awards. But after early 2023, further investment ended and the team shifted toward LLM + search. Looking back, I think one lesson is that emotional and multimodal interaction alone cannot justify a product if the core capability and device context do not create enough user value. Before mainstream LLMs, the assistant could not handle many complex questions, and mobile screens were not always the best environment for virtual-human interaction. The experience made me more rigorous about separating novelty from durable user value."
+          "standardAnswer": "One difficult learning experience was Duxiaoxiao. From a design and innovation perspective, the project achieved a lot: it validated AI virtual human interaction at large scale, supported commercial revenue, and won international design awards.\n\nBut after early 2023, further investment ended and the team shifted toward LLM + search. Looking back, I think one lesson is that emotional and multimodal interaction alone cannot justify a product if the core capability and device context do not create enough user value.\n\nBefore mainstream LLMs, the assistant could not handle many complex questions, and mobile screens were not always the best environment for virtual-human interaction. The experience made me more rigorous about separating novelty from durable user value."
         },
         {
           "id": "q-6-2",
@@ -1279,7 +1279,7 @@
             "Blaming external conditions only.",
             "Ignoring your own learning."
           ],
-          "standardAnswer": "Duxiaoxiao is the clearest example. The project delivered strong design innovation, large-scale interaction data, commercial revenue, and external recognition, but it did not become a long-term continuing product after Baidu shifted focus toward LLM + search. The expected result was that a humanized AI assistant could become a durable product and brand asset. What we learned was more nuanced: some users responded strongly to companionship and emotional feedback, but for mainstream search users, efficiency, answer quality, privacy, and device context mattered more. That learning changed how I evaluate AI products. I now pay more attention to whether the AI experience improves a real user path, not only whether it feels new or expressive."
+          "standardAnswer": "Duxiaoxiao is the clearest example. The project delivered strong design innovation, large-scale interaction data, commercial revenue, and external recognition, but it did not become a long-term continuing product after Baidu shifted focus toward LLM + search.\n\nThe expected result was that a humanized AI assistant could become a durable product and brand asset. What we learned was more nuanced: some users responded strongly to companionship and emotional feedback, but for mainstream search users, efficiency, answer quality, privacy, and device context mattered more.\n\nThat learning changed how I evaluate AI products. I now pay more attention to whether the AI experience improves a real user path, not only whether it feels new or expressive."
         },
         {
           "id": "q-6-3",
@@ -1295,7 +1295,7 @@
             "Choosing a trivial issue.",
             "Becoming defensive."
           ],
-          "standardAnswer": "Earlier in my design leadership work, I received feedback that some of my exploratory concepts were strong, but the rationale was not always easy for non-design stakeholders to follow. I was moving quickly from insight to solution, while others still needed to understand the decision path. I took that seriously and changed how I presented work. I began showing the problem framing, assumptions, alternatives, trade-offs, and evidence before showing the recommended direction. That improved stakeholder alignment, especially in projects like Baidu App homepage redesigns and Duxiaoxiao, where the ideas were complex and cross-functional."
+          "standardAnswer": "Earlier in my design leadership work, I received feedback that some of my exploratory concepts were strong, but the rationale was not always easy for non-design stakeholders to follow. I was moving quickly from insight to solution, while others still needed to understand the decision path.\n\nI took that seriously and changed how I presented work. I began showing the problem framing, assumptions, alternatives, trade-offs, and evidence before showing the recommended direction.\n\nThat improved stakeholder alignment, especially in projects like Baidu App homepage redesigns and Duxiaoxiao, where the ideas were complex and cross-functional."
         },
         {
           "id": "q-6-4",
@@ -1311,7 +1311,7 @@
             "Making the change seem random.",
             "Saying only leadership forced the change."
           ],
-          "standardAnswer": "In the Baidu App homepage work, I strongly believed the product needed to move toward a more feed-led homepage. But through stakeholder discussion and experiments, I adjusted my view on speed and rollout. Instead of pushing immediately to the most aggressive version, we moved through intermediate states that preserved more of the existing search mental model. That was the right decision because the product had massive scale and strong user habits. I did not change the strategic direction, but I changed my view on how quickly the organization and users could absorb the change."
+          "standardAnswer": "In the Baidu App homepage work, I strongly believed the product needed to move toward a more feed-led homepage. But through stakeholder discussion and experiments, I adjusted my view on speed and rollout.\n\nInstead of pushing immediately to the most aggressive version, we moved through intermediate states that preserved more of the existing search mental model. That was the right decision because the product had massive scale and strong user habits.\n\nI did not change the strategic direction, but I changed my view on how quickly the organization and users could absorb the change."
         },
         {
           "id": "q-6-5",
@@ -1326,7 +1326,7 @@
             "Ignoring validation after the decision.",
             "Choosing a low-stakes example."
           ],
-          "standardAnswer": "Duxiaoxiao required many decisions with incomplete information because AI virtual human assistants were a new product category. We did not have a mature benchmark for how a virtual human should enter search, when it should speak, how expressive it should be, or when it should hand off to traditional search results. I made decisions by defining assumptions clearly, building prototypes, and testing the experience in real product contexts. We broke the work into interaction framework, character layer, spatial container, control layer, and production systems. The key was not to pretend we had certainty, but to make each assumption testable and keep learning from real users."
+          "standardAnswer": "Duxiaoxiao required many decisions with incomplete information because AI virtual human assistants were a new product category. We did not have a mature benchmark for how a virtual human should enter search, when it should speak, how expressive it should be, or when it should hand off to traditional search results.\n\nI made decisions by defining assumptions clearly, building prototypes, and testing the experience in real product contexts. We broke the work into interaction framework, character layer, spatial container, control layer, and production systems.\n\nThe key was not to pretend we had certainty, but to make each assumption testable and keep learning from real users."
         },
         {
           "id": "q-6-6",
@@ -1342,7 +1342,7 @@
             "Focusing only on personal charm.",
             "Leaving out actions."
           ],
-          "standardAnswer": "When I took over Baidu News App design, the product was undergoing a strategic shift toward more professional and in-depth news. I had to earn trust from product and business stakeholders quickly because the redesign needed to change the product's tone, hierarchy, and reading experience. I started by aligning the design direction with the business strategy, then translated that into concrete changes in information hierarchy, visual tone, and reading flow. I kept the team focused on how design could make the new positioning clearer to users. The final redesign received recognition from senior leadership and won an internal innovation award, which helped build trust in the design team's judgment."
+          "standardAnswer": "When I took over Baidu News App design, the product was undergoing a strategic shift toward more professional and in-depth news. I had to earn trust from product and business stakeholders quickly because the redesign needed to change the product's tone, hierarchy, and reading experience.\n\nI started by aligning the design direction with the business strategy, then translated that into concrete changes in information hierarchy, visual tone, and reading flow. I kept the team focused on how design could make the new positioning clearer to users.\n\nThe final redesign received recognition from senior leadership and won an internal innovation award, which helped build trust in the design team's judgment."
         },
         {
           "id": "q-6-7",
@@ -1358,7 +1358,7 @@
             "Focusing only on team morale.",
             "Ignoring product structure."
           ],
-          "standardAnswer": "Duxiaoxiao was a major ambiguity challenge. The initial idea of an AI virtual human assistant was exciting but broad: it involved AI capabilities, conversation, 3D character design, motion, search integration, brand, content production, and commercialization. My role was to turn ambiguity into direction by breaking that abstract vision into clearer workstreams: experience framework, multimodal interaction, character behavior, search container, 3D asset system, and production tools. Prototypes helped make abstract concepts tangible for product, engineering, AI, motion, and 3D teams. That structure helped the team move from an uncertain concept to a launched product that was validated by large-scale usage, business revenue, patents, and design awards."
+          "standardAnswer": "Duxiaoxiao was a major ambiguity challenge. The initial idea of an AI virtual human assistant was exciting but broad: it involved AI capabilities, conversation, 3D character design, motion, search integration, brand, content production, and commercialization.\n\nMy role was to turn ambiguity into direction by breaking that abstract vision into clearer workstreams: experience framework, multimodal interaction, character behavior, search container, 3D asset system, and production tools.\n\nPrototypes helped make abstract concepts tangible for product, engineering, AI, motion, and 3D teams. That structure helped the team move from an uncertain concept to a launched product that was validated by large-scale usage, business revenue, patents, and design awards."
         },
         {
           "id": "q-6-8",
@@ -1374,7 +1374,7 @@
             "Describing only task assignment.",
             "Being vague about coaching method."
           ],
-          "standardAnswer": "On Duxiaoxiao, I coached designers through work that was unfamiliar to many traditional UX designers, especially multimodal interaction and 3D character-related experience. My coaching focused less on giving visual feedback and more on helping them structure the problem: what user intent we were supporting, what the AI capability could actually do, what the character needed to express, and how the interface should support control and feedback. I also encouraged designers to use prototypes because static screens could not explain the interaction well. That helped the team build confidence in a new domain and produce work that could align product, engineering, and 3D teams."
+          "standardAnswer": "On Duxiaoxiao, I coached designers through work that was unfamiliar to many traditional UX designers, especially multimodal interaction and 3D character-related experience.\n\nMy coaching focused less on giving visual feedback and more on helping them structure the problem: what user intent we were supporting, what the AI capability could actually do, what the character needed to express, and how the interface should support control and feedback.\n\nI also encouraged designers to use prototypes because static screens could not explain the interaction well. That helped the team build confidence in a new domain and produce work that could align product, engineering, and 3D teams."
         },
         {
           "id": "q-6-9",
@@ -1389,7 +1389,7 @@
             "Creating fear-based review culture.",
             "Ignoring shipped quality."
           ],
-          "standardAnswer": "I raise the quality bar by combining clear standards, strong design reviews, practical methods, and implementation follow-through. At Baidu, I taught high-fidelity prototyping as an internal instructor because I wanted to turn individual expertise into a team capability. In project work, I use design reviews to clarify rationale, compare alternatives, and identify risks early. I also care about implementation fidelity, because design quality is ultimately measured by what users experience after launch. For system work like dark mode and motion, quality also comes from reusable standards that help many teams make better decisions."
+          "standardAnswer": "I raise the quality bar by combining clear standards, strong design reviews, practical methods, and implementation follow-through.\n\nAt Baidu, I taught high-fidelity prototyping as an internal instructor because I wanted to turn individual expertise into a team capability. In project work, I use design reviews to clarify rationale, compare alternatives, and identify risks early.\n\nI also care about implementation fidelity, because design quality is ultimately measured by what users experience after launch. For system work like dark mode and motion, quality also comes from reusable standards that help many teams make better decisions."
         },
         {
           "id": "q-6-10",
@@ -1405,7 +1405,7 @@
             "Doing everything yourself.",
             "Confusing delegation with low involvement."
           ],
-          "standardAnswer": "I stay hands-on where my involvement has the highest leverage: product architecture, interaction framework, design direction, complex trade-offs, and quality standards. At the same time, I delegate execution areas with clear context, decision criteria, and feedback loops so designers can grow. On Duxiaoxiao, I managed designers and 3D-related work, but I remained directly involved in the core experience framework and AI + search interaction. I think the right balance is to give the team ownership while still contributing where senior judgment can reduce risk or raise quality."
+          "standardAnswer": "I stay hands-on where my involvement has the highest leverage: product architecture, interaction framework, design direction, complex trade-offs, and quality standards.\n\nAt the same time, I delegate execution areas with clear context, decision criteria, and feedback loops so designers can grow. On Duxiaoxiao, I managed designers and 3D-related work, but I remained directly involved in the core experience framework and AI + search interaction.\n\nI think the right balance is to give the team ownership while still contributing where senior judgment can reduce risk or raise quality."
         },
         {
           "id": "q-6-11",
@@ -1421,7 +1421,7 @@
             "Giving feedback without context.",
             "Letting senior voices dominate without criteria."
           ],
-          "standardAnswer": "I run design reviews around decisions, not personal taste. I ask the presenter to clarify the problem, user goal, business goal, constraints, design alternatives, and what kind of feedback they need. Then I guide the discussion around criteria such as clarity, task efficiency, hierarchy, consistency, feasibility, and expected impact. For complex work, I like to review prototypes rather than only static screens. A good design review should help the team make a better decision, identify risks earlier, and improve the designer's thinking, not just produce a list of visual comments."
+          "standardAnswer": "I run design reviews around decisions, not personal taste. I ask the presenter to clarify the problem, user goal, business goal, constraints, design alternatives, and what kind of feedback they need.\n\nThen I guide the discussion around criteria such as clarity, task efficiency, hierarchy, consistency, feasibility, and expected impact. For complex work, I like to review prototypes rather than only static screens.\n\nA good design review should help the team make a better decision, identify risks earlier, and improve the designer's thinking, not just produce a list of visual comments."
         },
         {
           "id": "q-6-12",
@@ -1437,7 +1437,7 @@
             "Making it personal.",
             "Seeking artificial consensus."
           ],
-          "standardAnswer": "I try to handle conflict by first separating the people from the problem. Most conflicts in product teams come from different goals or constraints, not bad intent. I ask what each person is optimizing for, then try to create shared decision criteria around user value, business impact, feasibility, risk, and timing. If the team still disagrees, I prefer to present options with trade-offs clearly and escalate the decision when necessary. The important thing is to make the conflict productive and explicit, rather than letting it become hidden resistance."
+          "standardAnswer": "I try to handle conflict by first separating the people from the problem. Most conflicts in product teams come from different goals or constraints, not bad intent.\n\nI ask what each person is optimizing for, then try to create shared decision criteria around user value, business impact, feasibility, risk, and timing.\n\nIf the team still disagrees, I prefer to present options with trade-offs clearly and escalate the decision when necessary. The important thing is to make the conflict productive and explicit, rather than letting it become hidden resistance."
         },
         {
           "id": "q-6-13",
@@ -1453,7 +1453,7 @@
             "Sounding authoritarian.",
             "Overemphasizing harmony over outcomes."
           ],
-          "standardAnswer": "My leadership style is structured, evidence-led, and hands-on where it matters. I try to create clarity in ambiguous situations, set a high quality bar, and help designers understand the reasoning behind decisions. I care about coaching because strong design teams need reusable thinking methods, not only individual feedback. At the same time, I am comfortable making hard trade-offs when the product needs a clear direction. I would describe myself as a design leader who connects strategy, craft, systems, and delivery."
+          "standardAnswer": "My leadership style is structured, evidence-led, and hands-on where it matters. I try to create clarity in ambiguous situations, set a high quality bar, and help designers understand the reasoning behind decisions.\n\nI care about coaching because strong design teams need reusable thinking methods, not only individual feedback. At the same time, I am comfortable making hard trade-offs when the product needs a clear direction.\n\nI would describe myself as a design leader who connects strategy, craft, systems, and delivery."
         },
         {
           "id": "q-6-14",
@@ -1469,7 +1469,7 @@
             "Saying there is no difference.",
             "Overgeneralizing North America or China."
           ],
-          "standardAnswer": "The hardest part is not the design fundamentals; many product problems are transferable. The harder part is translating context clearly. Products like Baidu App have massive scale and complex business models, but North American interviewers may not know the product, the market, or the organizational context. So I need to explain the product in familiar terms, be specific about my role, and connect the work to universal design themes such as user behavior, product strategy, experimentation, systems, and business impact. My master's program and time in Vancouver have also helped me adapt my communication style and understand the local product environment better."
+          "standardAnswer": "The hardest part is not the design fundamentals; many product problems are transferable. The harder part is translating context clearly.\n\nProducts like Baidu App have massive scale and complex business models, but North American interviewers may not know the product, the market, or the organizational context. So I need to explain the product in familiar terms, be specific about my role, and connect the work to universal design themes such as user behavior, product strategy, experimentation, systems, and business impact.\n\nMy master's program and time in Vancouver have also helped me adapt my communication style and understand the local product environment better."
         },
         {
           "id": "q-6-15",
@@ -1485,7 +1485,7 @@
             "Overusing cultural stereotypes.",
             "Treating adaptation as losing your point of view."
           ],
-          "standardAnswer": "I start by observing how the team makes decisions: how direct people are, how much context they expect, what evidence they value, and how disagreement is handled. In North American teams, I try to be more explicit about my point of view, the reasoning behind it, and the trade-offs. I also ask clarifying questions earlier instead of assuming shared context. Adaptation does not mean losing my design judgment; it means making my thinking easier for the team to evaluate and use."
+          "standardAnswer": "I start by observing how the team makes decisions: how direct people are, how much context they expect, what evidence they value, and how disagreement is handled.\n\nIn North American teams, I try to be more explicit about my point of view, the reasoning behind it, and the trade-offs. I also ask clarifying questions earlier instead of assuming shared context.\n\nAdaptation does not mean losing my design judgment; it means making my thinking easier for the team to evaluate and use."
         },
         {
           "id": "q-6-16",
@@ -1501,7 +1501,7 @@
             "Saying the project was a failure.",
             "Ignoring what the product achieved."
           ],
-          "standardAnswer": "I learned that a product can be innovative, well-designed, and commercially meaningful, but still not become the long-term direction if technology, market timing, and user value do not align. Duxiaoxiao achieved a lot: large-scale interaction, monetization revenue, patents, and international awards. But before mainstream LLMs, the assistant's ability to answer complex questions was limited, and on mobile, virtual-human interaction was not always more efficient than traditional search. When further investment ended and the team shifted toward LLM + search, it made me more careful about evaluating AI products. I now ask whether the AI improves a real user path, whether users understand its boundaries, and whether the experience can create durable value beyond novelty."
+          "standardAnswer": "I learned that a product can be innovative, well-designed, and commercially meaningful, but still not become the long-term direction if technology, market timing, and user value do not align.\n\nDuxiaoxiao achieved a lot: large-scale interaction, monetization revenue, patents, and international awards. But before mainstream LLMs, the assistant's ability to answer complex questions was limited, and on mobile, virtual-human interaction was not always more efficient than traditional search.\n\nWhen further investment ended and the team shifted toward LLM + search, it made me more careful about evaluating AI products. I now ask whether the AI improves a real user path, whether users understand its boundaries, and whether the experience can create durable value beyond novelty."
         },
         {
           "id": "q-6-17",
@@ -1516,7 +1516,7 @@
             "Making it only about taste.",
             "Ignoring business and delivery."
           ],
-          "standardAnswer": "Good design leadership means helping teams make better product decisions and ship better user experiences. It includes setting a clear direction, raising the quality bar, creating reusable systems, coaching designers, and building alignment with product, engineering, data, and business teams. I also think good design leaders connect design to business impact without losing user value. Design leadership is not only about managing designers; it is about making design a strategic function that improves the product, the team, and the organization over time."
+          "standardAnswer": "Good design leadership means helping teams make better product decisions and ship better user experiences.\n\nIt includes setting a clear direction, raising the quality bar, creating reusable systems, coaching designers, and building alignment with product, engineering, data, and business teams. I also think good design leaders connect design to business impact without losing user value.\n\nDesign leadership is not only about managing designers; it is about making design a strategic function that improves the product, the team, and the organization over time."
         },
         {
           "id": "q-6-18",
@@ -1556,7 +1556,7 @@
             "Saying only that you work hard.",
             "Making unsupported claims."
           ],
-          "standardAnswer": "I think I would be a strong fit if you need a product designer who can handle complex product problems at both strategic and execution levels. I bring 12 years of experience across large-scale consumer platforms, AI product design, design systems, and cross-functional leadership. I have designed for products with hundreds of millions of users, led 0-to-1 AI assistant experiences, built platform-level design infrastructure, and connected design decisions to measurable business outcomes. I also bring technical fluency, so I can collaborate closely with engineers and prototype complex interactions when needed. I can contribute not only to interface quality, but also to product direction, team alignment, and long-term experience systems."
+          "standardAnswer": "I think I would be a strong fit if you need a product designer who can handle complex product problems at both strategic and execution levels. I bring 12 years of experience across large-scale consumer platforms, AI product design, design systems, and cross-functional leadership.\n\nI have designed for products with hundreds of millions of users, led 0-to-1 AI assistant experiences, built platform-level design infrastructure, and connected design decisions to measurable business outcomes.\n\nI also bring technical fluency, so I can collaborate closely with engineers and prototype complex interactions when needed. I can contribute not only to interface quality, but also to product direction, team alignment, and long-term experience systems."
         },
         {
           "id": "q-7-2",
@@ -1571,7 +1571,7 @@
             "Using inflated language.",
             "Repeating answer 1 word-for-word."
           ],
-          "standardAnswer": "What makes me different is the combination of product scale, AI interaction experience, systems thinking, and technical fluency. Many designers are strong in one or two of those areas. My background connects them. I have worked on Baidu App at massive scale, led Duxiaoxiao as a 0-to-1 AI virtual human assistant, built design infrastructure used across teams, and managed designers while staying hands-on. I bring a systems lens to product design and can move from strategy to execution across UX architecture, UI craft, prototyping, metrics, and cross-functional leadership. That range is where I can create the most value."
+          "standardAnswer": "What makes me different is the combination of product scale, AI interaction experience, systems thinking, and technical fluency. Many designers are strong in one or two of those areas. My background connects them.\n\nI have worked on Baidu App at massive scale, led Duxiaoxiao as a 0-to-1 AI virtual human assistant, built design infrastructure used across teams, and managed designers while staying hands-on.\n\nI bring a systems lens to product design and can move from strategy to execution across UX architecture, UI craft, prototyping, metrics, and cross-functional leadership. That range is where I can create the most value."
         },
         {
           "id": "q-7-3",
@@ -1587,7 +1587,7 @@
             "Giving a generic growth answer.",
             "Ignoring business/user outcomes."
           ],
-          "standardAnswer": "I would want to have impact in three areas. First, I want to help the product solve meaningful user problems with clear, high-quality experiences. Second, I want to contribute to product strategy by bringing design judgment into problem framing, prioritization, and trade-offs. Third, I want to help the team build reusable systems and standards that improve quality and delivery over time. I would start by learning the product, users, business model, and team workflow, then look for places where my experience in platform UX, AI, systems, and cross-functional execution can create leverage."
+          "standardAnswer": "I would want to have impact in three areas. First, I want to help the product solve meaningful user problems with clear, high-quality experiences.\n\nSecond, I want to contribute to product strategy by bringing design judgment into problem framing, prioritization, and trade-offs. Third, I want to help the team build reusable systems and standards that improve quality and delivery over time.\n\nI would start by learning the product, users, business model, and team workflow, then look for places where my experience in platform UX, AI, systems, and cross-functional execution can create leverage."
         },
         {
           "id": "q-7-4",
@@ -1603,7 +1603,7 @@
             "Giving only tool-level examples.",
             "Ignoring risk and responsibility."
           ],
-          "standardAnswer": "AI will change product design in two ways. First, it will change the design workflow by helping designers explore, prototype, generate content, and test ideas faster. Second, and more importantly, it will change product experiences themselves. More products will include AI agents, generated answers, personalized interfaces, and multimodal interaction. That means designers need to think about trust, user control, explainability, failure states, privacy, and long-term human-AI relationships. My view is that AI does not reduce the need for product design judgment; it increases it, because the experience becomes more dynamic and less predictable."
+          "standardAnswer": "AI will change product design in two ways. First, it will change the design workflow by helping designers explore, prototype, generate content, and test ideas faster.\n\nSecond, and more importantly, it will change product experiences themselves. More products will include AI agents, generated answers, personalized interfaces, and multimodal interaction. That means designers need to think about trust, user control, explainability, failure states, privacy, and long-term human-AI relationships.\n\nMy view is that AI does not reduce the need for product design judgment; it increases it, because the experience becomes more dynamic and less predictable."
         },
         {
           "id": "q-7-5",
@@ -1619,7 +1619,7 @@
             "Ignoring emotional dependence and privacy.",
             "Overstating companionship as always positive."
           ],
-          "standardAnswer": "My point of view is that AI assistants are not only a question-answering interface. They create a relationship between the user and the system, and that relationship needs to be designed carefully. From Duxiaoxiao, I learned that some users value emotional response, companionship, and expression, while mainstream users still care deeply about efficiency, answer quality, control, and privacy. Multimodal interaction can make AI feel more understandable and approachable, but it can also create higher expectations and dependency risks. Good AI assistant design should make the AI useful, transparent, controllable, and emotionally appropriate for the context."
+          "standardAnswer": "My point of view is that AI assistants are not only a question-answering interface. They create a relationship between the user and the system, and that relationship needs to be designed carefully.\n\nFrom Duxiaoxiao, I learned that some users value emotional response, companionship, and expression, while mainstream users still care deeply about efficiency, answer quality, control, and privacy.\n\nMultimodal interaction can make AI feel more understandable and approachable, but it can also create higher expectations and dependency risks. Good AI assistant design should make the AI useful, transparent, controllable, and emotionally appropriate for the context."
         },
         {
           "id": "q-7-6",
@@ -1635,7 +1635,7 @@
             "Saying business impact is only revenue.",
             "Ignoring user value."
           ],
-          "standardAnswer": "I think design creates business impact by shaping user understanding, behavior, trust, efficiency, and long-term engagement. In Baidu App homepage redesigns, design decisions around hierarchy and content discovery affected DAU, time spent, search/feed engagement, and estimated revenue. But business impact should not mean blindly pushing metrics. In homepage monetization work, I also pushed for rules to protect the core user experience. Good design connects user value and business value so the product can grow without damaging trust or clarity."
+          "standardAnswer": "I think design creates business impact by shaping user understanding, behavior, trust, efficiency, and long-term engagement.\n\nIn Baidu App homepage redesigns, design decisions around hierarchy and content discovery affected DAU, time spent, search/feed engagement, and estimated revenue. But business impact should not mean blindly pushing metrics.\n\nIn homepage monetization work, I also pushed for rules to protect the core user experience. Good design connects user value and business value so the product can grow without damaging trust or clarity."
         },
         {
           "id": "q-7-7",
@@ -1651,7 +1651,7 @@
             "Sounding defensive.",
             "Overexplaining."
           ],
-          "standardAnswer": "You might have questions about how my China-based experience transfers to a North American product team, or whether my recent computer science master's degree means I am moving away from design. My answer is that the product context is different, but the core problems are very transferable: user behavior, product strategy, experimentation, design systems, AI interaction, business trade-offs, and cross-functional alignment. The master's degree was not a career pivot away from design; it strengthened my technical fluency as a designer. I am also actively adapting how I communicate my work so the context is clear for North American teams."
+          "standardAnswer": "You might have questions about how my China-based experience transfers to a North American product team, or whether my recent computer science master's degree means I am moving away from design.\n\nMy answer is that the product context is different, but the core problems are very transferable: user behavior, product strategy, experimentation, design systems, AI interaction, business trade-offs, and cross-functional alignment.\n\nThe master's degree was not a career pivot away from design; it strengthened my technical fluency as a designer. I am also actively adapting how I communicate my work so the context is clear for North American teams."
         },
         {
           "id": "q-7-8",
@@ -1668,7 +1668,7 @@
             "Saying markets are identical.",
             "Using unexplained China-specific terms."
           ],
-          "standardAnswer": "I would interpret it as high-scale product design experience in a different but very demanding market. Baidu App, for example, can be understood as a China-specific super app-style product combining search, content discovery, short video, AI assistants, and service entry points. The exact market is different from North America, but the design challenges are highly transferable: how to support different user intents, how to evolve a product architecture, how to validate changes at scale, how to balance business and user needs, and how to align many teams. I also know I need to keep learning the local context, but I believe the complexity and depth of my past work are directly relevant."
+          "standardAnswer": "I would interpret it as high-scale product design experience in a different but very demanding market. Baidu App, for example, can be understood as a China-specific super app-style product combining search, content discovery, short video, AI assistants, and service entry points.\n\nThe exact market is different from North America, but the design challenges are highly transferable: how to support different user intents, how to evolve a product architecture, how to validate changes at scale, how to balance business and user needs, and how to align many teams.\n\nI also know I need to keep learning the local context, but I believe the complexity and depth of my past work are directly relevant."
         },
         {
           "id": "q-7-9",
@@ -1708,7 +1708,7 @@
             "Sounding evasive forever.",
             "Ignoring total compensation."
           ],
-          "standardAnswer": "I am looking for a market-aligned package based on the role's level, scope, location, and total compensation structure. At this stage, I would prefer to understand how your team is leveling the role and what range you have budgeted. If we are aligned on scope and level, I am confident we can have a practical compensation discussion."
+          "standardAnswer": "I am looking for a market-aligned package based on the role's level, scope, location, and total compensation structure.\n\nAt this stage, I would prefer to understand how your team is leveling the role and what range you have budgeted. If we are aligned on scope and level, I am confident we can have a practical compensation discussion."
         },
         {
           "id": "q-8-2",
@@ -1739,7 +1739,7 @@
             "Giving vague \"good culture\" language.",
             "Adding too many demands."
           ],
-          "standardAnswer": "I would want clarity on the role scope, level expectations, team structure, product priorities, manager relationship, and how design contributes to product decisions. Compensation and work model also matter, but the most important factor is whether the role can use my strengths in product design, AI or platform complexity, systems thinking, and cross-functional leadership. If those are aligned, I would feel comfortable making a decision quickly."
+          "standardAnswer": "I would want clarity on the role scope, level expectations, team structure, product priorities, manager relationship, and how design contributes to product decisions.\n\nCompensation and work model also matter, but the most important factor is whether the role can use my strengths in product design, AI or platform complexity, systems thinking, and cross-functional leadership. If those are aligned, I would feel comfortable making a decision quickly."
         },
         {
           "id": "q-8-4",
@@ -1755,7 +1755,7 @@
             "Underselling yourself.",
             "Comparing titles across companies too literally."
           ],
-          "standardAnswer": "Based on my experience, I would expect to be considered around Senior Product Designer, Staff Product Designer, or Product Design Lead level, depending on how your company defines scope and leveling. My background includes Staff-level product design, platform architecture, AI product leadership, design systems, business impact, and people leadership. I am open to discussing the right level based on the actual expectations of the role."
+          "standardAnswer": "Based on my experience, I would expect to be considered around Senior Product Designer, Staff Product Designer, or Product Design Lead level, depending on how your company defines scope and leveling.\n\nMy background includes Staff-level product design, platform architecture, AI product leadership, design systems, business impact, and people leadership. I am open to discussing the right level based on the actual expectations of the role."
         },
         {
           "id": "q-8-5",
@@ -1771,7 +1771,7 @@
             "Hiding sponsorship needs outside Canada.",
             "Overexplaining."
           ],
-          "standardAnswer": "For Canada, I do not need employer sponsorship. My three-year Canadian post-graduation work permit is currently being processed, and I currently have legal authorization to work for Canadian employers. For opportunities outside Canada, work authorization would depend on the local requirements of that country or region."
+          "standardAnswer": "For Canada, I do not need employer sponsorship. My three-year Canadian post-graduation work permit is currently being processed, and I currently have legal authorization to work for Canadian employers.\n\nFor opportunities outside Canada, work authorization would depend on the local requirements of that country or region."
         },
         {
           "id": "q-8-6",
