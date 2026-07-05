@@ -57,7 +57,7 @@ export function AppShell({
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
                   )}
                 >
-                  Practice
+                  PRACTICE
                 </span>
                 <span
                   className={cn(
@@ -77,7 +77,7 @@ export function AppShell({
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
                   )}
                 >
-                  Library
+                  LIBRARY
                 </span>
                 <span
                   className={cn(
@@ -97,7 +97,7 @@ export function AppShell({
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
                   )}
                 >
-                  Interview
+                  INTERVIEW
                 </span>
                 <span
                   className={cn(
