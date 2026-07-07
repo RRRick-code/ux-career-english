@@ -239,16 +239,15 @@
           "questionNum": 2,
           "question": "Are you more of an IC designer, a design lead, or a people manager?",
           "include": [
-            "Use hybrid IC/people-manager framing.",
-            "Mention hands-on ownership and direct management experience.",
-            "Explain you can adapt based on role needs."
+            "Frame as an IC-first profile with strong people-management capabilities.",
+            "Mention hands-on ownership and people-management experience.",
+            "Emphasize the ability to dive deep into execution while aligning stakeholders."
           ],
           "avoid": [
             "Sounding unwilling to do hands-on work.",
-            "Sounding like management is the only acceptable path.",
-            "Making the answer unclear."
+            "Sounding like management is the only acceptable path."
           ],
-          "standardAnswer": "At my core, I am a hands-on senior IC, but I also bring 6 years of direct management experience. This means I can dive deep into complex execution, while still knowing how to guide a team and align stakeholders when needed."
+          "standardAnswer": "At my core, I am a hands-on senior IC with 6 years of people-management experience. Whether I was the Design Architect for Baidu App or leading the Duxiaoxiao project, I never stopped doing hands-on design work. This means I can dive deep into complex execution, while still knowing how to guide a team and align stakeholders."
         },
         {
           "id": "q-2-3",
