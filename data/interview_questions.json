@@ -286,17 +286,15 @@
           "questionNum": 5,
           "question": "How would you summarize your Baidu App experience?",
           "include": [
-            "Explain Baidu App for a North American audience.",
-            "Mention evolution from search tool to information and services platform.",
-            "Highlight homepage, algorithmic feed, AI + search, design infrastructure.",
-            "Include impact and scale."
+            "Frame your 10-year growth from UI Designer to Design Architect.",
+            "Cover three pillars: Homepage Strategy, Design Infrastructure, and AI Innovations.",
+            "Back up achievements with concrete metrics like 200M DAU and 9-figure revenue."
           ],
           "avoid": [
-            "Assuming the interviewer understands Baidu.",
-            "Drowning them in product history.",
-            "Failing to explain your ownership."
+            "Overclaiming macro company strategies as your own.",
+            "Over-explaining local products (like Duxiaoxiao) instead of their functional value."
           ],
-          "standardAnswer": "Baidu App was my largest platform UX experience. It is Baidu's flagship mobile search and information app, with about 700 million monthly active users and 200 million daily active users.\n\nI worked on it across multiple stages as it evolved from a search-focused mobile app into a broader platform for search, content discovery, short video, local services, and AI assistants.\n\nMy work included homepage redesigns, the shift toward a search-and-algorithmic-feed architecture, design infrastructure such as dark mode and motion systems, and AI + search exploration.\n\nThat experience shaped how I think about platform-scale design, experimentation, stakeholder alignment, and business impact."
+          "standardAnswer": "Baidu App is Baidu's flagship mobile search and information platform with 200 million daily active users. I spent a decade there, growing from a senior UI designer into the Design Architect role.\n\nMy biggest contribution was leading the homepage strategy over several years to shift the experience from a search-first utility to a feed-driven content platform, improving DAU, time spent, search/feed usage, and revenue.\n\nI also led core design infrastructure initiatives, such as homepage campaigns and monetization capabilities, protecting the user experience while sustaining nine-figure annual revenue.\n\nAdditionally, I led the design of key AI innovations within Search, including an AI virtual human assistant and Baidu's first LLM-powered search experience.\n\nThis journey defined my growth, transforming me from a feature-focused designer into a platform strategist who can design at massive scale, align teams, and drive business impact."
         },
         {
           "id": "q-2-6",
