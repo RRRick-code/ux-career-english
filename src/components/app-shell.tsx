@@ -47,11 +47,11 @@ export function AppShell({
             >
               UXCE
             </Link>
-            <nav className="absolute left-1/2 flex h-full -translate-x-1/2 items-center gap-4">
+            <nav className="absolute left-1/2 flex h-full -translate-x-1/2 items-center gap-1 sm:gap-4">
               <Link to="/" className="relative flex h-full items-center">
                 <span
                   className={cn(
-                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    "rounded-full px-2 sm:px-3 py-1 text-sm font-medium transition-colors",
                     location.pathname === "/" || location.pathname.startsWith("/study")
                       ? "text-primary font-semibold"
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
@@ -71,7 +71,7 @@ export function AppShell({
               <Link to="/library" className="relative flex h-full items-center">
                 <span
                   className={cn(
-                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    "rounded-full px-2 sm:px-3 py-1 text-sm font-medium transition-colors",
                     location.pathname.startsWith("/library")
                       ? "text-primary font-semibold"
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
@@ -91,7 +91,7 @@ export function AppShell({
               <Link to="/interview" className="relative flex h-full items-center">
                 <span
                   className={cn(
-                    "rounded-full px-3 py-1 text-sm font-medium transition-colors",
+                    "rounded-full px-2 sm:px-3 py-1 text-sm font-medium transition-colors",
                     location.pathname.startsWith("/interview")
                       ? "text-primary font-semibold"
                       : "text-muted-foreground hover:bg-slate-100 hover:text-foreground"
